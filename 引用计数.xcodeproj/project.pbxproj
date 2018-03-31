@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11001E28206A2E2700457CBC /* RuleStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11001E27206A2E2700457CBC /* RuleStudyViewController.m */; };
+		11001E2F206A300D00457CBC /* ARCOwnershipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11001E2E206A300D00457CBC /* ARCOwnershipViewController.m */; };
+		11001E42206A44C500457CBC /* NSObject+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 11001E41206A44C500457CBC /* NSObject+Category.m */; };
 		1115737320660DFC00EB426C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1115737220660DFC00EB426C /* main.m */; };
 		1115737620660DFC00EB426C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1115737520660DFC00EB426C /* AppDelegate.m */; };
 		1115737920660DFC00EB426C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1115737820660DFC00EB426C /* ViewController.m */; };
@@ -16,6 +19,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11001E26206A2E2700457CBC /* RuleStudyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuleStudyViewController.h; sourceTree = "<group>"; };
+		11001E27206A2E2700457CBC /* RuleStudyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuleStudyViewController.m; sourceTree = "<group>"; };
+		11001E2D206A300D00457CBC /* ARCOwnershipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCOwnershipViewController.h; sourceTree = "<group>"; };
+		11001E2E206A300D00457CBC /* ARCOwnershipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCOwnershipViewController.m; sourceTree = "<group>"; };
+		11001E40206A44C500457CBC /* NSObject+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Category.h"; sourceTree = "<group>"; };
+		11001E41206A44C500457CBC /* NSObject+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Category.m"; sourceTree = "<group>"; };
 		1115736E20660DFC00EB426C /* 引用计数.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "引用计数.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1115737220660DFC00EB426C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1115737420660DFC00EB426C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,6 +48,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11001E29206A2E2E00457CBC /* 内存管理规则研究 */ = {
+			isa = PBXGroup;
+			children = (
+				11001E26206A2E2700457CBC /* RuleStudyViewController.h */,
+				11001E27206A2E2700457CBC /* RuleStudyViewController.m */,
+			);
+			name = "内存管理规则研究";
+			sourceTree = "<group>";
+		};
+		11001E2A206A2E4500457CBC /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1115737420660DFC00EB426C /* AppDelegate.h */,
+				1115737520660DFC00EB426C /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		11001E2B206A2E5200457CBC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				1115737720660DFC00EB426C /* ViewController.h */,
+				1115737820660DFC00EB426C /* ViewController.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		11001E2C206A2F0600457CBC /* ARC所有权修饰符研究 */ = {
+			isa = PBXGroup;
+			children = (
+				11001E40206A44C500457CBC /* NSObject+Category.h */,
+				11001E41206A44C500457CBC /* NSObject+Category.m */,
+				11001E2D206A300D00457CBC /* ARCOwnershipViewController.h */,
+				11001E2E206A300D00457CBC /* ARCOwnershipViewController.m */,
+			);
+			name = "ARC所有权修饰符研究";
+			sourceTree = "<group>";
+		};
+		11001E30206A33B200457CBC /* 引用计数 */ = {
+			isa = PBXGroup;
+			children = (
+				11001E29206A2E2E00457CBC /* 内存管理规则研究 */,
+				11001E2C206A2F0600457CBC /* ARC所有权修饰符研究 */,
+			);
+			name = "引用计数";
+			sourceTree = "<group>";
+		};
 		1115736520660DFC00EB426C = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +114,9 @@
 		1115737020660DFC00EB426C /* 引用计数 */ = {
 			isa = PBXGroup;
 			children = (
-				1115737420660DFC00EB426C /* AppDelegate.h */,
-				1115737520660DFC00EB426C /* AppDelegate.m */,
-				1115737720660DFC00EB426C /* ViewController.h */,
-				1115737820660DFC00EB426C /* ViewController.m */,
-				1115737A20660DFC00EB426C /* Main.storyboard */,
-				1115737D20660DFC00EB426C /* Assets.xcassets */,
-				1115737F20660DFC00EB426C /* LaunchScreen.storyboard */,
-				1115738220660DFC00EB426C /* Info.plist */,
+				11001E2A206A2E4500457CBC /* AppDelegate */,
+				11001E2B206A2E5200457CBC /* Main */,
+				11001E30206A33B200457CBC /* 引用计数 */,
 				1115737120660DFC00EB426C /* Supporting Files */,
 			);
 			path = "引用计数";
@@ -74,6 +125,10 @@
 		1115737120660DFC00EB426C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1115737A20660DFC00EB426C /* Main.storyboard */,
+				1115737D20660DFC00EB426C /* Assets.xcassets */,
+				1115737F20660DFC00EB426C /* LaunchScreen.storyboard */,
+				1115738220660DFC00EB426C /* Info.plist */,
 				1115737220660DFC00EB426C /* main.m */,
 			);
 			name = "Supporting Files";
@@ -150,9 +205,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11001E28206A2E2700457CBC /* RuleStudyViewController.m in Sources */,
 				1115737920660DFC00EB426C /* ViewController.m in Sources */,
 				1115737620660DFC00EB426C /* AppDelegate.m in Sources */,
+				11001E2F206A300D00457CBC /* ARCOwnershipViewController.m in Sources */,
 				1115737320660DFC00EB426C /* main.m in Sources */,
+				11001E42206A44C500457CBC /* NSObject+Category.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +328,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				INFOPLIST_FILE = "引用计数/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "yangaishangxian.----";
@@ -282,7 +340,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_ARC = YES;
 				INFOPLIST_FILE = "引用计数/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "yangaishangxian.----";
@@ -309,6 +367,7 @@
 				1115738720660DFC00EB426C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
