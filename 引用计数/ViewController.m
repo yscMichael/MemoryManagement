@@ -101,7 +101,10 @@
 
         _dataSoure = [[NSMutableArray alloc]initWithObjects:
                       @[@"内存管理规则探究",
-                        @"ARC规则研究"],
+                        @"自动释放池内存探究",
+                        @"MRC下研究autorelease",
+                        @"ARC下研究autorelease",
+                        @"ARC所有权修饰符研究"],
                       @[@""],
                       @[@""],nil];
     }
@@ -114,25 +117,15 @@
     {
         _controllerSoure = [[NSMutableArray alloc]initWithObjects:
                             @[@"RuleStudyViewController",
+                              @"AutoReleaseMemoryViewController",
+                              @"AutoReleaseMRCViewController",
+                              @"AutoReleaseARCViewController",
                               @"ARCOwnershipViewController"],
                             @[],
                             @[],nil];
     }
     return _controllerSoure;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @end
 

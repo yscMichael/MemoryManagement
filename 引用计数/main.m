@@ -8,8 +8,13 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "Person.h"
 
 int main(int argc, char * argv[]) {
+
+//    Person *person = [[Person alloc]init];
+
+
     @autoreleasepool {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }

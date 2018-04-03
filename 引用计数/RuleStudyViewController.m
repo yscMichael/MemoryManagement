@@ -8,7 +8,8 @@
 
 #import "RuleStudyViewController.h"
 
-OBJC_EXTERN int _objc_rootRetainCount(id);
+extern void _objc_autoreleasePoolPrint();//打印注册到自动释放池中的对象
+extern uintptr_t _objc_rootRetainCount(id obj);//获取对象的引用计数
 
 @interface RuleStudyViewController ()
 
@@ -35,7 +36,7 @@ OBJC_EXTERN int _objc_rootRetainCount(id);
     self.view.backgroundColor = [UIColor whiteColor];
 
     //四条法则验证
-    //[self testOne];
+    [self testRule];
 }
 
 /*
@@ -46,9 +47,7 @@ OBJC_EXTERN int _objc_rootRetainCount(id);
  *
  * 以上是否持有关系到自己有没有权利释放。
  **/
-
-/*
-- (void)testOne
+- (void)testRule
 {
     //1、生成(alloc、new、copy、mutablecopy等)并持有对象、引用计数加1
     id objOne = [[NSObject alloc]init];
@@ -71,6 +70,8 @@ OBJC_EXTERN int _objc_rootRetainCount(id);
 
     //4、非自己生成并持有的对象，若用retain变为自己持有，也可以用release释放
     id  objFour = [NSMutableArray array];
+    //这里引用计数为1
+    //可以理解这个对象已经在自动缓存池中存有，但是不是objFour所持有!!!
     NSLog(@"retain count-4 = %ld",CFGetRetainCount((__bridge CFTypeRef)(objFour)));
     [objFour retain];
     NSLog(@"retain count-4 = %ld",CFGetRetainCount((__bridge CFTypeRef)(objFour)));
@@ -102,7 +103,16 @@ OBJC_EXTERN int _objc_rootRetainCount(id);
     return obj;
 }
 
-*/
+//总结：
+// 1、调用alloc或是retain,引用计数值加1
+// 2、调用release后,引用计数值减1
+// 3、引用计数值为0时,调用dealloc方法废弃对象。
+// 4、ARC和MRC下都可以使用dealloc方法,只不过是ARC不能显示调用[super dealloc]
+//    MRC必须将[super dealloc]放在最后,如果必须调用的话
+// 5、放在自动释放池中对象,会被延迟释放;此时可以理解为引用计数为1
+//    当自动释放池被销毁时,会向里面的对象发送一条release信息
+// 6、某个对象使用多少次autorelease,自动释放池被销毁时,就会向某个对象发送多少次release
+
 
 @end
 

@@ -9,6 +9,7 @@
 #import "ARCOwnershipViewController.h"
 #import "NSObject+Category.h"
 
+
 extern void _objc_autoreleasePoolPrint();//打印注册到自动释放池中的对象
 extern uintptr_t _objc_rootRetainCount(id obj);//获取对象的引用计数
 
@@ -25,10 +26,121 @@ extern uintptr_t _objc_rootRetainCount(id obj);//获取对象的引用计数
     self.view.backgroundColor = [UIColor whiteColor];
 
     //所有权修饰符探究
-    [self testOne];
-    [self testTwo];
-    [self testThree];
+//    [self testOne];
+//    [self testTwo];
+//    [self testThree];
     [self testFour];
+//    [self testFive];
+//    [self testSix];
+}
+
+/**
+ * __autoreleasing研究 崩溃1
+ */
+- (void)testTwo
+{
+    id __unsafe_unretained obj1 = nil;
+    {
+        //这里如果添加__autoreleasing,不会崩溃
+        id  obj0 = [NSMutableArray array];
+        [obj0 addObject:@"obj"];
+        obj1 = obj0;
+        NSLog(@"obj0 = %@", obj0);
+        _objc_autoreleasePoolPrint();
+    }
+    //以下代码等价于:
+    {
+        //objc_retainAutoreleasedReturnValue函数与objc_retain函数不同，它即便不注册到autoreleasepool中而返回对象，也能够正确地获取对象
+        //id obj = objc_msgSend(NSMutableArray, @selector(array));
+        //...
+        //objc_release(obj);
+    }
+    _objc_autoreleasePoolPrint();
+
+    //同样这里会崩溃,因为对象已经被销毁了
+//    NSLog(@"obj1 = %@", obj1);
+}
+
+/**
+ *  紧接上面  崩溃2
+ */
+- (void)testThree
+{
+    id __unsafe_unretained obj1 = nil;
+    {
+        //这里如果添加__autoreleasing,不会崩溃
+        id  obj0 = [[NSMutableArray alloc]init];
+        [obj0 addObject:@"obj"];
+        obj1 = obj0;
+        NSLog(@"obj0RetainCount-1 = %lu",_objc_rootRetainCount(obj0));
+        NSLog(@"obj0 = %@", obj0);
+    }//到这里obj0就release、因为使用的是__unsafe_unretained,所以obj1仍然指向原来区域
+
+    //以上代码等价于以下代码：
+    //{
+    //   id obj = objc_msgSend(NSObject, @selector(alloc));
+    //   objc_msgSend(obj, @selector(init));
+    //   //...
+    //   objc_release(obj);
+    //}
+
+    //由于原来的区域已经释放,它自己又不会变为nil,所以出现也指针崩溃
+    //    NSLog(@"obj1 = %@", obj1);
+}
+
+/**
+ *  紧接上面  不崩溃1
+ */
+- (void)testFour
+{
+    id __unsafe_unretained obj1 = nil;
+    {
+//        @autoreleasepool{
+        //它的内容会被返回到自动释放池中
+        id obj0 = [NSMutableArray arrayWithObjects:@"obj",nil];
+        obj1 = obj0;
+//        _objc_autoreleasePoolPrint();
+        NSLog(@"obj0RetainCount-2 = %lu",_objc_rootRetainCount(obj0));
+        NSLog(@"obj0 = %@", obj0);
+//        }
+    }
+    NSLog(@"obj1 = %@", obj1);
+
+//    NSMutableArray *array1 = [NSMutableArray array];
+//    NSLog(@"retain count1 = %lu", _objc_rootRetainCount(array1));
+//
+//    NSMutableArray *array2 = [NSMutableArray arrayWithObjects:@"obj", nil];
+//    NSLog(@"retain count2 = %lu", _objc_rootRetainCount(array2));
+}
+
+/**
+ *  紧接上面 不崩溃2
+ */
+- (void)testFive
+{
+    id __unsafe_unretained obj1 = nil;
+    {
+        id obj0 = [[self class] Object];
+        [obj0 addObject:@"obj"];
+        obj1 = obj0;
+        NSLog(@"obj0 = %@", obj0);
+    }
+    NSLog(@"obj1 = %@", obj1);
+}
+
+/**
+ *  紧接上面 崩溃3
+ */
+- (void)testSix
+{
+    id __unsafe_unretained obj1 = nil;
+    {
+        id obj0 = [[self class] copy];
+        [obj0 addObject:@"obj"];
+        obj1 = obj0;
+        NSLog(@"obj0 = %@", obj0);
+    }
+    //    NSLog(@"obj1 = %@", obj1);
 }
 
 /*
@@ -96,81 +208,7 @@ extern uintptr_t _objc_rootRetainCount(id obj);//获取对象的引用计数
     //NSLog(@"obj1 = %@", obj1);
 }
 
-/**
- * __autoreleasing研究
- */
-- (void)testTwo
-{
-    id __unsafe_unretained obj1 = nil;
-    {
-        id  obj0 = [NSMutableArray array];
-        [obj0 addObject:@"obj"];
-        obj1 = obj0;
-        NSLog(@"obj0 = %@", obj0);
-    }
 
-    NSLog(@"obj1 = %@", obj1);
-}
-
-/**
- *  紧接上面
- */
-- (void)testThree
-{
-    id __unsafe_unretained obj1 = nil;
-    {
-        id  obj0 = [[NSMutableArray alloc]init];
-        [obj0 addObject:@"obj"];
-        obj1 = obj0;
-        NSLog(@"obj0 = %@", obj0);
-    }
-
-    NSLog(@"obj1 = %@", obj1);
-}
-
-/**
- *  紧接上面
- */
-- (void)testFour
-{
-    id __unsafe_unretained obj1 = nil;
-    {
-        id obj0 = [NSMutableArray arrayWithObjects:@"obj",nil];
-        obj1 = obj0;
-        NSLog(@"obj0 = %@", obj0);
-    }
-    NSLog(@"obj1 = %@", obj1);
-}
-
-/**
- *  紧接上面
- */
-- (void)testFive
-{
-    id __unsafe_unretained obj1 = nil;
-    {
-        id obj0 = [[self class] Object];
-        [obj0 addObject:@"obj"];
-        obj1 = obj0;
-        NSLog(@"obj0 = %@", obj0);
-    }  
-    NSLog(@"obj1 = %@", obj1);
-}
-
-/**
- *  紧接上面
- */
-- (void)testSix
-{
-    id __unsafe_unretained obj1 = nil;
-    {
-        id obj0 = [[self class] allocObject];
-        [obj0 addObject:@"obj"];
-        obj1 = obj0;
-        NSLog(@"obj0 = %@", obj0);
-    }  
-    NSLog(@"obj1 = %@", obj1);
-}
 
 
 @end

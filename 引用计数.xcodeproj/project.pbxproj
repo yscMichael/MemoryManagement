@@ -7,15 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11001E28206A2E2700457CBC /* RuleStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11001E27206A2E2700457CBC /* RuleStudyViewController.m */; };
+		11001E28206A2E2700457CBC /* RuleStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11001E27206A2E2700457CBC /* RuleStudyViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		11001E2F206A300D00457CBC /* ARCOwnershipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11001E2E206A300D00457CBC /* ARCOwnershipViewController.m */; };
-		11001E42206A44C500457CBC /* NSObject+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 11001E41206A44C500457CBC /* NSObject+Category.m */; };
 		1115737320660DFC00EB426C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1115737220660DFC00EB426C /* main.m */; };
 		1115737620660DFC00EB426C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1115737520660DFC00EB426C /* AppDelegate.m */; };
 		1115737920660DFC00EB426C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1115737820660DFC00EB426C /* ViewController.m */; };
 		1115737C20660DFC00EB426C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1115737A20660DFC00EB426C /* Main.storyboard */; };
 		1115737E20660DFC00EB426C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1115737D20660DFC00EB426C /* Assets.xcassets */; };
 		1115738120660DFC00EB426C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1115737F20660DFC00EB426C /* LaunchScreen.storyboard */; };
+		11A2A3B3206F455400B4AFF4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A3B2206F455400B4AFF4 /* Person.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		11A2A3D0207219BB00B4AFF4 /* AutoReleaseMemoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A3CF207219BB00B4AFF4 /* AutoReleaseMemoryViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		11A2A3D520721B8A00B4AFF4 /* AutoReleaseMRCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A3D420721B8A00B4AFF4 /* AutoReleaseMRCViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		11A2A3DE20732B1800B4AFF4 /* AutoReleaseARCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A3DD20732B1800B4AFF4 /* AutoReleaseARCViewController.m */; };
+		11A2A3E120732C9100B4AFF4 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A3E020732C9100B4AFF4 /* Animal.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		11A2A3F020735F0200B4AFF4 /* NSObject+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A3EF20735F0200B4AFF4 /* NSObject+Category.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,8 +28,6 @@
 		11001E27206A2E2700457CBC /* RuleStudyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuleStudyViewController.m; sourceTree = "<group>"; };
 		11001E2D206A300D00457CBC /* ARCOwnershipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCOwnershipViewController.h; sourceTree = "<group>"; };
 		11001E2E206A300D00457CBC /* ARCOwnershipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCOwnershipViewController.m; sourceTree = "<group>"; };
-		11001E40206A44C500457CBC /* NSObject+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Category.h"; sourceTree = "<group>"; };
-		11001E41206A44C500457CBC /* NSObject+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Category.m"; sourceTree = "<group>"; };
 		1115736E20660DFC00EB426C /* 引用计数.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "引用计数.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1115737220660DFC00EB426C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1115737420660DFC00EB426C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -35,6 +38,18 @@
 		1115737D20660DFC00EB426C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1115738020660DFC00EB426C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1115738220660DFC00EB426C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11A2A3B1206F455400B4AFF4 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		11A2A3B2206F455400B4AFF4 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		11A2A3CE207219BB00B4AFF4 /* AutoReleaseMemoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoReleaseMemoryViewController.h; sourceTree = "<group>"; };
+		11A2A3CF207219BB00B4AFF4 /* AutoReleaseMemoryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoReleaseMemoryViewController.m; sourceTree = "<group>"; };
+		11A2A3D320721B8A00B4AFF4 /* AutoReleaseMRCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoReleaseMRCViewController.h; sourceTree = "<group>"; };
+		11A2A3D420721B8A00B4AFF4 /* AutoReleaseMRCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoReleaseMRCViewController.m; sourceTree = "<group>"; };
+		11A2A3DC20732B1800B4AFF4 /* AutoReleaseARCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoReleaseARCViewController.h; sourceTree = "<group>"; };
+		11A2A3DD20732B1800B4AFF4 /* AutoReleaseARCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoReleaseARCViewController.m; sourceTree = "<group>"; };
+		11A2A3DF20732C9100B4AFF4 /* Animal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		11A2A3E020732C9100B4AFF4 /* Animal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
+		11A2A3EE20735F0200B4AFF4 /* NSObject+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Category.h"; sourceTree = "<group>"; };
+		11A2A3EF20735F0200B4AFF4 /* NSObject+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Category.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +93,6 @@
 		11001E2C206A2F0600457CBC /* ARC所有权修饰符研究 */ = {
 			isa = PBXGroup;
 			children = (
-				11001E40206A44C500457CBC /* NSObject+Category.h */,
-				11001E41206A44C500457CBC /* NSObject+Category.m */,
 				11001E2D206A300D00457CBC /* ARCOwnershipViewController.h */,
 				11001E2E206A300D00457CBC /* ARCOwnershipViewController.m */,
 			);
@@ -90,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				11001E29206A2E2E00457CBC /* 内存管理规则研究 */,
+				11A2A3CD2072173F00B4AFF4 /* 自动释放池探究 */,
 				11001E2C206A2F0600457CBC /* ARC所有权修饰符研究 */,
 			);
 			name = "引用计数";
@@ -134,6 +148,49 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		11A2A3CD2072173F00B4AFF4 /* 自动释放池探究 */ = {
+			isa = PBXGroup;
+			children = (
+				11A2A3D1207219F900B4AFF4 /* 自动释放池内存 */,
+				11A2A3D220721A0D00B4AFF4 /* MRC研究autorelease */,
+				11A2A3DB20732A5800B4AFF4 /* ARC下研究autorelease */,
+			);
+			name = "自动释放池探究";
+			sourceTree = "<group>";
+		};
+		11A2A3D1207219F900B4AFF4 /* 自动释放池内存 */ = {
+			isa = PBXGroup;
+			children = (
+				11A2A3CE207219BB00B4AFF4 /* AutoReleaseMemoryViewController.h */,
+				11A2A3CF207219BB00B4AFF4 /* AutoReleaseMemoryViewController.m */,
+			);
+			name = "自动释放池内存";
+			sourceTree = "<group>";
+		};
+		11A2A3D220721A0D00B4AFF4 /* MRC研究autorelease */ = {
+			isa = PBXGroup;
+			children = (
+				11A2A3B1206F455400B4AFF4 /* Person.h */,
+				11A2A3B2206F455400B4AFF4 /* Person.m */,
+				11A2A3DF20732C9100B4AFF4 /* Animal.h */,
+				11A2A3E020732C9100B4AFF4 /* Animal.m */,
+				11A2A3D320721B8A00B4AFF4 /* AutoReleaseMRCViewController.h */,
+				11A2A3D420721B8A00B4AFF4 /* AutoReleaseMRCViewController.m */,
+			);
+			name = "MRC研究autorelease";
+			sourceTree = "<group>";
+		};
+		11A2A3DB20732A5800B4AFF4 /* ARC下研究autorelease */ = {
+			isa = PBXGroup;
+			children = (
+				11A2A3EE20735F0200B4AFF4 /* NSObject+Category.h */,
+				11A2A3EF20735F0200B4AFF4 /* NSObject+Category.m */,
+				11A2A3DC20732B1800B4AFF4 /* AutoReleaseARCViewController.h */,
+				11A2A3DD20732B1800B4AFF4 /* AutoReleaseARCViewController.m */,
+			);
+			name = "ARC下研究autorelease";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -165,6 +222,7 @@
 				TargetAttributes = {
 					1115736D20660DFC00EB426C = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 59PVTAC458;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -206,11 +264,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				11001E28206A2E2700457CBC /* RuleStudyViewController.m in Sources */,
+				11A2A3D520721B8A00B4AFF4 /* AutoReleaseMRCViewController.m in Sources */,
 				1115737920660DFC00EB426C /* ViewController.m in Sources */,
+				11A2A3B3206F455400B4AFF4 /* Person.m in Sources */,
+				11A2A3D0207219BB00B4AFF4 /* AutoReleaseMemoryViewController.m in Sources */,
 				1115737620660DFC00EB426C /* AppDelegate.m in Sources */,
 				11001E2F206A300D00457CBC /* ARCOwnershipViewController.m in Sources */,
 				1115737320660DFC00EB426C /* main.m in Sources */,
-				11001E42206A44C500457CBC /* NSObject+Category.m in Sources */,
+				11A2A3E120732C9100B4AFF4 /* Animal.m in Sources */,
+				11A2A3F020735F0200B4AFF4 /* NSObject+Category.m in Sources */,
+				11A2A3DE20732B1800B4AFF4 /* AutoReleaseARCViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,9 +392,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				DEVELOPMENT_TEAM = 59PVTAC458;
 				INFOPLIST_FILE = "引用计数/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "yangaishangxian.----";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yangshichuan.aishangxian;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -341,9 +406,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				DEVELOPMENT_TEAM = 59PVTAC458;
 				INFOPLIST_FILE = "引用计数/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "yangaishangxian.----";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yangshichuan.aishangxian;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
