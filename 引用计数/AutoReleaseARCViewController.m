@@ -37,7 +37,7 @@ extern uintptr_t _objc_rootRetainCount(id obj);//获取对象的引用计数
     [self customizeClassMethodStudy];
 }
 
-//系统方法
+#pragma mark - 系统方法
 - (void)systemClassMethodStudy
 {
     //[self systemClassMethodStudyOne];
@@ -45,7 +45,7 @@ extern uintptr_t _objc_rootRetainCount(id obj);//获取对象的引用计数
     //[self systemClassMethodStudyThree];
 }
 
-//自定义方法
+#pragma mark - 自定义方法
 - (void)customizeClassMethodStudy
 {
     //[self customizeClassMethodStudyOne];
@@ -57,12 +57,6 @@ extern uintptr_t _objc_rootRetainCount(id obj);//获取对象的引用计数
     //[self customizeClassMethodStudySix];
     //[self customizeClassMethodStudySeven];
     //[self customizeClassMethodStudyEight];
-}
-
-//__autoreleasing特殊字符研究
-- (void)autoreleaseCharacter
-{
-
 }
 
 //系统类方法-1-崩溃
