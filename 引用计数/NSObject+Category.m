@@ -155,8 +155,6 @@
 
 + (id)copyObjectss
 {
-    //_objc_msgSend
-    //_objc_msgSend
     return [[NSMutableArray alloc]init];
 }
 
@@ -171,10 +169,6 @@
 
 + (id)copyObjectsss
 {
-    //_objc_msgSend
-    //_objc_msgSend
-    //_objc_retain
-    //_objc_storeStrong
     id obj = [[NSMutableArray alloc]init];
     return obj;
 }
@@ -193,5 +187,14 @@
 //}
 
 
+//总结:
+//1、不是以alloc、new、copy、mutableCopy开头的方法,返回的只有两种可能
+//   a、[obj autorelease] //一定是加入自动释放池
+//   b、objc_autoreleaseReturnValue(obj) //取决于外面的指针
+//2、以alloc、new、copy、mutableCopy开头的方法,返回的只有一种
+//   a、obj
+
 
 @end
+
+

@@ -128,6 +128,7 @@ extern uintptr_t _objc_rootRetainCount(id obj);//获取对象的引用计数
 {
     id __unsafe_unretained target = nil;
     {
+        //对象被放到了自动释放池中
         id temp = [[self class] Object];
         [temp addObject:@"obj"];
 
@@ -143,6 +144,7 @@ extern uintptr_t _objc_rootRetainCount(id obj);//获取对象的引用计数
 {
     id __unsafe_unretained target = nil;
     {
+        //这里对象没有出现在自动释放池中
         id temp = [[self class] Objects];
         [temp addObject:@"obj"];
 
