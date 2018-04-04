@@ -1,18 +1,18 @@
 //
-//  ViewController.m
+//  ARCOwnershipViewListController.m
 //  引用计数
 //
-//  Created by 杨世川 on 18/3/24.
+//  Created by 杨世川 on 2018/4/4.
 //  Copyright © 2018年 杨世川. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ARCOwnershipViewListController.h"
 
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
 #define BarHeight 20
 
-@interface ViewController ()<UITableViewDataSource,UITableViewDelegate>
+@interface ARCOwnershipViewListController ()<UITableViewDataSource,UITableViewDelegate>
 
 @property (nonatomic,strong) UITableView *tableView;
 
@@ -22,7 +22,7 @@
 
 @end
 
-@implementation ViewController
+@implementation ARCOwnershipViewListController
 
 - (void)viewDidLoad
 {
@@ -31,6 +31,7 @@
     [self.view addSubview:self.tableView];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
 }
+
 
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -87,9 +88,7 @@
     if (!_sectionSource)
     {
         _sectionSource = [[NSMutableArray alloc]initWithObjects:
-                          @"引用计数",
-                          @"Block",
-                          @"GCD", nil];
+                          @"所有权修饰符详解",nil];
     }
     return _sectionSource;
 }
@@ -100,14 +99,10 @@
     {
 
         _dataSoure = [[NSMutableArray alloc]initWithObjects:
-                      @[@"内存管理规则探究",
-                        @"自动释放池内存探究",
-                        @"MRC下研究autorelease",
-                        @"ARC下研究autorelease",
-                        @"ARC所有权修饰符研究",
-                        @"引用计数数值例题"],
-                      @[@""],
-                      @[@""],nil];
+                      @[@"__strong",
+                        @"__weak",
+                        @"__unsafe__unretained",
+                        @"__autoreleasing"],nil];
     }
     return _dataSoure;
 }
@@ -117,19 +112,14 @@
     if (!_controllerSoure)
     {
         _controllerSoure = [[NSMutableArray alloc]initWithObjects:
-                            @[@"RuleStudyViewController",
-                              @"AutoReleaseMemoryViewController",
-                              @"AutoReleaseMRCViewController",
-                              @"AutoReleaseARCViewController",
-                              @"ARCOwnershipViewListController",
-                              @"ReferenceCountViewController"],
-                            @[],
-                            @[],nil];
+                            @[@"ARCOwnershipAutoStrongController",
+                              @"ARCOwnershipAutoWeakController",
+                              @"ARCOwnershipAutoUnRetainedController",
+                              @"ARCOwnershipAutoReleaseController"],nil];
     }
     return _controllerSoure;
 }
 
 @end
-
 
 

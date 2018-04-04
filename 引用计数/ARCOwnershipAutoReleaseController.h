@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ARCOwnershipViewController : UIViewController
+@interface ARCOwnershipAutoReleaseController : UIViewController
 
 @end

@@ -37,6 +37,8 @@ extern uintptr_t _objc_rootRetainCount(id obj);//获取对象的引用计数
         //这里的前提是中间部分代码有autorelease对象产生
         //NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
 
+        //在MRC下,如果系统方法不是以alloc、new、copy、mutableCopy开头
+        //一般返回的都是[obj autorelease]
         NSString *string =@"Abc";
         string = [string lowercaseString];
         string = [string stringByAppendingString:@"xyz"];

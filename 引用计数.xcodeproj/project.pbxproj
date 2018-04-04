@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		11001E28206A2E2700457CBC /* RuleStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11001E27206A2E2700457CBC /* RuleStudyViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		11001E2F206A300D00457CBC /* ARCOwnershipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11001E2E206A300D00457CBC /* ARCOwnershipViewController.m */; };
+		11001E2F206A300D00457CBC /* ARCOwnershipAutoReleaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11001E2E206A300D00457CBC /* ARCOwnershipAutoReleaseController.m */; };
 		1115737320660DFC00EB426C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1115737220660DFC00EB426C /* main.m */; };
 		1115737620660DFC00EB426C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1115737520660DFC00EB426C /* AppDelegate.m */; };
 		1115737920660DFC00EB426C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1115737820660DFC00EB426C /* ViewController.m */; };
@@ -21,13 +21,18 @@
 		11A2A3DE20732B1800B4AFF4 /* AutoReleaseARCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A3DD20732B1800B4AFF4 /* AutoReleaseARCViewController.m */; };
 		11A2A3E120732C9100B4AFF4 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A3E020732C9100B4AFF4 /* Animal.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		11A2A3F020735F0200B4AFF4 /* NSObject+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A3EF20735F0200B4AFF4 /* NSObject+Category.m */; };
+		11A2A3F42074AF1D00B4AFF4 /* ARCOwnershipViewListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A3F32074AF1D00B4AFF4 /* ARCOwnershipViewListController.m */; };
+		11A2A3FC2074B16F00B4AFF4 /* ARCOwnershipAutoStrongController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A3FB2074B16F00B4AFF4 /* ARCOwnershipAutoStrongController.m */; };
+		11A2A3FF2074B18100B4AFF4 /* ARCOwnershipAutoWeakController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A3FE2074B18100B4AFF4 /* ARCOwnershipAutoWeakController.m */; };
+		11A2A4022074B18E00B4AFF4 /* ARCOwnershipAutoUnRetainedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A4012074B18E00B4AFF4 /* ARCOwnershipAutoUnRetainedController.m */; };
+		11A2A4052074B40D00B4AFF4 /* ReferenceCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A4042074B40D00B4AFF4 /* ReferenceCountViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		11001E26206A2E2700457CBC /* RuleStudyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RuleStudyViewController.h; sourceTree = "<group>"; };
 		11001E27206A2E2700457CBC /* RuleStudyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuleStudyViewController.m; sourceTree = "<group>"; };
-		11001E2D206A300D00457CBC /* ARCOwnershipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCOwnershipViewController.h; sourceTree = "<group>"; };
-		11001E2E206A300D00457CBC /* ARCOwnershipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCOwnershipViewController.m; sourceTree = "<group>"; };
+		11001E2D206A300D00457CBC /* ARCOwnershipAutoReleaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCOwnershipAutoReleaseController.h; sourceTree = "<group>"; };
+		11001E2E206A300D00457CBC /* ARCOwnershipAutoReleaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCOwnershipAutoReleaseController.m; sourceTree = "<group>"; };
 		1115736E20660DFC00EB426C /* 引用计数.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "引用计数.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1115737220660DFC00EB426C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1115737420660DFC00EB426C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -50,6 +55,16 @@
 		11A2A3E020732C9100B4AFF4 /* Animal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
 		11A2A3EE20735F0200B4AFF4 /* NSObject+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Category.h"; sourceTree = "<group>"; };
 		11A2A3EF20735F0200B4AFF4 /* NSObject+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Category.m"; sourceTree = "<group>"; };
+		11A2A3F22074AF1D00B4AFF4 /* ARCOwnershipViewListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCOwnershipViewListController.h; sourceTree = "<group>"; };
+		11A2A3F32074AF1D00B4AFF4 /* ARCOwnershipViewListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCOwnershipViewListController.m; sourceTree = "<group>"; };
+		11A2A3FA2074B16F00B4AFF4 /* ARCOwnershipAutoStrongController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCOwnershipAutoStrongController.h; sourceTree = "<group>"; };
+		11A2A3FB2074B16F00B4AFF4 /* ARCOwnershipAutoStrongController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCOwnershipAutoStrongController.m; sourceTree = "<group>"; };
+		11A2A3FD2074B18100B4AFF4 /* ARCOwnershipAutoWeakController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCOwnershipAutoWeakController.h; sourceTree = "<group>"; };
+		11A2A3FE2074B18100B4AFF4 /* ARCOwnershipAutoWeakController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCOwnershipAutoWeakController.m; sourceTree = "<group>"; };
+		11A2A4002074B18E00B4AFF4 /* ARCOwnershipAutoUnRetainedController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ARCOwnershipAutoUnRetainedController.h; sourceTree = "<group>"; };
+		11A2A4012074B18E00B4AFF4 /* ARCOwnershipAutoUnRetainedController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCOwnershipAutoUnRetainedController.m; sourceTree = "<group>"; };
+		11A2A4032074B40D00B4AFF4 /* ReferenceCountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReferenceCountViewController.h; sourceTree = "<group>"; };
+		11A2A4042074B40D00B4AFF4 /* ReferenceCountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReferenceCountViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,8 +108,11 @@
 		11001E2C206A2F0600457CBC /* ARC所有权修饰符研究 */ = {
 			isa = PBXGroup;
 			children = (
-				11001E2D206A300D00457CBC /* ARCOwnershipViewController.h */,
-				11001E2E206A300D00457CBC /* ARCOwnershipViewController.m */,
+				11A2A3F52074AF2400B4AFF4 /* 所有权修饰符列表 */,
+				11A2A3F62074AF3300B4AFF4 /* strong */,
+				11A2A3F72074AF3A00B4AFF4 /* weak */,
+				11A2A3F92074AF6500B4AFF4 /* unsafe_unretained */,
+				11A2A3F82074AF4000B4AFF4 /* autoreleasing */,
 			);
 			name = "ARC所有权修饰符研究";
 			sourceTree = "<group>";
@@ -105,6 +123,7 @@
 				11001E29206A2E2E00457CBC /* 内存管理规则研究 */,
 				11A2A3CD2072173F00B4AFF4 /* 自动释放池探究 */,
 				11001E2C206A2F0600457CBC /* ARC所有权修饰符研究 */,
+				11A2A3F12074AC0000B4AFF4 /* 引用计数数值例题 */,
 			);
 			name = "引用计数";
 			sourceTree = "<group>";
@@ -191,6 +210,60 @@
 			name = "ARC下研究autorelease";
 			sourceTree = "<group>";
 		};
+		11A2A3F12074AC0000B4AFF4 /* 引用计数数值例题 */ = {
+			isa = PBXGroup;
+			children = (
+				11A2A4032074B40D00B4AFF4 /* ReferenceCountViewController.h */,
+				11A2A4042074B40D00B4AFF4 /* ReferenceCountViewController.m */,
+			);
+			name = "引用计数数值例题";
+			sourceTree = "<group>";
+		};
+		11A2A3F52074AF2400B4AFF4 /* 所有权修饰符列表 */ = {
+			isa = PBXGroup;
+			children = (
+				11A2A3F22074AF1D00B4AFF4 /* ARCOwnershipViewListController.h */,
+				11A2A3F32074AF1D00B4AFF4 /* ARCOwnershipViewListController.m */,
+			);
+			name = "所有权修饰符列表";
+			sourceTree = "<group>";
+		};
+		11A2A3F62074AF3300B4AFF4 /* strong */ = {
+			isa = PBXGroup;
+			children = (
+				11A2A3FA2074B16F00B4AFF4 /* ARCOwnershipAutoStrongController.h */,
+				11A2A3FB2074B16F00B4AFF4 /* ARCOwnershipAutoStrongController.m */,
+			);
+			name = strong;
+			sourceTree = "<group>";
+		};
+		11A2A3F72074AF3A00B4AFF4 /* weak */ = {
+			isa = PBXGroup;
+			children = (
+				11A2A3FD2074B18100B4AFF4 /* ARCOwnershipAutoWeakController.h */,
+				11A2A3FE2074B18100B4AFF4 /* ARCOwnershipAutoWeakController.m */,
+			);
+			name = weak;
+			sourceTree = "<group>";
+		};
+		11A2A3F82074AF4000B4AFF4 /* autoreleasing */ = {
+			isa = PBXGroup;
+			children = (
+				11001E2D206A300D00457CBC /* ARCOwnershipAutoReleaseController.h */,
+				11001E2E206A300D00457CBC /* ARCOwnershipAutoReleaseController.m */,
+			);
+			name = autoreleasing;
+			sourceTree = "<group>";
+		};
+		11A2A3F92074AF6500B4AFF4 /* unsafe_unretained */ = {
+			isa = PBXGroup;
+			children = (
+				11A2A4002074B18E00B4AFF4 /* ARCOwnershipAutoUnRetainedController.h */,
+				11A2A4012074B18E00B4AFF4 /* ARCOwnershipAutoUnRetainedController.m */,
+			);
+			name = unsafe_unretained;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -263,16 +336,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11A2A4052074B40D00B4AFF4 /* ReferenceCountViewController.m in Sources */,
 				11001E28206A2E2700457CBC /* RuleStudyViewController.m in Sources */,
 				11A2A3D520721B8A00B4AFF4 /* AutoReleaseMRCViewController.m in Sources */,
+				11A2A3FC2074B16F00B4AFF4 /* ARCOwnershipAutoStrongController.m in Sources */,
+				11A2A4022074B18E00B4AFF4 /* ARCOwnershipAutoUnRetainedController.m in Sources */,
 				1115737920660DFC00EB426C /* ViewController.m in Sources */,
 				11A2A3B3206F455400B4AFF4 /* Person.m in Sources */,
 				11A2A3D0207219BB00B4AFF4 /* AutoReleaseMemoryViewController.m in Sources */,
 				1115737620660DFC00EB426C /* AppDelegate.m in Sources */,
-				11001E2F206A300D00457CBC /* ARCOwnershipViewController.m in Sources */,
+				11001E2F206A300D00457CBC /* ARCOwnershipAutoReleaseController.m in Sources */,
+				11A2A3FF2074B18100B4AFF4 /* ARCOwnershipAutoWeakController.m in Sources */,
 				1115737320660DFC00EB426C /* main.m in Sources */,
 				11A2A3E120732C9100B4AFF4 /* Animal.m in Sources */,
 				11A2A3F020735F0200B4AFF4 /* NSObject+Category.m in Sources */,
+				11A2A3F42074AF1D00B4AFF4 /* ARCOwnershipViewListController.m in Sources */,
 				11A2A3DE20732B1800B4AFF4 /* AutoReleaseARCViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

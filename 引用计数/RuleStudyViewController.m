@@ -17,7 +17,7 @@ extern uintptr_t _objc_rootRetainCount(id obj);//获取对象的引用计数
 
 @implementation RuleStudyViewController
 //当前要在MRC环境下执行！！！
-/**
+/*
  ARC下获取引用计数
  1、使用KVC
  [obj valueForKey:@"retainCount"]
@@ -46,7 +46,7 @@ extern uintptr_t _objc_rootRetainCount(id obj);//获取对象的引用计数
  * 非自己持有的对象无法释放      --- MRC中无法调用release，否则会崩溃；ARC中不会调用release
  *
  * 以上是否持有关系到自己有没有权利释放。
- **/
+ */
 - (void)testRule
 {
     //1、生成(alloc、new、copy、mutablecopy等)并持有对象、引用计数加1

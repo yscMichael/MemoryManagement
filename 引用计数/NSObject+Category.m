@@ -34,6 +34,12 @@
 //    return objc_autoreleaseReturnValue(obj);
 //}
 
+//总结:
+//1、[NSMutableArray NSArray]本身是决定加入自动释放池的,为了在ARC优化编译器,特意加入了objc_autoreleaseReturnValue(obj);
+//2、[NSMutableArray NSArray] + objc_retainAutoreleasedReturnValue(obj)就相当于是[[NSMutableArray alloc] init];自己持有、不加入自动释放池了
+//3、以上是针对是ARC,MRC下肯定是适应前面的四条规则,存在自动释放池中
+
+
 + (id)Object
 {
     return [NSMutableArray array];//不会崩溃
