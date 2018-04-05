@@ -18,16 +18,6 @@ extern uintptr_t _objc_rootRetainCount(id obj);//获取对象的引用计数
 
 @implementation AutoReleaseARCViewController
 
-//这里主要查看反编译代码
-//1、将代码转化为汇编指令(学习内存管理很有用)!!!
-//clang -S -fobjc-arc main.m
-//
-//2、在终端使用Clang命令 编译（相比于Xcode运行，可以单独的编译文件并运行）
-//clang -fobjc-arc -framework Foundation AAAA.m -o BBBB
-//
-//3、Clang重写m文件为cpp文件(重点说下，在学习Runtime时候很有用，可以逆向观察学习)!!!
-//clang -rewrite-objc main.m
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
