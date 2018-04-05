@@ -26,6 +26,7 @@
 		11A2A3FF2074B18100B4AFF4 /* ARCOwnershipAutoWeakController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A3FE2074B18100B4AFF4 /* ARCOwnershipAutoWeakController.m */; };
 		11A2A4022074B18E00B4AFF4 /* ARCOwnershipAutoUnRetainedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A4012074B18E00B4AFF4 /* ARCOwnershipAutoUnRetainedController.m */; };
 		11A2A4052074B40D00B4AFF4 /* ReferenceCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A4042074B40D00B4AFF4 /* ReferenceCountViewController.m */; };
+		11A2A4092074D51400B4AFF4 /* AttributesCompareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A4082074D51400B4AFF4 /* AttributesCompareViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +66,8 @@
 		11A2A4012074B18E00B4AFF4 /* ARCOwnershipAutoUnRetainedController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ARCOwnershipAutoUnRetainedController.m; sourceTree = "<group>"; };
 		11A2A4032074B40D00B4AFF4 /* ReferenceCountViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReferenceCountViewController.h; sourceTree = "<group>"; };
 		11A2A4042074B40D00B4AFF4 /* ReferenceCountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReferenceCountViewController.m; sourceTree = "<group>"; };
+		11A2A4072074D51400B4AFF4 /* AttributesCompareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttributesCompareViewController.h; sourceTree = "<group>"; };
+		11A2A4082074D51400B4AFF4 /* AttributesCompareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttributesCompareViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,8 +127,16 @@
 				11A2A3CD2072173F00B4AFF4 /* 自动释放池探究 */,
 				11001E2C206A2F0600457CBC /* ARC所有权修饰符研究 */,
 				11A2A3F12074AC0000B4AFF4 /* 引用计数数值例题 */,
+				11A2A4062074D4CE00B4AFF4 /* 关键字比较 */,
 			);
 			name = "引用计数";
+			sourceTree = "<group>";
+		};
+		110968DB2075C77700A35EF2 /* Block知识 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Block知识";
 			sourceTree = "<group>";
 		};
 		1115736520660DFC00EB426C = {
@@ -150,6 +161,7 @@
 				11001E2A206A2E4500457CBC /* AppDelegate */,
 				11001E2B206A2E5200457CBC /* Main */,
 				11001E30206A33B200457CBC /* 引用计数 */,
+				110968DB2075C77700A35EF2 /* Block知识 */,
 				1115737120660DFC00EB426C /* Supporting Files */,
 			);
 			path = "引用计数";
@@ -264,6 +276,15 @@
 			name = unsafe_unretained;
 			sourceTree = "<group>";
 		};
+		11A2A4062074D4CE00B4AFF4 /* 关键字比较 */ = {
+			isa = PBXGroup;
+			children = (
+				11A2A4072074D51400B4AFF4 /* AttributesCompareViewController.h */,
+				11A2A4082074D51400B4AFF4 /* AttributesCompareViewController.m */,
+			);
+			name = "关键字比较";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -342,6 +363,7 @@
 				11A2A3FC2074B16F00B4AFF4 /* ARCOwnershipAutoStrongController.m in Sources */,
 				11A2A4022074B18E00B4AFF4 /* ARCOwnershipAutoUnRetainedController.m in Sources */,
 				1115737920660DFC00EB426C /* ViewController.m in Sources */,
+				11A2A4092074D51400B4AFF4 /* AttributesCompareViewController.m in Sources */,
 				11A2A3B3206F455400B4AFF4 /* Person.m in Sources */,
 				11A2A3D0207219BB00B4AFF4 /* AutoReleaseMemoryViewController.m in Sources */,
 				1115737620660DFC00EB426C /* AppDelegate.m in Sources */,

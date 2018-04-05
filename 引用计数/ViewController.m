@@ -105,7 +105,8 @@
                         @"MRC下研究autorelease",
                         @"ARC下研究autorelease",
                         @"ARC所有权修饰符研究",
-                        @"引用计数数值例题"],
+                        @"引用计数数值例题",
+                        @"属性关键字比较"],
                       @[@""],
                       @[@""],nil];
     }
@@ -122,7 +123,8 @@
                               @"AutoReleaseMRCViewController",
                               @"AutoReleaseARCViewController",
                               @"ARCOwnershipViewListController",
-                              @"ReferenceCountViewController"],
+                              @"ReferenceCountViewController"
+                              @"AttributesCompareViewController"],
                             @[],
                             @[],nil];
     }
