@@ -27,6 +27,12 @@
 		11A2A4022074B18E00B4AFF4 /* ARCOwnershipAutoUnRetainedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A4012074B18E00B4AFF4 /* ARCOwnershipAutoUnRetainedController.m */; };
 		11A2A4052074B40D00B4AFF4 /* ReferenceCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A4042074B40D00B4AFF4 /* ReferenceCountViewController.m */; };
 		11A2A4092074D51400B4AFF4 /* AttributesCompareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A4082074D51400B4AFF4 /* AttributesCompareViewController.m */; };
+		11B8FD3D20760F48009878D2 /* RunTimeViewListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8FD3C20760F48009878D2 /* RunTimeViewListController.m */; };
+		11B8FD422076105F009878D2 /* ISAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8FD412076105F009878D2 /* ISAViewController.m */; };
+		11B8FD4620761C6F009878D2 /* msgSendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8FD4520761C6F009878D2 /* msgSendViewController.m */; };
+		11B8FD4920763159009878D2 /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8FD4820763159009878D2 /* Father.m */; };
+		11B8FD4C2076316B009878D2 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8FD4B2076316B009878D2 /* Son.m */; };
+		11B8FD5020765430009878D2 /* MessageForwardingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8FD4F20765430009878D2 /* MessageForwardingController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +74,18 @@
 		11A2A4042074B40D00B4AFF4 /* ReferenceCountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReferenceCountViewController.m; sourceTree = "<group>"; };
 		11A2A4072074D51400B4AFF4 /* AttributesCompareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttributesCompareViewController.h; sourceTree = "<group>"; };
 		11A2A4082074D51400B4AFF4 /* AttributesCompareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttributesCompareViewController.m; sourceTree = "<group>"; };
+		11B8FD3B20760F48009878D2 /* RunTimeViewListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunTimeViewListController.h; sourceTree = "<group>"; };
+		11B8FD3C20760F48009878D2 /* RunTimeViewListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunTimeViewListController.m; sourceTree = "<group>"; };
+		11B8FD402076105F009878D2 /* ISAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISAViewController.h; sourceTree = "<group>"; };
+		11B8FD412076105F009878D2 /* ISAViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ISAViewController.m; sourceTree = "<group>"; };
+		11B8FD4420761C6F009878D2 /* msgSendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = msgSendViewController.h; sourceTree = "<group>"; };
+		11B8FD4520761C6F009878D2 /* msgSendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = msgSendViewController.m; sourceTree = "<group>"; };
+		11B8FD4720763159009878D2 /* Father.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Father.h; sourceTree = "<group>"; };
+		11B8FD4820763159009878D2 /* Father.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Father.m; sourceTree = "<group>"; };
+		11B8FD4A2076316B009878D2 /* Son.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Son.h; sourceTree = "<group>"; };
+		11B8FD4B2076316B009878D2 /* Son.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
+		11B8FD4E20765430009878D2 /* MessageForwardingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageForwardingController.h; sourceTree = "<group>"; };
+		11B8FD4F20765430009878D2 /* MessageForwardingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageForwardingController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +180,7 @@
 				11001E2B206A2E5200457CBC /* Main */,
 				11001E30206A33B200457CBC /* 引用计数 */,
 				110968DB2075C77700A35EF2 /* Block知识 */,
+				11B8FD3A20760F11009878D2 /* 运行时知识补充 */,
 				1115737120660DFC00EB426C /* Supporting Files */,
 			);
 			path = "引用计数";
@@ -170,6 +189,7 @@
 		1115737120660DFC00EB426C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				11B8FD3E2076103E009878D2 /* 备用列表控制器 */,
 				1115737A20660DFC00EB426C /* Main.storyboard */,
 				1115737D20660DFC00EB426C /* Assets.xcassets */,
 				1115737F20660DFC00EB426C /* LaunchScreen.storyboard */,
@@ -285,6 +305,56 @@
 			name = "关键字比较";
 			sourceTree = "<group>";
 		};
+		11B8FD3A20760F11009878D2 /* 运行时知识补充 */ = {
+			isa = PBXGroup;
+			children = (
+				11B8FD3F2076104C009878D2 /* isa指针解析 */,
+				11B8FD4320761C51009878D2 /* objc_msgSend解析 */,
+				11B8FD4D20765396009878D2 /* 消息转发 */,
+			);
+			name = "运行时知识补充";
+			sourceTree = "<group>";
+		};
+		11B8FD3E2076103E009878D2 /* 备用列表控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				11B8FD3B20760F48009878D2 /* RunTimeViewListController.h */,
+				11B8FD3C20760F48009878D2 /* RunTimeViewListController.m */,
+			);
+			name = "备用列表控制器";
+			sourceTree = "<group>";
+		};
+		11B8FD3F2076104C009878D2 /* isa指针解析 */ = {
+			isa = PBXGroup;
+			children = (
+				11B8FD402076105F009878D2 /* ISAViewController.h */,
+				11B8FD412076105F009878D2 /* ISAViewController.m */,
+			);
+			name = "isa指针解析";
+			sourceTree = "<group>";
+		};
+		11B8FD4320761C51009878D2 /* objc_msgSend解析 */ = {
+			isa = PBXGroup;
+			children = (
+				11B8FD4720763159009878D2 /* Father.h */,
+				11B8FD4820763159009878D2 /* Father.m */,
+				11B8FD4A2076316B009878D2 /* Son.h */,
+				11B8FD4B2076316B009878D2 /* Son.m */,
+				11B8FD4420761C6F009878D2 /* msgSendViewController.h */,
+				11B8FD4520761C6F009878D2 /* msgSendViewController.m */,
+			);
+			name = "objc_msgSend解析";
+			sourceTree = "<group>";
+		};
+		11B8FD4D20765396009878D2 /* 消息转发 */ = {
+			isa = PBXGroup;
+			children = (
+				11B8FD4E20765430009878D2 /* MessageForwardingController.h */,
+				11B8FD4F20765430009878D2 /* MessageForwardingController.m */,
+			);
+			name = "消息转发";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -357,17 +427,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11B8FD4C2076316B009878D2 /* Son.m in Sources */,
 				11A2A4052074B40D00B4AFF4 /* ReferenceCountViewController.m in Sources */,
 				11001E28206A2E2700457CBC /* RuleStudyViewController.m in Sources */,
 				11A2A3D520721B8A00B4AFF4 /* AutoReleaseMRCViewController.m in Sources */,
 				11A2A3FC2074B16F00B4AFF4 /* ARCOwnershipAutoStrongController.m in Sources */,
 				11A2A4022074B18E00B4AFF4 /* ARCOwnershipAutoUnRetainedController.m in Sources */,
 				1115737920660DFC00EB426C /* ViewController.m in Sources */,
+				11B8FD4620761C6F009878D2 /* msgSendViewController.m in Sources */,
 				11A2A4092074D51400B4AFF4 /* AttributesCompareViewController.m in Sources */,
 				11A2A3B3206F455400B4AFF4 /* Person.m in Sources */,
+				11B8FD5020765430009878D2 /* MessageForwardingController.m in Sources */,
 				11A2A3D0207219BB00B4AFF4 /* AutoReleaseMemoryViewController.m in Sources */,
 				1115737620660DFC00EB426C /* AppDelegate.m in Sources */,
 				11001E2F206A300D00457CBC /* ARCOwnershipAutoReleaseController.m in Sources */,
+				11B8FD422076105F009878D2 /* ISAViewController.m in Sources */,
+				11B8FD4920763159009878D2 /* Father.m in Sources */,
+				11B8FD3D20760F48009878D2 /* RunTimeViewListController.m in Sources */,
 				11A2A3FF2074B18100B4AFF4 /* ARCOwnershipAutoWeakController.m in Sources */,
 				1115737320660DFC00EB426C /* main.m in Sources */,
 				11A2A3E120732C9100B4AFF4 /* Animal.m in Sources */,
