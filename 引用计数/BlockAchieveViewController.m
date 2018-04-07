@@ -134,6 +134,8 @@ void exampleA() {
     }();
 }
 //A.始终能够正常运行
+
+//A.始终能够正常运行
 //B.只有在使用ARC的情况下才能正常运行
 //C.不使用ARC才能正常运行
 //D.永远无法正常运行
@@ -154,6 +156,7 @@ void exampleB()
     void (^block)() = [array objectAtIndex:0];
     block();
 }
+//B.只有在使用ARC的情况下才能正常运行
 
 //-----------第三道题：选项同第一题--------------
 void exampleC_addBlockToArray(NSMutableArray *array)
@@ -168,6 +171,7 @@ void exampleC()
     void (^block)() = [array objectAtIndex:0];
     block();
 }
+//A.始终能够正常运行
 
 //-----------第四道题：选项同第一题--------------
 typedef void (^dBlock)();
@@ -182,6 +186,7 @@ void exampleD()
 {
     exampleD_getBlock()();
 }
+//B.只有在使用ARC的情况下才能正常运行
 
 //-----------第五道题：选项同第一题--------------
 typedef void (^eBlock)();
@@ -198,6 +203,7 @@ void exampleE()
     eBlock block = exampleE_getBlock();
     block();
 }
+////B.只有在使用ARC的情况下才能正常运行
 
 //总结:
 //1、参考文章

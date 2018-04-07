@@ -8,6 +8,9 @@
 
 #import "InterceptedObjectsController.h"
 
+//声明block类型
+typedef void (^blk_t)(id);
+
 @interface InterceptedObjectsController ()
 
 @end
@@ -19,10 +22,12 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
 
-    [self InterceptedObjectsUse];
-    [self InterceptedObjectsAssignment];
-    [self charArrayCWrong];
-    [self charArrayCRight];
+    //[self InterceptedObjectsUse];
+    //[self InterceptedObjectsAssignment];
+    //[self InterceptedObjectsOne];
+    [self InterceptedObjectsTwo];
+    //[self charArrayCWrong];
+    //[self charArrayCRight];
 }
 
 //截获对象并使用对象--无问题
@@ -51,6 +56,41 @@
 
     blk();
 }
+
+//截获对象
+- (void)InterceptedObjectsOne
+{
+    blk_t blk;
+    {
+        NSMutableArray *array = [[NSMutableArray alloc]init];
+        blk = [^(id obj){
+            [array addObject:obj];
+            NSLog(@"array.count-1 = %lu",(unsigned long)array.count);
+        } copy];
+    }
+
+    blk([[NSObject alloc] init]);
+    blk([[NSObject alloc] init]);
+    blk([[NSObject alloc] init]);
+}
+
+//截获对象
+- (void)InterceptedObjectsTwo
+{
+    blk_t blk;
+    {
+        NSMutableArray *array = [[NSMutableArray alloc]init];
+        blk = ^(id obj){
+            [array addObject:obj];
+            NSLog(@"array.count-2 = %lu",(unsigned long)array.count);
+        };
+    }
+
+    blk([[NSObject alloc] init]);
+    blk([[NSObject alloc] init]);
+    blk([[NSObject alloc] init]);
+}
+
 
 //C语言字符串数组
 //会有问题:截获自动变量的方法并没有实现对C语言数组的截获
@@ -81,6 +121,7 @@
 
     blk();
 }
+
 
 //总结:
 //1、如果对象是局部变量,在不加__block的情况下,只能截获使用,不能重新赋值

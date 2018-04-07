@@ -12,8 +12,10 @@
 void (^blk)(void) = ^{printf("Global Block\n");};
 //声明一个block类型
 typedef int (^blk_t)(int);
-typedef void (^blk_v)(void);
 typedef int (^blk_t1)(void);
+typedef void (^blk_t2)(int);
+typedef void (^blk_v)(void);
+
 
 @interface BlockStorageController ()
 
@@ -26,68 +28,71 @@ typedef int (^blk_t1)(void);
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
 
-    //[self exampleMallocBlockOne];
-    [self stackOrHeapOne];
+    //[self testStack];
+    //[self testGlobalBlock];
+    [self testMallocBlock];
+
+    //[self stackOrHeapOne];
+    //[self stackOrHeapTwo];
 }
 
 //1、默认block是设置在栈上的
+- (void)testStack
+{
+    blk_v bb = [self returnBlock];
+    bb();
+}
+
+//block作为返回值,编译器自动复制代码到堆上
+- (blk_v)returnBlock
+{
+    __block int add=10;
+    blk_v blk_h = ^{
+        printf("add=%d\n",++add);
+    };
+
+    return blk_h;
+}
 
 //2、全局block
-- (void)exampleGlobalBlock
+//测试全局Block
+- (void)testGlobalBlock
 {
-    //1、在声明全局变量的地方,定义Block(一定是定义,不是类型),是_NSConcretGlobalBlock
-    //2、定义在函数内部的Block,没有捕获任何自动变量,也是_NSConcretGlobalBlock
-
     //全局block
-    for(int rate = 0; rate < 100; rate++)
+    for(int rate = 0; rate < 3; rate++)
     {
         //这里进行定义<这里的返回值int可以省略>
         blk_t blk = ^(int count) {
             return count;
         };
+        //这里打断点查看isa内容
         blk(10);
     }
 
-    //栈block
-    for(int rate = 0; rate < 100; rate++)
+    //栈block --- 打印是malloc
+    for(int rate = 0; rate < 3; rate++)
     {
         //这里进行定义<这里的返回值int可以省略>
         blk_t blk = ^int (int count) {
             return rate * count;
         };
+
+        //这里打断点查看isa内容
         blk(10);
     }
 }
+//注意:
+//1、在声明全局变量的地方,定义Block(一定是定义,不是类型),是_NSConcretGlobalBlock
+//2、定义在函数内部的Block,没有捕获任何自动变量,也是_NSConcretGlobalBlock
+
 
 //3、堆block
-//a、block作为返回值使用
-blk_t func(int rate)
-{
-    return ^(int count){return rate * count;};
-}
-
-//备注:
-//如果在非ARC下,以下会报错.
-//Returning block that lives on the local stack
-//因为rate是在栈上的自动变量,被block捕获的时候,会放在block的结构体内,返回block的话就是返回局部变量,所以会出问题.
-//这也从一个侧面印证了block截获自动变量的话,block就处于栈上
-//ARC会自动判断,自动加上autorelease
-//在MRC下加上autorelease,就能避免报错
-
-blk_t fun()
-{
-    return ^(int count){
-        return count;
-    };
-}
-//不使用栈上的自动变量,在ARC和MRC下就没有问题,因为此时block是全局的
-
-//b、使用copy,将block拷贝到堆上
-- (void)exampleMallocBlockOne
+//a、使用copy,将block拷贝到堆上
+- (void)testMallocBlock
 {
     //这个会造成崩溃
-    //id obj = [self getBlockArray];
-    id obj = [self getBlockArrayCopy];
+    id obj = [self getBlockArray];
+    //id obj = [self getBlockArrayCopy];
     blk_v blk = (blk_v)[obj objectAtIndex:0];
     blk();
 }//这里会发生崩溃
@@ -110,7 +115,35 @@ blk_t fun()
             [^{NSLog(@"blk1:%d",val);} copy],nil];
 }
 
-/*******************************/
+//a、block作为返回值使用
+blk_t func(int rate)
+{
+    return ^(int count){return rate * count;};
+}
+
+//备注:
+//如果在非ARC下,以下会报错.
+//Returning block that lives on the local stack
+//因为rate是在栈上的自动变量,被block捕获的时候,会放在block的结构体内,返回block的话就是返回局部变量,所以会出问题.
+//这也从一个侧面印证了block截获自动变量的话,block就处于栈上
+//ARC会自动判断,自动加上autorelease
+//在MRC下加上autorelease,就能避免报错
+
+blk_t fun()
+{
+    return ^(int count){
+        return count;
+    };
+}
+//不使用栈上的自动变量,在ARC和MRC下就没有问题,因为此时block是全局的
+
+
+
+
+
+
+
+/************？？？？？待定*******************/
 //注意:
 //在栈上调用copy那么复制到堆上
 //在全局block调用copy什么也不做
@@ -122,28 +155,29 @@ blk_t fun()
 /*****************************/
 - (void)stackOrHeapOne
 {
-    __block int val =10;
+    __block int val = 10;
     int *valPtr = &val;//使用int的指针，来检测block到底在栈上,还是堆上
     blk_t1 s = ^{
-        NSLog(@"val_block = %d",++val);
+        NSLog(@"val_block = %d",++val);//11
         return val;
     };
 
     s();
-    NSLog(@"valPointer = %d",*valPtr);
+    NSLog(@"valPointer = %d",*valPtr);//10
 }
 
 - (void)stackOrHeapTwo
 {
-    __block int val =10;
+    __block int val = 10;
     int *valPtr = &val;//使用int的指针，来检测block到底在栈上，还是堆上
     blk_t1 s= ^{
-        NSLog(@"val_block = %d",++val);
-        return val;};
+        NSLog(@"val_block = %d",++val);//11
+        return val;
+    };
     blk_t1 h = [s copy];
     
     h();
-    NSLog(@"valPointer = %d",*valPtr);
+    NSLog(@"valPointer = %d",*valPtr);//10
 }
 
 
