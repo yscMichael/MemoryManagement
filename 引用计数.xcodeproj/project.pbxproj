@@ -15,6 +15,12 @@
 		1115737C20660DFC00EB426C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1115737A20660DFC00EB426C /* Main.storyboard */; };
 		1115737E20660DFC00EB426C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1115737D20660DFC00EB426C /* Assets.xcassets */; };
 		1115738120660DFC00EB426C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1115737F20660DFC00EB426C /* LaunchScreen.storyboard */; };
+		112018F12078B39100C9567A /* BlockSyntaxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112018F02078B39100C9567A /* BlockSyntaxViewController.m */; };
+		112018F52078BF3200C9567A /* InterceptedVariableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112018F42078BF3200C9567A /* InterceptedVariableController.m */; };
+		112018F92078C34C00C9567A /* InterceptedObjectsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112018F82078C34C00C9567A /* InterceptedObjectsController.m */; };
+		112018FD2078CEE800C9567A /* BlockAchieveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112018FC2078CEE800C9567A /* BlockAchieveViewController.m */; };
+		112019012078F98D00C9567A /* BlockStorageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112019002078F98D00C9567A /* BlockStorageController.m */; };
+		112019052079112000C9567A /* blockVariableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112019042079112000C9567A /* blockVariableController.m */; };
 		11A2A3B3206F455400B4AFF4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A3B2206F455400B4AFF4 /* Person.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		11A2A3D0207219BB00B4AFF4 /* AutoReleaseMemoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A3CF207219BB00B4AFF4 /* AutoReleaseMemoryViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		11A2A3D520721B8A00B4AFF4 /* AutoReleaseMRCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A3D420721B8A00B4AFF4 /* AutoReleaseMRCViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -33,6 +39,7 @@
 		11B8FD4920763159009878D2 /* Father.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8FD4820763159009878D2 /* Father.m */; };
 		11B8FD4C2076316B009878D2 /* Son.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8FD4B2076316B009878D2 /* Son.m */; };
 		11B8FD5020765430009878D2 /* MessageForwardingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8FD4F20765430009878D2 /* MessageForwardingController.m */; };
+		11FE4A1620771BFD006BD4C5 /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11FE4A1520771BFD006BD4C5 /* OtherViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +57,18 @@
 		1115737D20660DFC00EB426C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1115738020660DFC00EB426C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1115738220660DFC00EB426C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		112018EF2078B39100C9567A /* BlockSyntaxViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockSyntaxViewController.h; sourceTree = "<group>"; };
+		112018F02078B39100C9567A /* BlockSyntaxViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockSyntaxViewController.m; sourceTree = "<group>"; };
+		112018F32078BF3200C9567A /* InterceptedVariableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterceptedVariableController.h; sourceTree = "<group>"; };
+		112018F42078BF3200C9567A /* InterceptedVariableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterceptedVariableController.m; sourceTree = "<group>"; };
+		112018F72078C34C00C9567A /* InterceptedObjectsController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterceptedObjectsController.h; sourceTree = "<group>"; };
+		112018F82078C34C00C9567A /* InterceptedObjectsController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterceptedObjectsController.m; sourceTree = "<group>"; };
+		112018FB2078CEE800C9567A /* BlockAchieveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockAchieveViewController.h; sourceTree = "<group>"; };
+		112018FC2078CEE800C9567A /* BlockAchieveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockAchieveViewController.m; sourceTree = "<group>"; };
+		112018FF2078F98D00C9567A /* BlockStorageController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockStorageController.h; sourceTree = "<group>"; };
+		112019002078F98D00C9567A /* BlockStorageController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockStorageController.m; sourceTree = "<group>"; };
+		112019032079112000C9567A /* blockVariableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blockVariableController.h; sourceTree = "<group>"; };
+		112019042079112000C9567A /* blockVariableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = blockVariableController.m; sourceTree = "<group>"; };
 		11A2A3B1206F455400B4AFF4 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		11A2A3B2206F455400B4AFF4 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		11A2A3CE207219BB00B4AFF4 /* AutoReleaseMemoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoReleaseMemoryViewController.h; sourceTree = "<group>"; };
@@ -86,6 +105,8 @@
 		11B8FD4B2076316B009878D2 /* Son.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Son.m; sourceTree = "<group>"; };
 		11B8FD4E20765430009878D2 /* MessageForwardingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageForwardingController.h; sourceTree = "<group>"; };
 		11B8FD4F20765430009878D2 /* MessageForwardingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageForwardingController.m; sourceTree = "<group>"; };
+		11FE4A1420771BFD006BD4C5 /* OtherViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherViewController.h; sourceTree = "<group>"; };
+		11FE4A1520771BFD006BD4C5 /* OtherViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +174,12 @@
 		110968DB2075C77700A35EF2 /* Block知识 */ = {
 			isa = PBXGroup;
 			children = (
+				112018EE2078B04900C9567A /* Block语法 */,
+				112018F22078BF1600C9567A /* 截取变量 */,
+				112018F62078C33400C9567A /* 截获对象 */,
+				112018FA2078CBE200C9567A /* Block内部实现 */,
+				112018FE2078F92900C9567A /* Block存储区域 */,
+				112019022079109500C9567A /* block变量存储区域 */,
 			);
 			name = "Block知识";
 			sourceTree = "<group>";
@@ -160,8 +187,9 @@
 		1115736520660DFC00EB426C = {
 			isa = PBXGroup;
 			children = (
+				11FE4A1420771BFD006BD4C5 /* OtherViewController.h */,
+				11FE4A1520771BFD006BD4C5 /* OtherViewController.m */,
 				1115737020660DFC00EB426C /* 引用计数 */,
-				1115736F20660DFC00EB426C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,6 +199,7 @@
 				1115736E20660DFC00EB426C /* 引用计数.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		1115737020660DFC00EB426C /* 引用计数 */ = {
@@ -195,8 +224,63 @@
 				1115737F20660DFC00EB426C /* LaunchScreen.storyboard */,
 				1115738220660DFC00EB426C /* Info.plist */,
 				1115737220660DFC00EB426C /* main.m */,
+				1115736F20660DFC00EB426C /* Products */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		112018EE2078B04900C9567A /* Block语法 */ = {
+			isa = PBXGroup;
+			children = (
+				112018EF2078B39100C9567A /* BlockSyntaxViewController.h */,
+				112018F02078B39100C9567A /* BlockSyntaxViewController.m */,
+			);
+			name = "Block语法";
+			sourceTree = "<group>";
+		};
+		112018F22078BF1600C9567A /* 截取变量 */ = {
+			isa = PBXGroup;
+			children = (
+				112018F32078BF3200C9567A /* InterceptedVariableController.h */,
+				112018F42078BF3200C9567A /* InterceptedVariableController.m */,
+			);
+			name = "截取变量";
+			sourceTree = "<group>";
+		};
+		112018F62078C33400C9567A /* 截获对象 */ = {
+			isa = PBXGroup;
+			children = (
+				112018F72078C34C00C9567A /* InterceptedObjectsController.h */,
+				112018F82078C34C00C9567A /* InterceptedObjectsController.m */,
+			);
+			name = "截获对象";
+			sourceTree = "<group>";
+		};
+		112018FA2078CBE200C9567A /* Block内部实现 */ = {
+			isa = PBXGroup;
+			children = (
+				112018FB2078CEE800C9567A /* BlockAchieveViewController.h */,
+				112018FC2078CEE800C9567A /* BlockAchieveViewController.m */,
+			);
+			name = "Block内部实现";
+			sourceTree = "<group>";
+		};
+		112018FE2078F92900C9567A /* Block存储区域 */ = {
+			isa = PBXGroup;
+			children = (
+				112018FF2078F98D00C9567A /* BlockStorageController.h */,
+				112019002078F98D00C9567A /* BlockStorageController.m */,
+			);
+			name = "Block存储区域";
+			sourceTree = "<group>";
+		};
+		112019022079109500C9567A /* block变量存储区域 */ = {
+			isa = PBXGroup;
+			children = (
+				112019032079112000C9567A /* blockVariableController.h */,
+				112019042079112000C9567A /* blockVariableController.m */,
+			);
+			name = "block变量存储区域";
 			sourceTree = "<group>";
 		};
 		11A2A3CD2072173F00B4AFF4 /* 自动释放池探究 */ = {
@@ -427,22 +511,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				112019012078F98D00C9567A /* BlockStorageController.m in Sources */,
 				11B8FD4C2076316B009878D2 /* Son.m in Sources */,
 				11A2A4052074B40D00B4AFF4 /* ReferenceCountViewController.m in Sources */,
 				11001E28206A2E2700457CBC /* RuleStudyViewController.m in Sources */,
+				112018F52078BF3200C9567A /* InterceptedVariableController.m in Sources */,
 				11A2A3D520721B8A00B4AFF4 /* AutoReleaseMRCViewController.m in Sources */,
 				11A2A3FC2074B16F00B4AFF4 /* ARCOwnershipAutoStrongController.m in Sources */,
+				112018FD2078CEE800C9567A /* BlockAchieveViewController.m in Sources */,
 				11A2A4022074B18E00B4AFF4 /* ARCOwnershipAutoUnRetainedController.m in Sources */,
 				1115737920660DFC00EB426C /* ViewController.m in Sources */,
 				11B8FD4620761C6F009878D2 /* msgSendViewController.m in Sources */,
 				11A2A4092074D51400B4AFF4 /* AttributesCompareViewController.m in Sources */,
+				11FE4A1620771BFD006BD4C5 /* OtherViewController.m in Sources */,
 				11A2A3B3206F455400B4AFF4 /* Person.m in Sources */,
 				11B8FD5020765430009878D2 /* MessageForwardingController.m in Sources */,
+				112018F12078B39100C9567A /* BlockSyntaxViewController.m in Sources */,
 				11A2A3D0207219BB00B4AFF4 /* AutoReleaseMemoryViewController.m in Sources */,
 				1115737620660DFC00EB426C /* AppDelegate.m in Sources */,
 				11001E2F206A300D00457CBC /* ARCOwnershipAutoReleaseController.m in Sources */,
+				112019052079112000C9567A /* blockVariableController.m in Sources */,
 				11B8FD422076105F009878D2 /* ISAViewController.m in Sources */,
 				11B8FD4920763159009878D2 /* Father.m in Sources */,
+				112018F92078C34C00C9567A /* InterceptedObjectsController.m in Sources */,
 				11B8FD3D20760F48009878D2 /* RunTimeViewListController.m in Sources */,
 				11A2A3FF2074B18100B4AFF4 /* ARCOwnershipAutoWeakController.m in Sources */,
 				1115737320660DFC00EB426C /* main.m in Sources */,
