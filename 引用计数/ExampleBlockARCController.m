@@ -19,15 +19,16 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
 
+    [self exampleBlock];
 }
 
 //Block例题
 - (void)exampleBlock
 {
-    exampleA();
-    exampleB();
-    exampleC();
-    exampleD();
+    //exampleA();
+    //exampleB();
+    //exampleC();
+    //exampleD();
     exampleE();
 }
 
@@ -63,6 +64,11 @@ void exampleB()
 }
 //B.只有在使用ARC的情况下才能正常运行
 
+//A.始终能够正常运行
+//B.只有在使用ARC的情况下才能正常运行
+//C.不使用ARC才能正常运行
+//D.永远无法正常运行
+
 //-----------第三道题：选项同第一题--------------
 void exampleC_addBlockToArray(NSMutableArray *array)
 {
@@ -77,6 +83,11 @@ void exampleC()
     block();
 }
 //A.始终能够正常运行
+
+//A.始终能够正常运行
+//B.只有在使用ARC的情况下才能正常运行
+//C.不使用ARC才能正常运行
+//D.永远无法正常运行
 
 //-----------第四道题：选项同第一题--------------
 typedef void (^dBlock)();
@@ -93,6 +104,11 @@ void exampleD()
 }
 //B.只有在使用ARC的情况下才能正常运行
 
+//A.始终能够正常运行
+//B.只有在使用ARC的情况下才能正常运行
+//C.不使用ARC才能正常运行
+//D.永远无法正常运行
+
 //-----------第五道题：选项同第一题--------------
 typedef void (^eBlock)();
 
@@ -108,7 +124,12 @@ void exampleE()
     eBlock block = exampleE_getBlock();
     block();
 }
-////B.只有在使用ARC的情况下才能正常运行
+//B.只有在使用ARC的情况下才能正常运行
+
+//A.始终能够正常运行
+//B.只有在使用ARC的情况下才能正常运行
+//C.不使用ARC才能正常运行
+//D.永远无法正常运行
 
 
 
