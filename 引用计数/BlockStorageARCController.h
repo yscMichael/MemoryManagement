@@ -1,5 +1,5 @@
 //
-//  BlockStorageController.h
+//  BlockStorageARCController.h
 //  引用计数
 //
 //  Created by 杨世川 on 2018/4/7.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BlockStorageController : UIViewController
+@interface BlockStorageARCController : UIViewController
 
 @end

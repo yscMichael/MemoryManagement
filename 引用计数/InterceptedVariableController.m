@@ -22,11 +22,20 @@ static int staticCount = 10;
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
 
+    //截获自动变量
     [self InterceptedVariable];
+    //__block变量
     [self ChangeInterceptedVariable];
+    //静态变量
     [self StaticVariable];
+    //静态全局变量
     [self StaticGlobalVariable];
+    //全局变量
     [self GlobalVariable];
+    //字符串数组
+    //[self charArrayCWrong];
+    //字符串指针
+    //[self charArrayCRight];
 }
 
 //截获自动变量
@@ -49,6 +58,7 @@ static int staticCount = 10;
 
     void (^blk)(void) = ^{
         NSLog(@"__block变量val = %d",val);//2
+        //不加__block,这里会报错❌
         val = 1;
     };
 
@@ -106,10 +116,43 @@ static int staticCount = 10;
     NSLog(@"Global = %d",globalCount);//1
 }
 
+//C语言字符串数组
+//会有问题:截获自动变量的方法并没有实现对C语言数组的截获
+- (void)charArrayCWrong
+{
+    const char text[] = "hello";
+    void (^blk)(void) = ^{
+        //这里会报错❌
+        //printf("%c\n",text[0]);
+    };
+    blk();
+    printf("%c\n",text[0]);
+}
+
+//C语言字符串数组--无问题
+- (void)charArrayCRight
+{
+    const char *text = "hello";
+    void (^blk)(void) = ^{
+        //这里正常
+        printf("字符 = %c\n",text[0]);//h
+
+        //sizeof
+        const char temp[] = "hello";
+        printf("sizeof-*text = %lu\n",sizeof(text));//8
+        //包含\0在内
+        printf("sizeof-temp[] = %lu\n",sizeof(temp));//6
+    };
+
+    blk();
+}
+
 
 //总结:
 //1、针对自动变量也就是局部变量,在不加__block的情况下,只能截获数值,不能改变数值
 //2、如果变量是静态变量、静态全局变量、全局变量,则可以进行截取并修改值
+//3、C语言中数组是不能被截获的,只能使用指针
+
 
 
 @end

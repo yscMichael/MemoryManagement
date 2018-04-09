@@ -31,6 +31,8 @@
 //__weak、__block对比
 //__weak、__unsafe_unretained对比
 //sizeof????
+//字符串数组和字符串指针
+//block属性用strong还是weak
 
 
 //c 语言在内存划分中分为：栈区 堆区 全局静态区 常量区 代码区
