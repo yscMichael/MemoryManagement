@@ -26,6 +26,9 @@ typedef void (^blockMallocThree_ARC)(void);
 typedef int (^blockMallocFour_ARC)(int);
 blockMallocFour_ARC blockFourARC;
 
+//test
+void(^blockTestARC)(void);
+
 @interface BlockStorageARCController ()
 {
     blockMallocThree_ARC blockThreeTestARC;
@@ -48,7 +51,7 @@ blockMallocFour_ARC blockFourARC;
     //Global
     //[self testBlockMRCThree];
     //[self testBlockMRCFour];
-    [self testBlockMRCTen];
+    //[self testBlockMRCTen];
 
     //Malloc
     //[self testBlockMRCTwo];
@@ -57,7 +60,10 @@ blockMallocFour_ARC blockFourARC;
     //[self testBlockMRCNine];
 
     //system
-    [self testBlockMRCEleven];
+    //[self testBlockMRCEleven];
+
+    //test
+    [self testBlockMRCTwelve];
 }
 
 #pragma mark - test1-Stack
@@ -230,6 +236,36 @@ blockMallocFour_ARC funARC(int rate)
     block();
 }
 
+#pragma mark - test12-system
+- (void)testBlockMRCTwelve
+{
+    NSArray *array = [self getBlockArray];
+    blockTestARC = array[0];
+    blockTestARC();
+}
+
+- (id)getBlockArray
+{
+    int val = 10;
+
+    //会崩溃
+    //    NSArray *arr = [[NSArray alloc] initWithObjects:
+    //                    ^{NSLog(@"ARC-blk0:%d",val);},
+    //                    ^{NSLog(@"ARC-blk1:%d",val);},nil];
+
+    //会崩毁
+    //return  [[NSArray alloc] initWithObjects:
+    //                           ^{NSLog(@"ARC-blk0:%d",val);},
+    //                           ^{NSLog(@"ARC-blk1:%d",val);},nil];
+
+    //不会崩溃、这里编译器不能判断是否需要复制!!!!
+    //相当于block还在栈上
+    return  [[NSArray alloc] initWithObjects:
+                               [^{NSLog(@"ARC-blk0:%d",val);} copy],
+                               [^{NSLog(@"ARC-blk1:%d",val);} copy],nil];
+
+}
+
 //基本语法:
 //1、NSGlobalBlock是位于全局区的block,它是设置在程序的数据区域（.data区）中
 //2、NSStackBlock是位于栈区,超出变量作用域,栈上的Block以及__block变量都被销毁
@@ -243,7 +279,8 @@ blockMallocFour_ARC funARC(int rate)
 //   b、block语法的表达式中没有使用应截获的自动变量时
 //   c、block语法赋值给成语变量
 
-//2、什么是栈Block <在ARC环境下,不存在栈Block!!!>
+//2、什么是栈Block <在ARC环境下,不存在栈Block!!!,但是如果block被当成参数,又被返回,在Block>
+//   见例题12
 //   a、block语法的表达式在函数内局部定义,类似于局部变量
 //   b、block语法的表达式中使用截获的自动变量时
 
@@ -260,6 +297,33 @@ blockMallocFour_ARC funARC(int rate)
 //   c、栈上的__block变量复制到堆上时,会将成员变量__forwarding的值替换为复制到堆上的__block变量用结构体实例的地址.所以"不管__block变量配置在栈上还是堆上,都能够正确的访问该变量",这也是成员变量__forwarding存在的理由
 //   d、++i等价于 ++(i->__forwarding->i);
 //      如果__block没有被复制到堆上,则__forwarding指向自己;否则指向堆上变量
+
+//5、Block的copy
+//   _NSConcretStackBlock    copy      从栈复制到堆
+//   _NSConcretGlobalBlock   copy      什么也不做
+//   _NSConcretMallocBlock   copy      引用计数增加
+//   注意:在ARC环境下,如果不确定是否要copy block尽管copy即可.ARC会打扫战场
+
+
+//最终总结:
+//一、有人问block是存在栈还是堆,回答如下:
+//   1、MRC主要存在堆、栈、数据区域
+//      数据区域: a、定义全局变量的地方有block语法时
+//               b、block语法的表达式中没有使用应截获的自动变量时
+//               c、block语法赋值给成语变量
+//          堆: a、使用copy
+//              b、Cocoa框架和CGD方法中使用的block
+//          栈: a、在局部函数使用Block语法,并且访问了自动变量
+//              b、除了以上情况,全部属于栈
+//  2、ARC主要存在数据区域和堆,栈目前发现一种特殊情况
+//      数据区域: 和MRC相同
+//           堆: 包括MRC两种情况
+//               c、即使不主动使用copy,默认也是在堆上
+//           栈: 目前就发现了一种情况
+//              a、作为返回对象的参数,编译器无法判断是否需要到堆.见例12
+
+
+
 
 
 @end

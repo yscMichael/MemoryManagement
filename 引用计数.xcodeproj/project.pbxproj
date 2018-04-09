@@ -22,6 +22,10 @@
 		112019012078F98D00C9567A /* BlockStorageARCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112019002078F98D00C9567A /* BlockStorageARCController.m */; };
 		112019052079112000C9567A /* blockVariableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112019042079112000C9567A /* blockVariableController.m */; };
 		1174AC82207B189A002996C5 /* BlockStorageMRCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC81207B189A002996C5 /* BlockStorageMRCController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1174AC85207B5A23002996C5 /* InterceptedObjectsMRCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC84207B5A23002996C5 /* InterceptedObjectsMRCController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1174AC88207B5A64002996C5 /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC87207B5A64002996C5 /* MyClass.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1174ACB1207B6152002996C5 /* ExampleBlockARCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174ACB0207B6152002996C5 /* ExampleBlockARCController.m */; };
+		1174ACB6207B8278002996C5 /* ExampleBlockMRCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174ACB5207B8278002996C5 /* ExampleBlockMRCController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		11A2A3B3206F455400B4AFF4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A3B2206F455400B4AFF4 /* Person.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		11A2A3D0207219BB00B4AFF4 /* AutoReleaseMemoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A3CF207219BB00B4AFF4 /* AutoReleaseMemoryViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		11A2A3D520721B8A00B4AFF4 /* AutoReleaseMRCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A3D420721B8A00B4AFF4 /* AutoReleaseMRCViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -72,6 +76,14 @@
 		112019042079112000C9567A /* blockVariableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = blockVariableController.m; sourceTree = "<group>"; };
 		1174AC80207B189A002996C5 /* BlockStorageMRCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockStorageMRCController.h; sourceTree = "<group>"; };
 		1174AC81207B189A002996C5 /* BlockStorageMRCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockStorageMRCController.m; sourceTree = "<group>"; };
+		1174AC83207B5A23002996C5 /* InterceptedObjectsMRCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterceptedObjectsMRCController.h; sourceTree = "<group>"; };
+		1174AC84207B5A23002996C5 /* InterceptedObjectsMRCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterceptedObjectsMRCController.m; sourceTree = "<group>"; };
+		1174AC86207B5A64002996C5 /* MyClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyClass.h; sourceTree = "<group>"; };
+		1174AC87207B5A64002996C5 /* MyClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyClass.m; sourceTree = "<group>"; };
+		1174ACAF207B6152002996C5 /* ExampleBlockARCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleBlockARCController.h; sourceTree = "<group>"; };
+		1174ACB0207B6152002996C5 /* ExampleBlockARCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleBlockARCController.m; sourceTree = "<group>"; };
+		1174ACB4207B8278002996C5 /* ExampleBlockMRCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleBlockMRCController.h; sourceTree = "<group>"; };
+		1174ACB5207B8278002996C5 /* ExampleBlockMRCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleBlockMRCController.m; sourceTree = "<group>"; };
 		11A2A3B1206F455400B4AFF4 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		11A2A3B2206F455400B4AFF4 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		11A2A3CE207219BB00B4AFF4 /* AutoReleaseMemoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoReleaseMemoryViewController.h; sourceTree = "<group>"; };
@@ -180,9 +192,11 @@
 				112018EE2078B04900C9567A /* Block语法 */,
 				112018F22078BF1600C9567A /* 截取变量 */,
 				112018F62078C33400C9567A /* 截获对象 */,
+				1174ACAD207B5C52002996C5 /* Block_Copy对引用计数影响 */,
 				112018FA2078CBE200C9567A /* Block内部实现 */,
 				112018FE2078F92900C9567A /* Block存储区域 */,
-				112019022079109500C9567A /* block变量存储区域 */,
+				112019022079109500C9567A /* block变量存储区域和对象修饰符 */,
+				1174ACAE207B612E002996C5 /* Block例题 */,
 			);
 			name = "Block知识";
 			sourceTree = "<group>";
@@ -277,13 +291,13 @@
 			name = "Block存储区域";
 			sourceTree = "<group>";
 		};
-		112019022079109500C9567A /* block变量存储区域 */ = {
+		112019022079109500C9567A /* block变量存储区域和对象修饰符 */ = {
 			isa = PBXGroup;
 			children = (
 				112019032079112000C9567A /* blockVariableController.h */,
 				112019042079112000C9567A /* blockVariableController.m */,
 			);
-			name = "block变量存储区域";
+			name = "block变量存储区域和对象修饰符";
 			sourceTree = "<group>";
 		};
 		1174AC7E207B1880002996C5 /* ARC */ = {
@@ -300,6 +314,44 @@
 			children = (
 				1174AC80207B189A002996C5 /* BlockStorageMRCController.h */,
 				1174AC81207B189A002996C5 /* BlockStorageMRCController.m */,
+			);
+			name = MRC;
+			sourceTree = "<group>";
+		};
+		1174ACAD207B5C52002996C5 /* Block_Copy对引用计数影响 */ = {
+			isa = PBXGroup;
+			children = (
+				1174AC86207B5A64002996C5 /* MyClass.h */,
+				1174AC87207B5A64002996C5 /* MyClass.m */,
+				1174AC83207B5A23002996C5 /* InterceptedObjectsMRCController.h */,
+				1174AC84207B5A23002996C5 /* InterceptedObjectsMRCController.m */,
+			);
+			name = "Block_Copy对引用计数影响";
+			sourceTree = "<group>";
+		};
+		1174ACAE207B612E002996C5 /* Block例题 */ = {
+			isa = PBXGroup;
+			children = (
+				1174ACB3207B8264002996C5 /* MRC */,
+				1174ACB2207B8259002996C5 /* ARC */,
+			);
+			name = "Block例题";
+			sourceTree = "<group>";
+		};
+		1174ACB2207B8259002996C5 /* ARC */ = {
+			isa = PBXGroup;
+			children = (
+				1174ACAF207B6152002996C5 /* ExampleBlockARCController.h */,
+				1174ACB0207B6152002996C5 /* ExampleBlockARCController.m */,
+			);
+			name = ARC;
+			sourceTree = "<group>";
+		};
+		1174ACB3207B8264002996C5 /* MRC */ = {
+			isa = PBXGroup;
+			children = (
+				1174ACB4207B8278002996C5 /* ExampleBlockMRCController.h */,
+				1174ACB5207B8278002996C5 /* ExampleBlockMRCController.m */,
 			);
 			name = MRC;
 			sourceTree = "<group>";
@@ -534,6 +586,7 @@
 			files = (
 				112019012078F98D00C9567A /* BlockStorageARCController.m in Sources */,
 				11B8FD4C2076316B009878D2 /* Son.m in Sources */,
+				1174ACB1207B6152002996C5 /* ExampleBlockARCController.m in Sources */,
 				11A2A4052074B40D00B4AFF4 /* ReferenceCountViewController.m in Sources */,
 				11001E28206A2E2700457CBC /* RuleStudyViewController.m in Sources */,
 				112018F52078BF3200C9567A /* InterceptedVariableController.m in Sources */,
@@ -541,6 +594,7 @@
 				11A2A3FC2074B16F00B4AFF4 /* ARCOwnershipAutoStrongController.m in Sources */,
 				112018FD2078CEE800C9567A /* BlockAchieveViewController.m in Sources */,
 				11A2A4022074B18E00B4AFF4 /* ARCOwnershipAutoUnRetainedController.m in Sources */,
+				1174AC85207B5A23002996C5 /* InterceptedObjectsMRCController.m in Sources */,
 				1174AC82207B189A002996C5 /* BlockStorageMRCController.m in Sources */,
 				1115737920660DFC00EB426C /* ViewController.m in Sources */,
 				11B8FD4620761C6F009878D2 /* msgSendViewController.m in Sources */,
@@ -549,6 +603,8 @@
 				11A2A3B3206F455400B4AFF4 /* Person.m in Sources */,
 				11B8FD5020765430009878D2 /* MessageForwardingController.m in Sources */,
 				112018F12078B39100C9567A /* BlockSyntaxViewController.m in Sources */,
+				1174AC88207B5A64002996C5 /* MyClass.m in Sources */,
+				1174ACB6207B8278002996C5 /* ExampleBlockMRCController.m in Sources */,
 				11A2A3D0207219BB00B4AFF4 /* AutoReleaseMemoryViewController.m in Sources */,
 				1115737620660DFC00EB426C /* AppDelegate.m in Sources */,
 				11001E2F206A300D00457CBC /* ARCOwnershipAutoReleaseController.m in Sources */,

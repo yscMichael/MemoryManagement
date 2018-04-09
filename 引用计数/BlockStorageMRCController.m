@@ -26,6 +26,9 @@ typedef void (^blockMallocThree)(void);
 typedef int (^blockMallocFour)(int);
 blockMallocFour blockFour;
 
+//test
+void(^blockTest)(void);
+
 @interface BlockStorageMRCController ()
 {
    blockMallocThree blockThreeTest;
@@ -50,7 +53,7 @@ blockMallocFour blockFour;
     //Global
     //[self testBlockMRCThree];
     //[self testBlockMRCFour];
-    [self testBlockMRCTen];
+    //[self testBlockMRCTen];
 
     //Malloc
     //[self testBlockMRCTwo];
@@ -59,14 +62,17 @@ blockMallocFour blockFour;
     //[self testBlockMRCNine];
 
     //system
-    [self testBlockMRCEleven];
+    //[self testBlockMRCEleven];
+
+    //test
+    [self testBlockMRCTwelve];
 }
 
 #pragma mark - test1-Stack
 - (void)testBlockMRCOne
 {
     NSInteger i = 10;
-    //打断点可以发现,这里是NSStackBlock,会❌
+    //打断点可以发现,这里是NSStackBlock;在touchesBegan里,会❌
     blockStackOne = ^(id obj){
         NSLog(@"%ld", i);
     };
@@ -114,7 +120,7 @@ blockMallocFour blockFour;
 #pragma mark - test5-Stack
 - (void)testBlockMRCFive
 {
-    //在代码不截获自动变量时，生成的block也是在全局区
+    //在代码截获自动变量时，生成的block也是在栈区
     //这里是NSStackBlock
 
     int tempValue = 10;
@@ -157,6 +163,7 @@ blockMallocFour blockFour;
 {
     NSMutableArray *array = [[NSMutableArray alloc]init];
     blockThree = ^(id obj){
+        //block中引用了自动变量;否则,可以是全局block
         [array addObject:obj];
         NSLog(@"array.count-1 = %lu",(unsigned long)array.count);
     };
@@ -201,6 +208,7 @@ blockMallocFour fun(int rate)
 - (void)testBlockMRCTen
 {
     //这里相当于是全局Block
+    //成员变量属性
     blockThreeTest = ^{
         NSLog(@"Block");
     };
@@ -218,7 +226,6 @@ blockMallocFour fun(int rate)
         NSLog(@"%@", self);
     }];
 
-
     //当block不是self的属性时,self并不持有这个block,所以也不存在循环引用
     void(^block)(void) = ^() {
         NSLog(@"%@", self);
@@ -226,6 +233,34 @@ blockMallocFour fun(int rate)
     block();
 }
 
+#pragma mark - test12-system
+- (void)testBlockMRCTwelve
+{
+    NSArray *array = [self getBlockArray];
+    blockTest = array[0];
+    blockTest();
+}
+
+- (id)getBlockArray
+{
+    int val = 10;
+    //这样返回会崩溃
+    //    return [NSArray arrayWithObjects:
+    //            ^{NSLog(@"MRC-blk0:%d",val);},
+    //            ^{NSLog(@"MRC-blk1:%d",val);},nil];
+
+    //这样不会崩溃
+    //return [NSArray arrayWithObjects:
+    //        [^{NSLog(@"MRC-blk0:%d",val);} copy],
+    //        [^{NSLog(@"MRC-blk1:%d",val);} copy],nil];
+
+    //这样也没事
+    NSArray *arr = [[NSArray alloc] initWithObjects:
+                    ^{NSLog(@"MRC-blk0:%d",val);},
+                    ^{NSLog(@"MRC-blk1:%d",val);},
+                    ^{NSLog(@"MRC-blk2:%d",val);},nil];
+    return arr;
+}
 
 //基本语法:
 //1、NSGlobalBlock是位于全局区的block,它是设置在程序的数据区域（.data区）中
@@ -258,6 +293,11 @@ blockMallocFour fun(int rate)
 //   d、++i等价于 ++(i->__forwarding->i);
 //      如果__block没有被复制到堆上,则__forwarding指向自己;否则指向堆上变量
 
+
+//5、Block的copy
+//   _NSConcretStackBlock    copy      从栈复制到堆
+//   _NSConcretGlobalBlock   copy      什么也不做
+//   _NSConcretMallocBlock   copy      引用计数增加
 
 @end
 
