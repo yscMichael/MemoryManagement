@@ -26,6 +26,7 @@
 		1174AC88207B5A64002996C5 /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC87207B5A64002996C5 /* MyClass.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1174ACB1207B6152002996C5 /* ExampleBlockARCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174ACB0207B6152002996C5 /* ExampleBlockARCController.m */; };
 		1174ACB6207B8278002996C5 /* ExampleBlockMRCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174ACB5207B8278002996C5 /* ExampleBlockMRCController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		117F8D9E207BAA5F0058825B /* CGDBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117F8D9D207BAA5F0058825B /* CGDBasicViewController.m */; };
 		11A2A3B3206F455400B4AFF4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A3B2206F455400B4AFF4 /* Person.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		11A2A3D0207219BB00B4AFF4 /* AutoReleaseMemoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A3CF207219BB00B4AFF4 /* AutoReleaseMemoryViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		11A2A3D520721B8A00B4AFF4 /* AutoReleaseMRCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A3D420721B8A00B4AFF4 /* AutoReleaseMRCViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -84,6 +85,8 @@
 		1174ACB0207B6152002996C5 /* ExampleBlockARCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleBlockARCController.m; sourceTree = "<group>"; };
 		1174ACB4207B8278002996C5 /* ExampleBlockMRCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleBlockMRCController.h; sourceTree = "<group>"; };
 		1174ACB5207B8278002996C5 /* ExampleBlockMRCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleBlockMRCController.m; sourceTree = "<group>"; };
+		117F8D9C207BAA5F0058825B /* CGDBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGDBasicViewController.h; sourceTree = "<group>"; };
+		117F8D9D207BAA5F0058825B /* CGDBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGDBasicViewController.m; sourceTree = "<group>"; };
 		11A2A3B1206F455400B4AFF4 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		11A2A3B2206F455400B4AFF4 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		11A2A3CE207219BB00B4AFF4 /* AutoReleaseMemoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoReleaseMemoryViewController.h; sourceTree = "<group>"; };
@@ -226,6 +229,7 @@
 				11001E2B206A2E5200457CBC /* Main */,
 				11001E30206A33B200457CBC /* 引用计数 */,
 				110968DB2075C77700A35EF2 /* Block知识 */,
+				11CF0D5D207BA9D600A71FFD /* GCD知识详解 */,
 				11B8FD3A20760F11009878D2 /* 运行时知识补充 */,
 				1115737120660DFC00EB426C /* Supporting Files */,
 			);
@@ -512,6 +516,15 @@
 			name = "消息转发";
 			sourceTree = "<group>";
 		};
+		11CF0D5D207BA9D600A71FFD /* GCD知识详解 */ = {
+			isa = PBXGroup;
+			children = (
+				117F8D9C207BAA5F0058825B /* CGDBasicViewController.h */,
+				117F8D9D207BAA5F0058825B /* CGDBasicViewController.m */,
+			);
+			name = "GCD知识详解";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -606,6 +619,7 @@
 				1174AC88207B5A64002996C5 /* MyClass.m in Sources */,
 				1174ACB6207B8278002996C5 /* ExampleBlockMRCController.m in Sources */,
 				11A2A3D0207219BB00B4AFF4 /* AutoReleaseMemoryViewController.m in Sources */,
+				117F8D9E207BAA5F0058825B /* CGDBasicViewController.m in Sources */,
 				1115737620660DFC00EB426C /* AppDelegate.m in Sources */,
 				11001E2F206A300D00457CBC /* ARCOwnershipAutoReleaseController.m in Sources */,
 				112019052079112000C9567A /* blockVariableController.m in Sources */,
