@@ -102,7 +102,6 @@ typedef void(^blockCGD)(void);
 //    同步执行:不会开辟子线程
 //    这里默认是主线程(任你队列可以让任务同时执行,但是开发者就给你一条路,无路可选,只能乖乖在主线程执行.根据FIFO原则,结果肯定是任务在主线程一个个按顺序执行)
 //结果:任务在主线程一个个按顺序执行
-//
 - (void)concurrentQueueSyncStudy
 {
     dispatch_queue_t queue = dispatch_queue_create("com.example.gcd.MySerialQueue", DISPATCH_QUEUE_CONCURRENT);
@@ -188,34 +187,17 @@ typedef void(^blockCGD)(void);
 //   2、实现方式
 //     a、异步
 //        dispatch_async(队列,block)
-//
 //     b、同步
 //        dispatch_sync(队列,block)
-//
 
 
 //额外知识补充:
-
 //一、NSThread编程
+
 //二、NSObject分类:
 //   a、performSelectorOnMainThread
 //   b、performSelector
 //   c、performSelectorInBackground
-//三、GCD
-//   1、Dispatch Queue是按照先进先出(FIFO)的原则
-//   2、Serial Dispatch Queue
-//     (1)等待前面结束再执行
-//     (2)串行队列、按照先进先出(FIFO)的原则执行
-//     (3)一个串行队列,系统只生成并使用一个线程,串行队列能够避免数据竞争
-//     (4)
-//     (5)创建方式
-//
-//   3、Concurrent Dispatch Queue
-//     (1)不等待前面处理结束
-//     (2)并行队列、执行顺序是随机的、不可控的
-
-
-
 
 @end
 
