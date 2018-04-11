@@ -22,6 +22,9 @@
 		112019012078F98D00C9567A /* BlockStorageARCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112019002078F98D00C9567A /* BlockStorageARCController.m */; };
 		112019052079112000C9567A /* blockVariableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112019042079112000C9567A /* blockVariableController.m */; };
 		11232EF1207DF7B6000824B2 /* DispatchGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11232EF0207DF7B6000824B2 /* DispatchGroupViewController.m */; };
+		11232EF8207DFD35000824B2 /* DispatchBarrierController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11232EF7207DFD35000824B2 /* DispatchBarrierController.m */; };
+		11232EFC207DFE8C000824B2 /* DispatchSemaphoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11232EFB207DFE8C000824B2 /* DispatchSemaphoreController.m */; };
+		11232F00207E0131000824B2 /* OtherCGDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11232EFF207E0131000824B2 /* OtherCGDViewController.m */; };
 		1174AC82207B189A002996C5 /* BlockStorageMRCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC81207B189A002996C5 /* BlockStorageMRCController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1174AC85207B5A23002996C5 /* InterceptedObjectsMRCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC84207B5A23002996C5 /* InterceptedObjectsMRCController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1174AC88207B5A64002996C5 /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC87207B5A64002996C5 /* MyClass.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -78,6 +81,12 @@
 		112019042079112000C9567A /* blockVariableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = blockVariableController.m; sourceTree = "<group>"; };
 		11232EEF207DF7B6000824B2 /* DispatchGroupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchGroupViewController.h; sourceTree = "<group>"; };
 		11232EF0207DF7B6000824B2 /* DispatchGroupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchGroupViewController.m; sourceTree = "<group>"; };
+		11232EF6207DFD35000824B2 /* DispatchBarrierController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchBarrierController.h; sourceTree = "<group>"; };
+		11232EF7207DFD35000824B2 /* DispatchBarrierController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchBarrierController.m; sourceTree = "<group>"; };
+		11232EFA207DFE8C000824B2 /* DispatchSemaphoreController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchSemaphoreController.h; sourceTree = "<group>"; };
+		11232EFB207DFE8C000824B2 /* DispatchSemaphoreController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchSemaphoreController.m; sourceTree = "<group>"; };
+		11232EFE207E0131000824B2 /* OtherCGDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OtherCGDViewController.h; sourceTree = "<group>"; };
+		11232EFF207E0131000824B2 /* OtherCGDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OtherCGDViewController.m; sourceTree = "<group>"; };
 		1174AC80207B189A002996C5 /* BlockStorageMRCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockStorageMRCController.h; sourceTree = "<group>"; };
 		1174AC81207B189A002996C5 /* BlockStorageMRCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockStorageMRCController.m; sourceTree = "<group>"; };
 		1174AC83207B5A23002996C5 /* InterceptedObjectsMRCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterceptedObjectsMRCController.h; sourceTree = "<group>"; };
@@ -325,6 +334,33 @@
 			name = DispatchGroup;
 			sourceTree = "<group>";
 		};
+		11232EF2207DFCB0000824B2 /* dispatchBarrier */ = {
+			isa = PBXGroup;
+			children = (
+				11232EF6207DFD35000824B2 /* DispatchBarrierController.h */,
+				11232EF7207DFD35000824B2 /* DispatchBarrierController.m */,
+			);
+			name = dispatchBarrier;
+			sourceTree = "<group>";
+		};
+		11232EF9207DFE65000824B2 /* dispatchSemaphore */ = {
+			isa = PBXGroup;
+			children = (
+				11232EFA207DFE8C000824B2 /* DispatchSemaphoreController.h */,
+				11232EFB207DFE8C000824B2 /* DispatchSemaphoreController.m */,
+			);
+			name = dispatchSemaphore;
+			sourceTree = "<group>";
+		};
+		11232EFD207E00AE000824B2 /* afterApplySuspendIO用法 */ = {
+			isa = PBXGroup;
+			children = (
+				11232EFE207E0131000824B2 /* OtherCGDViewController.h */,
+				11232EFF207E0131000824B2 /* OtherCGDViewController.m */,
+			);
+			name = "afterApplySuspendIO用法";
+			sourceTree = "<group>";
+		};
 		1174AC7E207B1880002996C5 /* ARC */ = {
 			isa = PBXGroup;
 			children = (
@@ -542,6 +578,9 @@
 			children = (
 				11232EED207DF765000824B2 /* GCD基础知识 */,
 				11232EEE207DF77D000824B2 /* DispatchGroup */,
+				11232EF2207DFCB0000824B2 /* dispatchBarrier */,
+				11232EF9207DFE65000824B2 /* dispatchSemaphore */,
+				11232EFD207E00AE000824B2 /* afterApplySuspendIO用法 */,
 			);
 			name = "GCD知识详解";
 			sourceTree = "<group>";
@@ -626,6 +665,7 @@
 				112018F52078BF3200C9567A /* InterceptedVariableController.m in Sources */,
 				11A2A3D520721B8A00B4AFF4 /* AutoReleaseMRCViewController.m in Sources */,
 				11A2A3FC2074B16F00B4AFF4 /* ARCOwnershipAutoStrongController.m in Sources */,
+				11232EFC207DFE8C000824B2 /* DispatchSemaphoreController.m in Sources */,
 				112018FD2078CEE800C9567A /* BlockAchieveViewController.m in Sources */,
 				11A2A4022074B18E00B4AFF4 /* ARCOwnershipAutoUnRetainedController.m in Sources */,
 				1174AC85207B5A23002996C5 /* InterceptedObjectsMRCController.m in Sources */,
@@ -635,6 +675,7 @@
 				11A2A4092074D51400B4AFF4 /* AttributesCompareViewController.m in Sources */,
 				11FE4A1620771BFD006BD4C5 /* OtherViewController.m in Sources */,
 				11A2A3B3206F455400B4AFF4 /* Person.m in Sources */,
+				11232EF8207DFD35000824B2 /* DispatchBarrierController.m in Sources */,
 				11B8FD5020765430009878D2 /* MessageForwardingController.m in Sources */,
 				112018F12078B39100C9567A /* BlockSyntaxViewController.m in Sources */,
 				1174AC88207B5A64002996C5 /* MyClass.m in Sources */,
@@ -650,6 +691,7 @@
 				11B8FD3D20760F48009878D2 /* RunTimeViewListController.m in Sources */,
 				11A2A3FF2074B18100B4AFF4 /* ARCOwnershipAutoWeakController.m in Sources */,
 				1115737320660DFC00EB426C /* main.m in Sources */,
+				11232F00207E0131000824B2 /* OtherCGDViewController.m in Sources */,
 				11A2A3E120732C9100B4AFF4 /* Animal.m in Sources */,
 				11A2A3F020735F0200B4AFF4 /* NSObject+Category.m in Sources */,
 				11A2A3F42074AF1D00B4AFF4 /* ARCOwnershipViewListController.m in Sources */,

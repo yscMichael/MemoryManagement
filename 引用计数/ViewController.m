@@ -119,7 +119,10 @@
                         @"block例题MRC",
                         @"block例题ARC"],
                       @[@"GCD基础知识",
-                        @"Dispatch Group"],
+                        @"Dispatch Group",
+                        @"Dispatch Barrier",
+                        @"Dispatch Semaphore",
+                        @"CGD其它琐碎知识点"],
                       @[@"isa指针详解",
                         @"objc_msgSend详解",],nil];
     }
@@ -149,7 +152,10 @@
                               @"ExampleBlockMRCController",
                               @"ExampleBlockARCController"],
                             @[@"CGDBasicViewController",
-                              @"DispatchGroupViewController"],
+                              @"DispatchGroupViewController",
+                              @"DispatchBarrierController",
+                              @"DispatchSemaphoreController",
+                              @"OtherCGDViewController"],
                             @[@"ISAViewController",
                               @"msgSendViewController",
                               @"MessageForwardingController"],nil];
