@@ -54,6 +54,9 @@ typedef void(^blockCGD)(void);
     //[self MainQueueSyncStudy];
 
     //5、全局队列<并发队列>研究
+
+    //全局队列+异步+同步任务,任务之间嵌套
+    [self GlobalQueueAsyncStudy];
 }
 
 //串行队列+异步
@@ -414,6 +417,51 @@ typedef void(^blockCGD)(void);
     dispatch_sync(queue, task0);
     dispatch_sync(queue, task1);
     dispatch_sync(queue, task2);
+}
+
+//全局队列+异步
+//结果:同并发队列一致
+- (void)GlobalQueueAsyncStudy
+{
+    //第一个参数是值得优先级,使用默认的
+    //第二个参数是标识位,使用默认的
+    dispatch_queue_t queue = dispatch_get_global_queue(0, 0);
+
+    //将任务添加到并发队列
+    dispatch_async(queue, ^{//任务0
+        [NSThread sleepForTimeInterval:3];
+        NSLog(@"我是任务0");
+        NSLog(@"%@",[NSThread currentThread]);
+
+        //任务1也是任务0的一部分
+        //dispatch_async(queue, ^{//任务1
+        //    [NSThread sleepForTimeInterval:2];
+        //    NSLog(@"我是任务1");
+        //    NSLog(@"%@",[NSThread currentThread]);
+        //});//任务1
+
+        //任务1也是任务0的一部分
+        dispatch_sync(queue, ^{//任务1
+            [NSThread sleepForTimeInterval:2];
+            NSLog(@"我是任务1");
+            NSLog(@"%@",[NSThread currentThread]);
+        });//任务1
+
+        NSLog(@"我是任务4");
+    });//任务0
+
+    //任务2
+    dispatch_sync(queue, ^{
+        [NSThread sleepForTimeInterval:10];
+        NSLog(@"我是任务2");
+        NSLog(@"%@",[NSThread currentThread]);
+    });
+}
+
+//全局队列+同步
+- (void)GlobalQueueSyncStudy
+{
+
 }
 
 //线程基本知识:
