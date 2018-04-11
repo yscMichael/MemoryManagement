@@ -118,7 +118,8 @@
                         @"block变量存储区域和对象修饰符",
                         @"block例题MRC",
                         @"block例题ARC"],
-                      @[@"GCD基础知识"],
+                      @[@"GCD基础知识",
+                        @"Dispatch Group"],
                       @[@"isa指针详解",
                         @"objc_msgSend详解",],nil];
     }
@@ -147,7 +148,8 @@
                               @"blockVariableController",
                               @"ExampleBlockMRCController",
                               @"ExampleBlockARCController"],
-                            @[@"CGDBasicViewController"],
+                            @[@"CGDBasicViewController",
+                              @"DispatchGroupViewController"],
                             @[@"ISAViewController",
                               @"msgSendViewController",
                               @"MessageForwardingController"],nil];

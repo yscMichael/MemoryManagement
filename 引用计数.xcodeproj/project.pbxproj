@@ -21,6 +21,7 @@
 		112018FD2078CEE800C9567A /* BlockAchieveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112018FC2078CEE800C9567A /* BlockAchieveViewController.m */; };
 		112019012078F98D00C9567A /* BlockStorageARCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112019002078F98D00C9567A /* BlockStorageARCController.m */; };
 		112019052079112000C9567A /* blockVariableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112019042079112000C9567A /* blockVariableController.m */; };
+		11232EF1207DF7B6000824B2 /* DispatchGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11232EF0207DF7B6000824B2 /* DispatchGroupViewController.m */; };
 		1174AC82207B189A002996C5 /* BlockStorageMRCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC81207B189A002996C5 /* BlockStorageMRCController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1174AC85207B5A23002996C5 /* InterceptedObjectsMRCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC84207B5A23002996C5 /* InterceptedObjectsMRCController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1174AC88207B5A64002996C5 /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC87207B5A64002996C5 /* MyClass.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -75,6 +76,8 @@
 		112019002078F98D00C9567A /* BlockStorageARCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockStorageARCController.m; sourceTree = "<group>"; };
 		112019032079112000C9567A /* blockVariableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blockVariableController.h; sourceTree = "<group>"; };
 		112019042079112000C9567A /* blockVariableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = blockVariableController.m; sourceTree = "<group>"; };
+		11232EEF207DF7B6000824B2 /* DispatchGroupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchGroupViewController.h; sourceTree = "<group>"; };
+		11232EF0207DF7B6000824B2 /* DispatchGroupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchGroupViewController.m; sourceTree = "<group>"; };
 		1174AC80207B189A002996C5 /* BlockStorageMRCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockStorageMRCController.h; sourceTree = "<group>"; };
 		1174AC81207B189A002996C5 /* BlockStorageMRCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockStorageMRCController.m; sourceTree = "<group>"; };
 		1174AC83207B5A23002996C5 /* InterceptedObjectsMRCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterceptedObjectsMRCController.h; sourceTree = "<group>"; };
@@ -304,6 +307,24 @@
 			name = "block变量存储区域和对象修饰符";
 			sourceTree = "<group>";
 		};
+		11232EED207DF765000824B2 /* GCD基础知识 */ = {
+			isa = PBXGroup;
+			children = (
+				117F8D9C207BAA5F0058825B /* CGDBasicViewController.h */,
+				117F8D9D207BAA5F0058825B /* CGDBasicViewController.m */,
+			);
+			name = "GCD基础知识";
+			sourceTree = "<group>";
+		};
+		11232EEE207DF77D000824B2 /* DispatchGroup */ = {
+			isa = PBXGroup;
+			children = (
+				11232EEF207DF7B6000824B2 /* DispatchGroupViewController.h */,
+				11232EF0207DF7B6000824B2 /* DispatchGroupViewController.m */,
+			);
+			name = DispatchGroup;
+			sourceTree = "<group>";
+		};
 		1174AC7E207B1880002996C5 /* ARC */ = {
 			isa = PBXGroup;
 			children = (
@@ -519,8 +540,8 @@
 		11CF0D5D207BA9D600A71FFD /* GCD知识详解 */ = {
 			isa = PBXGroup;
 			children = (
-				117F8D9C207BAA5F0058825B /* CGDBasicViewController.h */,
-				117F8D9D207BAA5F0058825B /* CGDBasicViewController.m */,
+				11232EED207DF765000824B2 /* GCD基础知识 */,
+				11232EEE207DF77D000824B2 /* DispatchGroup */,
 			);
 			name = "GCD知识详解";
 			sourceTree = "<group>";
@@ -632,6 +653,7 @@
 				11A2A3E120732C9100B4AFF4 /* Animal.m in Sources */,
 				11A2A3F020735F0200B4AFF4 /* NSObject+Category.m in Sources */,
 				11A2A3F42074AF1D00B4AFF4 /* ARCOwnershipViewListController.m in Sources */,
+				11232EF1207DF7B6000824B2 /* DispatchGroupViewController.m in Sources */,
 				11A2A3DE20732B1800B4AFF4 /* AutoReleaseARCViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

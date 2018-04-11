@@ -56,7 +56,7 @@ typedef void(^blockCGD)(void);
     //5、全局队列<并发队列>研究
 
     //全局队列+异步+同步任务,任务之间嵌套
-    [self GlobalQueueAsyncStudy];
+    //[self GlobalQueueAsyncStudy];
 }
 
 //串行队列+异步
