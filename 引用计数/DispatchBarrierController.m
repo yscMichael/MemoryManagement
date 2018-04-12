@@ -19,7 +19,15 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
 
+
+    dispatch_barrier_async(<#dispatch_queue_t  _Nonnull queue#>, <#^(void)block#>)
 }
+
+//总结:
+//1、
+//2、
+//3、
+//4、
 
 
 
