@@ -126,7 +126,8 @@
                         @"Dispatch Sync",
                         @"Dispatch Apply",
                         @"Dispatch Suspend",
-                        @"Dispatch Semaphore"],
+                        @"Dispatch Semaphore",
+                        @"Dispatch Once"],
                       @[@"isa指针详解",
                         @"objc_msgSend详解",],nil];
     }
@@ -163,7 +164,8 @@
                               @"DispatchSyncViewController",
                               @"DispatchApplyViewController",
                               @"DispatchSuspendController",
-                              @"DispatchSemaphoreController"],
+                              @"DispatchSemaphoreController",
+                              @"DispatchOnceViewController"],
                             @[@"ISAViewController",
                               @"msgSendViewController",
                               @"MessageForwardingController"],nil];

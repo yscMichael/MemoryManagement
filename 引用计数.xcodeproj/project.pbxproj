@@ -47,6 +47,7 @@
 		11AAA9A52081C62500DE7CA4 /* DispatchAfterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AAA9A42081C62500DE7CA4 /* DispatchAfterViewController.m */; };
 		11AAA9A92081C8E900DE7CA4 /* DispatchApplyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AAA9A82081C8E900DE7CA4 /* DispatchApplyViewController.m */; };
 		11AAA9AD2081EE8C00DE7CA4 /* DispatchSuspendController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AAA9AC2081EE8C00DE7CA4 /* DispatchSuspendController.m */; };
+		11AAA9B120823F2F00DE7CA4 /* DispatchOnceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AAA9B020823F2F00DE7CA4 /* DispatchOnceViewController.m */; };
 		11B8FD3D20760F48009878D2 /* RunTimeViewListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8FD3C20760F48009878D2 /* RunTimeViewListController.m */; };
 		11B8FD422076105F009878D2 /* ISAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8FD412076105F009878D2 /* ISAViewController.m */; };
 		11B8FD4620761C6F009878D2 /* msgSendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8FD4520761C6F009878D2 /* msgSendViewController.m */; };
@@ -135,6 +136,8 @@
 		11AAA9A82081C8E900DE7CA4 /* DispatchApplyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchApplyViewController.m; sourceTree = "<group>"; };
 		11AAA9AB2081EE8C00DE7CA4 /* DispatchSuspendController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchSuspendController.h; sourceTree = "<group>"; };
 		11AAA9AC2081EE8C00DE7CA4 /* DispatchSuspendController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchSuspendController.m; sourceTree = "<group>"; };
+		11AAA9AF20823F2F00DE7CA4 /* DispatchOnceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchOnceViewController.h; sourceTree = "<group>"; };
+		11AAA9B020823F2F00DE7CA4 /* DispatchOnceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchOnceViewController.m; sourceTree = "<group>"; };
 		11B8FD3B20760F48009878D2 /* RunTimeViewListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunTimeViewListController.h; sourceTree = "<group>"; };
 		11B8FD3C20760F48009878D2 /* RunTimeViewListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunTimeViewListController.m; sourceTree = "<group>"; };
 		11B8FD402076105F009878D2 /* ISAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISAViewController.h; sourceTree = "<group>"; };
@@ -571,6 +574,29 @@
 			name = DispatchSuspend;
 			sourceTree = "<group>";
 		};
+		11AAA9AE20823F0D00DE7CA4 /* DispatchOnce */ = {
+			isa = PBXGroup;
+			children = (
+				11AAA9AF20823F2F00DE7CA4 /* DispatchOnceViewController.h */,
+				11AAA9B020823F2F00DE7CA4 /* DispatchOnceViewController.m */,
+			);
+			name = DispatchOnce;
+			sourceTree = "<group>";
+		};
+		11AAA9B220823F9100DE7CA4 /* DispatchIO */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DispatchIO;
+			sourceTree = "<group>";
+		};
+		11AAA9B320823FA000DE7CA4 /* DispatchSource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = DispatchSource;
+			sourceTree = "<group>";
+		};
 		11B8FD3A20760F11009878D2 /* 运行时知识补充 */ = {
 			isa = PBXGroup;
 			children = (
@@ -633,6 +659,9 @@
 				11AAA9A62081C8BC00DE7CA4 /* DispatchApply */,
 				11AAA9AA2081EE6900DE7CA4 /* DispatchSuspend */,
 				11232EF9207DFE65000824B2 /* dispatchSemaphore */,
+				11AAA9AE20823F0D00DE7CA4 /* DispatchOnce */,
+				11AAA9B220823F9100DE7CA4 /* DispatchIO */,
+				11AAA9B320823FA000DE7CA4 /* DispatchSource */,
 			);
 			name = "GCD知识详解";
 			sourceTree = "<group>";
@@ -724,6 +753,7 @@
 				1174AC85207B5A23002996C5 /* InterceptedObjectsMRCController.m in Sources */,
 				1174AC82207B189A002996C5 /* BlockStorageMRCController.m in Sources */,
 				11AAA99D2081ADB600DE7CA4 /* DispatchTargetViewController.m in Sources */,
+				11AAA9B120823F2F00DE7CA4 /* DispatchOnceViewController.m in Sources */,
 				1115737920660DFC00EB426C /* ViewController.m in Sources */,
 				11B8FD4620761C6F009878D2 /* msgSendViewController.m in Sources */,
 				11A2A4092074D51400B4AFF4 /* AttributesCompareViewController.m in Sources */,
