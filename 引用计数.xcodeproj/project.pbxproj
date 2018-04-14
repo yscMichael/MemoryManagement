@@ -257,6 +257,7 @@
 				11001E30206A33B200457CBC /* 引用计数 */,
 				110968DB2075C77700A35EF2 /* Block知识 */,
 				11CF0D5D207BA9D600A71FFD /* GCD知识详解 */,
+				11AAA9B42082401300DE7CA4 /* NSOperation知识详解 */,
 				11B8FD3A20760F11009878D2 /* 运行时知识补充 */,
 				1115737120660DFC00EB426C /* Supporting Files */,
 			);
@@ -595,6 +596,13 @@
 			children = (
 			);
 			name = DispatchSource;
+			sourceTree = "<group>";
+		};
+		11AAA9B42082401300DE7CA4 /* NSOperation知识详解 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "NSOperation知识详解";
 			sourceTree = "<group>";
 		};
 		11B8FD3A20760F11009878D2 /* 运行时知识补充 */ = {
