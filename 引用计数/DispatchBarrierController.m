@@ -20,7 +20,9 @@
     self.view.backgroundColor = [UIColor whiteColor];
 
     //测试栅栏函数
-    [self testBarrier];
+    //[self testBarrier];
+    //测试发现全局并发队列失效
+    [self testGlobalConcurrentQueue];
 }
 
 //测试栅栏函数
@@ -59,6 +61,12 @@
     dispatch_async(queue, ^{
         NSLog(@"blk3 = %@", [NSThread currentThread]);
     });
+}
+
+//测试全局并发队列
+- (void)testGlobalConcurrentQueue
+{
+
 }
 
 //总结:
