@@ -31,7 +31,7 @@
     //这三个请求不相互干扰,各自拿回各自数据
     //如果相互干扰,怎么办呢????????????
     //有人会说用异步串行队列,但是队列只会一直往下执行,中间的数据处理怎么半
-    // 1、刮起队列
+    // 1、挂起队列
     // 2、NSOPeration
     dispatch_group_async(group, queue, ^{
         [NSThread sleepForTimeInterval:5.0];

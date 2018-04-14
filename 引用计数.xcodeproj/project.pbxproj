@@ -43,6 +43,7 @@
 		11A2A4022074B18E00B4AFF4 /* ARCOwnershipAutoUnRetainedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A4012074B18E00B4AFF4 /* ARCOwnershipAutoUnRetainedController.m */; };
 		11A2A4052074B40D00B4AFF4 /* ReferenceCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A4042074B40D00B4AFF4 /* ReferenceCountViewController.m */; };
 		11A2A4092074D51400B4AFF4 /* AttributesCompareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A4082074D51400B4AFF4 /* AttributesCompareViewController.m */; };
+		11AAA99D2081ADB600DE7CA4 /* DispatchTargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AAA99C2081ADB600DE7CA4 /* DispatchTargetViewController.m */; };
 		11B8FD3D20760F48009878D2 /* RunTimeViewListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8FD3C20760F48009878D2 /* RunTimeViewListController.m */; };
 		11B8FD422076105F009878D2 /* ISAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8FD412076105F009878D2 /* ISAViewController.m */; };
 		11B8FD4620761C6F009878D2 /* msgSendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8FD4520761C6F009878D2 /* msgSendViewController.m */; };
@@ -123,6 +124,8 @@
 		11A2A4042074B40D00B4AFF4 /* ReferenceCountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReferenceCountViewController.m; sourceTree = "<group>"; };
 		11A2A4072074D51400B4AFF4 /* AttributesCompareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttributesCompareViewController.h; sourceTree = "<group>"; };
 		11A2A4082074D51400B4AFF4 /* AttributesCompareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttributesCompareViewController.m; sourceTree = "<group>"; };
+		11AAA99B2081ADB600DE7CA4 /* DispatchTargetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchTargetViewController.h; sourceTree = "<group>"; };
+		11AAA99C2081ADB600DE7CA4 /* DispatchTargetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchTargetViewController.m; sourceTree = "<group>"; };
 		11B8FD3B20760F48009878D2 /* RunTimeViewListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunTimeViewListController.h; sourceTree = "<group>"; };
 		11B8FD3C20760F48009878D2 /* RunTimeViewListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunTimeViewListController.m; sourceTree = "<group>"; };
 		11B8FD402076105F009878D2 /* ISAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISAViewController.h; sourceTree = "<group>"; };
@@ -523,6 +526,15 @@
 			name = "关键字比较";
 			sourceTree = "<group>";
 		};
+		11AAA99A2081AD8400DE7CA4 /* DispatchTarget */ = {
+			isa = PBXGroup;
+			children = (
+				11AAA99B2081ADB600DE7CA4 /* DispatchTargetViewController.h */,
+				11AAA99C2081ADB600DE7CA4 /* DispatchTargetViewController.m */,
+			);
+			name = DispatchTarget;
+			sourceTree = "<group>";
+		};
 		11B8FD3A20760F11009878D2 /* 运行时知识补充 */ = {
 			isa = PBXGroup;
 			children = (
@@ -577,6 +589,7 @@
 			isa = PBXGroup;
 			children = (
 				11232EED207DF765000824B2 /* GCD基础知识 */,
+				11AAA99A2081AD8400DE7CA4 /* DispatchTarget */,
 				11232EEE207DF77D000824B2 /* DispatchGroup */,
 				11232EF2207DFCB0000824B2 /* dispatchBarrier */,
 				11232EF9207DFE65000824B2 /* dispatchSemaphore */,
@@ -670,6 +683,7 @@
 				11A2A4022074B18E00B4AFF4 /* ARCOwnershipAutoUnRetainedController.m in Sources */,
 				1174AC85207B5A23002996C5 /* InterceptedObjectsMRCController.m in Sources */,
 				1174AC82207B189A002996C5 /* BlockStorageMRCController.m in Sources */,
+				11AAA99D2081ADB600DE7CA4 /* DispatchTargetViewController.m in Sources */,
 				1115737920660DFC00EB426C /* ViewController.m in Sources */,
 				11B8FD4620761C6F009878D2 /* msgSendViewController.m in Sources */,
 				11A2A4092074D51400B4AFF4 /* AttributesCompareViewController.m in Sources */,
