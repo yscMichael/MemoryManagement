@@ -24,6 +24,7 @@
 		11232EF1207DF7B6000824B2 /* DispatchGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11232EF0207DF7B6000824B2 /* DispatchGroupViewController.m */; };
 		11232EF8207DFD35000824B2 /* DispatchBarrierController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11232EF7207DFD35000824B2 /* DispatchBarrierController.m */; };
 		11232EFC207DFE8C000824B2 /* DispatchSemaphoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11232EFB207DFE8C000824B2 /* DispatchSemaphoreController.m */; };
+		113ABED520830CCD00847675 /* shareObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABED420830CCD00847675 /* shareObject.m */; };
 		1174AC82207B189A002996C5 /* BlockStorageMRCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC81207B189A002996C5 /* BlockStorageMRCController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1174AC85207B5A23002996C5 /* InterceptedObjectsMRCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC84207B5A23002996C5 /* InterceptedObjectsMRCController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1174AC88207B5A64002996C5 /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC87207B5A64002996C5 /* MyClass.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -90,6 +91,8 @@
 		11232EF7207DFD35000824B2 /* DispatchBarrierController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchBarrierController.m; sourceTree = "<group>"; };
 		11232EFA207DFE8C000824B2 /* DispatchSemaphoreController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchSemaphoreController.h; sourceTree = "<group>"; };
 		11232EFB207DFE8C000824B2 /* DispatchSemaphoreController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchSemaphoreController.m; sourceTree = "<group>"; };
+		113ABED320830CCD00847675 /* shareObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shareObject.h; sourceTree = "<group>"; };
+		113ABED420830CCD00847675 /* shareObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shareObject.m; sourceTree = "<group>"; };
 		1174AC80207B189A002996C5 /* BlockStorageMRCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockStorageMRCController.h; sourceTree = "<group>"; };
 		1174AC81207B189A002996C5 /* BlockStorageMRCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockStorageMRCController.m; sourceTree = "<group>"; };
 		1174AC83207B5A23002996C5 /* InterceptedObjectsMRCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterceptedObjectsMRCController.h; sourceTree = "<group>"; };
@@ -578,6 +581,8 @@
 		11AAA9AE20823F0D00DE7CA4 /* DispatchOnce */ = {
 			isa = PBXGroup;
 			children = (
+				113ABED320830CCD00847675 /* shareObject.h */,
+				113ABED420830CCD00847675 /* shareObject.m */,
 				11AAA9AF20823F2F00DE7CA4 /* DispatchOnceViewController.h */,
 				11AAA9B020823F2F00DE7CA4 /* DispatchOnceViewController.m */,
 			);
@@ -784,6 +789,7 @@
 				112018F92078C34C00C9567A /* InterceptedObjectsController.m in Sources */,
 				11B8FD3D20760F48009878D2 /* RunTimeViewListController.m in Sources */,
 				11A2A3FF2074B18100B4AFF4 /* ARCOwnershipAutoWeakController.m in Sources */,
+				113ABED520830CCD00847675 /* shareObject.m in Sources */,
 				1115737320660DFC00EB426C /* main.m in Sources */,
 				11A2A3E120732C9100B4AFF4 /* Animal.m in Sources */,
 				11A2A3F020735F0200B4AFF4 /* NSObject+Category.m in Sources */,
