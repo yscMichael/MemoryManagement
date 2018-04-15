@@ -90,6 +90,7 @@
                           @"引用计数",
                           @"Block",
                           @"GCD",
+                          @"NSOperation",
                           @"运行时",nil];
     }
     return _sectionSource;
@@ -128,6 +129,7 @@
                         @"Dispatch Suspend",
                         @"Dispatch Semaphore",
                         @"Dispatch Once"],
+                      @[@"NSOperation基础知识"],
                       @[@"isa指针详解",
                         @"objc_msgSend详解",],nil];
     }
@@ -166,6 +168,7 @@
                               @"DispatchSuspendController",
                               @"DispatchSemaphoreController",
                               @"DispatchOnceViewController"],
+                            @[@"NSOperationBasicViewController"],
                             @[@"ISAViewController",
                               @"msgSendViewController",
                               @"MessageForwardingController"],nil];

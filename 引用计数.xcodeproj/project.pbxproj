@@ -25,6 +25,8 @@
 		11232EF8207DFD35000824B2 /* DispatchBarrierController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11232EF7207DFD35000824B2 /* DispatchBarrierController.m */; };
 		11232EFC207DFE8C000824B2 /* DispatchSemaphoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11232EFB207DFE8C000824B2 /* DispatchSemaphoreController.m */; };
 		113ABED520830CCD00847675 /* shareObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABED420830CCD00847675 /* shareObject.m */; };
+		113ABED82083217900847675 /* NSOperationBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABED72083217900847675 /* NSOperationBasicViewController.m */; };
+		113ABEDC20833A7700847675 /* YYOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABEDB20833A7700847675 /* YYOperation.m */; };
 		1174AC82207B189A002996C5 /* BlockStorageMRCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC81207B189A002996C5 /* BlockStorageMRCController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1174AC85207B5A23002996C5 /* InterceptedObjectsMRCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC84207B5A23002996C5 /* InterceptedObjectsMRCController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1174AC88207B5A64002996C5 /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC87207B5A64002996C5 /* MyClass.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -93,6 +95,10 @@
 		11232EFB207DFE8C000824B2 /* DispatchSemaphoreController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchSemaphoreController.m; sourceTree = "<group>"; };
 		113ABED320830CCD00847675 /* shareObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shareObject.h; sourceTree = "<group>"; };
 		113ABED420830CCD00847675 /* shareObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shareObject.m; sourceTree = "<group>"; };
+		113ABED62083217900847675 /* NSOperationBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSOperationBasicViewController.h; sourceTree = "<group>"; };
+		113ABED72083217900847675 /* NSOperationBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSOperationBasicViewController.m; sourceTree = "<group>"; };
+		113ABEDA20833A7700847675 /* YYOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYOperation.h; sourceTree = "<group>"; };
+		113ABEDB20833A7700847675 /* YYOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYOperation.m; sourceTree = "<group>"; };
 		1174AC80207B189A002996C5 /* BlockStorageMRCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockStorageMRCController.h; sourceTree = "<group>"; };
 		1174AC81207B189A002996C5 /* BlockStorageMRCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockStorageMRCController.m; sourceTree = "<group>"; };
 		1174AC83207B5A23002996C5 /* InterceptedObjectsMRCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterceptedObjectsMRCController.h; sourceTree = "<group>"; };
@@ -371,6 +377,17 @@
 			name = dispatchSemaphore;
 			sourceTree = "<group>";
 		};
+		113ABED920833A3700847675 /* NSOperation基础知识 */ = {
+			isa = PBXGroup;
+			children = (
+				113ABEDA20833A7700847675 /* YYOperation.h */,
+				113ABEDB20833A7700847675 /* YYOperation.m */,
+				113ABED62083217900847675 /* NSOperationBasicViewController.h */,
+				113ABED72083217900847675 /* NSOperationBasicViewController.m */,
+			);
+			name = "NSOperation基础知识";
+			sourceTree = "<group>";
+		};
 		1174AC7E207B1880002996C5 /* ARC */ = {
 			isa = PBXGroup;
 			children = (
@@ -606,6 +623,7 @@
 		11AAA9B42082401300DE7CA4 /* NSOperation知识详解 */ = {
 			isa = PBXGroup;
 			children = (
+				113ABED920833A3700847675 /* NSOperation基础知识 */,
 			);
 			name = "NSOperation知识详解";
 			sourceTree = "<group>";
@@ -778,6 +796,7 @@
 				112018F12078B39100C9567A /* BlockSyntaxViewController.m in Sources */,
 				1174AC88207B5A64002996C5 /* MyClass.m in Sources */,
 				1174ACB6207B8278002996C5 /* ExampleBlockMRCController.m in Sources */,
+				113ABEDC20833A7700847675 /* YYOperation.m in Sources */,
 				11AAA9A92081C8E900DE7CA4 /* DispatchApplyViewController.m in Sources */,
 				11A2A3D0207219BB00B4AFF4 /* AutoReleaseMemoryViewController.m in Sources */,
 				117F8D9E207BAA5F0058825B /* CGDBasicViewController.m in Sources */,
@@ -790,6 +809,7 @@
 				11B8FD3D20760F48009878D2 /* RunTimeViewListController.m in Sources */,
 				11A2A3FF2074B18100B4AFF4 /* ARCOwnershipAutoWeakController.m in Sources */,
 				113ABED520830CCD00847675 /* shareObject.m in Sources */,
+				113ABED82083217900847675 /* NSOperationBasicViewController.m in Sources */,
 				1115737320660DFC00EB426C /* main.m in Sources */,
 				11A2A3E120732C9100B4AFF4 /* Animal.m in Sources */,
 				11A2A3F020735F0200B4AFF4 /* NSObject+Category.m in Sources */,
