@@ -38,6 +38,7 @@ static shareObject *instance = nil;
 
 //还有一种实现方式
 //不建议<性能不比dispatch_once高>
+//原因猜测:可能每次都要执行判断操作,dispatch_once连判断操作都不要
 + (instancetype)shareOther
 {
     @synchronized(self)
