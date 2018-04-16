@@ -11,6 +11,11 @@
 
 @interface NSOperationBasicViewController ()
 
+//火车票数目
+@property (nonatomic ,assign) NSInteger ticketSurplusCount;
+//加锁
+@property (nonatomic ,strong) NSLock *lock;
+
 @end
 
 @implementation NSOperationBasicViewController
@@ -47,8 +52,59 @@
     //[self testOperationDependency];
 
     //7、线程之间依赖关系
-    [self testOperationQueueCommunication];
+    //[self testOperationQueueCommunication];
+
+    //8、线程非安全
+    //[self testThreadInsecure];
+
+    //9、线程安全
+    [self testThreadSecurity];
 }
+
+//总结:
+//一、为什么使用NSOperation、NSOperationQueue,国外使用较多.
+//   1、先搞清两者的关系,NSOpertaionQueue用GCD构建封装的,是GCD的高级抽象!
+//   2、FIFO队列,而NSOperationQueue中的队列可以被重新设置优先级,
+//      从而实现不同操作的执行顺序调整.
+//   3、GCD不支持异步操作之间的依赖关系设置.
+//      如果某个操作的依赖另一个操作的数据(生产者-消费者模型是其中之一),
+//      使用NSOperationQueue能够按照正确的顺序执行操作.GCD则没有内建的依赖关系支持.
+//   4、NSOperationQueue支持KVO,意味着我们可以观察任务的执行状态.
+//
+//   性能上分析:
+//   1、GCD更接近底层,而NSOperationQueue则更高级抽象.
+//      所以GCD在追求性能的底层操作来说,是速度最快的.
+//      这取决于使用Instruments进行代码性能分析,如有必要的话.
+//   2、从异步操作之间的事务性,顺序性,依赖关系.
+//      GCD需要自己写更多的代码来实现,而NSOperationQueue已经内建了这些支持
+//   3、如果异步操作的过程需要更多的被交互和UI呈现出来,NSOperationQueue会是一个更好的选择.
+//      底层代码中,任务之间不太互相依赖,而需要更高的并发能力,GCD则更有优势
+//
+//   总结:高级封装、FIFO和优先级、是否容易设置异步操作依赖、是否支持KVO
+//
+//  二、操作和队列
+//    1、操作(Operation):执行操作的意思,换句话说就是你在线程中执行的那段代码.
+//       GCD:放在 block 中的
+//       NSOperation:NSInvocationOperation、NSBlockOperation、自定义Operation
+//
+//    2、队列(Operation Queues):
+//      GCD:FIFO（先进先出）的原则
+//      NSOperation:对于添加到队列中的操作;谁先准备好(还有优先级),谁就执行
+//
+//    3、并发和串行
+//      GCD:声明并行队列,串行队列
+//      NSOperation:通过设置最大并发操作数(maxConcurrentOperationCount)来控制并发、串行
+//                 :提供两种不同的队列(主队列和自定义队列)
+//    4、异步和同步
+//       GCD:dispatch_async和dispatch_sync
+//       NSOperation:主队列默认在主线程执行,自定义队列默认在后台执行(会开辟子线程)
+//                  :是否异步或者同步由任务之间的依赖关系决定
+//
+//    5、资源限制
+//      GCD:信号量
+//      NSOperation:maxConcurrentOperationCount(也控制并发和串行)
+
+
 
 //NSInvocationOperation
 //结果:阻塞主线程(不给任务指定线程的话,默认在当前线程执行,这里当前线程是主线程)
@@ -359,8 +415,193 @@
 }
 
 //线程同步和线程安全
+//线程安全：如果你的代码所在的进程中有多个线程在同时运行，而这些线程可能会同时运行这段代码。如果每次运行结果和单线程运行的结果是一样的，而且其他的变量的值也和预期的是一样的，就是线程安全的。 若每个线程中对全局变量、静态变量只有读操作，而无写操作，一般来说，这个全局变量是线程安全的；若有多个线程同时执行写操作（更改变量），一般都需要考虑线程同步，否则的话就可能影响线程安全。
+//
+//线程同步：可理解为线程 A 和 线程 B 一块配合，A 执行到一定程度时要依靠线程 B 的某个结果，于是停下来，示意 B 运行；B 依言执行，再将结果给 A；A 再继续操作。
+//
+//
+// 场景:下面，我们模拟火车票售卖的方式，实现 NSOperation 线程安全和解决线程同步问题。 场景：总共有50张火车票，有两个售卖火车票的窗口，一个是北京火车票售卖窗口，另一个是上海火车票售卖窗口。两个窗口同时售卖火车票，卖完为止。
+//
+//
+//
 
+//测试线程非安全
+- (void)testThreadInsecure
+{
+    NSLog(@"currentThread---%@",[NSThread currentThread]);
+    self.ticketSurplusCount = 50;
 
+    //1.创建 queue1
+    //queue1 代表北京火车票售卖窗口
+    NSOperationQueue *queue1 = [[NSOperationQueue alloc] init];
+    queue1.maxConcurrentOperationCount = 1;
+
+    //2.创建 queue2
+    //queue2 代表上海火车票售卖窗口
+    NSOperationQueue *queue2 = [[NSOperationQueue alloc] init];
+    queue2.maxConcurrentOperationCount = 1;
+
+    //3.创建卖票操作 op1
+    __weak typeof(self) weakSelf = self;
+    NSBlockOperation *op1 = [NSBlockOperation blockOperationWithBlock:^{
+        [weakSelf saleTicketNotSafe];
+    }];
+
+    //4.创建卖票操作 op2
+    NSBlockOperation *op2 = [NSBlockOperation blockOperationWithBlock:^{
+        [weakSelf saleTicketNotSafe];
+    }];
+
+    //5.添加操作，开始卖票
+    [queue1 addOperation:op1];
+    [queue2 addOperation:op2];
+}
+
+/**
+ * 售卖火车票(非线程安全)
+ */
+- (void)saleTicketNotSafe
+{
+    while (1)
+    {
+        if (self.ticketSurplusCount > 0)
+        {
+            //如果还有票，继续售卖
+            self.ticketSurplusCount--;
+            NSLog(@"%@", [NSString stringWithFormat:@"剩余票数:%ld 窗口:%@", (long)self.ticketSurplusCount, [NSThread currentThread]]);
+            [NSThread sleepForTimeInterval:0.2];
+        }
+        else
+        {
+            NSLog(@"所有火车票均已售完");
+            break;
+        }
+    }
+}
+
+//线程安全解决方案：可以给线程加锁，在一个线程执行该操作的时候，不允许其他线程进行操作。iOS 实现线程加锁有很多种方式。@synchronized、 NSLock、NSRecursiveLock、NSCondition、NSConditionLock、pthread_mutex、dispatch_semaphore、OSSpinLock、atomic(property) set/ge等等各种方式。这里我们使用 NSLock 对象来解决线程同步问题。NSLock 对象可以通过进入锁时调用 lock 方法，解锁时调用 unlock 方法来保证线程安全。
+
+//测试线程安全
+- (void)testThreadSecurity
+{
+    NSLog(@"currentThread---%@",[NSThread currentThread]);
+    self.ticketSurplusCount = 50;
+
+    self.lock = [[NSLock alloc] init];//初始化 NSLock 对象
+
+    //1.创建queue1
+    //queue1 代表北京火车票售卖窗口
+    NSOperationQueue *queue1 = [[NSOperationQueue alloc] init];
+    queue1.maxConcurrentOperationCount = 1;
+
+    //2.创建queue2
+    //queue2 代表上海火车票售卖窗口
+    NSOperationQueue *queue2 = [[NSOperationQueue alloc] init];
+    queue2.maxConcurrentOperationCount = 1;
+
+    //3.创建卖票操作 op1
+    __weak typeof(self) weakSelf = self;
+    NSBlockOperation *op1 = [NSBlockOperation blockOperationWithBlock:^{
+        [weakSelf saleTicketSafe];
+    }];
+
+    //4.创建卖票操作 op2
+    NSBlockOperation *op2 = [NSBlockOperation blockOperationWithBlock:^{
+        [weakSelf saleTicketSafe];
+    }];
+
+    //5.添加操作，开始卖票
+    [queue1 addOperation:op1];
+    [queue2 addOperation:op2];
+}
+
+/**
+ * 售卖火车票(线程安全)
+ */
+- (void)saleTicketSafe
+{
+    while (1)
+    {
+        //加锁
+        [self.lock lock];
+
+        if (self.ticketSurplusCount > 0)
+        {
+            //如果还有票，继续售卖
+            self.ticketSurplusCount--;
+            NSLog(@"%@", [NSString stringWithFormat:@"剩余票数:%ld 窗口:%@", (long)self.ticketSurplusCount, [NSThread currentThread]]);
+            [NSThread sleepForTimeInterval:0.2];
+        }
+
+        //解锁
+        [self.lock unlock];
+
+        if (self.ticketSurplusCount <= 0)
+        {
+            NSLog(@"所有火车票均已售完");
+            break;
+        }
+    }
+}
+
+//常用属性
+//1、NSOperation常用属性
+//取消操作方法
+//
+//- (void)cancel; 可取消操作，实质是标记 isCancelled 状态。
+//
+//判断操作状态方法
+//
+//- (BOOL)isFinished; 判断操作是否已经结束。
+//
+//- (BOOL)isCancelled; 判断操作是否已经标记为取消。
+//
+//- (BOOL)isExecuting; 判断操作是否正在在运行。
+//
+//- (BOOL)isReady; 判断操作是否处于准备就绪状态，这个值和操作的依赖关系相关。
+//
+//操作同步
+//
+//- (void)waitUntilFinished; 阻塞当前线程，直到该操作结束。可用于线程执行顺序的同步。
+//
+//- (void)setCompletionBlock:(void (^)(void))block; completionBlock 会在当前操作执行完毕时执行 completionBlock。
+//
+//- (void)addDependency:(NSOperation *)op; 添加依赖，使当前操作依赖于操作 op 的完成。
+//
+//- (void)removeDependency:(NSOperation *)op; 移除依赖，取消当前操作对操作 op 的依赖。
+//
+//@property (readonly, copy) NSArray *dependencies; 在当前操作开始执行之前完成执行的所有操作对象数组。
+//
+//2、NSOperationQueue 常用属性和方法
+//
+//取消/暂停/恢复操作
+//
+//- (void)cancelAllOperations; 可以取消队列的所有操作。
+//
+//- (BOOL)isSuspended; 判断队列是否处于暂停状态。 YES 为暂停状态，NO 为恢复状态。
+//
+//- (void)setSuspended:(BOOL)b; 可设置操作的暂停和恢复，YES 代表暂停队列，NO 代表恢复队列。
+//
+//操作同步
+//
+//- (void)waitUntilAllOperationsAreFinished; 阻塞当前线程，直到队列中的操作全部执行完毕。
+//
+//添加/获取操作`
+//
+//- (void)addOperationWithBlock:(void (^)(void))block; 向队列中添加一个 NSBlockOperation 类型操作对象。
+//
+//- (void)addOperations:(NSArray *)ops waitUntilFinished:(BOOL)wait; 向队列中添加操作数组，wait 标志是否阻塞当前线程直到所有操作结束
+//
+//- (NSArray *)operations; 当前在队列中的操作数组（某个操作执行结束后会自动从这个数组清除）。
+//
+//- (NSUInteger)operationCount; 当前队列中的操作数。
+//
+//获取队列
+//
+//+ (id)currentQueue; 获取当前队列，如果当前线程不是在 NSOperationQueue 上运行则返回 nil。
+//
+//+ (id)mainQueue; 获取主队列。
+//
 
 //参考网址:
 //   1、NSOperation详细总结

@@ -388,6 +388,78 @@
 			name = "NSOperation基础知识";
 			sourceTree = "<group>";
 		};
+		113ABEDD2084E0BE00847675 /* NSInvocationOperation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = NSInvocationOperation;
+			sourceTree = "<group>";
+		};
+		113ABEDE2084E0E600847675 /* NSBlockOperation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = NSBlockOperation;
+			sourceTree = "<group>";
+		};
+		113ABEDF2084E0F700847675 /* 自定义NSOperation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "自定义NSOperation";
+			sourceTree = "<group>";
+		};
+		113ABEE02084E15400847675 /* NSOperationQueue */ = {
+			isa = PBXGroup;
+			children = (
+				113ABEE12084E1AC00847675 /* 主队列 */,
+				113ABEE22084E1BD00847675 /* 自定义队列 */,
+			);
+			name = NSOperationQueue;
+			sourceTree = "<group>";
+		};
+		113ABEE12084E1AC00847675 /* 主队列 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "主队列";
+			sourceTree = "<group>";
+		};
+		113ABEE22084E1BD00847675 /* 自定义队列 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "自定义队列";
+			sourceTree = "<group>";
+		};
+		113ABEE32084E1D900847675 /* NSOperation操作依赖 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "NSOperation操作依赖";
+			sourceTree = "<group>";
+		};
+		113ABEE42084E1F300847675 /* NSOperation优先级 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "NSOperation优先级";
+			sourceTree = "<group>";
+		};
+		113ABEE52084E20C00847675 /* NSOperationQueue线程间的通信 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "NSOperationQueue线程间的通信";
+			sourceTree = "<group>";
+		};
+		113ABEE62084E22700847675 /* NSOperationQueue线程同步和线程安全 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "NSOperationQueue线程同步和线程安全";
+			sourceTree = "<group>";
+		};
 		1174AC7E207B1880002996C5 /* ARC */ = {
 			isa = PBXGroup;
 			children = (
@@ -624,6 +696,14 @@
 			isa = PBXGroup;
 			children = (
 				113ABED920833A3700847675 /* NSOperation基础知识 */,
+				113ABEDD2084E0BE00847675 /* NSInvocationOperation */,
+				113ABEDE2084E0E600847675 /* NSBlockOperation */,
+				113ABEDF2084E0F700847675 /* 自定义NSOperation */,
+				113ABEE02084E15400847675 /* NSOperationQueue */,
+				113ABEE32084E1D900847675 /* NSOperation操作依赖 */,
+				113ABEE42084E1F300847675 /* NSOperation优先级 */,
+				113ABEE52084E20C00847675 /* NSOperationQueue线程间的通信 */,
+				113ABEE62084E22700847675 /* NSOperationQueue线程同步和线程安全 */,
 			);
 			name = "NSOperation知识详解";
 			sourceTree = "<group>";
