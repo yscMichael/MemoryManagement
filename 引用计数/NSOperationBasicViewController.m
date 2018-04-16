@@ -20,23 +20,34 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
 
-    //NSInvocationOperation
+    //1、NSInvocationOperation
     //[self testInvocationOperation];
 
-    //NSBlockOperation单个任务
+    //2、NSBlockOperation单个任务
     //[self testBlockOperationOne];
     //NSBlockOperation多个任务
     //[self testBlockOperationMore];
 
-    //自定义Operation
+    //3、自定义Operation
     //[self testCustomizeOperation];
 
-    //创建主队列
+    //4、创建主队列
     //[self testOperationMainQueueOne];
     //[self testOperationMainQueueTwo];
-    //创建自定义队列
+
+    //5、创建自定义队列
+    //这里是并发队列,开启子线程
     //[self testOperationCustomizeQueueOne];
+    //这里是并发队列,开启子线程
     //[self testOperationCustomizeQueueTwo];
+    //这里尝试串行队列(也会开启子线程)和并发队列
+    //[self testMaxConcurrentOperationCount];
+
+    //6、依赖关系
+    //[self testOperationDependency];
+
+    //7、线程之间依赖关系
+    [self testOperationQueueCommunication];
 }
 
 //NSInvocationOperation
@@ -218,6 +229,138 @@
             NSLog(@"3---%@", [NSThread currentThread]);
     }];
 }
+//以上是NSOperationQueue并发执行
+
+//NSOperationQueue的串行操作
+//通过maxConcurrentOperationCount来实现
+//结果:开辟新的子线程(因为队列数不一样,打印速度也不一样)
+//注意:这里maxConcurrentOperationCount控制的不是并发线程的数量,而是一个队列中同时能并发执行的最大
+//操作数.而且一个操作也并非只能在一个线程中运行
+- (void)testMaxConcurrentOperationCount
+{
+    //1.创建队列
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+
+    //2.设置最大并发操作数
+    //queue.maxConcurrentOperationCount = 1; //串行队列(也开辟子线程了)
+    //queue.maxConcurrentOperationCount = 2; //并发队列
+    queue.maxConcurrentOperationCount = 8; //并发队列
+
+    //3.添加操作
+    [queue addOperationWithBlock:^{
+        for (int i = 0; i < 2; i ++)
+        {
+            [NSThread sleepForTimeInterval:3];
+            NSLog(@"1--%d--%@", i,[NSThread currentThread]);
+        }
+    }];
+    [queue addOperationWithBlock:^{
+        for (int i = 0; i < 2; i ++)
+        {
+            [NSThread sleepForTimeInterval:2];
+            NSLog(@"2--%d--%@", i,[NSThread currentThread]);
+        }
+    }];
+    [queue addOperationWithBlock:^{
+        for (int i = 0; i < 2; i ++)
+        {
+            [NSThread sleepForTimeInterval:1];
+            NSLog(@"3--%d--%@", i,[NSThread currentThread]);
+        }
+    }];
+    [queue addOperationWithBlock:^{
+        for (int i = 0; i < 2; i ++)
+        {
+            [NSThread sleepForTimeInterval:4];
+            NSLog(@"4--%d--%@", i,[NSThread currentThread]);
+        }
+    }];
+    [queue addOperationWithBlock:^{
+        for (int i = 0; i < 2; i ++)
+        {
+            [NSThread sleepForTimeInterval:3];
+            NSLog(@"5--%d--%@", i,[NSThread currentThread]);
+        }
+    }];
+    [queue addOperationWithBlock:^{
+        for (int i = 0; i < 2; i ++)
+        {
+            [NSThread sleepForTimeInterval:1];
+            NSLog(@"6--%d--%@", i,[NSThread currentThread]);
+        }
+    }];
+}
+
+//NSOperation 操作依赖
+//场景:有A、B两个操作,其中A执行完操作,B才能执行操作
+//结果:开辟新的子线程,不过op2先执行,后执行op1
+- (void)testOperationDependency
+{
+    //1.创建队列
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    //2.创建操作
+    NSBlockOperation *op1 = [NSBlockOperation blockOperationWithBlock:^{
+        for (int i = 0; i < 2; i++)
+        {
+            [NSThread sleepForTimeInterval:2];
+            NSLog(@"1--%d--%@", i,[NSThread currentThread]);
+        }
+    }];
+    NSBlockOperation *op2 = [NSBlockOperation blockOperationWithBlock:^{
+        for (int i = 0; i < 2; i++)
+        {
+            [NSThread sleepForTimeInterval:2];
+            NSLog(@"2--%d--%@", i,[NSThread currentThread]);
+        }
+    }];
+
+    //3.添加依赖
+    [op1 addDependency:op2]; //让op2依赖于op1,则先执行op1,在执行op2
+
+    //4.添加操作到队列中
+    [queue addOperation:op1];
+    [queue addOperation:op2];
+}
+
+//NSOperation 优先级
+//NSOperation 提供了queuePriority（优先级）属性
+//queuePriority属性适用于同一操作队列中的操作，不适用于不同操作队列中的操作
+//* queuePriority 属性决定了进入准备就绪状态下的操作之间的开始执行顺序。并且，优先级不能取代依赖关系
+
+
+//线程之间进行通信
+- (void)testOperationQueueCommunication
+{
+    //1.创建队列
+    NSOperationQueue *queue = [[NSOperationQueue alloc]init];
+
+    //2.添加操作
+    [queue addOperationWithBlock:^{
+        //异步进行耗时操作
+        for (int i = 0; i < 2; i++)
+        {
+            [NSThread sleepForTimeInterval:2];
+            NSLog(@"1--%d--%@", i,[NSThread currentThread]);
+        }
+
+        //回到主线程
+        //这里稍后执行
+        [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+            // 进行一些UI、刷新等操作
+            for (int i = 0; i < 2; i++)
+            {
+                [NSThread sleepForTimeInterval:2];
+                NSLog(@"2--%d--%@", i,[NSThread currentThread]);
+            }
+        }];
+
+        NSLog(@"hello world");
+    }];
+}
+
+//线程同步和线程安全
+
+
 
 //参考网址:
 //   1、NSOperation详细总结
