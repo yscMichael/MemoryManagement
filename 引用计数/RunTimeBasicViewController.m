@@ -19,6 +19,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
 
+    NSLog(@"我是runtime控制器");
 }
 
 //总结:

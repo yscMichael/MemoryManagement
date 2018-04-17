@@ -14,6 +14,8 @@
 		1110660A2085EB7D002B5C38 /* SDWebImageBasicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111066092085EB7D002B5C38 /* SDWebImageBasicController.m */; };
 		1110660D2085EBA8002B5C38 /* ResponseChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110660C2085EBA8002B5C38 /* ResponseChainViewController.m */; };
 		111066112085EBFA002B5C38 /* LoadAndInitializeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111066102085EBFA002B5C38 /* LoadAndInitializeViewController.m */; };
+		111066172085F4DB002B5C38 /* UIViewController+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 111066162085F4DB002B5C38 /* UIViewController+Swizzling.m */; };
+		1110661A2086325C002B5C38 /* SwizzlingMethodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111066192086325C002B5C38 /* SwizzlingMethodViewController.m */; };
 		1115737320660DFC00EB426C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1115737220660DFC00EB426C /* main.m */; };
 		1115737620660DFC00EB426C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1115737520660DFC00EB426C /* AppDelegate.m */; };
 		1115737920660DFC00EB426C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1115737820660DFC00EB426C /* ViewController.m */; };
@@ -91,6 +93,10 @@
 		1110660C2085EBA8002B5C38 /* ResponseChainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResponseChainViewController.m; sourceTree = "<group>"; };
 		1110660F2085EBFA002B5C38 /* LoadAndInitializeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadAndInitializeViewController.h; sourceTree = "<group>"; };
 		111066102085EBFA002B5C38 /* LoadAndInitializeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadAndInitializeViewController.m; sourceTree = "<group>"; };
+		111066152085F4DB002B5C38 /* UIViewController+Swizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Swizzling.h"; sourceTree = "<group>"; };
+		111066162085F4DB002B5C38 /* UIViewController+Swizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Swizzling.m"; sourceTree = "<group>"; };
+		111066182086325C002B5C38 /* SwizzlingMethodViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwizzlingMethodViewController.h; sourceTree = "<group>"; };
+		111066192086325C002B5C38 /* SwizzlingMethodViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwizzlingMethodViewController.m; sourceTree = "<group>"; };
 		1115736E20660DFC00EB426C /* 引用计数.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "引用计数.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1115737220660DFC00EB426C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1115737420660DFC00EB426C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -318,6 +324,10 @@
 		111065FD2085E613002B5C38 /* 动态交换两个方法 */ = {
 			isa = PBXGroup;
 			children = (
+				111066152085F4DB002B5C38 /* UIViewController+Swizzling.h */,
+				111066162085F4DB002B5C38 /* UIViewController+Swizzling.m */,
+				111066182086325C002B5C38 /* SwizzlingMethodViewController.h */,
+				111066192086325C002B5C38 /* SwizzlingMethodViewController.m */,
 			);
 			name = "动态交换两个方法";
 			sourceTree = "<group>";
@@ -904,13 +914,13 @@
 			isa = PBXGroup;
 			children = (
 				111065F92085D58C002B5C38 /* runtime基础知识 */,
+				111065FD2085E613002B5C38 /* 动态交换两个方法 */,
 				111066032085E66D002B5C38 /* 实现 NSCoding 的自动归档和解档 */,
 				111066022085E65F002B5C38 /* 拦截并替换方法 */,
 				111066012085E654002B5C38 /* 动态添加方法 */,
 				111066002085E64C002B5C38 /* 发送消息 */,
 				111065FF2085E63A002B5C38 /* 字典转模型的自动转换 */,
 				111065FE2085E62E002B5C38 /* 动态添加属性 */,
-				111065FD2085E613002B5C38 /* 动态交换两个方法 */,
 				11B8FD3F2076104C009878D2 /* isa指针解析 */,
 				11B8FD4320761C51009878D2 /* objc_msgSend解析 */,
 				11B8FD4D20765396009878D2 /* 消息转发 */,
@@ -1068,6 +1078,7 @@
 				11AAA9B120823F2F00DE7CA4 /* DispatchOnceViewController.m in Sources */,
 				113ABEFF2085B37100847675 /* QueueCommunicationController.m in Sources */,
 				1115737920660DFC00EB426C /* ViewController.m in Sources */,
+				1110661A2086325C002B5C38 /* SwizzlingMethodViewController.m in Sources */,
 				11B8FD4620761C6F009878D2 /* msgSendViewController.m in Sources */,
 				113ABEED208594A900847675 /* BlockOperationViewController.m in Sources */,
 				11A2A4092074D51400B4AFF4 /* AttributesCompareViewController.m in Sources */,
@@ -1110,6 +1121,7 @@
 				11A2A3F020735F0200B4AFF4 /* NSObject+Category.m in Sources */,
 				11A2A3F42074AF1D00B4AFF4 /* ARCOwnershipViewListController.m in Sources */,
 				11AAA9A12081C5E200DE7CA4 /* DispatchSyncViewController.m in Sources */,
+				111066172085F4DB002B5C38 /* UIViewController+Swizzling.m in Sources */,
 				11232EF1207DF7B6000824B2 /* DispatchGroupViewController.m in Sources */,
 				113ABF0A2085CABB00847675 /* QueueAttributesViewController.m in Sources */,
 				11A2A3DE20732B1800B4AFF4 /* AutoReleaseARCViewController.m in Sources */,
