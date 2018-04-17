@@ -27,6 +27,9 @@
 		113ABED520830CCD00847675 /* shareObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABED420830CCD00847675 /* shareObject.m */; };
 		113ABED82083217900847675 /* NSOperationBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABED72083217900847675 /* NSOperationBasicViewController.m */; };
 		113ABEDC20833A7700847675 /* YYOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABEDB20833A7700847675 /* YYOperation.m */; };
+		113ABEEA2085949900847675 /* InvocationOperationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABEE92085949900847675 /* InvocationOperationController.m */; };
+		113ABEED208594A900847675 /* BlockOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABEEC208594A900847675 /* BlockOperationViewController.m */; };
+		113ABEF0208594DF00847675 /* CustomOperationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABEEF208594DF00847675 /* CustomOperationController.m */; };
 		1174AC82207B189A002996C5 /* BlockStorageMRCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC81207B189A002996C5 /* BlockStorageMRCController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1174AC85207B5A23002996C5 /* InterceptedObjectsMRCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC84207B5A23002996C5 /* InterceptedObjectsMRCController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1174AC88207B5A64002996C5 /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC87207B5A64002996C5 /* MyClass.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -99,6 +102,12 @@
 		113ABED72083217900847675 /* NSOperationBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSOperationBasicViewController.m; sourceTree = "<group>"; };
 		113ABEDA20833A7700847675 /* YYOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYOperation.h; sourceTree = "<group>"; };
 		113ABEDB20833A7700847675 /* YYOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYOperation.m; sourceTree = "<group>"; };
+		113ABEE82085949900847675 /* InvocationOperationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InvocationOperationController.h; sourceTree = "<group>"; };
+		113ABEE92085949900847675 /* InvocationOperationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InvocationOperationController.m; sourceTree = "<group>"; };
+		113ABEEB208594A900847675 /* BlockOperationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockOperationViewController.h; sourceTree = "<group>"; };
+		113ABEEC208594A900847675 /* BlockOperationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockOperationViewController.m; sourceTree = "<group>"; };
+		113ABEEE208594DF00847675 /* CustomOperationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomOperationController.h; sourceTree = "<group>"; };
+		113ABEEF208594DF00847675 /* CustomOperationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomOperationController.m; sourceTree = "<group>"; };
 		1174AC80207B189A002996C5 /* BlockStorageMRCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockStorageMRCController.h; sourceTree = "<group>"; };
 		1174AC81207B189A002996C5 /* BlockStorageMRCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockStorageMRCController.m; sourceTree = "<group>"; };
 		1174AC83207B5A23002996C5 /* InterceptedObjectsMRCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterceptedObjectsMRCController.h; sourceTree = "<group>"; };
@@ -389,6 +398,8 @@
 		113ABEDD2084E0BE00847675 /* NSInvocationOperation */ = {
 			isa = PBXGroup;
 			children = (
+				113ABEE82085949900847675 /* InvocationOperationController.h */,
+				113ABEE92085949900847675 /* InvocationOperationController.m */,
 			);
 			name = NSInvocationOperation;
 			sourceTree = "<group>";
@@ -396,6 +407,8 @@
 		113ABEDE2084E0E600847675 /* NSBlockOperation */ = {
 			isa = PBXGroup;
 			children = (
+				113ABEEB208594A900847675 /* BlockOperationViewController.h */,
+				113ABEEC208594A900847675 /* BlockOperationViewController.m */,
 			);
 			name = NSBlockOperation;
 			sourceTree = "<group>";
@@ -405,6 +418,8 @@
 			children = (
 				113ABEDA20833A7700847675 /* YYOperation.h */,
 				113ABEDB20833A7700847675 /* YYOperation.m */,
+				113ABEEE208594DF00847675 /* CustomOperationController.h */,
+				113ABEEF208594DF00847675 /* CustomOperationController.m */,
 			);
 			name = "自定义NSOperation";
 			sourceTree = "<group>";
@@ -867,6 +882,7 @@
 				11AAA9B120823F2F00DE7CA4 /* DispatchOnceViewController.m in Sources */,
 				1115737920660DFC00EB426C /* ViewController.m in Sources */,
 				11B8FD4620761C6F009878D2 /* msgSendViewController.m in Sources */,
+				113ABEED208594A900847675 /* BlockOperationViewController.m in Sources */,
 				11A2A4092074D51400B4AFF4 /* AttributesCompareViewController.m in Sources */,
 				11FE4A1620771BFD006BD4C5 /* OtherViewController.m in Sources */,
 				11A2A3B3206F455400B4AFF4 /* Person.m in Sources */,
@@ -883,10 +899,12 @@
 				1115737620660DFC00EB426C /* AppDelegate.m in Sources */,
 				11001E2F206A300D00457CBC /* ARCOwnershipAutoReleaseController.m in Sources */,
 				112019052079112000C9567A /* blockVariableController.m in Sources */,
+				113ABEEA2085949900847675 /* InvocationOperationController.m in Sources */,
 				11B8FD422076105F009878D2 /* ISAViewController.m in Sources */,
 				11B8FD4920763159009878D2 /* Father.m in Sources */,
 				112018F92078C34C00C9567A /* InterceptedObjectsController.m in Sources */,
 				11B8FD3D20760F48009878D2 /* RunTimeViewListController.m in Sources */,
+				113ABEF0208594DF00847675 /* CustomOperationController.m in Sources */,
 				11A2A3FF2074B18100B4AFF4 /* ARCOwnershipAutoWeakController.m in Sources */,
 				113ABED520830CCD00847675 /* shareObject.m in Sources */,
 				113ABED82083217900847675 /* NSOperationBasicViewController.m in Sources */,

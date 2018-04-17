@@ -129,7 +129,10 @@
                         @"Dispatch Suspend",
                         @"Dispatch Semaphore",
                         @"Dispatch Once"],
-                      @[@"NSOperation基础知识"],
+                      @[@"NSOperation基础知识",
+                        @"Invocation Operation",
+                        @"Block Operation",
+                        @"Custom Operation"],
                       @[@"isa指针详解",
                         @"objc_msgSend详解",],nil];
     }
@@ -168,7 +171,10 @@
                               @"DispatchSuspendController",
                               @"DispatchSemaphoreController",
                               @"DispatchOnceViewController"],
-                            @[@"NSOperationBasicViewController"],
+                            @[@"NSOperationBasicViewController",
+                              @"InvocationOperationController",
+                              @"BlockOperationViewController",
+                              @"CustomOperationController"],
                             @[@"ISAViewController",
                               @"msgSendViewController",
                               @"MessageForwardingController"],nil];
