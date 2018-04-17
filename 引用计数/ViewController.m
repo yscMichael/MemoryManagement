@@ -132,7 +132,9 @@
                       @[@"NSOperation基础知识",
                         @"Invocation Operation",
                         @"Block Operation",
-                        @"Custom Operation"],
+                        @"Custom Operation",
+                        @"OperationQueue Main",
+                        @"OperationQueue Custom"],
                       @[@"isa指针详解",
                         @"objc_msgSend详解",],nil];
     }
@@ -174,7 +176,9 @@
                             @[@"NSOperationBasicViewController",
                               @"InvocationOperationController",
                               @"BlockOperationViewController",
-                              @"CustomOperationController"],
+                              @"CustomOperationController",
+                              @"OperationQueueMainController",
+                              @"OperationQueueCustomController"],
                             @[@"ISAViewController",
                               @"msgSendViewController",
                               @"MessageForwardingController"],nil];

@@ -30,6 +30,8 @@
 		113ABEEA2085949900847675 /* InvocationOperationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABEE92085949900847675 /* InvocationOperationController.m */; };
 		113ABEED208594A900847675 /* BlockOperationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABEEC208594A900847675 /* BlockOperationViewController.m */; };
 		113ABEF0208594DF00847675 /* CustomOperationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABEEF208594DF00847675 /* CustomOperationController.m */; };
+		113ABEF32085986100847675 /* OperationQueueMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABEF22085986100847675 /* OperationQueueMainController.m */; };
+		113ABEF6208598CE00847675 /* OperationQueueCustomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABEF5208598CE00847675 /* OperationQueueCustomController.m */; };
 		1174AC82207B189A002996C5 /* BlockStorageMRCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC81207B189A002996C5 /* BlockStorageMRCController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1174AC85207B5A23002996C5 /* InterceptedObjectsMRCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC84207B5A23002996C5 /* InterceptedObjectsMRCController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1174AC88207B5A64002996C5 /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC87207B5A64002996C5 /* MyClass.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -108,6 +110,10 @@
 		113ABEEC208594A900847675 /* BlockOperationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockOperationViewController.m; sourceTree = "<group>"; };
 		113ABEEE208594DF00847675 /* CustomOperationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomOperationController.h; sourceTree = "<group>"; };
 		113ABEEF208594DF00847675 /* CustomOperationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomOperationController.m; sourceTree = "<group>"; };
+		113ABEF12085986100847675 /* OperationQueueMainController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationQueueMainController.h; sourceTree = "<group>"; };
+		113ABEF22085986100847675 /* OperationQueueMainController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationQueueMainController.m; sourceTree = "<group>"; };
+		113ABEF4208598CE00847675 /* OperationQueueCustomController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationQueueCustomController.h; sourceTree = "<group>"; };
+		113ABEF5208598CE00847675 /* OperationQueueCustomController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationQueueCustomController.m; sourceTree = "<group>"; };
 		1174AC80207B189A002996C5 /* BlockStorageMRCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockStorageMRCController.h; sourceTree = "<group>"; };
 		1174AC81207B189A002996C5 /* BlockStorageMRCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockStorageMRCController.m; sourceTree = "<group>"; };
 		1174AC83207B5A23002996C5 /* InterceptedObjectsMRCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterceptedObjectsMRCController.h; sourceTree = "<group>"; };
@@ -436,6 +442,8 @@
 		113ABEE12084E1AC00847675 /* 主队列 */ = {
 			isa = PBXGroup;
 			children = (
+				113ABEF12085986100847675 /* OperationQueueMainController.h */,
+				113ABEF22085986100847675 /* OperationQueueMainController.m */,
 			);
 			name = "主队列";
 			sourceTree = "<group>";
@@ -443,6 +451,8 @@
 		113ABEE22084E1BD00847675 /* 自定义队列 */ = {
 			isa = PBXGroup;
 			children = (
+				113ABEF4208598CE00847675 /* OperationQueueCustomController.h */,
+				113ABEF5208598CE00847675 /* OperationQueueCustomController.m */,
 			);
 			name = "自定义队列";
 			sourceTree = "<group>";
@@ -885,6 +895,7 @@
 				113ABEED208594A900847675 /* BlockOperationViewController.m in Sources */,
 				11A2A4092074D51400B4AFF4 /* AttributesCompareViewController.m in Sources */,
 				11FE4A1620771BFD006BD4C5 /* OtherViewController.m in Sources */,
+				113ABEF6208598CE00847675 /* OperationQueueCustomController.m in Sources */,
 				11A2A3B3206F455400B4AFF4 /* Person.m in Sources */,
 				11232EF8207DFD35000824B2 /* DispatchBarrierController.m in Sources */,
 				11B8FD5020765430009878D2 /* MessageForwardingController.m in Sources */,
@@ -908,6 +919,7 @@
 				11A2A3FF2074B18100B4AFF4 /* ARCOwnershipAutoWeakController.m in Sources */,
 				113ABED520830CCD00847675 /* shareObject.m in Sources */,
 				113ABED82083217900847675 /* NSOperationBasicViewController.m in Sources */,
+				113ABEF32085986100847675 /* OperationQueueMainController.m in Sources */,
 				1115737320660DFC00EB426C /* main.m in Sources */,
 				11A2A3E120732C9100B4AFF4 /* Animal.m in Sources */,
 				11A2A3F020735F0200B4AFF4 /* NSObject+Category.m in Sources */,
