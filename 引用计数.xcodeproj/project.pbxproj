@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		11001E28206A2E2700457CBC /* RuleStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11001E27206A2E2700457CBC /* RuleStudyViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		11001E2F206A300D00457CBC /* ARCOwnershipAutoReleaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11001E2E206A300D00457CBC /* ARCOwnershipAutoReleaseController.m */; };
+		111065FC2085D638002B5C38 /* RunTimeBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111065FB2085D638002B5C38 /* RunTimeBasicViewController.m */; };
+		111066072085EB51002B5C38 /* RunLoopBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111066062085EB51002B5C38 /* RunLoopBasicViewController.m */; };
+		1110660A2085EB7D002B5C38 /* SDWebImageBasicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111066092085EB7D002B5C38 /* SDWebImageBasicController.m */; };
+		1110660D2085EBA8002B5C38 /* ResponseChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110660C2085EBA8002B5C38 /* ResponseChainViewController.m */; };
+		111066112085EBFA002B5C38 /* LoadAndInitializeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111066102085EBFA002B5C38 /* LoadAndInitializeViewController.m */; };
 		1115737320660DFC00EB426C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1115737220660DFC00EB426C /* main.m */; };
 		1115737620660DFC00EB426C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1115737520660DFC00EB426C /* AppDelegate.m */; };
 		1115737920660DFC00EB426C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1115737820660DFC00EB426C /* ViewController.m */; };
@@ -76,6 +81,16 @@
 		11001E27206A2E2700457CBC /* RuleStudyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuleStudyViewController.m; sourceTree = "<group>"; };
 		11001E2D206A300D00457CBC /* ARCOwnershipAutoReleaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCOwnershipAutoReleaseController.h; sourceTree = "<group>"; };
 		11001E2E206A300D00457CBC /* ARCOwnershipAutoReleaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCOwnershipAutoReleaseController.m; sourceTree = "<group>"; };
+		111065FA2085D638002B5C38 /* RunTimeBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunTimeBasicViewController.h; sourceTree = "<group>"; };
+		111065FB2085D638002B5C38 /* RunTimeBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunTimeBasicViewController.m; sourceTree = "<group>"; };
+		111066052085EB51002B5C38 /* RunLoopBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunLoopBasicViewController.h; sourceTree = "<group>"; };
+		111066062085EB51002B5C38 /* RunLoopBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunLoopBasicViewController.m; sourceTree = "<group>"; };
+		111066082085EB7D002B5C38 /* SDWebImageBasicController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDWebImageBasicController.h; sourceTree = "<group>"; };
+		111066092085EB7D002B5C38 /* SDWebImageBasicController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDWebImageBasicController.m; sourceTree = "<group>"; };
+		1110660B2085EBA8002B5C38 /* ResponseChainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResponseChainViewController.h; sourceTree = "<group>"; };
+		1110660C2085EBA8002B5C38 /* ResponseChainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResponseChainViewController.m; sourceTree = "<group>"; };
+		1110660F2085EBFA002B5C38 /* LoadAndInitializeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadAndInitializeViewController.h; sourceTree = "<group>"; };
+		111066102085EBFA002B5C38 /* LoadAndInitializeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadAndInitializeViewController.m; sourceTree = "<group>"; };
 		1115736E20660DFC00EB426C /* 引用计数.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "引用计数.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1115737220660DFC00EB426C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1115737420660DFC00EB426C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -273,6 +288,99 @@
 			name = "Block知识";
 			sourceTree = "<group>";
 		};
+		111065F72085CD78002B5C38 /* SDWebImage源码解读 */ = {
+			isa = PBXGroup;
+			children = (
+				111066082085EB7D002B5C38 /* SDWebImageBasicController.h */,
+				111066092085EB7D002B5C38 /* SDWebImageBasicController.m */,
+			);
+			name = "SDWebImage源码解读";
+			sourceTree = "<group>";
+		};
+		111065F82085CD9A002B5C38 /* 响应链知识补充 */ = {
+			isa = PBXGroup;
+			children = (
+				1110660B2085EBA8002B5C38 /* ResponseChainViewController.h */,
+				1110660C2085EBA8002B5C38 /* ResponseChainViewController.m */,
+			);
+			name = "响应链知识补充";
+			sourceTree = "<group>";
+		};
+		111065F92085D58C002B5C38 /* runtime基础知识 */ = {
+			isa = PBXGroup;
+			children = (
+				111065FA2085D638002B5C38 /* RunTimeBasicViewController.h */,
+				111065FB2085D638002B5C38 /* RunTimeBasicViewController.m */,
+			);
+			name = "runtime基础知识";
+			sourceTree = "<group>";
+		};
+		111065FD2085E613002B5C38 /* 动态交换两个方法 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "动态交换两个方法";
+			sourceTree = "<group>";
+		};
+		111065FE2085E62E002B5C38 /* 动态添加属性 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "动态添加属性";
+			sourceTree = "<group>";
+		};
+		111065FF2085E63A002B5C38 /* 字典转模型的自动转换 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "字典转模型的自动转换";
+			sourceTree = "<group>";
+		};
+		111066002085E64C002B5C38 /* 发送消息 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "发送消息";
+			sourceTree = "<group>";
+		};
+		111066012085E654002B5C38 /* 动态添加方法 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "动态添加方法";
+			sourceTree = "<group>";
+		};
+		111066022085E65F002B5C38 /* 拦截并替换方法 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "拦截并替换方法";
+			sourceTree = "<group>";
+		};
+		111066032085E66D002B5C38 /* 实现 NSCoding 的自动归档和解档 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "实现 NSCoding 的自动归档和解档";
+			sourceTree = "<group>";
+		};
+		111066042085EA33002B5C38 /* 面试题 */ = {
+			isa = PBXGroup;
+			children = (
+				1110660E2085EBDE002B5C38 /* load和initialize区别 */,
+			);
+			name = "面试题";
+			sourceTree = "<group>";
+		};
+		1110660E2085EBDE002B5C38 /* load和initialize区别 */ = {
+			isa = PBXGroup;
+			children = (
+				1110660F2085EBFA002B5C38 /* LoadAndInitializeViewController.h */,
+				111066102085EBFA002B5C38 /* LoadAndInitializeViewController.m */,
+			);
+			name = "load和initialize区别";
+			sourceTree = "<group>";
+		};
 		1115736520660DFC00EB426C = {
 			isa = PBXGroup;
 			children = (
@@ -300,7 +408,11 @@
 				110968DB2075C77700A35EF2 /* Block知识 */,
 				11CF0D5D207BA9D600A71FFD /* GCD知识详解 */,
 				11AAA9B42082401300DE7CA4 /* NSOperation知识详解 */,
-				11B8FD3A20760F11009878D2 /* 运行时知识补充 */,
+				11B8FD3A20760F11009878D2 /* runtime知识补充 */,
+				113ABF0B2085CD3F00847675 /* runloop知识补充 */,
+				111065F72085CD78002B5C38 /* SDWebImage源码解读 */,
+				111065F82085CD9A002B5C38 /* 响应链知识补充 */,
+				111066042085EA33002B5C38 /* 面试题 */,
 				1115737120660DFC00EB426C /* Supporting Files */,
 			);
 			path = "引用计数";
@@ -527,6 +639,15 @@
 				113ABF092085CABB00847675 /* QueueAttributesViewController.m */,
 			);
 			name = "NSOperationQueue常用属性和方法";
+			sourceTree = "<group>";
+		};
+		113ABF0B2085CD3F00847675 /* runloop知识补充 */ = {
+			isa = PBXGroup;
+			children = (
+				111066052085EB51002B5C38 /* RunLoopBasicViewController.h */,
+				111066062085EB51002B5C38 /* RunLoopBasicViewController.m */,
+			);
+			name = "runloop知识补充";
 			sourceTree = "<group>";
 		};
 		1174AC7E207B1880002996C5 /* ARC */ = {
@@ -779,14 +900,22 @@
 			name = "NSOperation知识详解";
 			sourceTree = "<group>";
 		};
-		11B8FD3A20760F11009878D2 /* 运行时知识补充 */ = {
+		11B8FD3A20760F11009878D2 /* runtime知识补充 */ = {
 			isa = PBXGroup;
 			children = (
+				111065F92085D58C002B5C38 /* runtime基础知识 */,
+				111066032085E66D002B5C38 /* 实现 NSCoding 的自动归档和解档 */,
+				111066022085E65F002B5C38 /* 拦截并替换方法 */,
+				111066012085E654002B5C38 /* 动态添加方法 */,
+				111066002085E64C002B5C38 /* 发送消息 */,
+				111065FF2085E63A002B5C38 /* 字典转模型的自动转换 */,
+				111065FE2085E62E002B5C38 /* 动态添加属性 */,
+				111065FD2085E613002B5C38 /* 动态交换两个方法 */,
 				11B8FD3F2076104C009878D2 /* isa指针解析 */,
 				11B8FD4320761C51009878D2 /* objc_msgSend解析 */,
 				11B8FD4D20765396009878D2 /* 消息转发 */,
 			);
-			name = "运行时知识补充";
+			name = "runtime知识补充";
 			sourceTree = "<group>";
 		};
 		11B8FD3E2076103E009878D2 /* 备用列表控制器 */ = {
@@ -944,6 +1073,7 @@
 				11A2A4092074D51400B4AFF4 /* AttributesCompareViewController.m in Sources */,
 				113ABEFC2085AF2300847675 /* OperationqueuePriorityController.m in Sources */,
 				11FE4A1620771BFD006BD4C5 /* OtherViewController.m in Sources */,
+				1110660A2085EB7D002B5C38 /* SDWebImageBasicController.m in Sources */,
 				113ABEF6208598CE00847675 /* OperationQueueCustomController.m in Sources */,
 				11A2A3B3206F455400B4AFF4 /* Person.m in Sources */,
 				11232EF8207DFD35000824B2 /* DispatchBarrierController.m in Sources */,
@@ -951,7 +1081,9 @@
 				11B8FD5020765430009878D2 /* MessageForwardingController.m in Sources */,
 				11AAA9A52081C62500DE7CA4 /* DispatchAfterViewController.m in Sources */,
 				112018F12078B39100C9567A /* BlockSyntaxViewController.m in Sources */,
+				111066112085EBFA002B5C38 /* LoadAndInitializeViewController.m in Sources */,
 				1174AC88207B5A64002996C5 /* MyClass.m in Sources */,
+				111065FC2085D638002B5C38 /* RunTimeBasicViewController.m in Sources */,
 				1174ACB6207B8278002996C5 /* ExampleBlockMRCController.m in Sources */,
 				113ABEDC20833A7700847675 /* YYOperation.m in Sources */,
 				11AAA9A92081C8E900DE7CA4 /* DispatchApplyViewController.m in Sources */,
@@ -963,6 +1095,8 @@
 				113ABF072085CA8A00847675 /* OperationAttributesController.m in Sources */,
 				113ABEEA2085949900847675 /* InvocationOperationController.m in Sources */,
 				11B8FD422076105F009878D2 /* ISAViewController.m in Sources */,
+				1110660D2085EBA8002B5C38 /* ResponseChainViewController.m in Sources */,
+				111066072085EB51002B5C38 /* RunLoopBasicViewController.m in Sources */,
 				11B8FD4920763159009878D2 /* Father.m in Sources */,
 				112018F92078C34C00C9567A /* InterceptedObjectsController.m in Sources */,
 				11B8FD3D20760F48009878D2 /* RunTimeViewListController.m in Sources */,
