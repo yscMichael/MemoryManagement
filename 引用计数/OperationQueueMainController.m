@@ -75,7 +75,7 @@
 
     //使用addOperationWithBlock:添加操作到队列中
     [queue addOperationWithBlock:^{
-        [NSThread sleepForTimeInterval:2];
+        [NSThread sleepForTimeInterval:5];
         NSLog(@"1---%@", [NSThread currentThread]);
     }];
     [queue addOperationWithBlock:^{
@@ -96,10 +96,8 @@
 }
 
 //总结:
-//1、凡是添加到主队列中的操作,都会放到主线程中执行;
-//   但是这里有个addExecutionBlock,根据上面介绍:会开启子线程(也在当前线程执行)
-//   如果只有addOperationWithBlock也在主线程执行
-//
+//1、凡是添加到主队列中的操作,一般都会放到主线程中执行;
+//   特例:存在addExecutionBlock那种情况,开辟新的线程
 
 
 
