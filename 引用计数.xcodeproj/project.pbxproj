@@ -380,8 +380,6 @@
 		113ABED920833A3700847675 /* NSOperation基础知识 */ = {
 			isa = PBXGroup;
 			children = (
-				113ABEDA20833A7700847675 /* YYOperation.h */,
-				113ABEDB20833A7700847675 /* YYOperation.m */,
 				113ABED62083217900847675 /* NSOperationBasicViewController.h */,
 				113ABED72083217900847675 /* NSOperationBasicViewController.m */,
 			);
@@ -405,6 +403,8 @@
 		113ABEDF2084E0F700847675 /* 自定义NSOperation */ = {
 			isa = PBXGroup;
 			children = (
+				113ABEDA20833A7700847675 /* YYOperation.h */,
+				113ABEDB20833A7700847675 /* YYOperation.m */,
 			);
 			name = "自定义NSOperation";
 			sourceTree = "<group>";
