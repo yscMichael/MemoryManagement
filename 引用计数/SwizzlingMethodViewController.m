@@ -35,6 +35,16 @@
     [banana swizzlingBananacanEat];  //香蕉可以吃喔
 }
 
+//总结:
+//   1、自己类的方法可以使用method_exchangeImplementations
+//   2、自己没有父类有,使用class_replaceMethod
+//
+//
+//
+//
+
+
+
 
 
 @end
