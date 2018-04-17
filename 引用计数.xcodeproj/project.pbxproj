@@ -33,6 +33,7 @@
 		113ABEF32085986100847675 /* OperationQueueMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABEF22085986100847675 /* OperationQueueMainController.m */; };
 		113ABEF6208598CE00847675 /* OperationQueueCustomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABEF5208598CE00847675 /* OperationQueueCustomController.m */; };
 		113ABEF92085A89A00847675 /* OperationDependViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABEF82085A89A00847675 /* OperationDependViewController.m */; };
+		113ABEFC2085AF2300847675 /* OperationqueuePriorityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABEFB2085AF2300847675 /* OperationqueuePriorityController.m */; };
 		1174AC82207B189A002996C5 /* BlockStorageMRCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC81207B189A002996C5 /* BlockStorageMRCController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1174AC85207B5A23002996C5 /* InterceptedObjectsMRCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC84207B5A23002996C5 /* InterceptedObjectsMRCController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1174AC88207B5A64002996C5 /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC87207B5A64002996C5 /* MyClass.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -117,6 +118,8 @@
 		113ABEF5208598CE00847675 /* OperationQueueCustomController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationQueueCustomController.m; sourceTree = "<group>"; };
 		113ABEF72085A89A00847675 /* OperationDependViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationDependViewController.h; sourceTree = "<group>"; };
 		113ABEF82085A89A00847675 /* OperationDependViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationDependViewController.m; sourceTree = "<group>"; };
+		113ABEFA2085AF2300847675 /* OperationqueuePriorityController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationqueuePriorityController.h; sourceTree = "<group>"; };
+		113ABEFB2085AF2300847675 /* OperationqueuePriorityController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationqueuePriorityController.m; sourceTree = "<group>"; };
 		1174AC80207B189A002996C5 /* BlockStorageMRCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockStorageMRCController.h; sourceTree = "<group>"; };
 		1174AC81207B189A002996C5 /* BlockStorageMRCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockStorageMRCController.m; sourceTree = "<group>"; };
 		1174AC83207B5A23002996C5 /* InterceptedObjectsMRCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterceptedObjectsMRCController.h; sourceTree = "<group>"; };
@@ -472,6 +475,8 @@
 		113ABEE42084E1F300847675 /* NSOperation优先级 */ = {
 			isa = PBXGroup;
 			children = (
+				113ABEFA2085AF2300847675 /* OperationqueuePriorityController.h */,
+				113ABEFB2085AF2300847675 /* OperationqueuePriorityController.m */,
 			);
 			name = "NSOperation优先级";
 			sourceTree = "<group>";
@@ -899,6 +904,7 @@
 				11B8FD4620761C6F009878D2 /* msgSendViewController.m in Sources */,
 				113ABEED208594A900847675 /* BlockOperationViewController.m in Sources */,
 				11A2A4092074D51400B4AFF4 /* AttributesCompareViewController.m in Sources */,
+				113ABEFC2085AF2300847675 /* OperationqueuePriorityController.m in Sources */,
 				11FE4A1620771BFD006BD4C5 /* OtherViewController.m in Sources */,
 				113ABEF6208598CE00847675 /* OperationQueueCustomController.m in Sources */,
 				11A2A3B3206F455400B4AFF4 /* Person.m in Sources */,
