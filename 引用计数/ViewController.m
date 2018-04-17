@@ -138,7 +138,9 @@
                         @"Operation Depend",
                         @"Operation queuePriority",
                         @"Queue Communication",
-                        @"Thread Insecure"],
+                        @"Thread Insecure",
+                        @"Operation Attributes",
+                        @"Queue Attributes"],
                       @[@"isa指针详解",
                         @"objc_msgSend详解",],nil];
     }
@@ -186,7 +188,9 @@
                               @"OperationDependViewController",
                               @"OperationqueuePriorityController",
                               @"QueueCommunicationController",
-                              @"ThreadInsecureViewController"],
+                              @"ThreadInsecureViewController",
+                              @"OperationAttributesController",
+                              @"QueueAttributesViewController"],
                             @[@"ISAViewController",
                               @"msgSendViewController",
                               @"MessageForwardingController"],nil];

@@ -36,6 +36,8 @@
 		113ABEFC2085AF2300847675 /* OperationqueuePriorityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABEFB2085AF2300847675 /* OperationqueuePriorityController.m */; };
 		113ABEFF2085B37100847675 /* QueueCommunicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABEFE2085B37100847675 /* QueueCommunicationController.m */; };
 		113ABF022085C55500847675 /* ThreadInsecureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABF012085C55500847675 /* ThreadInsecureViewController.m */; };
+		113ABF072085CA8A00847675 /* OperationAttributesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABF062085CA8A00847675 /* OperationAttributesController.m */; };
+		113ABF0A2085CABB00847675 /* QueueAttributesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABF092085CABB00847675 /* QueueAttributesViewController.m */; };
 		1174AC82207B189A002996C5 /* BlockStorageMRCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC81207B189A002996C5 /* BlockStorageMRCController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1174AC85207B5A23002996C5 /* InterceptedObjectsMRCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC84207B5A23002996C5 /* InterceptedObjectsMRCController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1174AC88207B5A64002996C5 /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC87207B5A64002996C5 /* MyClass.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -126,6 +128,10 @@
 		113ABEFE2085B37100847675 /* QueueCommunicationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QueueCommunicationController.m; sourceTree = "<group>"; };
 		113ABF002085C55500847675 /* ThreadInsecureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadInsecureViewController.h; sourceTree = "<group>"; };
 		113ABF012085C55500847675 /* ThreadInsecureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadInsecureViewController.m; sourceTree = "<group>"; };
+		113ABF052085CA8A00847675 /* OperationAttributesController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationAttributesController.h; sourceTree = "<group>"; };
+		113ABF062085CA8A00847675 /* OperationAttributesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationAttributesController.m; sourceTree = "<group>"; };
+		113ABF082085CABB00847675 /* QueueAttributesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueueAttributesViewController.h; sourceTree = "<group>"; };
+		113ABF092085CABB00847675 /* QueueAttributesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QueueAttributesViewController.m; sourceTree = "<group>"; };
 		1174AC80207B189A002996C5 /* BlockStorageMRCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockStorageMRCController.h; sourceTree = "<group>"; };
 		1174AC81207B189A002996C5 /* BlockStorageMRCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockStorageMRCController.m; sourceTree = "<group>"; };
 		1174AC83207B5A23002996C5 /* InterceptedObjectsMRCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterceptedObjectsMRCController.h; sourceTree = "<group>"; };
@@ -505,6 +511,24 @@
 			name = "NSOperationQueue线程同步和线程安全";
 			sourceTree = "<group>";
 		};
+		113ABF032085C88300847675 /* NSOperation常用属性和方法 */ = {
+			isa = PBXGroup;
+			children = (
+				113ABF052085CA8A00847675 /* OperationAttributesController.h */,
+				113ABF062085CA8A00847675 /* OperationAttributesController.m */,
+			);
+			name = "NSOperation常用属性和方法";
+			sourceTree = "<group>";
+		};
+		113ABF042085C89700847675 /* NSOperationQueue常用属性和方法 */ = {
+			isa = PBXGroup;
+			children = (
+				113ABF082085CABB00847675 /* QueueAttributesViewController.h */,
+				113ABF092085CABB00847675 /* QueueAttributesViewController.m */,
+			);
+			name = "NSOperationQueue常用属性和方法";
+			sourceTree = "<group>";
+		};
 		1174AC7E207B1880002996C5 /* ARC */ = {
 			isa = PBXGroup;
 			children = (
@@ -749,6 +773,8 @@
 				113ABEE42084E1F300847675 /* NSOperation优先级 */,
 				113ABEE52084E20C00847675 /* NSOperationQueue线程间的通信 */,
 				113ABEE62084E22700847675 /* NSOperationQueue线程同步和线程安全 */,
+				113ABF032085C88300847675 /* NSOperation常用属性和方法 */,
+				113ABF042085C89700847675 /* NSOperationQueue常用属性和方法 */,
 			);
 			name = "NSOperation知识详解";
 			sourceTree = "<group>";
@@ -934,6 +960,7 @@
 				1115737620660DFC00EB426C /* AppDelegate.m in Sources */,
 				11001E2F206A300D00457CBC /* ARCOwnershipAutoReleaseController.m in Sources */,
 				112019052079112000C9567A /* blockVariableController.m in Sources */,
+				113ABF072085CA8A00847675 /* OperationAttributesController.m in Sources */,
 				113ABEEA2085949900847675 /* InvocationOperationController.m in Sources */,
 				11B8FD422076105F009878D2 /* ISAViewController.m in Sources */,
 				11B8FD4920763159009878D2 /* Father.m in Sources */,
@@ -950,6 +977,7 @@
 				11A2A3F42074AF1D00B4AFF4 /* ARCOwnershipViewListController.m in Sources */,
 				11AAA9A12081C5E200DE7CA4 /* DispatchSyncViewController.m in Sources */,
 				11232EF1207DF7B6000824B2 /* DispatchGroupViewController.m in Sources */,
+				113ABF0A2085CABB00847675 /* QueueAttributesViewController.m in Sources */,
 				11A2A3DE20732B1800B4AFF4 /* AutoReleaseARCViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
