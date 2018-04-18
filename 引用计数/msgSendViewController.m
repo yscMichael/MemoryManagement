@@ -113,6 +113,42 @@
 }
 
 
+//总结:
+//一、objc_msgSend
+//   1、objc_msgSend:包含接受者、方法名称、参数
+//   2、objc_msgSend运作过程如下:
+//      a、首先在接受者所属类中搜寻其方法列表(list of methods).
+//         若能顺利找到方法,就跳至实现代码.
+//      b、如果找不到,则继续向上查找,直到找到合适的方法,再跳转至实现代码.
+//      c、如果还是找不到合适代码,那就执行消息转发(message forwarding).
+//
+//      注意:调用一个方法并不一定要执行以上步骤,因为objc_msgSend会将匹配结果
+//      缓存在"快速映射表"里面,下次找就不那么麻烦了.
+//
+//二、消息转发
+//   1、基本概念
+//      一个对象调用方法,但是自己并没有实现这个方法,父类也没有实现这个方法.此时会消息转发
+//      如果你做一些处理操作,可以避免崩溃等突发状况.
+//   2、有以下几种方案
+//      a、
+//         + (BOOL)resolveInstanceMethod:(SEL)sel//你要用的方法是实例方法
+//         + (BOOL)resolveClassMethod:(SEL)sel//你要用的方法是类方法
+//
+//      b、
+//         - (id)forwardingTargetForSelector:(SEL)aSelector
+//
+//      c、
+//         - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector;
+//         - (void)forwardInvocation:(NSInvocation *)anInvocation;
+//
+//    参考文章:
+//    1、轻松学习之 Objective-C消息转发
+//      http://www.cocoachina.com/ios/20150604/12013.html
+
+
+
+
+
 //参考文章:
 //1、深入理解Objective-C的Runtime机制
 //   https://www.csdn.net/article/2015-07-06/2825133-objective-c-runtime/1

@@ -204,7 +204,9 @@
                             @[@"RunLoopBasicViewController"],
                             @[@"SDWebImageBasicController"],
                             @[@"ResponseChainViewController"],
-                            @[@"LoadAndInitializeViewController"],nil];
+                            @[@"LoadAndInitializeViewController",
+                              @"synthesizeAndDynamicController",
+                              @"VariablesDifferenceController"],nil];
     }
     return _controllerSoure;
 }

@@ -50,6 +50,14 @@
 		113ABF022085C55500847675 /* ThreadInsecureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABF012085C55500847675 /* ThreadInsecureViewController.m */; };
 		113ABF072085CA8A00847675 /* OperationAttributesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABF062085CA8A00847675 /* OperationAttributesController.m */; };
 		113ABF0A2085CABB00847675 /* QueueAttributesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABF092085CABB00847675 /* QueueAttributesViewController.m */; };
+		11624E262086E1F900ABEB75 /* CategoryAttributesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11624E252086E1F900ABEB75 /* CategoryAttributesController.m */; };
+		11624E292086E2B900ABEB75 /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = 11624E282086E2B900ABEB75 /* NSObject+Property.m */; };
+		11624E2D2086E5EB00ABEB75 /* synthesizeAndDynamicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11624E2C2086E5EB00ABEB75 /* synthesizeAndDynamicController.m */; };
+		11624E312086E65B00ABEB75 /* VariablesDifferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11624E302086E65B00ABEB75 /* VariablesDifferenceController.m */; };
+		11624E342086E70700ABEB75 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 11624E332086E70700ABEB75 /* Car.m */; };
+		11624E372086E7C900ABEB75 /* DictionaryToModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11624E362086E7C900ABEB75 /* DictionaryToModelController.m */; };
+		11624E3A2086E86300ABEB75 /* DynamicAddMethodController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11624E392086E86300ABEB75 /* DynamicAddMethodController.m */; };
+		11624E3D2086E8B800ABEB75 /* NSCodingMethodController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11624E3C2086E8B800ABEB75 /* NSCodingMethodController.m */; };
 		1174AC82207B189A002996C5 /* BlockStorageMRCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC81207B189A002996C5 /* BlockStorageMRCController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1174AC85207B5A23002996C5 /* InterceptedObjectsMRCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC84207B5A23002996C5 /* InterceptedObjectsMRCController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1174AC88207B5A64002996C5 /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC87207B5A64002996C5 /* MyClass.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -168,6 +176,22 @@
 		113ABF062085CA8A00847675 /* OperationAttributesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationAttributesController.m; sourceTree = "<group>"; };
 		113ABF082085CABB00847675 /* QueueAttributesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueueAttributesViewController.h; sourceTree = "<group>"; };
 		113ABF092085CABB00847675 /* QueueAttributesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QueueAttributesViewController.m; sourceTree = "<group>"; };
+		11624E242086E1F900ABEB75 /* CategoryAttributesController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryAttributesController.h; sourceTree = "<group>"; };
+		11624E252086E1F900ABEB75 /* CategoryAttributesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryAttributesController.m; sourceTree = "<group>"; };
+		11624E272086E2B900ABEB75 /* NSObject+Property.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Property.h"; sourceTree = "<group>"; };
+		11624E282086E2B900ABEB75 /* NSObject+Property.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
+		11624E2B2086E5EB00ABEB75 /* synthesizeAndDynamicController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = synthesizeAndDynamicController.h; sourceTree = "<group>"; };
+		11624E2C2086E5EB00ABEB75 /* synthesizeAndDynamicController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = synthesizeAndDynamicController.m; sourceTree = "<group>"; };
+		11624E2F2086E65B00ABEB75 /* VariablesDifferenceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VariablesDifferenceController.h; sourceTree = "<group>"; };
+		11624E302086E65B00ABEB75 /* VariablesDifferenceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VariablesDifferenceController.m; sourceTree = "<group>"; };
+		11624E322086E70700ABEB75 /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		11624E332086E70700ABEB75 /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
+		11624E352086E7C900ABEB75 /* DictionaryToModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DictionaryToModelController.h; sourceTree = "<group>"; };
+		11624E362086E7C900ABEB75 /* DictionaryToModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DictionaryToModelController.m; sourceTree = "<group>"; };
+		11624E382086E86300ABEB75 /* DynamicAddMethodController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicAddMethodController.h; sourceTree = "<group>"; };
+		11624E392086E86300ABEB75 /* DynamicAddMethodController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicAddMethodController.m; sourceTree = "<group>"; };
+		11624E3B2086E8B800ABEB75 /* NSCodingMethodController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSCodingMethodController.h; sourceTree = "<group>"; };
+		11624E3C2086E8B800ABEB75 /* NSCodingMethodController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSCodingMethodController.m; sourceTree = "<group>"; };
 		1174AC80207B189A002996C5 /* BlockStorageMRCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockStorageMRCController.h; sourceTree = "<group>"; };
 		1174AC81207B189A002996C5 /* BlockStorageMRCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockStorageMRCController.m; sourceTree = "<group>"; };
 		1174AC83207B5A23002996C5 /* InterceptedObjectsMRCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterceptedObjectsMRCController.h; sourceTree = "<group>"; };
@@ -345,52 +369,50 @@
 			name = "动态交换两个方法";
 			sourceTree = "<group>";
 		};
-		111065FE2085E62E002B5C38 /* 动态添加属性 */ = {
+		111065FE2085E62E002B5C38 /* 给分类动态添加属性 */ = {
 			isa = PBXGroup;
 			children = (
+				11624E272086E2B900ABEB75 /* NSObject+Property.h */,
+				11624E282086E2B900ABEB75 /* NSObject+Property.m */,
+				11624E242086E1F900ABEB75 /* CategoryAttributesController.h */,
+				11624E252086E1F900ABEB75 /* CategoryAttributesController.m */,
 			);
-			name = "动态添加属性";
+			name = "给分类动态添加属性";
 			sourceTree = "<group>";
 		};
 		111065FF2085E63A002B5C38 /* 字典转模型的自动转换 */ = {
 			isa = PBXGroup;
 			children = (
+				11624E352086E7C900ABEB75 /* DictionaryToModelController.h */,
+				11624E362086E7C900ABEB75 /* DictionaryToModelController.m */,
 			);
 			name = "字典转模型的自动转换";
-			sourceTree = "<group>";
-		};
-		111066002085E64C002B5C38 /* 发送消息 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "发送消息";
 			sourceTree = "<group>";
 		};
 		111066012085E654002B5C38 /* 动态添加方法 */ = {
 			isa = PBXGroup;
 			children = (
+				11624E382086E86300ABEB75 /* DynamicAddMethodController.h */,
+				11624E392086E86300ABEB75 /* DynamicAddMethodController.m */,
 			);
 			name = "动态添加方法";
 			sourceTree = "<group>";
 		};
-		111066022085E65F002B5C38 /* 拦截并替换方法 */ = {
+		111066032085E66D002B5C38 /* 实现NSCoding的自动归档和解档 */ = {
 			isa = PBXGroup;
 			children = (
+				11624E3B2086E8B800ABEB75 /* NSCodingMethodController.h */,
+				11624E3C2086E8B800ABEB75 /* NSCodingMethodController.m */,
 			);
-			name = "拦截并替换方法";
-			sourceTree = "<group>";
-		};
-		111066032085E66D002B5C38 /* 实现 NSCoding 的自动归档和解档 */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = "实现 NSCoding 的自动归档和解档";
+			name = "实现NSCoding的自动归档和解档";
 			sourceTree = "<group>";
 		};
 		111066042085EA33002B5C38 /* 面试题 */ = {
 			isa = PBXGroup;
 			children = (
 				1110660E2085EBDE002B5C38 /* load和initialize区别 */,
+				11624E2A2086E5B900ABEB75 /* @synthesize和dynamic */,
+				11624E2E2086E60400ABEB75 /* 成员变量和实例变量区别 */,
 			);
 			name = "面试题";
 			sourceTree = "<group>";
@@ -717,6 +739,26 @@
 			name = "runloop知识补充";
 			sourceTree = "<group>";
 		};
+		11624E2A2086E5B900ABEB75 /* @synthesize和dynamic */ = {
+			isa = PBXGroup;
+			children = (
+				11624E322086E70700ABEB75 /* Car.h */,
+				11624E332086E70700ABEB75 /* Car.m */,
+				11624E2B2086E5EB00ABEB75 /* synthesizeAndDynamicController.h */,
+				11624E2C2086E5EB00ABEB75 /* synthesizeAndDynamicController.m */,
+			);
+			name = "@synthesize和dynamic";
+			sourceTree = "<group>";
+		};
+		11624E2E2086E60400ABEB75 /* 成员变量和实例变量区别 */ = {
+			isa = PBXGroup;
+			children = (
+				11624E2F2086E65B00ABEB75 /* VariablesDifferenceController.h */,
+				11624E302086E65B00ABEB75 /* VariablesDifferenceController.m */,
+			);
+			name = "成员变量和实例变量区别";
+			sourceTree = "<group>";
+		};
 		1174AC7E207B1880002996C5 /* ARC */ = {
 			isa = PBXGroup;
 			children = (
@@ -972,15 +1014,13 @@
 			children = (
 				111065F92085D58C002B5C38 /* runtime基础知识 */,
 				111065FD2085E613002B5C38 /* 动态交换两个方法 */,
-				111066032085E66D002B5C38 /* 实现 NSCoding 的自动归档和解档 */,
-				111066022085E65F002B5C38 /* 拦截并替换方法 */,
-				111066012085E654002B5C38 /* 动态添加方法 */,
-				111066002085E64C002B5C38 /* 发送消息 */,
+				111065FE2085E62E002B5C38 /* 给分类动态添加属性 */,
 				111065FF2085E63A002B5C38 /* 字典转模型的自动转换 */,
-				111065FE2085E62E002B5C38 /* 动态添加属性 */,
-				11B8FD3F2076104C009878D2 /* isa指针解析 */,
+				111066012085E654002B5C38 /* 动态添加方法 */,
+				111066032085E66D002B5C38 /* 实现NSCoding的自动归档和解档 */,
 				11B8FD4320761C51009878D2 /* objc_msgSend解析 */,
 				11B8FD4D20765396009878D2 /* 消息转发 */,
+				11B8FD3F2076104C009878D2 /* isa指针解析 */,
 			);
 			name = "runtime知识补充";
 			sourceTree = "<group>";
@@ -1118,6 +1158,7 @@
 			files = (
 				112019012078F98D00C9567A /* BlockStorageARCController.m in Sources */,
 				11B8FD4C2076316B009878D2 /* Son.m in Sources */,
+				11624E262086E1F900ABEB75 /* CategoryAttributesController.m in Sources */,
 				1174ACB1207B6152002996C5 /* ExampleBlockARCController.m in Sources */,
 				11A2A4052074B40D00B4AFF4 /* ReferenceCountViewController.m in Sources */,
 				11AAA9AD2081EE8C00DE7CA4 /* DispatchSuspendController.m in Sources */,
@@ -1131,12 +1172,16 @@
 				113ABF022085C55500847675 /* ThreadInsecureViewController.m in Sources */,
 				1174AC85207B5A23002996C5 /* InterceptedObjectsMRCController.m in Sources */,
 				1110663620863DD7002B5C38 /* Banana+BananaOne.m in Sources */,
+				11624E3A2086E86300ABEB75 /* DynamicAddMethodController.m in Sources */,
 				1174AC82207B189A002996C5 /* BlockStorageMRCController.m in Sources */,
 				11AAA99D2081ADB600DE7CA4 /* DispatchTargetViewController.m in Sources */,
 				11AAA9B120823F2F00DE7CA4 /* DispatchOnceViewController.m in Sources */,
 				113ABEFF2085B37100847675 /* QueueCommunicationController.m in Sources */,
 				1110662F2086351F002B5C38 /* Apple.m in Sources */,
 				1115737920660DFC00EB426C /* ViewController.m in Sources */,
+				11624E342086E70700ABEB75 /* Car.m in Sources */,
+				11624E2D2086E5EB00ABEB75 /* synthesizeAndDynamicController.m in Sources */,
+				11624E3D2086E8B800ABEB75 /* NSCodingMethodController.m in Sources */,
 				1110661A2086325C002B5C38 /* SwizzlingMethodViewController.m in Sources */,
 				11B8FD4620761C6F009878D2 /* msgSendViewController.m in Sources */,
 				113ABEED208594A900847675 /* BlockOperationViewController.m in Sources */,
@@ -1144,6 +1189,7 @@
 				113ABEFC2085AF2300847675 /* OperationqueuePriorityController.m in Sources */,
 				11FE4A1620771BFD006BD4C5 /* OtherViewController.m in Sources */,
 				1110660A2085EB7D002B5C38 /* SDWebImageBasicController.m in Sources */,
+				11624E312086E65B00ABEB75 /* VariablesDifferenceController.m in Sources */,
 				113ABEF6208598CE00847675 /* OperationQueueCustomController.m in Sources */,
 				11A2A3B3206F455400B4AFF4 /* Person.m in Sources */,
 				11232EF8207DFD35000824B2 /* DispatchBarrierController.m in Sources */,
@@ -1161,6 +1207,7 @@
 				11A2A3D0207219BB00B4AFF4 /* AutoReleaseMemoryViewController.m in Sources */,
 				117F8D9E207BAA5F0058825B /* CGDBasicViewController.m in Sources */,
 				1115737620660DFC00EB426C /* AppDelegate.m in Sources */,
+				11624E372086E7C900ABEB75 /* DictionaryToModelController.m in Sources */,
 				11001E2F206A300D00457CBC /* ARCOwnershipAutoReleaseController.m in Sources */,
 				112019052079112000C9567A /* blockVariableController.m in Sources */,
 				113ABF072085CA8A00847675 /* OperationAttributesController.m in Sources */,
@@ -1184,6 +1231,7 @@
 				11A2A3F42074AF1D00B4AFF4 /* ARCOwnershipViewListController.m in Sources */,
 				11AAA9A12081C5E200DE7CA4 /* DispatchSyncViewController.m in Sources */,
 				111066172085F4DB002B5C38 /* UIViewController+Swizzling.m in Sources */,
+				11624E292086E2B900ABEB75 /* NSObject+Property.m in Sources */,
 				11232EF1207DF7B6000824B2 /* DispatchGroupViewController.m in Sources */,
 				113ABF0A2085CABB00847675 /* QueueAttributesViewController.m in Sources */,
 				11A2A3DE20732B1800B4AFF4 /* AutoReleaseARCViewController.m in Sources */,
