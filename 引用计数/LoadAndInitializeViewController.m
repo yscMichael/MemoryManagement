@@ -22,9 +22,19 @@
 }
 
 //总结:
-//http://www.cocoachina.com/ios/20161012/17732.html
+//
+//
+//
+//
+//
+//
+//
 
 
+
+//参考文章:
+//1、不得不知的load与initialize
+//   http://www.cocoachina.com/ios/20161012/17732.html
 
 @end
 

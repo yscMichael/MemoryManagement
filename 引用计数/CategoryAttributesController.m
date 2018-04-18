@@ -7,6 +7,8 @@
 //
 
 #import "CategoryAttributesController.h"
+#import "Person.h"
+#import "Person+NewPerson.h"
 
 @interface CategoryAttributesController ()
 
@@ -17,8 +19,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    self.view.backgroundColor = [UIColor whiteColor];
 
+    Person *person = [[Person alloc] init];
+    person.name = @"张三";
+    person.height = @"172";
+    NSLog(@"name = %@,height = %@",person.name,person.height);
 }
 
 
