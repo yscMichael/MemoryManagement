@@ -14,24 +14,24 @@
 
 @implementation DictionaryToModelController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
+
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+//总结:
+//1、字典转模型KVC实现
+//   setValue:forKey
+//   缺点:必须保证，模型中的属性和字典中的key 一一对应
+//   解决办法:重写对象的setValue:forUndefinedKey:,把系统的方法覆盖,就能继续使用KVC字典转模型了
+//
+//2、使用runtime
+//
+//
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
+

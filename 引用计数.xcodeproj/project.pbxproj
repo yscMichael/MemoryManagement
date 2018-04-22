@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		11001E28206A2E2700457CBC /* RuleStudyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11001E27206A2E2700457CBC /* RuleStudyViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		11001E2F206A300D00457CBC /* ARCOwnershipAutoReleaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11001E2E206A300D00457CBC /* ARCOwnershipAutoReleaseController.m */; };
+		110E8AAD208C40DD006D7E5C /* img.gif in Resources */ = {isa = PBXBuildFile; fileRef = 110E8AAC208C40DD006D7E5C /* img.gif */; };
 		111065FC2085D638002B5C38 /* RunTimeBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111065FB2085D638002B5C38 /* RunTimeBasicViewController.m */; };
 		111066072085EB51002B5C38 /* RunLoopBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111066062085EB51002B5C38 /* RunLoopBasicViewController.m */; };
 		1110660A2085EB7D002B5C38 /* SDWebImageBasicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111066092085EB7D002B5C38 /* SDWebImageBasicController.m */; };
@@ -96,6 +97,7 @@
 		11001E27206A2E2700457CBC /* RuleStudyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RuleStudyViewController.m; sourceTree = "<group>"; };
 		11001E2D206A300D00457CBC /* ARCOwnershipAutoReleaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARCOwnershipAutoReleaseController.h; sourceTree = "<group>"; };
 		11001E2E206A300D00457CBC /* ARCOwnershipAutoReleaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARCOwnershipAutoReleaseController.m; sourceTree = "<group>"; };
+		110E8AAC208C40DD006D7E5C /* img.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = img.gif; sourceTree = "<group>"; };
 		111065FA2085D638002B5C38 /* RunTimeBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunTimeBasicViewController.h; sourceTree = "<group>"; };
 		111065FB2085D638002B5C38 /* RunTimeBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunTimeBasicViewController.m; sourceTree = "<group>"; };
 		111066052085EB51002B5C38 /* RunLoopBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunLoopBasicViewController.h; sourceTree = "<group>"; };
@@ -473,6 +475,7 @@
 		1115736520660DFC00EB426C = {
 			isa = PBXGroup;
 			children = (
+				110E8AAC208C40DD006D7E5C /* img.gif */,
 				11FE4A1420771BFD006BD4C5 /* OtherViewController.h */,
 				11FE4A1520771BFD006BD4C5 /* OtherViewController.m */,
 				1115737020660DFC00EB426C /* 引用计数 */,
@@ -1143,6 +1146,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				110E8AAD208C40DD006D7E5C /* img.gif in Resources */,
 				1115738120660DFC00EB426C /* LaunchScreen.storyboard in Resources */,
 				1115737E20660DFC00EB426C /* Assets.xcassets in Resources */,
 				1115737C20660DFC00EB426C /* Main.storyboard in Resources */,
