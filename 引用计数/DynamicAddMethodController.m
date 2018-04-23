@@ -21,6 +21,10 @@
 
 }
 
-
+//总结:
+//   class_addMethod(class,originalSelector,method_getImplementation(swizzledMethod),
+//   method_getTypeEncoding(swizzledMethod));
+//   :给某个类动态添加方法
 
 @end
+
