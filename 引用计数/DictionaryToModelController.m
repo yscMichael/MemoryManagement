@@ -39,6 +39,20 @@
 //      //根据成员属性名去字典中查找对应的value
 //      id value = dict[key];
 //      //接下来进行各种判空操作
+//
+//   b、使用runtime字典转模型获取模型属性名的时候,
+//      最好获取成员属性名Ivar因为可能会有个属性是没有setter和getter方法的
+//
+//      获取类里面属性 class_copyPropertyList
+//      获取类中的所有成员变量 class_copyIvarList
+//
+//
+//     {
+//       int _a; // 成员变量
+//     }
+//
+//     @property (nonatomic, assign) NSInteger attitudes_count;//属性
+//
 
 
 @end
