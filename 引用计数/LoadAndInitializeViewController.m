@@ -10,6 +10,8 @@
 
 @interface LoadAndInitializeViewController ()
 
+@property (nonatomic , strong) NSString *name;
+
 @end
 
 @implementation LoadAndInitializeViewController
@@ -19,6 +21,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
 
+    self.name = @"string";
 }
 
 //总结:
