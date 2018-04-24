@@ -159,7 +159,8 @@
                         @"synthesize和dynamic",
                         @"成员变量和实例变量区别",
                         @"SDWebImage源码解析",
-                        @"AFNetworking3.0对比"],nil];
+                        @"AFNetworking3.0对比",
+                        @"Swift混编"],nil];
     }
     return _dataSoure;
 }
@@ -223,7 +224,8 @@
                               @"synthesizeAndDynamicController",
                               @"VariablesDifferenceController",
                               @"SDWebImageBasicController",
-                              @"AFNetworkingThreeController"],nil];
+                              @"AFNetworkingThreeController",
+                              @"SwiftMixingViewController"],nil];
     }
     return _controllerSoure;
 }
