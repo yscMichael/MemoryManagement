@@ -93,7 +93,6 @@
                           @"NSOperation",
                           @"runtime知识详解",
                           @"runloop知识详解",
-                          @"SDWebImage源码解读",
                           @"响应链知识补充",
                           @"面试题",nil];
     }
@@ -155,11 +154,11 @@
                         @"消息转发",
                         @"isa指针解析"],
                       @[@"runloop基础知识"],
-                      @[@"SDWebImage源码解析"],
                       @[@"响应链知识讲解"],
                       @[@"load和initialize细节",
                         @"synthesize和dynamic",
-                        @"成员变量和实例变量区别"],nil];
+                        @"成员变量和实例变量区别",
+                        @"SDWebImage源码解析"],nil];
     }
     return _dataSoure;
 }
@@ -218,11 +217,11 @@
                               @"MessageForwardingController",
                               @"ISAViewController"],
                             @[@"RunLoopBasicViewController"],
-                            @[@"SDWebImageBasicController"],
                             @[@"ResponseChainViewController"],
                             @[@"LoadAndInitializeViewController",
                               @"synthesizeAndDynamicController",
-                              @"VariablesDifferenceController"],nil];
+                              @"VariablesDifferenceController",
+                              @"SDWebImageBasicController"],nil];
     }
     return _controllerSoure;
 }
