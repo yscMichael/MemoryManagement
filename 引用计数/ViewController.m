@@ -157,7 +157,9 @@
                       @[@"runloop基础知识"],
                       @[@"SDWebImage源码解析"],
                       @[@"响应链知识讲解"],
-                      @[@"load和initialize细节"],nil];
+                      @[@"load和initialize细节",
+                        @"synthesize和dynamic",
+                        @"成员变量和实例变量区别"],nil];
     }
     return _dataSoure;
 }

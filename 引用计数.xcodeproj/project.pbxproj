@@ -58,7 +58,6 @@
 		11624E262086E1F900ABEB75 /* CategoryAttributesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11624E252086E1F900ABEB75 /* CategoryAttributesController.m */; };
 		11624E2D2086E5EB00ABEB75 /* synthesizeAndDynamicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11624E2C2086E5EB00ABEB75 /* synthesizeAndDynamicController.m */; };
 		11624E312086E65B00ABEB75 /* VariablesDifferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11624E302086E65B00ABEB75 /* VariablesDifferenceController.m */; };
-		11624E342086E70700ABEB75 /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 11624E332086E70700ABEB75 /* Car.m */; };
 		11624E372086E7C900ABEB75 /* DictionaryToModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11624E362086E7C900ABEB75 /* DictionaryToModelController.m */; };
 		11624E3A2086E86300ABEB75 /* DynamicAddMethodController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11624E392086E86300ABEB75 /* DynamicAddMethodController.m */; };
 		11624E3D2086E8B800ABEB75 /* NSCodingMethodController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11624E3C2086E8B800ABEB75 /* NSCodingMethodController.m */; };
@@ -196,8 +195,6 @@
 		11624E2C2086E5EB00ABEB75 /* synthesizeAndDynamicController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = synthesizeAndDynamicController.m; sourceTree = "<group>"; };
 		11624E2F2086E65B00ABEB75 /* VariablesDifferenceController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VariablesDifferenceController.h; sourceTree = "<group>"; };
 		11624E302086E65B00ABEB75 /* VariablesDifferenceController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VariablesDifferenceController.m; sourceTree = "<group>"; };
-		11624E322086E70700ABEB75 /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
-		11624E332086E70700ABEB75 /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		11624E352086E7C900ABEB75 /* DictionaryToModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DictionaryToModelController.h; sourceTree = "<group>"; };
 		11624E362086E7C900ABEB75 /* DictionaryToModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DictionaryToModelController.m; sourceTree = "<group>"; };
 		11624E382086E86300ABEB75 /* DynamicAddMethodController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicAddMethodController.h; sourceTree = "<group>"; };
@@ -428,7 +425,7 @@
 			children = (
 				1110660E2085EBDE002B5C38 /* load和initialize区别 */,
 				11624E2A2086E5B900ABEB75 /* @synthesize和dynamic */,
-				11624E2E2086E60400ABEB75 /* 成员变量和实例变量区别 */,
+				11624E2E2086E60400ABEB75 /* 成员变量和实例变量以及属性区别 */,
 			);
 			name = "面试题";
 			sourceTree = "<group>";
@@ -773,21 +770,19 @@
 		11624E2A2086E5B900ABEB75 /* @synthesize和dynamic */ = {
 			isa = PBXGroup;
 			children = (
-				11624E322086E70700ABEB75 /* Car.h */,
-				11624E332086E70700ABEB75 /* Car.m */,
 				11624E2B2086E5EB00ABEB75 /* synthesizeAndDynamicController.h */,
 				11624E2C2086E5EB00ABEB75 /* synthesizeAndDynamicController.m */,
 			);
 			name = "@synthesize和dynamic";
 			sourceTree = "<group>";
 		};
-		11624E2E2086E60400ABEB75 /* 成员变量和实例变量区别 */ = {
+		11624E2E2086E60400ABEB75 /* 成员变量和实例变量以及属性区别 */ = {
 			isa = PBXGroup;
 			children = (
 				11624E2F2086E65B00ABEB75 /* VariablesDifferenceController.h */,
 				11624E302086E65B00ABEB75 /* VariablesDifferenceController.m */,
 			);
-			name = "成员变量和实例变量区别";
+			name = "成员变量和实例变量以及属性区别";
 			sourceTree = "<group>";
 		};
 		1174AC7E207B1880002996C5 /* ARC */ = {
@@ -1214,7 +1209,6 @@
 				113ABEFF2085B37100847675 /* QueueCommunicationController.m in Sources */,
 				1110662F2086351F002B5C38 /* Apple.m in Sources */,
 				1115737920660DFC00EB426C /* ViewController.m in Sources */,
-				11624E342086E70700ABEB75 /* Car.m in Sources */,
 				11624E2D2086E5EB00ABEB75 /* synthesizeAndDynamicController.m in Sources */,
 				11624E3D2086E8B800ABEB75 /* NSCodingMethodController.m in Sources */,
 				1110661A2086325C002B5C38 /* SwizzlingMethodViewController.m in Sources */,
