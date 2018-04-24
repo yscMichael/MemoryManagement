@@ -34,6 +34,7 @@
 		112018FD2078CEE800C9567A /* BlockAchieveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112018FC2078CEE800C9567A /* BlockAchieveViewController.m */; };
 		112019012078F98D00C9567A /* BlockStorageARCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112019002078F98D00C9567A /* BlockStorageARCController.m */; };
 		112019052079112000C9567A /* blockVariableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112019042079112000C9567A /* blockVariableController.m */; };
+		11209757208E277100D666F7 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 11209756208E277100D666F7 /* Movie.m */; };
 		11232EF1207DF7B6000824B2 /* DispatchGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11232EF0207DF7B6000824B2 /* DispatchGroupViewController.m */; };
 		11232EF8207DFD35000824B2 /* DispatchBarrierController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11232EF7207DFD35000824B2 /* DispatchBarrierController.m */; };
 		11232EFC207DFE8C000824B2 /* DispatchSemaphoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11232EFB207DFE8C000824B2 /* DispatchSemaphoreController.m */; };
@@ -144,6 +145,8 @@
 		112019002078F98D00C9567A /* BlockStorageARCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockStorageARCController.m; sourceTree = "<group>"; };
 		112019032079112000C9567A /* blockVariableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = blockVariableController.h; sourceTree = "<group>"; };
 		112019042079112000C9567A /* blockVariableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = blockVariableController.m; sourceTree = "<group>"; };
+		11209755208E277100D666F7 /* Movie.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Movie.h; sourceTree = "<group>"; };
+		11209756208E277100D666F7 /* Movie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
 		11232EEF207DF7B6000824B2 /* DispatchGroupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchGroupViewController.h; sourceTree = "<group>"; };
 		11232EF0207DF7B6000824B2 /* DispatchGroupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchGroupViewController.m; sourceTree = "<group>"; };
 		11232EF6207DFD35000824B2 /* DispatchBarrierController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchBarrierController.h; sourceTree = "<group>"; };
@@ -403,6 +406,8 @@
 		111066032085E66D002B5C38 /* 实现NSCoding的自动归档和解档 */ = {
 			isa = PBXGroup;
 			children = (
+				11209755208E277100D666F7 /* Movie.h */,
+				11209756208E277100D666F7 /* Movie.m */,
 				11624E3B2086E8B800ABEB75 /* NSCodingMethodController.h */,
 				11624E3C2086E8B800ABEB75 /* NSCodingMethodController.m */,
 			);
@@ -1162,6 +1167,7 @@
 			files = (
 				112019012078F98D00C9567A /* BlockStorageARCController.m in Sources */,
 				11B8FD4C2076316B009878D2 /* Son.m in Sources */,
+				11209757208E277100D666F7 /* Movie.m in Sources */,
 				11624E262086E1F900ABEB75 /* CategoryAttributesController.m in Sources */,
 				1174ACB1207B6152002996C5 /* ExampleBlockARCController.m in Sources */,
 				11A2A4052074B40D00B4AFF4 /* ReferenceCountViewController.m in Sources */,
