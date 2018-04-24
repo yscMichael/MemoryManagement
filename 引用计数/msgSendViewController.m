@@ -146,17 +146,20 @@
 //      http://www.cocoachina.com/ios/20150604/12013.html
 
 
-
+//总结:
+//   1、objc_msgSend组成 id + SEL(方法选择器) + 参数
+//      id : 结构体指针,里面包含isa指针(根据isa可以找到所属哪个类)
+//      SEL : 指向方法的地址
 
 
 //参考文章:
 //1、深入理解Objective-C的Runtime机制
 //   https://www.csdn.net/article/2015-07-06/2825133-objective-c-runtime/1
-
-
-
+//
+//2、Objective-C特性：Runtime
+//  https://www.jianshu.com/p/25a319aee33d
+//
 
 @end
-
 
 
