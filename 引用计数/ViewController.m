@@ -158,7 +158,8 @@
                       @[@"load和initialize细节",
                         @"synthesize和dynamic",
                         @"成员变量和实例变量区别",
-                        @"SDWebImage源码解析"],nil];
+                        @"SDWebImage源码解析",
+                        @"AFNetworking3.0对比"],nil];
     }
     return _dataSoure;
 }
@@ -221,7 +222,8 @@
                             @[@"LoadAndInitializeViewController",
                               @"synthesizeAndDynamicController",
                               @"VariablesDifferenceController",
-                              @"SDWebImageBasicController"],nil];
+                              @"SDWebImageBasicController",
+                              @"AFNetworkingThreeController"],nil];
     }
     return _controllerSoure;
 }
