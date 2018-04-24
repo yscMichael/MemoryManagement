@@ -266,7 +266,7 @@
 		1110663520863DD7002B5C38 /* Banana+BananaOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Banana+BananaOne.m"; sourceTree = "<group>"; };
 		1110663720863DFA002B5C38 /* Apple+AppleOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Apple+AppleOne.h"; sourceTree = "<group>"; };
 		1110663820863DFA002B5C38 /* Apple+AppleOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Apple+AppleOne.m"; sourceTree = "<group>"; };
-		1115736E20660DFC00EB426C /* 引用计数.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "引用计数.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1115736E20660DFC00EB426C /* iosAdvanced.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iosAdvanced.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1115737220660DFC00EB426C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1115737420660DFC00EB426C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1115737520660DFC00EB426C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -782,20 +782,20 @@
 				110E8AAC208C40DD006D7E5C /* img.gif */,
 				11FE4A1420771BFD006BD4C5 /* OtherViewController.h */,
 				11FE4A1520771BFD006BD4C5 /* OtherViewController.m */,
-				1115737020660DFC00EB426C /* 引用计数 */,
+				1115737020660DFC00EB426C /* iosAdvanced */,
 			);
 			sourceTree = "<group>";
 		};
 		1115736F20660DFC00EB426C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1115736E20660DFC00EB426C /* 引用计数.app */,
+				1115736E20660DFC00EB426C /* iosAdvanced.app */,
 			);
 			name = Products;
 			path = ..;
 			sourceTree = "<group>";
 		};
-		1115737020660DFC00EB426C /* 引用计数 */ = {
+		1115737020660DFC00EB426C /* iosAdvanced */ = {
 			isa = PBXGroup;
 			children = (
 				11001E2A206A2E4500457CBC /* AppDelegate */,
@@ -811,7 +811,7 @@
 				115FAA25208F1CCE00353C45 /* 三方库 */,
 				1115737120660DFC00EB426C /* Supporting Files */,
 			);
-			path = "引用计数";
+			path = iosAdvanced;
 			sourceTree = "<group>";
 		};
 		1115737120660DFC00EB426C /* Supporting Files */ = {
@@ -1421,9 +1421,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1115736D20660DFC00EB426C /* 引用计数 */ = {
+		1115736D20660DFC00EB426C /* iosAdvanced */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1115738520660DFC00EB426C /* Build configuration list for PBXNativeTarget "引用计数" */;
+			buildConfigurationList = 1115738520660DFC00EB426C /* Build configuration list for PBXNativeTarget "iosAdvanced" */;
 			buildPhases = (
 				1115736A20660DFC00EB426C /* Sources */,
 				1115736B20660DFC00EB426C /* Frameworks */,
@@ -1433,9 +1433,9 @@
 			);
 			dependencies = (
 			);
-			name = "引用计数";
+			name = iosAdvanced;
 			productName = "引用计数";
-			productReference = 1115736E20660DFC00EB426C /* 引用计数.app */;
+			productReference = 1115736E20660DFC00EB426C /* iosAdvanced.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -1455,7 +1455,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1115736920660DFC00EB426C /* Build configuration list for PBXProject "引用计数" */;
+			buildConfigurationList = 1115736920660DFC00EB426C /* Build configuration list for PBXProject "iosAdvanced" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -1468,7 +1468,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1115736D20660DFC00EB426C /* 引用计数 */,
+				1115736D20660DFC00EB426C /* iosAdvanced */,
 			);
 		};
 /* End PBXProject section */
@@ -1772,7 +1772,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1115736920660DFC00EB426C /* Build configuration list for PBXProject "引用计数" */ = {
+		1115736920660DFC00EB426C /* Build configuration list for PBXProject "iosAdvanced" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1115738320660DFC00EB426C /* Debug */,
@@ -1781,7 +1781,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1115738520660DFC00EB426C /* Build configuration list for PBXNativeTarget "引用计数" */ = {
+		1115738520660DFC00EB426C /* Build configuration list for PBXNativeTarget "iosAdvanced" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1115738620660DFC00EB426C /* Debug */,
