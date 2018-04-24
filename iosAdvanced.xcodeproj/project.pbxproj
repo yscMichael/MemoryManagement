@@ -56,6 +56,8 @@
 		110E8697208F33D20049F587 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 110E867A208F33D20049F587 /* UIButton+WebCache.m */; };
 		110E869A208F76470049F587 /* AFNetworkingThreeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110E8699208F76470049F587 /* AFNetworkingThreeController.m */; };
 		110E869D208F7B5D0049F587 /* SwiftMixingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110E869C208F7B5D0049F587 /* SwiftMixingViewController.m */; };
+		110E86AD208F875B0049F587 /* SwiftTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E86AC208F875B0049F587 /* SwiftTestViewController.swift */; };
+		110E86AF208F8A8E0049F587 /* TestDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E86AE208F8A8E0049F587 /* TestDemo.swift */; };
 		110E8AAD208C40DD006D7E5C /* img.gif in Resources */ = {isa = PBXBuildFile; fileRef = 110E8AAC208C40DD006D7E5C /* img.gif */; };
 		111065FC2085D638002B5C38 /* RunTimeBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111065FB2085D638002B5C38 /* RunTimeBasicViewController.m */; };
 		111066072085EB51002B5C38 /* RunLoopBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111066062085EB51002B5C38 /* RunLoopBasicViewController.m */; };
@@ -241,6 +243,9 @@
 		110E8699208F76470049F587 /* AFNetworkingThreeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingThreeController.m; sourceTree = "<group>"; };
 		110E869B208F7B5D0049F587 /* SwiftMixingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftMixingViewController.h; sourceTree = "<group>"; };
 		110E869C208F7B5D0049F587 /* SwiftMixingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwiftMixingViewController.m; sourceTree = "<group>"; };
+		110E86AB208F875B0049F587 /* iosAdvanced-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iosAdvanced-Bridging-Header.h"; sourceTree = "<group>"; };
+		110E86AC208F875B0049F587 /* SwiftTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTestViewController.swift; sourceTree = "<group>"; };
+		110E86AE208F8A8E0049F587 /* TestDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDemo.swift; sourceTree = "<group>"; };
 		110E8AAC208C40DD006D7E5C /* img.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = img.gif; sourceTree = "<group>"; };
 		111065FA2085D638002B5C38 /* RunTimeBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunTimeBasicViewController.h; sourceTree = "<group>"; };
 		111065FB2085D638002B5C38 /* RunTimeBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunTimeBasicViewController.m; sourceTree = "<group>"; };
@@ -497,6 +502,9 @@
 		110E85C7208F22A10049F587 /* swift混编学习 */ = {
 			isa = PBXGroup;
 			children = (
+				110E86AE208F8A8E0049F587 /* TestDemo.swift */,
+				110E86AC208F875B0049F587 /* SwiftTestViewController.swift */,
+				110E86AB208F875B0049F587 /* iosAdvanced-Bridging-Header.h */,
 				110E869B208F7B5D0049F587 /* SwiftMixingViewController.h */,
 				110E869C208F7B5D0049F587 /* SwiftMixingViewController.m */,
 			);
@@ -1498,6 +1506,7 @@
 			files = (
 				112019012078F98D00C9567A /* BlockStorageARCController.m in Sources */,
 				11B8FD4C2076316B009878D2 /* Son.m in Sources */,
+				110E86AD208F875B0049F587 /* SwiftTestViewController.swift in Sources */,
 				11209757208E277100D666F7 /* Movie.m in Sources */,
 				11624E262086E1F900ABEB75 /* CategoryAttributesController.m in Sources */,
 				1174ACB1207B6152002996C5 /* ExampleBlockARCController.m in Sources */,
@@ -1565,6 +1574,7 @@
 				110E8687208F33D20049F587 /* SDWebImageCompat.m in Sources */,
 				11B8FD5020765430009878D2 /* MessageForwardingController.m in Sources */,
 				11AAA9A52081C62500DE7CA4 /* DispatchAfterViewController.m in Sources */,
+				110E86AF208F8A8E0049F587 /* TestDemo.swift in Sources */,
 				1110662C20863507002B5C38 /* Banana.m in Sources */,
 				112018F12078B39100C9567A /* BlockSyntaxViewController.m in Sources */,
 				111066112085EBFA002B5C38 /* LoadAndInitializeViewController.m in Sources */,
@@ -1740,13 +1750,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 59PVTAC458;
-				INFOPLIST_FILE = "引用计数/Info.plist";
+				INFOPLIST_FILE = iosAdvanced/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yangshichuan.aishangxian;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "引用计数/引用计数-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "iosAdvanced/iosAdvanced-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -1758,13 +1769,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 59PVTAC458;
-				INFOPLIST_FILE = "引用计数/Info.plist";
+				INFOPLIST_FILE = iosAdvanced/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yangshichuan.aishangxian;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "引用计数/引用计数-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "iosAdvanced/iosAdvanced-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
