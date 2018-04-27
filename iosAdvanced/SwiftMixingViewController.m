@@ -20,13 +20,13 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
 
-    TestDemo *testDemo = [[TestDemo alloc] init];
+    TestSwiftDemo *testDemo = [[TestSwiftDemo alloc] init];
     [testDemo show];
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
-    SwiftMixingViewController *swiftCtrl = [[SwiftMixingViewController alloc] init];
+    SwiftTestViewController *swiftCtrl = [[SwiftTestViewController alloc] init];
     [self.navigationController pushViewController:swiftCtrl animated:YES];
 }
 

@@ -57,7 +57,7 @@
 		110E869A208F76470049F587 /* AFNetworkingThreeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110E8699208F76470049F587 /* AFNetworkingThreeController.m */; };
 		110E869D208F7B5D0049F587 /* SwiftMixingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 110E869C208F7B5D0049F587 /* SwiftMixingViewController.m */; };
 		110E86AD208F875B0049F587 /* SwiftTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E86AC208F875B0049F587 /* SwiftTestViewController.swift */; };
-		110E86AF208F8A8E0049F587 /* TestDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E86AE208F8A8E0049F587 /* TestDemo.swift */; };
+		110E86AF208F8A8E0049F587 /* TestSwiftDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110E86AE208F8A8E0049F587 /* TestSwiftDemo.swift */; };
 		110E8AAD208C40DD006D7E5C /* img.gif in Resources */ = {isa = PBXBuildFile; fileRef = 110E8AAC208C40DD006D7E5C /* img.gif */; };
 		111065FC2085D638002B5C38 /* RunTimeBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111065FB2085D638002B5C38 /* RunTimeBasicViewController.m */; };
 		111066072085EB51002B5C38 /* RunLoopBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111066062085EB51002B5C38 /* RunLoopBasicViewController.m */; };
@@ -111,6 +111,7 @@
 		11624E3A2086E86300ABEB75 /* DynamicAddMethodController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11624E392086E86300ABEB75 /* DynamicAddMethodController.m */; };
 		11624E3D2086E8B800ABEB75 /* NSCodingMethodController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11624E3C2086E8B800ABEB75 /* NSCodingMethodController.m */; };
 		11624E43208750CC00ABEB75 /* Person+NewPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 11624E42208750CC00ABEB75 /* Person+NewPerson.m */; };
+		116F661D2092FDE700551E74 /* TestOCDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 116F661C2092FDE700551E74 /* TestOCDemo.m */; };
 		1174AC82207B189A002996C5 /* BlockStorageMRCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC81207B189A002996C5 /* BlockStorageMRCController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1174AC85207B5A23002996C5 /* InterceptedObjectsMRCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC84207B5A23002996C5 /* InterceptedObjectsMRCController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1174AC88207B5A64002996C5 /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC87207B5A64002996C5 /* MyClass.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -245,7 +246,7 @@
 		110E869C208F7B5D0049F587 /* SwiftMixingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwiftMixingViewController.m; sourceTree = "<group>"; };
 		110E86AB208F875B0049F587 /* iosAdvanced-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iosAdvanced-Bridging-Header.h"; sourceTree = "<group>"; };
 		110E86AC208F875B0049F587 /* SwiftTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftTestViewController.swift; sourceTree = "<group>"; };
-		110E86AE208F8A8E0049F587 /* TestDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestDemo.swift; sourceTree = "<group>"; };
+		110E86AE208F8A8E0049F587 /* TestSwiftDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSwiftDemo.swift; sourceTree = "<group>"; };
 		110E8AAC208C40DD006D7E5C /* img.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = img.gif; sourceTree = "<group>"; };
 		111065FA2085D638002B5C38 /* RunTimeBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunTimeBasicViewController.h; sourceTree = "<group>"; };
 		111065FB2085D638002B5C38 /* RunTimeBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunTimeBasicViewController.m; sourceTree = "<group>"; };
@@ -349,6 +350,8 @@
 		11624E3C2086E8B800ABEB75 /* NSCodingMethodController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSCodingMethodController.m; sourceTree = "<group>"; };
 		11624E41208750CC00ABEB75 /* Person+NewPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+NewPerson.h"; sourceTree = "<group>"; };
 		11624E42208750CC00ABEB75 /* Person+NewPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+NewPerson.m"; sourceTree = "<group>"; };
+		116F661B2092FDE700551E74 /* TestOCDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestOCDemo.h; sourceTree = "<group>"; };
+		116F661C2092FDE700551E74 /* TestOCDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestOCDemo.m; sourceTree = "<group>"; };
 		1174AC80207B189A002996C5 /* BlockStorageMRCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockStorageMRCController.h; sourceTree = "<group>"; };
 		1174AC81207B189A002996C5 /* BlockStorageMRCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockStorageMRCController.m; sourceTree = "<group>"; };
 		1174AC83207B5A23002996C5 /* InterceptedObjectsMRCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterceptedObjectsMRCController.h; sourceTree = "<group>"; };
@@ -502,8 +505,8 @@
 		110E85C7208F22A10049F587 /* swift混编学习 */ = {
 			isa = PBXGroup;
 			children = (
-				110E86AE208F8A8E0049F587 /* TestDemo.swift */,
-				110E86AC208F875B0049F587 /* SwiftTestViewController.swift */,
+				116F661E2092FDEF00551E74 /* 测试模型 */,
+				116F661F2092FDFA00551E74 /* 测试控制器 */,
 				110E86AB208F875B0049F587 /* iosAdvanced-Bridging-Header.h */,
 				110E869B208F7B5D0049F587 /* SwiftMixingViewController.h */,
 				110E869C208F7B5D0049F587 /* SwiftMixingViewController.m */,
@@ -1101,6 +1104,24 @@
 			name = "成员变量和实例变量以及属性区别";
 			sourceTree = "<group>";
 		};
+		116F661E2092FDEF00551E74 /* 测试模型 */ = {
+			isa = PBXGroup;
+			children = (
+				110E86AE208F8A8E0049F587 /* TestSwiftDemo.swift */,
+				116F661B2092FDE700551E74 /* TestOCDemo.h */,
+				116F661C2092FDE700551E74 /* TestOCDemo.m */,
+			);
+			name = "测试模型";
+			sourceTree = "<group>";
+		};
+		116F661F2092FDFA00551E74 /* 测试控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				110E86AC208F875B0049F587 /* SwiftTestViewController.swift */,
+			);
+			name = "测试控制器";
+			sourceTree = "<group>";
+		};
 		1174AC7E207B1880002996C5 /* ARC */ = {
 			isa = PBXGroup;
 			children = (
@@ -1574,7 +1595,7 @@
 				110E8687208F33D20049F587 /* SDWebImageCompat.m in Sources */,
 				11B8FD5020765430009878D2 /* MessageForwardingController.m in Sources */,
 				11AAA9A52081C62500DE7CA4 /* DispatchAfterViewController.m in Sources */,
-				110E86AF208F8A8E0049F587 /* TestDemo.swift in Sources */,
+				110E86AF208F8A8E0049F587 /* TestSwiftDemo.swift in Sources */,
 				1110662C20863507002B5C38 /* Banana.m in Sources */,
 				112018F12078B39100C9567A /* BlockSyntaxViewController.m in Sources */,
 				111066112085EBFA002B5C38 /* LoadAndInitializeViewController.m in Sources */,
@@ -1598,6 +1619,7 @@
 				11624E372086E7C900ABEB75 /* DictionaryToModelController.m in Sources */,
 				11001E2F206A300D00457CBC /* ARCOwnershipAutoReleaseController.m in Sources */,
 				112019052079112000C9567A /* blockVariableController.m in Sources */,
+				116F661D2092FDE700551E74 /* TestOCDemo.m in Sources */,
 				110E868F208F33D20049F587 /* NSData+ImageContentType.m in Sources */,
 				110E8692208F33D20049F587 /* SDWebImageGIFCoder.m in Sources */,
 				113ABF072085CA8A00847675 /* OperationAttributesController.m in Sources */,

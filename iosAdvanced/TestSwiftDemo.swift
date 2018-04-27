@@ -1,5 +1,5 @@
 //
-//  TestDemo.swift
+//  TestSwiftDemo.swift
 //  iosAdvanced
 //
 //  Created by 杨世川 on 2018/4/24.
@@ -8,9 +8,9 @@
 
 import UIKit
 
-class TestDemo: NSObject {
+class TestSwiftDemo: NSObject {
 
     func show() -> Void {
-        print("hello world");
+        print("hello 我是swift");
     }
 }
