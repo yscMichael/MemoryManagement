@@ -115,6 +115,7 @@
 		1172B69B2095C090009537DC /* Bird.m in Sources */ = {isa = PBXBuildFile; fileRef = 1172B6962095C090009537DC /* Bird.m */; };
 		1172B69C2095C090009537DC /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 1172B6972095C090009537DC /* People.m */; };
 		1172B69D2095C090009537DC /* Monkey.m in Sources */ = {isa = PBXBuildFile; fileRef = 1172B6982095C090009537DC /* Monkey.m */; };
+		1172B6A220960AD8009537DC /* NSTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1172B6A120960AD8009537DC /* NSTimerViewController.m */; };
 		1174AC82207B189A002996C5 /* BlockStorageMRCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC81207B189A002996C5 /* BlockStorageMRCController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1174AC85207B5A23002996C5 /* InterceptedObjectsMRCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC84207B5A23002996C5 /* InterceptedObjectsMRCController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1174AC88207B5A64002996C5 /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC87207B5A64002996C5 /* MyClass.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -361,6 +362,8 @@
 		1172B6982095C090009537DC /* Monkey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Monkey.m; sourceTree = "<group>"; };
 		1172B6992095C090009537DC /* Bird.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bird.h; sourceTree = "<group>"; };
 		1172B69A2095C090009537DC /* People.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = People.h; sourceTree = "<group>"; };
+		1172B6A020960AD8009537DC /* NSTimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTimerViewController.h; sourceTree = "<group>"; };
+		1172B6A120960AD8009537DC /* NSTimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTimerViewController.m; sourceTree = "<group>"; };
 		1174AC80207B189A002996C5 /* BlockStorageMRCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockStorageMRCController.h; sourceTree = "<group>"; };
 		1174AC81207B189A002996C5 /* BlockStorageMRCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockStorageMRCController.m; sourceTree = "<group>"; };
 		1174AC83207B5A23002996C5 /* InterceptedObjectsMRCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterceptedObjectsMRCController.h; sourceTree = "<group>"; };
@@ -737,6 +740,7 @@
 				111065F72085CD78002B5C38 /* SDWebImage源码解读 */,
 				110E85C6208F1F870049F587 /* AFNetworking 3.0和之前区别 */,
 				110E85C7208F22A10049F587 /* swift混编学习 */,
+				1172B69F20960AB2009537DC /* NSTimer知识 */,
 				115FAA27208F1F5500353C45 /* 加密算法 */,
 			);
 			name = "面试题";
@@ -1142,6 +1146,15 @@
 				1172B6972095C090009537DC /* People.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		1172B69F20960AB2009537DC /* NSTimer知识 */ = {
+			isa = PBXGroup;
+			children = (
+				1172B6A020960AD8009537DC /* NSTimerViewController.h */,
+				1172B6A120960AD8009537DC /* NSTimerViewController.m */,
+			);
+			name = "NSTimer知识";
 			sourceTree = "<group>";
 		};
 		1174AC7E207B1880002996C5 /* ARC */ = {
@@ -1599,6 +1612,7 @@
 				1110661A2086325C002B5C38 /* SwizzlingMethodViewController.m in Sources */,
 				110E8682208F33D20049F587 /* SDWebImageCodersManager.m in Sources */,
 				11B8FD4620761C6F009878D2 /* msgSendViewController.m in Sources */,
+				1172B6A220960AD8009537DC /* NSTimerViewController.m in Sources */,
 				110E868D208F33D20049F587 /* SDWebImageDownloaderOperation.m in Sources */,
 				1172B69C2095C090009537DC /* People.m in Sources */,
 				113ABEED208594A900847675 /* BlockOperationViewController.m in Sources */,

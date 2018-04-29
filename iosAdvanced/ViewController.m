@@ -160,7 +160,8 @@
                         @"成员变量和实例变量区别",
                         @"SDWebImage源码解析",
                         @"AFNetworking3.0对比",
-                        @"Swift混编"],nil];
+                        @"Swift混编",
+                        @"NSTimer知识"],nil];
     }
     return _dataSoure;
 }
@@ -225,7 +226,8 @@
                               @"VariablesDifferenceController",
                               @"SDWebImageBasicController",
                               @"AFNetworkingThreeController",
-                              @"SwiftMixingViewController"],nil];
+                              @"SwiftMixingViewController",
+                              @"NSTimerViewController"],nil];
     }
     return _controllerSoure;
 }
