@@ -7,6 +7,7 @@
 //
 
 #import "MessageForwardingController.h"
+#import "People.h"
 
 @interface MessageForwardingController ()
 
@@ -19,6 +20,20 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
 
+    People *people = [[People alloc] init];
+    [people performSelector:@selector(speak)];
+    NSLog(@"/*****************************/");
+    [people performSelector:@selector(fly)];
+    NSLog(@"/*****************************/");
+    [people performSelector:@selector(code)];
+    NSLog(@"/*****************************/");
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    //这里点击会崩溃
+    People *people = [[People alloc] init];
+    [people performSelector:@selector(missMethod)];
 }
 
 //总结:
