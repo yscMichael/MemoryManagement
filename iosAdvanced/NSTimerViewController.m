@@ -47,7 +47,7 @@
 //
 //  c、date:触发的时间,一般情况下我们都写[NSDate date],这样的话定时器会立马触发一次,并且以此时间为基准.如果没有此参数的方法,则都是以当前时间为基准,第一次触发时间是当前时间加上时间间隔ti.
 //
-//3、- (void)fire;
+//3、- (void)fire;//开启定时器
 //  a、对于重复定时器，它不会影响正常的定时触发
 //  b、对于非重复定时器，触发后就调用了invalidate方法，既使正常的还没有触发
 //
@@ -56,6 +56,16 @@
 //   b、当滑动屏幕的时候,比如UIScrollView或者它的子类UITableView、UICollectionView等滑动时runloop处于UITrackingRunLoopMode模式下
 //
 //  因此,如果你想让timer在滑动的时候也能够触发，就可以分别添加到这两个模式下。或者直接用NSRunLoopCommonModes一个模式集
+//
+//5、[timer setFireDate:[NSDate distantFuture]];//暂停
+//   [timer setFireDate:[NSDate date]];//开始
+//
+//6、invalidate方法
+//  a、将timer从runloop中移除
+//  b、timer本身也会释放它持有资源，比如target、userinfo、block
+//  可以避免循环引用,也可以使用block块
+//
+//7、block避免循环引用
 
 
 
