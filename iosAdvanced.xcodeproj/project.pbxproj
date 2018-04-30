@@ -77,6 +77,10 @@
 		1115737C20660DFC00EB426C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1115737A20660DFC00EB426C /* Main.storyboard */; };
 		1115737E20660DFC00EB426C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1115737D20660DFC00EB426C /* Assets.xcassets */; };
 		1115738120660DFC00EB426C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1115737F20660DFC00EB426C /* LaunchScreen.storyboard */; };
+		111E20DF2096EF9D00C1F94B /* HLThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 111E20DE2096EF9D00C1F94B /* HLThread.m */; };
+		111E20E22096F06100C1F94B /* NSThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111E20E12096F06100C1F94B /* NSThreadViewController.m */; };
+		111E20E52096FA7600C1F94B /* NSTimerRunLoopController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111E20E42096FA7600C1F94B /* NSTimerRunLoopController.m */; };
+		111E20E72097090100C1F94B /* NSTimerRunLoopController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 111E20E62097090100C1F94B /* NSTimerRunLoopController.xib */; };
 		112018F12078B39100C9567A /* BlockSyntaxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112018F02078B39100C9567A /* BlockSyntaxViewController.m */; };
 		112018F52078BF3200C9567A /* InterceptedVariableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112018F42078BF3200C9567A /* InterceptedVariableController.m */; };
 		112018F92078C34C00C9567A /* InterceptedObjectsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112018F82078C34C00C9567A /* InterceptedObjectsController.m */; };
@@ -286,6 +290,13 @@
 		1115737D20660DFC00EB426C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1115738020660DFC00EB426C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1115738220660DFC00EB426C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		111E20DD2096EF9D00C1F94B /* HLThread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HLThread.h; sourceTree = "<group>"; };
+		111E20DE2096EF9D00C1F94B /* HLThread.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLThread.m; sourceTree = "<group>"; };
+		111E20E02096F06100C1F94B /* NSThreadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSThreadViewController.h; sourceTree = "<group>"; };
+		111E20E12096F06100C1F94B /* NSThreadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSThreadViewController.m; sourceTree = "<group>"; };
+		111E20E32096FA7600C1F94B /* NSTimerRunLoopController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTimerRunLoopController.h; sourceTree = "<group>"; };
+		111E20E42096FA7600C1F94B /* NSTimerRunLoopController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTimerRunLoopController.m; sourceTree = "<group>"; };
+		111E20E62097090100C1F94B /* NSTimerRunLoopController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSTimerRunLoopController.xib; sourceTree = "<group>"; };
 		112018EF2078B39100C9567A /* BlockSyntaxViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockSyntaxViewController.h; sourceTree = "<group>"; };
 		112018F02078B39100C9567A /* BlockSyntaxViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockSyntaxViewController.m; sourceTree = "<group>"; };
 		112018F32078BF3200C9567A /* InterceptedVariableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterceptedVariableController.h; sourceTree = "<group>"; };
@@ -852,6 +863,41 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		111E20D92096C5D600C1F94B /* runloop基础知识 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "runloop基础知识";
+			sourceTree = "<group>";
+		};
+		111E20DA2096C5E700C1F94B /* 保证线程的长时间存活 */ = {
+			isa = PBXGroup;
+			children = (
+				111E20DD2096EF9D00C1F94B /* HLThread.h */,
+				111E20DE2096EF9D00C1F94B /* HLThread.m */,
+				111E20E02096F06100C1F94B /* NSThreadViewController.h */,
+				111E20E12096F06100C1F94B /* NSThreadViewController.m */,
+			);
+			name = "保证线程的长时间存活";
+			sourceTree = "<group>";
+		};
+		111E20DB2096C7FC00C1F94B /* NSTimer正常运行 */ = {
+			isa = PBXGroup;
+			children = (
+				111E20E32096FA7600C1F94B /* NSTimerRunLoopController.h */,
+				111E20E42096FA7600C1F94B /* NSTimerRunLoopController.m */,
+				111E20E62097090100C1F94B /* NSTimerRunLoopController.xib */,
+			);
+			name = "NSTimer正常运行";
+			sourceTree = "<group>";
+		};
+		111E20DC2096C81200C1F94B /* UITableView等优化 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "UITableView等优化";
+			sourceTree = "<group>";
+		};
 		112018EE2078B04900C9567A /* Block语法 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1064,8 +1110,12 @@
 		113ABF0B2085CD3F00847675 /* runloop知识补充 */ = {
 			isa = PBXGroup;
 			children = (
+				111E20D92096C5D600C1F94B /* runloop基础知识 */,
 				111066052085EB51002B5C38 /* RunLoopBasicViewController.h */,
 				111066062085EB51002B5C38 /* RunLoopBasicViewController.m */,
+				111E20DA2096C5E700C1F94B /* 保证线程的长时间存活 */,
+				111E20DB2096C7FC00C1F94B /* NSTimer正常运行 */,
+				111E20DC2096C81200C1F94B /* UITableView等优化 */,
 			);
 			name = "runloop知识补充";
 			sourceTree = "<group>";
@@ -1544,6 +1594,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				110E8633208F33C20049F587 /* README.md in Resources */,
+				111E20E72097090100C1F94B /* NSTimerRunLoopController.xib in Resources */,
 				110E8AAD208C40DD006D7E5C /* img.gif in Resources */,
 				1115738120660DFC00EB426C /* LaunchScreen.storyboard in Resources */,
 				110E867C208F33D20049F587 /* LICENSE in Resources */,
@@ -1616,6 +1667,7 @@
 				110E868D208F33D20049F587 /* SDWebImageDownloaderOperation.m in Sources */,
 				1172B69C2095C090009537DC /* People.m in Sources */,
 				113ABEED208594A900847675 /* BlockOperationViewController.m in Sources */,
+				111E20E22096F06100C1F94B /* NSThreadViewController.m in Sources */,
 				11A2A4092074D51400B4AFF4 /* AttributesCompareViewController.m in Sources */,
 				110E863F208F33C20049F587 /* AFURLSessionManager.m in Sources */,
 				110E8694208F33D20049F587 /* UIView+WebCacheOperation.m in Sources */,
@@ -1634,6 +1686,7 @@
 				11B8FD5020765430009878D2 /* MessageForwardingController.m in Sources */,
 				11AAA9A52081C62500DE7CA4 /* DispatchAfterViewController.m in Sources */,
 				110E86AF208F8A8E0049F587 /* TestSwiftDemo.swift in Sources */,
+				111E20E52096FA7600C1F94B /* NSTimerRunLoopController.m in Sources */,
 				1110662C20863507002B5C38 /* Banana.m in Sources */,
 				112018F12078B39100C9567A /* BlockSyntaxViewController.m in Sources */,
 				111066112085EBFA002B5C38 /* LoadAndInitializeViewController.m in Sources */,
@@ -1690,6 +1743,7 @@
 				110E863A208F33C20049F587 /* UIWebView+AFNetworking.m in Sources */,
 				11232EF1207DF7B6000824B2 /* DispatchGroupViewController.m in Sources */,
 				113ABF0A2085CABB00847675 /* QueueAttributesViewController.m in Sources */,
+				111E20DF2096EF9D00C1F94B /* HLThread.m in Sources */,
 				110E868E208F33D20049F587 /* SDWebImageTransition.m in Sources */,
 				11A2A3DE20732B1800B4AFF4 /* AutoReleaseARCViewController.m in Sources */,
 				1172B69B2095C090009537DC /* Bird.m in Sources */,

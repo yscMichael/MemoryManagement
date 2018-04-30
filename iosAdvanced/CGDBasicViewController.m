@@ -49,7 +49,7 @@ typedef void(^blockCGD)(void);
     //4、主队列<串行队列>研究
 
     //主队列+异步
-    //[self MainQueueAsyncStudy];
+    [self MainQueueAsyncStudy];
     //主队列+同步--这里会崩溃
     //[self MainQueueSyncStudy];
 
@@ -356,7 +356,7 @@ typedef void(^blockCGD)(void);
 //分析: 主队列:主线程中的队列,肯定也是串行队列,任务顺序执行
 //     异步:会开辟子线程
 //     因为主队列是串行队列,所以任务一定是一个个执行.异步虽然会开辟子线程,但是看你是主队列,身份特殊这里还是在主线程中,也就是并不会开辟新的子线程
-//结果:任务按照顺讯一个个在主线程执行,相当于是异步没有起作用,但是这里不卡顿
+//结果:任务按照顺讯一个个在主线程执行,相当于是异步没有起作用,但是这里不卡顿(当时当前整个页面程序必须先执行完,因为当前页面相当于是一个大任务)
 //   :跟串行队列最大区别是不开辟新的线程
 - (void)MainQueueAsyncStudy
 {
@@ -384,6 +384,9 @@ typedef void(^blockCGD)(void);
     dispatch_async(queue, task0);
     dispatch_async(queue, task1);
     dispatch_async(queue, task2);
+
+    [NSThread sleepForTimeInterval:10.0];
+    NSLog(@"先执行我,信息不信!!!!");
 }
 
 //主队列+同步

@@ -10,6 +10,8 @@
 
 @interface NSTimerViewController ()
 
+@property (nonatomic , assign) NSInteger count;
+
 @end
 
 @implementation NSTimerViewController
@@ -18,7 +20,34 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    //[self testOne];
+    [self testTwo];
+}
 
+- (void)testOne
+{
+    //第一种写法
+    NSTimer *timer = [NSTimer timerWithTimeInterval:5.0 target:self selector:@selector(timerUpdate) userInfo:nil repeats:YES];
+    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
+    [timer fire];//立马开启
+}
+
+- (void)testTwo
+{
+    //第二种写法
+    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(timerUpdate) userInfo:nil repeats:YES];
+    [timer fire];//立马开启
+}
+
+- (void)timerUpdate
+{
+    NSLog(@"当前线程：%@",[NSThread currentThread]);
+    NSLog(@"启动RunLoop后--%@",[NSRunLoop currentRunLoop].currentMode);
+    //NSLog(@"currentRunLoop:%@",[NSRunLoop currentRunLoop]);
+    dispatch_async(dispatch_get_main_queue(), ^{
+        self.count ++;
+        NSLog(@"self.count = %ld",(long)self.count);
+    });
 }
 
 //总结:
