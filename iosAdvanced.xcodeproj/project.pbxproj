@@ -81,6 +81,10 @@
 		111E20E22096F06100C1F94B /* NSThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111E20E12096F06100C1F94B /* NSThreadViewController.m */; };
 		111E20E52096FA7600C1F94B /* NSTimerRunLoopController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111E20E42096FA7600C1F94B /* NSTimerRunLoopController.m */; };
 		111E20E72097090100C1F94B /* NSTimerRunLoopController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 111E20E62097090100C1F94B /* NSTimerRunLoopController.xib */; };
+		111E20EA209713E800C1F94B /* PerformanceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111E20E9209713E800C1F94B /* PerformanceViewController.m */; };
+		111ED19720989E6D0023574B /* spaceship.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 111ED19620989E6D0023574B /* spaceship.jpg */; };
+		111ED1992098A0DA0023574B /* YYCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 111ED1982098A0DA0023574B /* YYCell.xib */; };
+		111ED19C2098A8850023574B /* YYCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 111ED19B2098A8850023574B /* YYCell.m */; };
 		112018F12078B39100C9567A /* BlockSyntaxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112018F02078B39100C9567A /* BlockSyntaxViewController.m */; };
 		112018F52078BF3200C9567A /* InterceptedVariableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112018F42078BF3200C9567A /* InterceptedVariableController.m */; };
 		112018F92078C34C00C9567A /* InterceptedObjectsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112018F82078C34C00C9567A /* InterceptedObjectsController.m */; };
@@ -105,6 +109,10 @@
 		113ABF022085C55500847675 /* ThreadInsecureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABF012085C55500847675 /* ThreadInsecureViewController.m */; };
 		113ABF072085CA8A00847675 /* OperationAttributesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABF062085CA8A00847675 /* OperationAttributesController.m */; };
 		113ABF0A2085CABB00847675 /* QueueAttributesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABF092085CABB00847675 /* QueueAttributesViewController.m */; };
+		115C99692098AD8C00916654 /* BasicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 115C99682098AD8C00916654 /* BasicTableViewController.m */; };
+		115C996B2098B39F00916654 /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 115C996A2098B39F00916654 /* timg.jpeg */; };
+		115C99702098B8C100916654 /* YYAdvancedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 115C996D2098B8C100916654 /* YYAdvancedCell.m */; };
+		115C99712098B8C100916654 /* YYAdvancedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 115C996F2098B8C100916654 /* YYAdvancedCell.xib */; };
 		115FA972208ECFEA00353C45 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 115FA971208ECFEA00353C45 /* Dog.m */; };
 		115FA978208ED0F600353C45 /* Bulldog.m in Sources */ = {isa = PBXBuildFile; fileRef = 115FA977208ED0F600353C45 /* Bulldog.m */; };
 		115FA97C208ED17300353C45 /* Bulldog+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 115FA97B208ED17300353C45 /* Bulldog+Category.m */; };
@@ -297,6 +305,12 @@
 		111E20E32096FA7600C1F94B /* NSTimerRunLoopController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTimerRunLoopController.h; sourceTree = "<group>"; };
 		111E20E42096FA7600C1F94B /* NSTimerRunLoopController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTimerRunLoopController.m; sourceTree = "<group>"; };
 		111E20E62097090100C1F94B /* NSTimerRunLoopController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NSTimerRunLoopController.xib; sourceTree = "<group>"; };
+		111E20E8209713E700C1F94B /* PerformanceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PerformanceViewController.h; sourceTree = "<group>"; };
+		111E20E9209713E800C1F94B /* PerformanceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PerformanceViewController.m; sourceTree = "<group>"; };
+		111ED19620989E6D0023574B /* spaceship.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = spaceship.jpg; sourceTree = "<group>"; };
+		111ED1982098A0DA0023574B /* YYCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = YYCell.xib; sourceTree = "<group>"; };
+		111ED19A2098A8850023574B /* YYCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYCell.h; sourceTree = "<group>"; };
+		111ED19B2098A8850023574B /* YYCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYCell.m; sourceTree = "<group>"; };
 		112018EF2078B39100C9567A /* BlockSyntaxViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockSyntaxViewController.h; sourceTree = "<group>"; };
 		112018F02078B39100C9567A /* BlockSyntaxViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockSyntaxViewController.m; sourceTree = "<group>"; };
 		112018F32078BF3200C9567A /* InterceptedVariableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterceptedVariableController.h; sourceTree = "<group>"; };
@@ -345,6 +359,12 @@
 		113ABF062085CA8A00847675 /* OperationAttributesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationAttributesController.m; sourceTree = "<group>"; };
 		113ABF082085CABB00847675 /* QueueAttributesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QueueAttributesViewController.h; sourceTree = "<group>"; };
 		113ABF092085CABB00847675 /* QueueAttributesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QueueAttributesViewController.m; sourceTree = "<group>"; };
+		115C99672098AD8B00916654 /* BasicTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasicTableViewController.h; sourceTree = "<group>"; };
+		115C99682098AD8C00916654 /* BasicTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicTableViewController.m; sourceTree = "<group>"; };
+		115C996A2098B39F00916654 /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
+		115C996D2098B8C100916654 /* YYAdvancedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYAdvancedCell.m; sourceTree = "<group>"; };
+		115C996E2098B8C100916654 /* YYAdvancedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYAdvancedCell.h; sourceTree = "<group>"; };
+		115C996F2098B8C100916654 /* YYAdvancedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YYAdvancedCell.xib; sourceTree = "<group>"; };
 		115FA970208ECFEA00353C45 /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
 		115FA971208ECFEA00353C45 /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 		115FA976208ED0F600353C45 /* Bulldog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bulldog.h; sourceTree = "<group>"; };
@@ -497,6 +517,7 @@
 				11001E2C206A2F0600457CBC /* ARC所有权修饰符研究 */,
 				11A2A3F12074AC0000B4AFF4 /* 引用计数数值例题 */,
 				11A2A4062074D4CE00B4AFF4 /* 关键字比较 */,
+				111E20ED20971D1500C1F94B /* FBRetainCycleDetector循环引用解决 */,
 			);
 			name = "引用计数";
 			sourceTree = "<group>";
@@ -866,6 +887,8 @@
 		111E20D92096C5D600C1F94B /* runloop基础知识 */ = {
 			isa = PBXGroup;
 			children = (
+				111066052085EB51002B5C38 /* RunLoopBasicViewController.h */,
+				111066062085EB51002B5C38 /* RunLoopBasicViewController.m */,
 			);
 			name = "runloop基础知识";
 			sourceTree = "<group>";
@@ -884,9 +907,6 @@
 		111E20DB2096C7FC00C1F94B /* NSTimer正常运行 */ = {
 			isa = PBXGroup;
 			children = (
-				111E20E32096FA7600C1F94B /* NSTimerRunLoopController.h */,
-				111E20E42096FA7600C1F94B /* NSTimerRunLoopController.m */,
-				111E20E62097090100C1F94B /* NSTimerRunLoopController.xib */,
 			);
 			name = "NSTimer正常运行";
 			sourceTree = "<group>";
@@ -894,8 +914,71 @@
 		111E20DC2096C81200C1F94B /* UITableView等优化 */ = {
 			isa = PBXGroup;
 			children = (
+				111ED19E2098A9060023574B /* img */,
+				111ED1A02098AD300023574B /* 基本的tableView */,
+				111ED19F2098AD240023574B /* 优化的tableView */,
 			);
 			name = "UITableView等优化";
+			sourceTree = "<group>";
+		};
+		111E20EB209714C100C1F94B /* 其它两种定时器 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "其它两种定时器";
+			sourceTree = "<group>";
+		};
+		111E20EC20971CE500C1F94B /* 崩溃日志收集 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "崩溃日志收集";
+			sourceTree = "<group>";
+		};
+		111E20ED20971D1500C1F94B /* FBRetainCycleDetector循环引用解决 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "FBRetainCycleDetector循环引用解决";
+			sourceTree = "<group>";
+		};
+		111ED19D2098A88B0023574B /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				111ED1982098A0DA0023574B /* YYCell.xib */,
+				111ED19A2098A8850023574B /* YYCell.h */,
+				111ED19B2098A8850023574B /* YYCell.m */,
+			);
+			name = cell;
+			sourceTree = "<group>";
+		};
+		111ED19E2098A9060023574B /* img */ = {
+			isa = PBXGroup;
+			children = (
+				115C996A2098B39F00916654 /* timg.jpeg */,
+				111ED19620989E6D0023574B /* spaceship.jpg */,
+			);
+			name = img;
+			sourceTree = "<group>";
+		};
+		111ED19F2098AD240023574B /* 优化的tableView */ = {
+			isa = PBXGroup;
+			children = (
+				115C996C2098B8B900916654 /* cell */,
+				111E20E8209713E700C1F94B /* PerformanceViewController.h */,
+				111E20E9209713E800C1F94B /* PerformanceViewController.m */,
+			);
+			name = "优化的tableView";
+			sourceTree = "<group>";
+		};
+		111ED1A02098AD300023574B /* 基本的tableView */ = {
+			isa = PBXGroup;
+			children = (
+				111ED19D2098A88B0023574B /* cell */,
+				115C99672098AD8B00916654 /* BasicTableViewController.h */,
+				115C99682098AD8C00916654 /* BasicTableViewController.m */,
+			);
+			name = "基本的tableView";
 			sourceTree = "<group>";
 		};
 		112018EE2078B04900C9567A /* Block语法 */ = {
@@ -1111,13 +1194,25 @@
 			isa = PBXGroup;
 			children = (
 				111E20D92096C5D600C1F94B /* runloop基础知识 */,
-				111066052085EB51002B5C38 /* RunLoopBasicViewController.h */,
-				111066062085EB51002B5C38 /* RunLoopBasicViewController.m */,
 				111E20DA2096C5E700C1F94B /* 保证线程的长时间存活 */,
 				111E20DB2096C7FC00C1F94B /* NSTimer正常运行 */,
+				111E20E32096FA7600C1F94B /* NSTimerRunLoopController.h */,
+				111E20E42096FA7600C1F94B /* NSTimerRunLoopController.m */,
+				111E20E62097090100C1F94B /* NSTimerRunLoopController.xib */,
 				111E20DC2096C81200C1F94B /* UITableView等优化 */,
+				111E20EC20971CE500C1F94B /* 崩溃日志收集 */,
 			);
 			name = "runloop知识补充";
+			sourceTree = "<group>";
+		};
+		115C996C2098B8B900916654 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				115C996E2098B8C100916654 /* YYAdvancedCell.h */,
+				115C996D2098B8C100916654 /* YYAdvancedCell.m */,
+				115C996F2098B8C100916654 /* YYAdvancedCell.xib */,
+			);
+			name = cell;
 			sourceTree = "<group>";
 		};
 		115FA979208ED10000353C45 /* dog */ = {
@@ -1203,6 +1298,7 @@
 			children = (
 				1172B6A020960AD8009537DC /* NSTimerViewController.h */,
 				1172B6A120960AD8009537DC /* NSTimerViewController.m */,
+				111E20EB209714C100C1F94B /* 其它两种定时器 */,
 			);
 			name = "NSTimer知识";
 			sourceTree = "<group>";
@@ -1593,9 +1689,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				111ED1992098A0DA0023574B /* YYCell.xib in Resources */,
 				110E8633208F33C20049F587 /* README.md in Resources */,
+				115C996B2098B39F00916654 /* timg.jpeg in Resources */,
 				111E20E72097090100C1F94B /* NSTimerRunLoopController.xib in Resources */,
+				111ED19720989E6D0023574B /* spaceship.jpg in Resources */,
 				110E8AAD208C40DD006D7E5C /* img.gif in Resources */,
+				115C99712098B8C100916654 /* YYAdvancedCell.xib in Resources */,
 				1115738120660DFC00EB426C /* LaunchScreen.storyboard in Resources */,
 				110E867C208F33D20049F587 /* LICENSE in Resources */,
 				1115737E20660DFC00EB426C /* Assets.xcassets in Resources */,
@@ -1623,6 +1723,7 @@
 				11AAA9AD2081EE8C00DE7CA4 /* DispatchSuspendController.m in Sources */,
 				11001E28206A2E2700457CBC /* RuleStudyViewController.m in Sources */,
 				110E8688208F33D20049F587 /* SDWebImagePrefetcher.m in Sources */,
+				115C99702098B8C100916654 /* YYAdvancedCell.m in Sources */,
 				112018F52078BF3200C9567A /* InterceptedVariableController.m in Sources */,
 				110E863E208F33C20049F587 /* AFHTTPSessionManager.m in Sources */,
 				11A2A3D520721B8A00B4AFF4 /* AutoReleaseMRCViewController.m in Sources */,
@@ -1654,6 +1755,7 @@
 				113ABEFF2085B37100847675 /* QueueCommunicationController.m in Sources */,
 				110E8636208F33C20049F587 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				1110662F2086351F002B5C38 /* Apple.m in Sources */,
+				115C99692098AD8C00916654 /* BasicTableViewController.m in Sources */,
 				110E8686208F33D20049F587 /* SDWebImageCoderHelper.m in Sources */,
 				1115737920660DFC00EB426C /* ViewController.m in Sources */,
 				11624E2D2086E5EB00ABEB75 /* synthesizeAndDynamicController.m in Sources */,
@@ -1702,6 +1804,7 @@
 				110E8681208F33D20049F587 /* UIImage+ForceDecode.m in Sources */,
 				110E8635208F33C20049F587 /* UIRefreshControl+AFNetworking.m in Sources */,
 				11AAA9A92081C8E900DE7CA4 /* DispatchApplyViewController.m in Sources */,
+				111ED19C2098A8850023574B /* YYCell.m in Sources */,
 				110E8680208F33D20049F587 /* SDWebImageFrame.m in Sources */,
 				11A2A3D0207219BB00B4AFF4 /* AutoReleaseMemoryViewController.m in Sources */,
 				110E8642208F33C20049F587 /* AFSecurityPolicy.m in Sources */,
@@ -1739,6 +1842,7 @@
 				110E869A208F76470049F587 /* AFNetworkingThreeController.m in Sources */,
 				11A2A3F42074AF1D00B4AFF4 /* ARCOwnershipViewListController.m in Sources */,
 				11AAA9A12081C5E200DE7CA4 /* DispatchSyncViewController.m in Sources */,
+				111E20EA209713E800C1F94B /* PerformanceViewController.m in Sources */,
 				111066172085F4DB002B5C38 /* UIViewController+Swizzling.m in Sources */,
 				110E863A208F33C20049F587 /* UIWebView+AFNetworking.m in Sources */,
 				11232EF1207DF7B6000824B2 /* DispatchGroupViewController.m in Sources */,
