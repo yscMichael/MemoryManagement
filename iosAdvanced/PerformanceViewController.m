@@ -36,11 +36,12 @@ typedef void(^RunloopBlock)(void);
     self.view.backgroundColor = [UIColor whiteColor];
 
     [self initView];
+    [self addObserver];
 }
 
-- (void)viewWillAppear:(BOOL)animated
+- (void)viewWillDisappear:(BOOL)animated
 {
-    self.timer  = nil;
+    self.timer = nil;
 }
 
 - (void)initView
@@ -48,9 +49,12 @@ typedef void(^RunloopBlock)(void);
     [self.view addSubview:self.tableView];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+}
 
+- (void)addObserver
+{
     self.maxQueueLenght = 15;
-    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.001 target:self selector:@selector(timerMethod) userInfo:nil repeats:YES];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(timerMethod) userInfo:nil repeats:YES];
     [self addRunloopObserver];
 }
 
@@ -94,7 +98,6 @@ static void Callback(CFRunLoopObserverRef observer, CFRunLoopActivity activity, 
     }
     RunloopBlock task = vc.tasks.firstObject;
     task();
-
     //干掉第一个任务
     [vc.tasks removeObjectAtIndex:0];
 }
@@ -131,15 +134,15 @@ static void Callback(CFRunLoopObserverRef observer, CFRunLoopActivity activity, 
      }
 
     [self addTask:^{
-        cell.firstImage = [UIImage imageNamed:@"spaceship.jpg"];
+        cell.firstIView.image = [UIImage imageNamed:@"spaceship.jpg"];
     }];
 
     [self addTask:^{
-        cell.secondImage = [UIImage imageNamed:@"spaceship.jpg"];
+        cell.secondIView.image = [UIImage imageNamed:@"spaceship.jpg"];
     }];
 
     [self addTask:^{
-        cell.threeImage = [UIImage imageNamed:@"spaceship.jpg"];
+        cell.threeIView.image = [UIImage imageNamed:@"spaceship.jpg"];
     }];
 
     return cell;

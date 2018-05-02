@@ -14,11 +14,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *secondIView;
 @property (weak, nonatomic) IBOutlet UIImageView *threeIView;
 
-@property (nonatomic ,strong) NSString *firstText;
-@property (nonatomic ,strong) UIImage *firstImage;
-@property (nonatomic ,strong) UIImage *secondImage;
-@property (nonatomic ,strong) UIImage *threeImage;
-
 +(instancetype)xibTableViewCell;
 
 @end

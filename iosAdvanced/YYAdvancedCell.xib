@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -31,7 +30,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ckU-nA-7dL" userLabel="oneImageView">
-                        <rect key="frame" x="35" y="30" width="100" height="100"/>
+                        <rect key="frame" x="0.0" y="30" width="100" height="100"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="100" id="Tn3-aO-SVU"/>
                             <constraint firstAttribute="width" constant="100" id="lSx-Um-MT5"/>
@@ -45,7 +44,7 @@
                         </constraints>
                     </imageView>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vFQ-vS-HbV" userLabel="twoImageView">
-                        <rect key="frame" x="445" y="30" width="100" height="100"/>
+                        <rect key="frame" x="460" y="30" width="100" height="100"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="100" id="rI3-Wa-c79"/>
                             <constraint firstAttribute="width" constant="100" id="v3A-A9-4eS"/>
@@ -55,13 +54,13 @@
                 <constraints>
                     <constraint firstItem="AA5-7l-NGs" firstAttribute="leading" secondItem="eg4-Ax-63g" secondAttribute="leading" id="2R2-yX-ZlQ"/>
                     <constraint firstItem="vFQ-vS-HbV" firstAttribute="centerY" secondItem="eg4-Ax-63g" secondAttribute="centerY" id="3GA-ak-fcu"/>
-                    <constraint firstAttribute="trailing" secondItem="vFQ-vS-HbV" secondAttribute="trailing" constant="15" id="4FK-ZR-lNZ"/>
+                    <constraint firstAttribute="trailing" secondItem="vFQ-vS-HbV" secondAttribute="trailing" id="4FK-ZR-lNZ"/>
                     <constraint firstItem="5wx-5v-zMF" firstAttribute="centerX" secondItem="eg4-Ax-63g" secondAttribute="centerX" id="9li-rd-efc"/>
                     <constraint firstItem="AA5-7l-NGs" firstAttribute="top" secondItem="eg4-Ax-63g" secondAttribute="top" id="BPS-fl-pgQ"/>
                     <constraint firstAttribute="trailing" secondItem="AA5-7l-NGs" secondAttribute="trailing" id="Jcg-aa-hLf"/>
                     <constraint firstItem="ckU-nA-7dL" firstAttribute="centerY" secondItem="eg4-Ax-63g" secondAttribute="centerY" id="Pvk-wg-btZ"/>
+                    <constraint firstItem="ckU-nA-7dL" firstAttribute="leading" secondItem="eg4-Ax-63g" secondAttribute="leading" id="dw8-Dk-RUz"/>
                     <constraint firstItem="5wx-5v-zMF" firstAttribute="centerY" secondItem="eg4-Ax-63g" secondAttribute="centerY" id="jqD-cI-luG"/>
-                    <constraint firstItem="ckU-nA-7dL" firstAttribute="leading" secondItem="eg4-Ax-63g" secondAttribute="leadingMargin" constant="15" id="zf3-vf-gbS"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>

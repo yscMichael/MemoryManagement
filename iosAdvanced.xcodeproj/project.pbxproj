@@ -916,7 +916,8 @@
 			children = (
 				111ED19E2098A9060023574B /* img */,
 				111ED1A02098AD300023574B /* 基本的tableView */,
-				111ED19F2098AD240023574B /* 优化的tableView */,
+				111ED19F2098AD240023574B /* runloop优化的tableView */,
+				1171CC5A20997762005E7C92 /* 异步绘制优化的tableView */,
 			);
 			name = "UITableView等优化";
 			sourceTree = "<group>";
@@ -961,14 +962,14 @@
 			name = img;
 			sourceTree = "<group>";
 		};
-		111ED19F2098AD240023574B /* 优化的tableView */ = {
+		111ED19F2098AD240023574B /* runloop优化的tableView */ = {
 			isa = PBXGroup;
 			children = (
 				115C996C2098B8B900916654 /* cell */,
 				111E20E8209713E700C1F94B /* PerformanceViewController.h */,
 				111E20E9209713E800C1F94B /* PerformanceViewController.m */,
 			);
-			name = "优化的tableView";
+			name = "runloop优化的tableView";
 			sourceTree = "<group>";
 		};
 		111ED1A02098AD300023574B /* 基本的tableView */ = {
@@ -1278,6 +1279,13 @@
 				110E86AC208F875B0049F587 /* SwiftTestViewController.swift */,
 			);
 			name = "测试控制器";
+			sourceTree = "<group>";
+		};
+		1171CC5A20997762005E7C92 /* 异步绘制优化的tableView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "异步绘制优化的tableView";
 			sourceTree = "<group>";
 		};
 		1172B69E2095C095009537DC /* Model */ = {

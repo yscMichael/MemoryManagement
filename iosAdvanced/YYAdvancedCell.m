@@ -16,19 +16,4 @@
   return [[[NSBundle mainBundle] loadNibNamed:@"YYAdvancedCell" owner:nil options:nil] lastObject];
 }
 
-- (void)setFirstImage:(UIImage *)firstImage
-{
-    self.firstIView.image = firstImage;
-}
-
-- (void)setSecondImage:(UIImage *)secondImage
-{
-    self.secondIView.image = secondImage;
-}
-
-- (void)setThreeImage:(UIImage *)threeImage
-{
-    self.threeIView.image = threeImage;
-}
-
 @end
