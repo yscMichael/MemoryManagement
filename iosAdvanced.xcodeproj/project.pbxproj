@@ -124,6 +124,9 @@
 		11624E3D2086E8B800ABEB75 /* NSCodingMethodController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11624E3C2086E8B800ABEB75 /* NSCodingMethodController.m */; };
 		11624E43208750CC00ABEB75 /* Person+NewPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 11624E42208750CC00ABEB75 /* Person+NewPerson.m */; };
 		116F661D2092FDE700551E74 /* TestOCDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 116F661C2092FDE700551E74 /* TestOCDemo.m */; };
+		1171CC5F209BF43F005E7C92 /* NSTimerCycleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CC5E209BF43F005E7C92 /* NSTimerCycleController.m */; };
+		1171CC63209BF5D5005E7C92 /* EOCClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CC62209BF5D4005E7C92 /* EOCClass.m */; };
+		1171CC69209C0566005E7C92 /* NSTimer+EOCBlocksSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CC68209C0566005E7C92 /* NSTimer+EOCBlocksSupport.m */; };
 		1172B69B2095C090009537DC /* Bird.m in Sources */ = {isa = PBXBuildFile; fileRef = 1172B6962095C090009537DC /* Bird.m */; };
 		1172B69C2095C090009537DC /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 1172B6972095C090009537DC /* People.m */; };
 		1172B69D2095C090009537DC /* Monkey.m in Sources */ = {isa = PBXBuildFile; fileRef = 1172B6982095C090009537DC /* Monkey.m */; };
@@ -387,6 +390,12 @@
 		11624E42208750CC00ABEB75 /* Person+NewPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+NewPerson.m"; sourceTree = "<group>"; };
 		116F661B2092FDE700551E74 /* TestOCDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestOCDemo.h; sourceTree = "<group>"; };
 		116F661C2092FDE700551E74 /* TestOCDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestOCDemo.m; sourceTree = "<group>"; };
+		1171CC5D209BF43F005E7C92 /* NSTimerCycleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTimerCycleController.h; sourceTree = "<group>"; };
+		1171CC5E209BF43F005E7C92 /* NSTimerCycleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTimerCycleController.m; sourceTree = "<group>"; };
+		1171CC61209BF5D4005E7C92 /* EOCClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EOCClass.h; sourceTree = "<group>"; };
+		1171CC62209BF5D4005E7C92 /* EOCClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EOCClass.m; sourceTree = "<group>"; };
+		1171CC67209C0566005E7C92 /* NSTimer+EOCBlocksSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+EOCBlocksSupport.h"; sourceTree = "<group>"; };
+		1171CC68209C0566005E7C92 /* NSTimer+EOCBlocksSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+EOCBlocksSupport.m"; sourceTree = "<group>"; };
 		1172B6952095C090009537DC /* Monkey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monkey.h; sourceTree = "<group>"; };
 		1172B6962095C090009537DC /* Bird.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bird.m; sourceTree = "<group>"; };
 		1172B6972095C090009537DC /* People.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
@@ -1288,6 +1297,44 @@
 			name = "异步绘制优化的tableView";
 			sourceTree = "<group>";
 		};
+		1171CC5B209BF377005E7C92 /* NSTimer基础知识 */ = {
+			isa = PBXGroup;
+			children = (
+				1172B6A020960AD8009537DC /* NSTimerViewController.h */,
+				1172B6A120960AD8009537DC /* NSTimerViewController.m */,
+			);
+			name = "NSTimer基础知识";
+			sourceTree = "<group>";
+		};
+		1171CC5C209BF3DC005E7C92 /* NSTimer解决循环引用 */ = {
+			isa = PBXGroup;
+			children = (
+				1171CC6A209C056B005E7C92 /* 定时器分类 */,
+				1171CC60209BF4C1005E7C92 /* 对象 */,
+				1171CC5D209BF43F005E7C92 /* NSTimerCycleController.h */,
+				1171CC5E209BF43F005E7C92 /* NSTimerCycleController.m */,
+			);
+			name = "NSTimer解决循环引用";
+			sourceTree = "<group>";
+		};
+		1171CC60209BF4C1005E7C92 /* 对象 */ = {
+			isa = PBXGroup;
+			children = (
+				1171CC61209BF5D4005E7C92 /* EOCClass.h */,
+				1171CC62209BF5D4005E7C92 /* EOCClass.m */,
+			);
+			name = "对象";
+			sourceTree = "<group>";
+		};
+		1171CC6A209C056B005E7C92 /* 定时器分类 */ = {
+			isa = PBXGroup;
+			children = (
+				1171CC67209C0566005E7C92 /* NSTimer+EOCBlocksSupport.h */,
+				1171CC68209C0566005E7C92 /* NSTimer+EOCBlocksSupport.m */,
+			);
+			name = "定时器分类";
+			sourceTree = "<group>";
+		};
 		1172B69E2095C095009537DC /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -1304,8 +1351,8 @@
 		1172B69F20960AB2009537DC /* NSTimer知识 */ = {
 			isa = PBXGroup;
 			children = (
-				1172B6A020960AD8009537DC /* NSTimerViewController.h */,
-				1172B6A120960AD8009537DC /* NSTimerViewController.m */,
+				1171CC5B209BF377005E7C92 /* NSTimer基础知识 */,
+				1171CC5C209BF3DC005E7C92 /* NSTimer解决循环引用 */,
 				111E20EB209714C100C1F94B /* 其它两种定时器 */,
 			);
 			name = "NSTimer知识";
@@ -1740,6 +1787,7 @@
 				110E8638208F33C20049F587 /* UIButton+AFNetworking.m in Sources */,
 				11A2A3FC2074B16F00B4AFF4 /* ARCOwnershipAutoStrongController.m in Sources */,
 				11232EFC207DFE8C000824B2 /* DispatchSemaphoreController.m in Sources */,
+				1171CC69209C0566005E7C92 /* NSTimer+EOCBlocksSupport.m in Sources */,
 				110E8639208F33C20049F587 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				110E863B208F33C20049F587 /* AFAutoPurgingImageCache.m in Sources */,
 				110E869D208F7B5D0049F587 /* SwiftMixingViewController.m in Sources */,
@@ -1753,6 +1801,7 @@
 				1110663620863DD7002B5C38 /* Banana+BananaOne.m in Sources */,
 				110E8684208F33D20049F587 /* UIImage+GIF.m in Sources */,
 				110E863D208F33C20049F587 /* AFURLResponseSerialization.m in Sources */,
+				1171CC5F209BF43F005E7C92 /* NSTimerCycleController.m in Sources */,
 				11624E3A2086E86300ABEB75 /* DynamicAddMethodController.m in Sources */,
 				110E868A208F33D20049F587 /* NSButton+WebCache.m in Sources */,
 				1174AC82207B189A002996C5 /* BlockStorageMRCController.m in Sources */,
@@ -1826,6 +1875,7 @@
 				110E868F208F33D20049F587 /* NSData+ImageContentType.m in Sources */,
 				110E8692208F33D20049F587 /* SDWebImageGIFCoder.m in Sources */,
 				113ABF072085CA8A00847675 /* OperationAttributesController.m in Sources */,
+				1171CC63209BF5D5005E7C92 /* EOCClass.m in Sources */,
 				110E867F208F33D20049F587 /* UIImageView+HighlightedWebCache.m in Sources */,
 				113ABEEA2085949900847675 /* InvocationOperationController.m in Sources */,
 				11B8FD422076105F009878D2 /* ISAViewController.m in Sources */,

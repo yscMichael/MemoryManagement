@@ -165,7 +165,8 @@
                         @"SDWebImage源码解析",
                         @"AFNetworking3.0对比",
                         @"Swift混编",
-                        @"NSTimer知识"],nil];
+                        @"NSTimer基础知识",
+                        @"NSTimer解决循环引用"],nil];
     }
     return _dataSoure;
 }
@@ -235,7 +236,8 @@
                               @"SDWebImageBasicController",
                               @"AFNetworkingThreeController",
                               @"SwiftMixingViewController",
-                              @"NSTimerViewController"],nil];
+                              @"NSTimerViewController",
+                              @"NSTimerCycleController"],nil];
     }
     return _controllerSoure;
 }

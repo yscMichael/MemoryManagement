@@ -11,11 +11,13 @@
 @interface NSTimerViewController ()
 
 @property (nonatomic , assign) NSInteger count;
+@property (nonatomic , strong) NSTimer *timer;
 
 @end
 
 @implementation NSTimerViewController
 
+//这里定时器会一直运行
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -24,12 +26,21 @@
     [self testTwo];
 }
 
+- (void)viewWillDisappear:(BOOL)animated
+{
+    [super viewWillDisappear:animated];
+    //定时器失效、释放其保留的目标对象
+    [self.timer invalidate];
+    self.timer = nil;
+}
+
 - (void)testOne
 {
     //第一种写法
     NSTimer *timer = [NSTimer timerWithTimeInterval:5.0 target:self selector:@selector(timerUpdate) userInfo:nil repeats:YES];
     [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
     [timer fire];//立马开启
+    self.timer = timer;
 }
 
 - (void)testTwo
@@ -37,6 +48,7 @@
     //第二种写法
     NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(timerUpdate) userInfo:nil repeats:YES];
     [timer fire];//立马开启
+    self.timer = timer;
 }
 
 - (void)timerUpdate
@@ -48,6 +60,11 @@
         self.count ++;
         NSLog(@"self.count = %ld",(long)self.count);
     });
+}
+
+- (void)dealloc
+{
+    NSLog(@"控制器销毁了");
 }
 
 //总结:
