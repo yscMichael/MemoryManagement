@@ -55,7 +55,7 @@
         }
         else
         {//这里说明子类实现了这个方法,这里直接进行IMP交换就可以了
-            NSLog(@"香蕉交换方法");
+            //NSLog(@"香蕉交换方法");
             //交换IMP
             method_exchangeImplementations(originalMethod, swizzledMethod);
             //最终实现效果

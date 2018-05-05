@@ -54,7 +54,7 @@
         }
         else
         {//这里说明子类实现了这个方法,这里直接进行IMP交换就可以了
-            NSLog(@"交换方法");
+            //NSLog(@"交换方法");
             //交换IMP
             method_exchangeImplementations(originalMethod, swizzledMethod);
             //最终实现效果
@@ -68,7 +68,7 @@
 {
     //[self swizzlingViewDidLoad];
     //NSLog(@"swizzlingViewDidLoad: %@", self);
-    NSLog(@"swizzlingViewDidLoad");
+    //NSLog(@"swizzlingViewDidLoad");
 }
 
 //第一种情况是要复写的方法(overridden)并没有在目标类中实现(notimplemented)，而是在其父类中实现了

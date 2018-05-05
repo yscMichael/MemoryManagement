@@ -43,6 +43,13 @@
     [self.person addObserver:self forKeyPath:@"age" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
 }
 
+// NSKeyValueObservingOptionOld 把更改之前的值提供给处理方法
+// NSKeyValueObservingOptionNew 把更改之后的值提供给处理方法
+// NSKeyValueObservingOptionInitial 把初始化的值提供给处理方法,一旦注册,立马就会调用一次.
+//                                  通常它会带有新值,而不会带有旧值.
+// NSKeyValueObservingOptionPrior 分2次调用.在值改变之前和值改变之后.
+
+
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     self.person.age = 20;
@@ -59,6 +66,11 @@
     NSString *ageStr = [numberFormatter stringFromNumber:[change objectForKey:@"new"]];
 
     self.personAgeLabel.text = ageStr;
+}
+
+- (void)dealloc
+{
+    [self.person removeObserver:self forKeyPath:@"age"];
 }
 
 @end

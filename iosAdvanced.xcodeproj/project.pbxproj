@@ -131,6 +131,9 @@
 		1171CC73209D55FB005E7C92 /* KVOBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CC72209D55FB005E7C92 /* KVOBasicViewController.m */; };
 		1171CC78209D57D7005E7C92 /* YYPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CC77209D57D7005E7C92 /* YYPerson.m */; };
 		1171CC7B209D625B005E7C92 /* KVOObserverArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CC7A209D625B005E7C92 /* KVOObserverArrayController.m */; };
+		1171CC7E209D6753005E7C92 /* model.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CC7D209D6753005E7C92 /* model.m */; };
+		1171CC80209D788B005E7C92 /* KVOObserverArrayController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1171CC7F209D788B005E7C92 /* KVOObserverArrayController.xib */; };
+		1171CC83209D9B18005E7C92 /* Rice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CC82209D9B18005E7C92 /* Rice.m */; };
 		1172B69B2095C090009537DC /* Bird.m in Sources */ = {isa = PBXBuildFile; fileRef = 1172B6962095C090009537DC /* Bird.m */; };
 		1172B69C2095C090009537DC /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 1172B6972095C090009537DC /* People.m */; };
 		1172B69D2095C090009537DC /* Monkey.m in Sources */ = {isa = PBXBuildFile; fileRef = 1172B6982095C090009537DC /* Monkey.m */; };
@@ -408,6 +411,11 @@
 		1171CC77209D57D7005E7C92 /* YYPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYPerson.m; sourceTree = "<group>"; };
 		1171CC79209D625B005E7C92 /* KVOObserverArrayController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOObserverArrayController.h; sourceTree = "<group>"; };
 		1171CC7A209D625B005E7C92 /* KVOObserverArrayController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOObserverArrayController.m; sourceTree = "<group>"; };
+		1171CC7C209D6753005E7C92 /* model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = model.h; sourceTree = "<group>"; };
+		1171CC7D209D6753005E7C92 /* model.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = model.m; sourceTree = "<group>"; };
+		1171CC7F209D788B005E7C92 /* KVOObserverArrayController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KVOObserverArrayController.xib; sourceTree = "<group>"; };
+		1171CC81209D9B18005E7C92 /* Rice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Rice.h; sourceTree = "<group>"; };
+		1171CC82209D9B18005E7C92 /* Rice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Rice.m; sourceTree = "<group>"; };
 		1172B6952095C090009537DC /* Monkey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monkey.h; sourceTree = "<group>"; };
 		1172B6962095C090009537DC /* Bird.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bird.m; sourceTree = "<group>"; };
 		1172B6972095C090009537DC /* People.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
@@ -1352,8 +1360,6 @@
 			isa = PBXGroup;
 			children = (
 				1171CC6F209D55C5005E7C92 /* 基础应用 */,
-				1171CC71209D55FB005E7C92 /* KVOBasicViewController.h */,
-				1171CC72209D55FB005E7C92 /* KVOBasicViewController.m */,
 				1171CC74209D5662005E7C92 /* 监听数组 */,
 				1171CC70209D55CF005E7C92 /* 手动触发KVO */,
 				1171CC75209D576E005E7C92 /* KVO其它使用场景 */,
@@ -1366,6 +1372,8 @@
 			children = (
 				1171CC76209D57D7005E7C92 /* YYPerson.h */,
 				1171CC77209D57D7005E7C92 /* YYPerson.m */,
+				1171CC71209D55FB005E7C92 /* KVOBasicViewController.h */,
+				1171CC72209D55FB005E7C92 /* KVOBasicViewController.m */,
 			);
 			name = "基础应用";
 			sourceTree = "<group>";
@@ -1373,6 +1381,8 @@
 		1171CC70209D55CF005E7C92 /* 手动触发KVO */ = {
 			isa = PBXGroup;
 			children = (
+				1171CC81209D9B18005E7C92 /* Rice.h */,
+				1171CC82209D9B18005E7C92 /* Rice.m */,
 				1171CC6C209C120E005E7C92 /* ManuallyKVOViewController.h */,
 				1171CC6D209C120E005E7C92 /* ManuallyKVOViewController.m */,
 			);
@@ -1382,8 +1392,11 @@
 		1171CC74209D5662005E7C92 /* 监听数组 */ = {
 			isa = PBXGroup;
 			children = (
+				1171CC7C209D6753005E7C92 /* model.h */,
+				1171CC7D209D6753005E7C92 /* model.m */,
 				1171CC79209D625B005E7C92 /* KVOObserverArrayController.h */,
 				1171CC7A209D625B005E7C92 /* KVOObserverArrayController.m */,
+				1171CC7F209D788B005E7C92 /* KVOObserverArrayController.xib */,
 			);
 			name = "监听数组";
 			sourceTree = "<group>";
@@ -1812,6 +1825,7 @@
 				110E8AAD208C40DD006D7E5C /* img.gif in Resources */,
 				115C99712098B8C100916654 /* YYAdvancedCell.xib in Resources */,
 				1115738120660DFC00EB426C /* LaunchScreen.storyboard in Resources */,
+				1171CC80209D788B005E7C92 /* KVOObserverArrayController.xib in Resources */,
 				110E867C208F33D20049F587 /* LICENSE in Resources */,
 				1115737E20660DFC00EB426C /* Assets.xcassets in Resources */,
 				1115737C20660DFC00EB426C /* Main.storyboard in Resources */,
@@ -1839,6 +1853,7 @@
 				11001E28206A2E2700457CBC /* RuleStudyViewController.m in Sources */,
 				110E8688208F33D20049F587 /* SDWebImagePrefetcher.m in Sources */,
 				115C99702098B8C100916654 /* YYAdvancedCell.m in Sources */,
+				1171CC83209D9B18005E7C92 /* Rice.m in Sources */,
 				112018F52078BF3200C9567A /* InterceptedVariableController.m in Sources */,
 				110E863E208F33C20049F587 /* AFHTTPSessionManager.m in Sources */,
 				11A2A3D520721B8A00B4AFF4 /* AutoReleaseMRCViewController.m in Sources */,
@@ -1899,6 +1914,7 @@
 				113ABEF6208598CE00847675 /* OperationQueueCustomController.m in Sources */,
 				110E868C208F33D20049F587 /* SDImageCache.m in Sources */,
 				11A2A3B3206F455400B4AFF4 /* Person.m in Sources */,
+				1171CC7E209D6753005E7C92 /* model.m in Sources */,
 				110E8685208F33D20049F587 /* UIImage+MultiFormat.m in Sources */,
 				11232EF8207DFD35000824B2 /* DispatchBarrierController.m in Sources */,
 				113ABEF92085A89A00847675 /* OperationDependViewController.m in Sources */,

@@ -43,7 +43,7 @@
         if (didAddMethod)
         {//这里说明子类没有实现该方法(只有父类有),上面已经将原来方法orl重新定义
             //也就是说调用原来的方法,可以达到新的实现效果
-            NSLog(@"苹果方法添加成功");
+            //NSLog(@"苹果方法添加成功");
             //但是原来的旧方法实现怎么办?万一以后要用呢
             //此时让新方法的SEL指向旧方法实现
             class_replaceMethod(class,
@@ -55,7 +55,7 @@
         }
         else
         {//这里说明子类实现了这个方法,这里直接进行IMP交换就可以了
-            NSLog(@"苹果交换方法");
+            //NSLog(@"苹果交换方法");
             //交换IMP
             method_exchangeImplementations(originalMethod, swizzledMethod);
             //最终实现效果
