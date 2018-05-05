@@ -128,6 +128,9 @@
 		1171CC63209BF5D5005E7C92 /* EOCClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CC62209BF5D4005E7C92 /* EOCClass.m */; };
 		1171CC69209C0566005E7C92 /* NSTimer+EOCBlocksSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CC68209C0566005E7C92 /* NSTimer+EOCBlocksSupport.m */; };
 		1171CC6E209C120E005E7C92 /* ManuallyKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CC6D209C120E005E7C92 /* ManuallyKVOViewController.m */; };
+		1171CC73209D55FB005E7C92 /* KVOBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CC72209D55FB005E7C92 /* KVOBasicViewController.m */; };
+		1171CC78209D57D7005E7C92 /* YYPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CC77209D57D7005E7C92 /* YYPerson.m */; };
+		1171CC7B209D625B005E7C92 /* KVOObserverArrayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CC7A209D625B005E7C92 /* KVOObserverArrayController.m */; };
 		1172B69B2095C090009537DC /* Bird.m in Sources */ = {isa = PBXBuildFile; fileRef = 1172B6962095C090009537DC /* Bird.m */; };
 		1172B69C2095C090009537DC /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 1172B6972095C090009537DC /* People.m */; };
 		1172B69D2095C090009537DC /* Monkey.m in Sources */ = {isa = PBXBuildFile; fileRef = 1172B6982095C090009537DC /* Monkey.m */; };
@@ -399,6 +402,12 @@
 		1171CC68209C0566005E7C92 /* NSTimer+EOCBlocksSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+EOCBlocksSupport.m"; sourceTree = "<group>"; };
 		1171CC6C209C120E005E7C92 /* ManuallyKVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManuallyKVOViewController.h; sourceTree = "<group>"; };
 		1171CC6D209C120E005E7C92 /* ManuallyKVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManuallyKVOViewController.m; sourceTree = "<group>"; };
+		1171CC71209D55FB005E7C92 /* KVOBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOBasicViewController.h; sourceTree = "<group>"; };
+		1171CC72209D55FB005E7C92 /* KVOBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOBasicViewController.m; sourceTree = "<group>"; };
+		1171CC76209D57D7005E7C92 /* YYPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYPerson.h; sourceTree = "<group>"; };
+		1171CC77209D57D7005E7C92 /* YYPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYPerson.m; sourceTree = "<group>"; };
+		1171CC79209D625B005E7C92 /* KVOObserverArrayController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOObserverArrayController.h; sourceTree = "<group>"; };
+		1171CC7A209D625B005E7C92 /* KVOObserverArrayController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOObserverArrayController.m; sourceTree = "<group>"; };
 		1172B6952095C090009537DC /* Monkey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monkey.h; sourceTree = "<group>"; };
 		1172B6962095C090009537DC /* Bird.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bird.m; sourceTree = "<group>"; };
 		1172B6972095C090009537DC /* People.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
@@ -785,7 +794,7 @@
 				110E85C6208F1F870049F587 /* AFNetworking 3.0和之前区别 */,
 				110E85C7208F22A10049F587 /* swift混编学习 */,
 				1172B69F20960AB2009537DC /* NSTimer知识 */,
-				1171CC6B209C112D005E7C92 /* 手动触发KVO */,
+				1171CC6B209C112D005E7C92 /* KVO相关 */,
 				115FAA27208F1F5500353C45 /* 加密算法 */,
 			);
 			name = "面试题";
@@ -1339,13 +1348,51 @@
 			name = "定时器分类";
 			sourceTree = "<group>";
 		};
-		1171CC6B209C112D005E7C92 /* 手动触发KVO */ = {
+		1171CC6B209C112D005E7C92 /* KVO相关 */ = {
+			isa = PBXGroup;
+			children = (
+				1171CC6F209D55C5005E7C92 /* 基础应用 */,
+				1171CC71209D55FB005E7C92 /* KVOBasicViewController.h */,
+				1171CC72209D55FB005E7C92 /* KVOBasicViewController.m */,
+				1171CC74209D5662005E7C92 /* 监听数组 */,
+				1171CC70209D55CF005E7C92 /* 手动触发KVO */,
+				1171CC75209D576E005E7C92 /* KVO其它使用场景 */,
+			);
+			name = "KVO相关";
+			sourceTree = "<group>";
+		};
+		1171CC6F209D55C5005E7C92 /* 基础应用 */ = {
+			isa = PBXGroup;
+			children = (
+				1171CC76209D57D7005E7C92 /* YYPerson.h */,
+				1171CC77209D57D7005E7C92 /* YYPerson.m */,
+			);
+			name = "基础应用";
+			sourceTree = "<group>";
+		};
+		1171CC70209D55CF005E7C92 /* 手动触发KVO */ = {
 			isa = PBXGroup;
 			children = (
 				1171CC6C209C120E005E7C92 /* ManuallyKVOViewController.h */,
 				1171CC6D209C120E005E7C92 /* ManuallyKVOViewController.m */,
 			);
 			name = "手动触发KVO";
+			sourceTree = "<group>";
+		};
+		1171CC74209D5662005E7C92 /* 监听数组 */ = {
+			isa = PBXGroup;
+			children = (
+				1171CC79209D625B005E7C92 /* KVOObserverArrayController.h */,
+				1171CC7A209D625B005E7C92 /* KVOObserverArrayController.m */,
+			);
+			name = "监听数组";
+			sourceTree = "<group>";
+		};
+		1171CC75209D576E005E7C92 /* KVO其它使用场景 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "KVO其它使用场景";
 			sourceTree = "<group>";
 		};
 		1172B69E2095C095009537DC /* Model */ = {
@@ -1834,6 +1881,7 @@
 				110E8691208F33D20049F587 /* NSImage+WebCache.m in Sources */,
 				1110661A2086325C002B5C38 /* SwizzlingMethodViewController.m in Sources */,
 				110E8682208F33D20049F587 /* SDWebImageCodersManager.m in Sources */,
+				1171CC78209D57D7005E7C92 /* YYPerson.m in Sources */,
 				11B8FD4620761C6F009878D2 /* msgSendViewController.m in Sources */,
 				1172B6A220960AD8009537DC /* NSTimerViewController.m in Sources */,
 				110E868D208F33D20049F587 /* SDWebImageDownloaderOperation.m in Sources */,
@@ -1864,6 +1912,7 @@
 				112018F12078B39100C9567A /* BlockSyntaxViewController.m in Sources */,
 				111066112085EBFA002B5C38 /* LoadAndInitializeViewController.m in Sources */,
 				1174AC88207B5A64002996C5 /* MyClass.m in Sources */,
+				1171CC73209D55FB005E7C92 /* KVOBasicViewController.m in Sources */,
 				111065FC2085D638002B5C38 /* RunTimeBasicViewController.m in Sources */,
 				110E8697208F33D20049F587 /* UIButton+WebCache.m in Sources */,
 				110E8689208F33D20049F587 /* SDWebImageCoder.m in Sources */,
@@ -1902,6 +1951,7 @@
 				113ABEF0208594DF00847675 /* CustomOperationController.m in Sources */,
 				11A2A3FF2074B18100B4AFF4 /* ARCOwnershipAutoWeakController.m in Sources */,
 				1110663920863DFA002B5C38 /* Apple+AppleOne.m in Sources */,
+				1171CC7B209D625B005E7C92 /* KVOObserverArrayController.m in Sources */,
 				113ABED520830CCD00847675 /* shareObject.m in Sources */,
 				113ABED82083217900847675 /* NSOperationBasicViewController.m in Sources */,
 				113ABEF32085986100847675 /* OperationQueueMainController.m in Sources */,

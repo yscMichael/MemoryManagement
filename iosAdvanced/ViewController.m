@@ -167,7 +167,10 @@
                         @"Swift混编",
                         @"NSTimer基础知识",
                         @"NSTimer解决循环引用",
-                        @"手动实现KVO"],nil];
+                        @"KVO基础使用",
+                        @"KVO监听数组",
+                        @"手动触发KVO",
+                        @"KVO其它使用场景"],nil];
     }
     return _dataSoure;
 }
@@ -239,6 +242,8 @@
                               @"SwiftMixingViewController",
                               @"NSTimerViewController",
                               @"NSTimerCycleController",
+                              @"KVOBasicViewController",
+                              @"KVOObserverArrayController",
                               @"ManuallyKVOViewController"],nil];
     }
     return _controllerSoure;
