@@ -166,7 +166,8 @@
                         @"AFNetworking3.0对比",
                         @"Swift混编",
                         @"NSTimer基础知识",
-                        @"NSTimer解决循环引用"],nil];
+                        @"NSTimer解决循环引用",
+                        @"手动实现KVO"],nil];
     }
     return _dataSoure;
 }
@@ -237,7 +238,8 @@
                               @"AFNetworkingThreeController",
                               @"SwiftMixingViewController",
                               @"NSTimerViewController",
-                              @"NSTimerCycleController"],nil];
+                              @"NSTimerCycleController",
+                              @"ManuallyKVOViewController"],nil];
     }
     return _controllerSoure;
 }

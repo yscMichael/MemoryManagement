@@ -127,6 +127,7 @@
 		1171CC5F209BF43F005E7C92 /* NSTimerCycleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CC5E209BF43F005E7C92 /* NSTimerCycleController.m */; };
 		1171CC63209BF5D5005E7C92 /* EOCClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CC62209BF5D4005E7C92 /* EOCClass.m */; };
 		1171CC69209C0566005E7C92 /* NSTimer+EOCBlocksSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CC68209C0566005E7C92 /* NSTimer+EOCBlocksSupport.m */; };
+		1171CC6E209C120E005E7C92 /* ManuallyKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CC6D209C120E005E7C92 /* ManuallyKVOViewController.m */; };
 		1172B69B2095C090009537DC /* Bird.m in Sources */ = {isa = PBXBuildFile; fileRef = 1172B6962095C090009537DC /* Bird.m */; };
 		1172B69C2095C090009537DC /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 1172B6972095C090009537DC /* People.m */; };
 		1172B69D2095C090009537DC /* Monkey.m in Sources */ = {isa = PBXBuildFile; fileRef = 1172B6982095C090009537DC /* Monkey.m */; };
@@ -396,6 +397,8 @@
 		1171CC62209BF5D4005E7C92 /* EOCClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EOCClass.m; sourceTree = "<group>"; };
 		1171CC67209C0566005E7C92 /* NSTimer+EOCBlocksSupport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSTimer+EOCBlocksSupport.h"; sourceTree = "<group>"; };
 		1171CC68209C0566005E7C92 /* NSTimer+EOCBlocksSupport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSTimer+EOCBlocksSupport.m"; sourceTree = "<group>"; };
+		1171CC6C209C120E005E7C92 /* ManuallyKVOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ManuallyKVOViewController.h; sourceTree = "<group>"; };
+		1171CC6D209C120E005E7C92 /* ManuallyKVOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ManuallyKVOViewController.m; sourceTree = "<group>"; };
 		1172B6952095C090009537DC /* Monkey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monkey.h; sourceTree = "<group>"; };
 		1172B6962095C090009537DC /* Bird.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bird.m; sourceTree = "<group>"; };
 		1172B6972095C090009537DC /* People.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
@@ -782,6 +785,7 @@
 				110E85C6208F1F870049F587 /* AFNetworking 3.0和之前区别 */,
 				110E85C7208F22A10049F587 /* swift混编学习 */,
 				1172B69F20960AB2009537DC /* NSTimer知识 */,
+				1171CC6B209C112D005E7C92 /* 手动触发KVO */,
 				115FAA27208F1F5500353C45 /* 加密算法 */,
 			);
 			name = "面试题";
@@ -1335,6 +1339,15 @@
 			name = "定时器分类";
 			sourceTree = "<group>";
 		};
+		1171CC6B209C112D005E7C92 /* 手动触发KVO */ = {
+			isa = PBXGroup;
+			children = (
+				1171CC6C209C120E005E7C92 /* ManuallyKVOViewController.h */,
+				1171CC6D209C120E005E7C92 /* ManuallyKVOViewController.m */,
+			);
+			name = "手动触发KVO";
+			sourceTree = "<group>";
+		};
 		1172B69E2095C095009537DC /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -1844,6 +1857,7 @@
 				110E8687208F33D20049F587 /* SDWebImageCompat.m in Sources */,
 				11B8FD5020765430009878D2 /* MessageForwardingController.m in Sources */,
 				11AAA9A52081C62500DE7CA4 /* DispatchAfterViewController.m in Sources */,
+				1171CC6E209C120E005E7C92 /* ManuallyKVOViewController.m in Sources */,
 				110E86AF208F8A8E0049F587 /* TestSwiftDemo.swift in Sources */,
 				111E20E52096FA7600C1F94B /* NSTimerRunLoopController.m in Sources */,
 				1110662C20863507002B5C38 /* Banana.m in Sources */,
