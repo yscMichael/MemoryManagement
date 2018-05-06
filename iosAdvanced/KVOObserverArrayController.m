@@ -40,8 +40,10 @@ static int count = 0;
 //会触发
 - (IBAction)secondButtonClick:(id)sender
 {
-    NSString *tempString = [NSString stringWithFormat:@"%d",count];
-    [[self mutableArrayValueForKey:@"testArray"] removeObject:tempString];
+    if(self.testArray.count > 0)
+    {
+        [[self mutableArrayValueForKey:@"testArray"] removeLastObject];
+    }
 }
 
 //替换元素

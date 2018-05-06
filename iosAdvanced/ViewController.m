@@ -170,6 +170,7 @@
                         @"KVO基础使用",
                         @"KVO监听数组",
                         @"手动触发KVO",
+                        @"KVO原理以及自定义",
                         @"KVO其它使用场景"],nil];
     }
     return _dataSoure;
@@ -244,7 +245,8 @@
                               @"NSTimerCycleController",
                               @"KVOBasicViewController",
                               @"KVOObserverArrayController",
-                              @"ManuallyKVOViewController"],nil];
+                              @"ManuallyKVOViewController",
+                              @"CustomizeKVOController"],nil];
     }
     return _controllerSoure;
 }
