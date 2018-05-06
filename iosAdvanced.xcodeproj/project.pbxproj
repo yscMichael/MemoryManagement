@@ -137,6 +137,9 @@
 		1171CC87209DEA67005E7C92 /* CustomizeKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CC86209DEA67005E7C92 /* CustomizeKVOController.m */; };
 		1171CC8B209DEAD9005E7C92 /* NSObject+KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CC8A209DEAD9005E7C92 /* NSObject+KVO.m */; };
 		1171CC8F209DEF3B005E7C92 /* Tomato.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CC8E209DEF3B005E7C92 /* Tomato.m */; };
+		1171CC94209ED356005E7C92 /* tableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CC93209ED356005E7C92 /* tableViewModel.m */; };
+		1171CC97209ED3AC005E7C92 /* TableViewRefreshController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CC96209ED3AC005E7C92 /* TableViewRefreshController.m */; };
+		1171CC9E209EDC1D005E7C92 /* NavBarGradientController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CC9D209EDC1D005E7C92 /* NavBarGradientController.m */; };
 		1172B69B2095C090009537DC /* Bird.m in Sources */ = {isa = PBXBuildFile; fileRef = 1172B6962095C090009537DC /* Bird.m */; };
 		1172B69C2095C090009537DC /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 1172B6972095C090009537DC /* People.m */; };
 		1172B69D2095C090009537DC /* Monkey.m in Sources */ = {isa = PBXBuildFile; fileRef = 1172B6982095C090009537DC /* Monkey.m */; };
@@ -425,6 +428,12 @@
 		1171CC8A209DEAD9005E7C92 /* NSObject+KVO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVO.m"; sourceTree = "<group>"; };
 		1171CC8D209DEF3B005E7C92 /* Tomato.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tomato.h; sourceTree = "<group>"; };
 		1171CC8E209DEF3B005E7C92 /* Tomato.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tomato.m; sourceTree = "<group>"; };
+		1171CC92209ED356005E7C92 /* tableViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = tableViewModel.h; sourceTree = "<group>"; };
+		1171CC93209ED356005E7C92 /* tableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = tableViewModel.m; sourceTree = "<group>"; };
+		1171CC95209ED3AC005E7C92 /* TableViewRefreshController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewRefreshController.h; sourceTree = "<group>"; };
+		1171CC96209ED3AC005E7C92 /* TableViewRefreshController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewRefreshController.m; sourceTree = "<group>"; };
+		1171CC9C209EDC1D005E7C92 /* NavBarGradientController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavBarGradientController.h; sourceTree = "<group>"; };
+		1171CC9D209EDC1D005E7C92 /* NavBarGradientController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavBarGradientController.m; sourceTree = "<group>"; };
 		1172B6952095C090009537DC /* Monkey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monkey.h; sourceTree = "<group>"; };
 		1172B6962095C090009537DC /* Bird.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bird.m; sourceTree = "<group>"; };
 		1172B6972095C090009537DC /* People.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
@@ -1414,6 +1423,11 @@
 		1171CC75209D576E005E7C92 /* KVO其它使用场景 */ = {
 			isa = PBXGroup;
 			children = (
+				1171CC90209ED220005E7C92 /* 监听数组刷新tableView */,
+				1171CC98209ED86A005E7C92 /* 导航栏颜色渐变 */,
+				1171CC99209ED94D005E7C92 /* webview混排监听contentsize */,
+				1171CC9A209ED957005E7C92 /* 监听模型属性实时更新UI */,
+				1171CC9B209ED963005E7C92 /* 监听控制器frame改变，实现抽屉效果 */,
 			);
 			name = "KVO其它使用场景";
 			sourceTree = "<group>";
@@ -1445,6 +1459,55 @@
 				1171CC8E209DEF3B005E7C92 /* Tomato.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		1171CC90209ED220005E7C92 /* 监听数组刷新tableView */ = {
+			isa = PBXGroup;
+			children = (
+				1171CC91209ED329005E7C92 /* model */,
+				1171CC95209ED3AC005E7C92 /* TableViewRefreshController.h */,
+				1171CC96209ED3AC005E7C92 /* TableViewRefreshController.m */,
+			);
+			name = "监听数组刷新tableView";
+			sourceTree = "<group>";
+		};
+		1171CC91209ED329005E7C92 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1171CC92209ED356005E7C92 /* tableViewModel.h */,
+				1171CC93209ED356005E7C92 /* tableViewModel.m */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		1171CC98209ED86A005E7C92 /* 导航栏颜色渐变 */ = {
+			isa = PBXGroup;
+			children = (
+				1171CC9C209EDC1D005E7C92 /* NavBarGradientController.h */,
+				1171CC9D209EDC1D005E7C92 /* NavBarGradientController.m */,
+			);
+			name = "导航栏颜色渐变";
+			sourceTree = "<group>";
+		};
+		1171CC99209ED94D005E7C92 /* webview混排监听contentsize */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "webview混排监听contentsize";
+			sourceTree = "<group>";
+		};
+		1171CC9A209ED957005E7C92 /* 监听模型属性实时更新UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "监听模型属性实时更新UI";
+			sourceTree = "<group>";
+		};
+		1171CC9B209ED963005E7C92 /* 监听控制器frame改变，实现抽屉效果 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "监听控制器frame改变，实现抽屉效果";
 			sourceTree = "<group>";
 		};
 		1172B69E2095C095009537DC /* Model */ = {
@@ -1881,6 +1944,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				112019012078F98D00C9567A /* BlockStorageARCController.m in Sources */,
+				1171CC97209ED3AC005E7C92 /* TableViewRefreshController.m in Sources */,
 				11B8FD4C2076316B009878D2 /* Son.m in Sources */,
 				1171CC8B209DEAD9005E7C92 /* NSObject+KVO.m in Sources */,
 				110E86AD208F875B0049F587 /* SwiftTestViewController.swift in Sources */,
@@ -1958,6 +2022,7 @@
 				1171CC7E209D6753005E7C92 /* model.m in Sources */,
 				110E8685208F33D20049F587 /* UIImage+MultiFormat.m in Sources */,
 				11232EF8207DFD35000824B2 /* DispatchBarrierController.m in Sources */,
+				1171CC9E209EDC1D005E7C92 /* NavBarGradientController.m in Sources */,
 				113ABEF92085A89A00847675 /* OperationDependViewController.m in Sources */,
 				110E8687208F33D20049F587 /* SDWebImageCompat.m in Sources */,
 				11B8FD5020765430009878D2 /* MessageForwardingController.m in Sources */,
@@ -2015,6 +2080,7 @@
 				113ABEF32085986100847675 /* OperationQueueMainController.m in Sources */,
 				1115737320660DFC00EB426C /* main.m in Sources */,
 				11A2A3E120732C9100B4AFF4 /* Animal.m in Sources */,
+				1171CC94209ED356005E7C92 /* tableViewModel.m in Sources */,
 				110E863C208F33C20049F587 /* AFImageDownloader.m in Sources */,
 				110E8695208F33D20049F587 /* UIView+WebCache.m in Sources */,
 				1110662320863416002B5C38 /* Fruit.m in Sources */,

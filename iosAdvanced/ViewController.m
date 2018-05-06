@@ -171,7 +171,8 @@
                         @"KVO监听数组",
                         @"手动触发KVO",
                         @"KVO原理以及自定义",
-                        @"KVO其它使用场景"],nil];
+                        @"KVO监听数组刷新tableView",
+                        @"KVO导航栏颜色渐变"],nil];
     }
     return _dataSoure;
 }
@@ -246,7 +247,9 @@
                               @"KVOBasicViewController",
                               @"KVOObserverArrayController",
                               @"ManuallyKVOViewController",
-                              @"CustomizeKVOController"],nil];
+                              @"CustomizeKVOController",
+                              @"TableViewRefreshController",
+                              @"NavBarGradientController"],nil];
     }
     return _controllerSoure;
 }
