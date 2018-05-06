@@ -172,7 +172,9 @@
                         @"手动触发KVO",
                         @"KVO原理以及自定义",
                         @"KVO监听数组刷新tableView",
-                        @"KVO导航栏颜色渐变"],nil];
+                        @"KVO导航栏颜色渐变",
+                        @"KVC基础知识",
+                        @"js与OC交互"],nil];
     }
     return _dataSoure;
 }
@@ -249,7 +251,9 @@
                               @"ManuallyKVOViewController",
                               @"CustomizeKVOController",
                               @"TableViewRefreshController",
-                              @"NavBarGradientController"],nil];
+                              @"NavBarGradientController",
+                              @"KVCBasicViewController",
+                              @"JsAndOCViewController"],nil];
     }
     return _controllerSoure;
 }

@@ -140,6 +140,8 @@
 		1171CC94209ED356005E7C92 /* tableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CC93209ED356005E7C92 /* tableViewModel.m */; };
 		1171CC97209ED3AC005E7C92 /* TableViewRefreshController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CC96209ED3AC005E7C92 /* TableViewRefreshController.m */; };
 		1171CC9E209EDC1D005E7C92 /* NavBarGradientController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CC9D209EDC1D005E7C92 /* NavBarGradientController.m */; };
+		1171CCA2209EE702005E7C92 /* KVCBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CCA1209EE702005E7C92 /* KVCBasicViewController.m */; };
+		1171CCA6209EFD70005E7C92 /* JsAndOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CCA5209EFD70005E7C92 /* JsAndOCViewController.m */; };
 		1172B69B2095C090009537DC /* Bird.m in Sources */ = {isa = PBXBuildFile; fileRef = 1172B6962095C090009537DC /* Bird.m */; };
 		1172B69C2095C090009537DC /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 1172B6972095C090009537DC /* People.m */; };
 		1172B69D2095C090009537DC /* Monkey.m in Sources */ = {isa = PBXBuildFile; fileRef = 1172B6982095C090009537DC /* Monkey.m */; };
@@ -434,6 +436,10 @@
 		1171CC96209ED3AC005E7C92 /* TableViewRefreshController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewRefreshController.m; sourceTree = "<group>"; };
 		1171CC9C209EDC1D005E7C92 /* NavBarGradientController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavBarGradientController.h; sourceTree = "<group>"; };
 		1171CC9D209EDC1D005E7C92 /* NavBarGradientController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavBarGradientController.m; sourceTree = "<group>"; };
+		1171CCA0209EE702005E7C92 /* KVCBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCBasicViewController.h; sourceTree = "<group>"; };
+		1171CCA1209EE702005E7C92 /* KVCBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCBasicViewController.m; sourceTree = "<group>"; };
+		1171CCA4209EFD70005E7C92 /* JsAndOCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsAndOCViewController.h; sourceTree = "<group>"; };
+		1171CCA5209EFD70005E7C92 /* JsAndOCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JsAndOCViewController.m; sourceTree = "<group>"; };
 		1172B6952095C090009537DC /* Monkey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monkey.h; sourceTree = "<group>"; };
 		1172B6962095C090009537DC /* Bird.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bird.m; sourceTree = "<group>"; };
 		1172B6972095C090009537DC /* People.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
@@ -821,6 +827,8 @@
 				110E85C7208F22A10049F587 /* swift混编学习 */,
 				1172B69F20960AB2009537DC /* NSTimer知识 */,
 				1171CC6B209C112D005E7C92 /* KVO相关 */,
+				1171CC9F209EE648005E7C92 /* KVC相关 */,
+				1171CCA3209EFB95005E7C92 /* js与OC交互 */,
 				115FAA27208F1F5500353C45 /* 加密算法 */,
 			);
 			name = "面试题";
@@ -1510,6 +1518,24 @@
 			name = "监听控制器frame改变，实现抽屉效果";
 			sourceTree = "<group>";
 		};
+		1171CC9F209EE648005E7C92 /* KVC相关 */ = {
+			isa = PBXGroup;
+			children = (
+				1171CCA0209EE702005E7C92 /* KVCBasicViewController.h */,
+				1171CCA1209EE702005E7C92 /* KVCBasicViewController.m */,
+			);
+			name = "KVC相关";
+			sourceTree = "<group>";
+		};
+		1171CCA3209EFB95005E7C92 /* js与OC交互 */ = {
+			isa = PBXGroup;
+			children = (
+				1171CCA4209EFD70005E7C92 /* JsAndOCViewController.h */,
+				1171CCA5209EFD70005E7C92 /* JsAndOCViewController.m */,
+			);
+			name = "js与OC交互";
+			sourceTree = "<group>";
+		};
 		1172B69E2095C095009537DC /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -1987,6 +2013,7 @@
 				11AAA99D2081ADB600DE7CA4 /* DispatchTargetViewController.m in Sources */,
 				110E867E208F33D20049F587 /* SDWebImageManager.m in Sources */,
 				11AAA9B120823F2F00DE7CA4 /* DispatchOnceViewController.m in Sources */,
+				1171CCA2209EE702005E7C92 /* KVCBasicViewController.m in Sources */,
 				110E8637208F33C20049F587 /* UIImageView+AFNetworking.m in Sources */,
 				113ABEFF2085B37100847675 /* QueueCommunicationController.m in Sources */,
 				110E8636208F33C20049F587 /* AFNetworkActivityIndicatorManager.m in Sources */,
@@ -2085,6 +2112,7 @@
 				110E8695208F33D20049F587 /* UIView+WebCache.m in Sources */,
 				1110662320863416002B5C38 /* Fruit.m in Sources */,
 				11A2A3F020735F0200B4AFF4 /* NSObject+Category.m in Sources */,
+				1171CCA6209EFD70005E7C92 /* JsAndOCViewController.m in Sources */,
 				110E869A208F76470049F587 /* AFNetworkingThreeController.m in Sources */,
 				11A2A3F42074AF1D00B4AFF4 /* ARCOwnershipViewListController.m in Sources */,
 				11AAA9A12081C5E200DE7CA4 /* DispatchSyncViewController.m in Sources */,
