@@ -30,6 +30,28 @@
 
     [self.view addSubview:self.tableView];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
+
+    UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(ScreenWidth - 120, 64, 100, 40)];
+    button.backgroundColor = [UIColor blueColor];
+    [button setTitle:@"滚动底部" forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(scrollToBottom) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+}
+
+#pragma mark - 滚动到底部
+- (void)scrollToBottom
+{
+    //第一种方法
+    if (self.tableView.contentSize.height > self.tableView.frame.size.height)
+    {
+        CGPoint offset = CGPointMake(0, self.tableView.contentSize.height - self.tableView.frame.size.height);
+        [self.tableView setContentOffset:offset animated:YES];
+    }
+
+    //第二种方法
+    //这里一定要设置为NO,动画可能会影响到scrollerView
+    //导致增加数据源之后,tableView到处乱跳
+    //[self.tableView scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:self.dataSoure.count - 1 inSection:0]  atScrollPosition:UITableViewScrollPositionBottom animated:NO];
 }
 
 #pragma mark - UITableViewDelegate
@@ -174,7 +196,7 @@
                         @"KVO监听数组刷新tableView",
                         @"KVO导航栏颜色渐变",
                         @"KVC基础知识",
-                        @"js与OC交互"],nil];
+                        @"通过截取URL(WebView和WKWebView)"],nil];
     }
     return _dataSoure;
 }
@@ -253,7 +275,7 @@
                               @"TableViewRefreshController",
                               @"NavBarGradientController",
                               @"KVCBasicViewController",
-                              @"JsAndOCViewController"],nil];
+                              @"JsAndOCByURLViewController"],nil];
     }
     return _controllerSoure;
 }

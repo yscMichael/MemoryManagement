@@ -1,5 +1,5 @@
 //
-//  JsAndOCViewController.h
+//  JsAndOCByURLViewController.h
 //  iosAdvanced
 //
 //  Created by 杨世川 on 2018/5/6.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JsAndOCViewController : UIViewController
+@interface JsAndOCByURLViewController : UIViewController
 
 @end

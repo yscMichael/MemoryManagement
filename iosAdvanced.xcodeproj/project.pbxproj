@@ -141,7 +141,7 @@
 		1171CC97209ED3AC005E7C92 /* TableViewRefreshController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CC96209ED3AC005E7C92 /* TableViewRefreshController.m */; };
 		1171CC9E209EDC1D005E7C92 /* NavBarGradientController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CC9D209EDC1D005E7C92 /* NavBarGradientController.m */; };
 		1171CCA2209EE702005E7C92 /* KVCBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CCA1209EE702005E7C92 /* KVCBasicViewController.m */; };
-		1171CCA6209EFD70005E7C92 /* JsAndOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CCA5209EFD70005E7C92 /* JsAndOCViewController.m */; };
+		1171CCA6209EFD70005E7C92 /* JsAndOCByURLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CCA5209EFD70005E7C92 /* JsAndOCByURLViewController.m */; };
 		1172B69B2095C090009537DC /* Bird.m in Sources */ = {isa = PBXBuildFile; fileRef = 1172B6962095C090009537DC /* Bird.m */; };
 		1172B69C2095C090009537DC /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 1172B6972095C090009537DC /* People.m */; };
 		1172B69D2095C090009537DC /* Monkey.m in Sources */ = {isa = PBXBuildFile; fileRef = 1172B6982095C090009537DC /* Monkey.m */; };
@@ -151,6 +151,10 @@
 		1174AC88207B5A64002996C5 /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC87207B5A64002996C5 /* MyClass.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1174ACB1207B6152002996C5 /* ExampleBlockARCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174ACB0207B6152002996C5 /* ExampleBlockARCController.m */; };
 		1174ACB6207B8278002996C5 /* ExampleBlockMRCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174ACB5207B8278002996C5 /* ExampleBlockMRCController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1177A817209FFC9700726FE5 /* JsAndOCByURLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1177A816209FFC9700726FE5 /* JsAndOCByURLViewController.xib */; };
+		1177A81920A0007A00726FE5 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 1177A81820A0007900726FE5 /* index.html */; };
+		1177A81D20A0011400726FE5 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1177A81C20A0011400726FE5 /* WebViewController.m */; };
+		1177A82020A0012200726FE5 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1177A81F20A0012200726FE5 /* WKWebViewController.m */; };
 		117F8D9E207BAA5F0058825B /* CGDBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117F8D9D207BAA5F0058825B /* CGDBasicViewController.m */; };
 		11A2A3B3206F455400B4AFF4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A3B2206F455400B4AFF4 /* Person.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		11A2A3D0207219BB00B4AFF4 /* AutoReleaseMemoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A3CF207219BB00B4AFF4 /* AutoReleaseMemoryViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -438,8 +442,8 @@
 		1171CC9D209EDC1D005E7C92 /* NavBarGradientController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavBarGradientController.m; sourceTree = "<group>"; };
 		1171CCA0209EE702005E7C92 /* KVCBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCBasicViewController.h; sourceTree = "<group>"; };
 		1171CCA1209EE702005E7C92 /* KVCBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCBasicViewController.m; sourceTree = "<group>"; };
-		1171CCA4209EFD70005E7C92 /* JsAndOCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsAndOCViewController.h; sourceTree = "<group>"; };
-		1171CCA5209EFD70005E7C92 /* JsAndOCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JsAndOCViewController.m; sourceTree = "<group>"; };
+		1171CCA4209EFD70005E7C92 /* JsAndOCByURLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsAndOCByURLViewController.h; sourceTree = "<group>"; };
+		1171CCA5209EFD70005E7C92 /* JsAndOCByURLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JsAndOCByURLViewController.m; sourceTree = "<group>"; };
 		1172B6952095C090009537DC /* Monkey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Monkey.h; sourceTree = "<group>"; };
 		1172B6962095C090009537DC /* Bird.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bird.m; sourceTree = "<group>"; };
 		1172B6972095C090009537DC /* People.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = People.m; sourceTree = "<group>"; };
@@ -458,6 +462,12 @@
 		1174ACB0207B6152002996C5 /* ExampleBlockARCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleBlockARCController.m; sourceTree = "<group>"; };
 		1174ACB4207B8278002996C5 /* ExampleBlockMRCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleBlockMRCController.h; sourceTree = "<group>"; };
 		1174ACB5207B8278002996C5 /* ExampleBlockMRCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleBlockMRCController.m; sourceTree = "<group>"; };
+		1177A816209FFC9700726FE5 /* JsAndOCByURLViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = JsAndOCByURLViewController.xib; sourceTree = "<group>"; };
+		1177A81820A0007900726FE5 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		1177A81B20A0011400726FE5 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		1177A81C20A0011400726FE5 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		1177A81E20A0012200726FE5 /* WKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
+		1177A81F20A0012200726FE5 /* WKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
 		117F8D9C207BAA5F0058825B /* CGDBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGDBasicViewController.h; sourceTree = "<group>"; };
 		117F8D9D207BAA5F0058825B /* CGDBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGDBasicViewController.m; sourceTree = "<group>"; };
 		11A2A3B1206F455400B4AFF4 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
@@ -1530,10 +1540,20 @@
 		1171CCA3209EFB95005E7C92 /* js与OC交互 */ = {
 			isa = PBXGroup;
 			children = (
-				1171CCA4209EFD70005E7C92 /* JsAndOCViewController.h */,
-				1171CCA5209EFD70005E7C92 /* JsAndOCViewController.m */,
+				1171CCA7209F115A005E7C92 /* 通过截取URL */,
 			);
 			name = "js与OC交互";
+			sourceTree = "<group>";
+		};
+		1171CCA7209F115A005E7C92 /* 通过截取URL */ = {
+			isa = PBXGroup;
+			children = (
+				1177A81A20A0007E00726FE5 /* html文件 */,
+				1177A82320A0015300726FE5 /* mainController */,
+				1177A82120A0012600726FE5 /* WebView */,
+				1177A82220A0013B00726FE5 /* WKWebView */,
+			);
+			name = "通过截取URL";
 			sourceTree = "<group>";
 		};
 		1172B69E2095C095009537DC /* Model */ = {
@@ -1613,6 +1633,42 @@
 				1174ACB5207B8278002996C5 /* ExampleBlockMRCController.m */,
 			);
 			name = MRC;
+			sourceTree = "<group>";
+		};
+		1177A81A20A0007E00726FE5 /* html文件 */ = {
+			isa = PBXGroup;
+			children = (
+				1177A81820A0007900726FE5 /* index.html */,
+			);
+			name = "html文件";
+			sourceTree = "<group>";
+		};
+		1177A82120A0012600726FE5 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				1177A81B20A0011400726FE5 /* WebViewController.h */,
+				1177A81C20A0011400726FE5 /* WebViewController.m */,
+			);
+			name = WebView;
+			sourceTree = "<group>";
+		};
+		1177A82220A0013B00726FE5 /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				1177A81E20A0012200726FE5 /* WKWebViewController.h */,
+				1177A81F20A0012200726FE5 /* WKWebViewController.m */,
+			);
+			name = WKWebView;
+			sourceTree = "<group>";
+		};
+		1177A82320A0015300726FE5 /* mainController */ = {
+			isa = PBXGroup;
+			children = (
+				1171CCA4209EFD70005E7C92 /* JsAndOCByURLViewController.h */,
+				1171CCA5209EFD70005E7C92 /* JsAndOCByURLViewController.m */,
+				1177A816209FFC9700726FE5 /* JsAndOCByURLViewController.xib */,
+			);
+			name = mainController;
 			sourceTree = "<group>";
 		};
 		11A2A3CD2072173F00B4AFF4 /* 自动释放池探究 */ = {
@@ -1950,6 +2006,8 @@
 				115C996B2098B39F00916654 /* timg.jpeg in Resources */,
 				111E20E72097090100C1F94B /* NSTimerRunLoopController.xib in Resources */,
 				111ED19720989E6D0023574B /* spaceship.jpg in Resources */,
+				1177A81920A0007A00726FE5 /* index.html in Resources */,
+				1177A817209FFC9700726FE5 /* JsAndOCByURLViewController.xib in Resources */,
 				110E8AAD208C40DD006D7E5C /* img.gif in Resources */,
 				115C99712098B8C100916654 /* YYAdvancedCell.xib in Resources */,
 				1115738120660DFC00EB426C /* LaunchScreen.storyboard in Resources */,
@@ -1987,6 +2045,7 @@
 				112018F52078BF3200C9567A /* InterceptedVariableController.m in Sources */,
 				110E863E208F33C20049F587 /* AFHTTPSessionManager.m in Sources */,
 				11A2A3D520721B8A00B4AFF4 /* AutoReleaseMRCViewController.m in Sources */,
+				1177A81D20A0011400726FE5 /* WebViewController.m in Sources */,
 				115FA97C208ED17300353C45 /* Bulldog+Category.m in Sources */,
 				110E8640208F33C20049F587 /* AFURLRequestSerialization.m in Sources */,
 				110E8638208F33C20049F587 /* UIButton+AFNetworking.m in Sources */,
@@ -2045,6 +2104,7 @@
 				11624E312086E65B00ABEB75 /* VariablesDifferenceController.m in Sources */,
 				113ABEF6208598CE00847675 /* OperationQueueCustomController.m in Sources */,
 				110E868C208F33D20049F587 /* SDImageCache.m in Sources */,
+				1177A82020A0012200726FE5 /* WKWebViewController.m in Sources */,
 				11A2A3B3206F455400B4AFF4 /* Person.m in Sources */,
 				1171CC7E209D6753005E7C92 /* model.m in Sources */,
 				110E8685208F33D20049F587 /* UIImage+MultiFormat.m in Sources */,
@@ -2112,7 +2172,7 @@
 				110E8695208F33D20049F587 /* UIView+WebCache.m in Sources */,
 				1110662320863416002B5C38 /* Fruit.m in Sources */,
 				11A2A3F020735F0200B4AFF4 /* NSObject+Category.m in Sources */,
-				1171CCA6209EFD70005E7C92 /* JsAndOCViewController.m in Sources */,
+				1171CCA6209EFD70005E7C92 /* JsAndOCByURLViewController.m in Sources */,
 				110E869A208F76470049F587 /* AFNetworkingThreeController.m in Sources */,
 				11A2A3F42074AF1D00B4AFF4 /* ARCOwnershipViewListController.m in Sources */,
 				11AAA9A12081C5E200DE7CA4 /* DispatchSyncViewController.m in Sources */,
