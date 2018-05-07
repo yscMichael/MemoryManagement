@@ -155,6 +155,11 @@
 		1177A81920A0007A00726FE5 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 1177A81820A0007900726FE5 /* index.html */; };
 		1177A81D20A0011400726FE5 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1177A81C20A0011400726FE5 /* WebViewController.m */; };
 		1177A82020A0012200726FE5 /* WKWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1177A81F20A0012200726FE5 /* WKWebViewController.m */; };
+		1177A82720A091E800726FE5 /* JavaScriptCoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1177A82620A091E800726FE5 /* JavaScriptCoreViewController.m */; };
+		1177A82A20A09C0500726FE5 /* indexTwo.html in Resources */ = {isa = PBXBuildFile; fileRef = 1177A82920A09C0500726FE5 /* indexTwo.html */; };
+		1177A82E20A0A1CF00726FE5 /* MessageHandlerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1177A82D20A0A1CF00726FE5 /* MessageHandlerController.m */; };
+		1177A83220A0A20400726FE5 /* JavascriptBridgeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1177A83120A0A20400726FE5 /* JavascriptBridgeController.m */; };
+		1177A83620A0A26E00726FE5 /* CordovaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1177A83520A0A26E00726FE5 /* CordovaViewController.m */; };
 		117F8D9E207BAA5F0058825B /* CGDBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117F8D9D207BAA5F0058825B /* CGDBasicViewController.m */; };
 		11A2A3B3206F455400B4AFF4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A3B2206F455400B4AFF4 /* Person.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		11A2A3D0207219BB00B4AFF4 /* AutoReleaseMemoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A3CF207219BB00B4AFF4 /* AutoReleaseMemoryViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -468,6 +473,15 @@
 		1177A81C20A0011400726FE5 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		1177A81E20A0012200726FE5 /* WKWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WKWebViewController.h; sourceTree = "<group>"; };
 		1177A81F20A0012200726FE5 /* WKWebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WKWebViewController.m; sourceTree = "<group>"; };
+		1177A82520A091E800726FE5 /* JavaScriptCoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JavaScriptCoreViewController.h; sourceTree = "<group>"; };
+		1177A82620A091E800726FE5 /* JavaScriptCoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JavaScriptCoreViewController.m; sourceTree = "<group>"; };
+		1177A82920A09C0500726FE5 /* indexTwo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = indexTwo.html; sourceTree = "<group>"; };
+		1177A82C20A0A1CF00726FE5 /* MessageHandlerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MessageHandlerController.h; sourceTree = "<group>"; };
+		1177A82D20A0A1CF00726FE5 /* MessageHandlerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageHandlerController.m; sourceTree = "<group>"; };
+		1177A83020A0A20400726FE5 /* JavascriptBridgeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JavascriptBridgeController.h; sourceTree = "<group>"; };
+		1177A83120A0A20400726FE5 /* JavascriptBridgeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JavascriptBridgeController.m; sourceTree = "<group>"; };
+		1177A83420A0A26E00726FE5 /* CordovaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CordovaViewController.h; sourceTree = "<group>"; };
+		1177A83520A0A26E00726FE5 /* CordovaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CordovaViewController.m; sourceTree = "<group>"; };
 		117F8D9C207BAA5F0058825B /* CGDBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGDBasicViewController.h; sourceTree = "<group>"; };
 		117F8D9D207BAA5F0058825B /* CGDBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGDBasicViewController.m; sourceTree = "<group>"; };
 		11A2A3B1206F455400B4AFF4 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
@@ -1541,6 +1555,10 @@
 			isa = PBXGroup;
 			children = (
 				1171CCA7209F115A005E7C92 /* 通过截取URL */,
+				1177A82420A091D400726FE5 /* JavaScriptCore */,
+				1177A82B20A0A1B700726FE5 /* WKScriptMessageHandler */,
+				1177A82F20A0A1DE00726FE5 /* 第三方框架 */,
+				1177A83320A0A25100726FE5 /* cordova使用 */,
 			);
 			name = "js与OC交互";
 			sourceTree = "<group>";
@@ -1669,6 +1687,51 @@
 				1177A816209FFC9700726FE5 /* JsAndOCByURLViewController.xib */,
 			);
 			name = mainController;
+			sourceTree = "<group>";
+		};
+		1177A82420A091D400726FE5 /* JavaScriptCore */ = {
+			isa = PBXGroup;
+			children = (
+				1177A82820A09BD800726FE5 /* html */,
+				1177A82520A091E800726FE5 /* JavaScriptCoreViewController.h */,
+				1177A82620A091E800726FE5 /* JavaScriptCoreViewController.m */,
+			);
+			name = JavaScriptCore;
+			sourceTree = "<group>";
+		};
+		1177A82820A09BD800726FE5 /* html */ = {
+			isa = PBXGroup;
+			children = (
+				1177A82920A09C0500726FE5 /* indexTwo.html */,
+			);
+			path = html;
+			sourceTree = "<group>";
+		};
+		1177A82B20A0A1B700726FE5 /* WKScriptMessageHandler */ = {
+			isa = PBXGroup;
+			children = (
+				1177A82C20A0A1CF00726FE5 /* MessageHandlerController.h */,
+				1177A82D20A0A1CF00726FE5 /* MessageHandlerController.m */,
+			);
+			name = WKScriptMessageHandler;
+			sourceTree = "<group>";
+		};
+		1177A82F20A0A1DE00726FE5 /* 第三方框架 */ = {
+			isa = PBXGroup;
+			children = (
+				1177A83020A0A20400726FE5 /* JavascriptBridgeController.h */,
+				1177A83120A0A20400726FE5 /* JavascriptBridgeController.m */,
+			);
+			name = "第三方框架";
+			sourceTree = "<group>";
+		};
+		1177A83320A0A25100726FE5 /* cordova使用 */ = {
+			isa = PBXGroup;
+			children = (
+				1177A83420A0A26E00726FE5 /* CordovaViewController.h */,
+				1177A83520A0A26E00726FE5 /* CordovaViewController.m */,
+			);
+			name = "cordova使用";
 			sourceTree = "<group>";
 		};
 		11A2A3CD2072173F00B4AFF4 /* 自动释放池探究 */ = {
@@ -2005,6 +2068,7 @@
 				110E8633208F33C20049F587 /* README.md in Resources */,
 				115C996B2098B39F00916654 /* timg.jpeg in Resources */,
 				111E20E72097090100C1F94B /* NSTimerRunLoopController.xib in Resources */,
+				1177A82A20A09C0500726FE5 /* indexTwo.html in Resources */,
 				111ED19720989E6D0023574B /* spaceship.jpg in Resources */,
 				1177A81920A0007A00726FE5 /* index.html in Resources */,
 				1177A817209FFC9700726FE5 /* JsAndOCByURLViewController.xib in Resources */,
@@ -2112,12 +2176,16 @@
 				1171CC9E209EDC1D005E7C92 /* NavBarGradientController.m in Sources */,
 				113ABEF92085A89A00847675 /* OperationDependViewController.m in Sources */,
 				110E8687208F33D20049F587 /* SDWebImageCompat.m in Sources */,
+				1177A83620A0A26E00726FE5 /* CordovaViewController.m in Sources */,
 				11B8FD5020765430009878D2 /* MessageForwardingController.m in Sources */,
 				11AAA9A52081C62500DE7CA4 /* DispatchAfterViewController.m in Sources */,
 				1171CC6E209C120E005E7C92 /* ManuallyKVOViewController.m in Sources */,
 				1171CC87209DEA67005E7C92 /* CustomizeKVOController.m in Sources */,
 				110E86AF208F8A8E0049F587 /* TestSwiftDemo.swift in Sources */,
+				1177A83220A0A20400726FE5 /* JavascriptBridgeController.m in Sources */,
+				1177A82720A091E800726FE5 /* JavaScriptCoreViewController.m in Sources */,
 				111E20E52096FA7600C1F94B /* NSTimerRunLoopController.m in Sources */,
+				1177A82E20A0A1CF00726FE5 /* MessageHandlerController.m in Sources */,
 				1110662C20863507002B5C38 /* Banana.m in Sources */,
 				112018F12078B39100C9567A /* BlockSyntaxViewController.m in Sources */,
 				111066112085EBFA002B5C38 /* LoadAndInitializeViewController.m in Sources */,

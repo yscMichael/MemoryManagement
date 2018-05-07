@@ -196,7 +196,8 @@
                         @"KVO监听数组刷新tableView",
                         @"KVO导航栏颜色渐变",
                         @"KVC基础知识",
-                        @"通过截取URL(WebView和WKWebView)"],nil];
+                        @"通过截取URL(WebView和WKWebView)",
+                        @"通过JavaScriptCore(WebView)"],nil];
     }
     return _dataSoure;
 }
@@ -275,7 +276,8 @@
                               @"TableViewRefreshController",
                               @"NavBarGradientController",
                               @"KVCBasicViewController",
-                              @"JsAndOCByURLViewController"],nil];
+                              @"JsAndOCByURLViewController",
+                              @"JavaScriptCoreViewController"],nil];
     }
     return _controllerSoure;
 }
