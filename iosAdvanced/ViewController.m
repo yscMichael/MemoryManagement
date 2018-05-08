@@ -197,7 +197,8 @@
                         @"KVO导航栏颜色渐变",
                         @"KVC基础知识",
                         @"通过截取URL(WebView和WKWebView)",
-                        @"通过JavaScriptCore(WebView)"],nil];
+                        @"通过JavaScriptCore(WebView)",
+                        @"通过WKScriptMessageHandler(WKWebView)"],nil];
     }
     return _dataSoure;
 }
@@ -277,7 +278,8 @@
                               @"NavBarGradientController",
                               @"KVCBasicViewController",
                               @"JsAndOCByURLViewController",
-                              @"JavaScriptCoreViewController"],nil];
+                              @"JavaScriptCoreViewController",
+                              @"MessageHandlerController"],nil];
     }
     return _controllerSoure;
 }

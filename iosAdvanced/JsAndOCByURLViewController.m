@@ -12,8 +12,6 @@
 
 @interface JsAndOCByURLViewController ()
 
-
-
 @end
 
 @implementation JsAndOCByURLViewController
