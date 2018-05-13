@@ -198,7 +198,9 @@
                         @"KVC基础知识",
                         @"通过截取URL(WebView和WKWebView)",
                         @"通过JavaScriptCore(WebView)",
-                        @"通过WKScriptMessageHandler(WKWebView)"],nil];
+                        @"通过WKScriptMessageHandler(WKWebView)",
+                        @"通过三方框架(WebView和WKWebView)",
+                        @"通过cordova实现"],nil];
     }
     return _dataSoure;
 }
@@ -279,7 +281,9 @@
                               @"KVCBasicViewController",
                               @"JsAndOCByURLViewController",
                               @"JavaScriptCoreViewController",
-                              @"MessageHandlerController"],nil];
+                              @"MessageHandlerController",
+                              @"JavascriptBridgeController",
+                              @"CordovaViewController"],nil];
     }
     return _controllerSoure;
 }

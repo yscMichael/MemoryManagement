@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CDVViewController.h"
 
-@interface CordovaViewController : UIViewController
+@interface CordovaViewController : CDVViewController
 
 @end

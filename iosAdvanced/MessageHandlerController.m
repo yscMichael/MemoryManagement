@@ -62,7 +62,8 @@
     [self.wkWebView.configuration.userContentController removeScriptMessageHandlerForName:@"Location"];
     [self.wkWebView.configuration.userContentController removeScriptMessageHandlerForName:@"Share"];
     [self.wkWebView.configuration.userContentController removeScriptMessageHandlerForName:@"Color"];
-    [self.wkWebView.configuration.userContentController removeScriptMessageHandlerForName:@"Pay"];
+    [self.wkWebView.configuration.userContentController
+        removeScriptMessageHandlerForName:@"Pay"];
     [self.wkWebView.configuration.userContentController removeScriptMessageHandlerForName:@"Shake"];
     [self.wkWebView.configuration.userContentController removeScriptMessageHandlerForName:@"GoBack"];
     [self.wkWebView.configuration.userContentController removeScriptMessageHandlerForName:@"PlaySound"];
