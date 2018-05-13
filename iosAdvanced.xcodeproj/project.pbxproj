@@ -191,6 +191,18 @@
 		1177A83220A0A20400726FE5 /* JavascriptBridgeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1177A83120A0A20400726FE5 /* JavascriptBridgeController.m */; };
 		1177A83620A0A26E00726FE5 /* CordovaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1177A83520A0A26E00726FE5 /* CordovaViewController.m */; };
 		117F8D9E207BAA5F0058825B /* CGDBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117F8D9D207BAA5F0058825B /* CGDBasicViewController.m */; };
+		1195A23620A7E4B2005CE445 /* OSSpinLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1195A23220A7E4B2005CE445 /* OSSpinLockViewController.m */; };
+		1195A23720A7E4B2005CE445 /* LockListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1195A23420A7E4B2005CE445 /* LockListViewController.m */; };
+		1195A23D20A7E580005CE445 /* DispatchSemaphoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1195A23C20A7E580005CE445 /* DispatchSemaphoreViewController.m */; };
+		1195A24120A7E5A6005CE445 /* PthreadMutexViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1195A24020A7E5A6005CE445 /* PthreadMutexViewController.m */; };
+		1195A24520A7E629005CE445 /* PthreadMutexRecursiveController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1195A24420A7E629005CE445 /* PthreadMutexRecursiveController.m */; };
+		1195A24920A7E65F005CE445 /* NSLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1195A24820A7E65F005CE445 /* NSLockViewController.m */; };
+		1195A24D20A7E67B005CE445 /* NSConditionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1195A24C20A7E67B005CE445 /* NSConditionViewController.m */; };
+		1195A25120A7E69D005CE445 /* NSRecursiveLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1195A25020A7E69D005CE445 /* NSRecursiveLockViewController.m */; };
+		1195A25520A7E6B9005CE445 /* SynchronizedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1195A25420A7E6B9005CE445 /* SynchronizedViewController.m */; };
+		1195A25920A7E6D4005CE445 /* NSConditionLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1195A25820A7E6D4005CE445 /* NSConditionLockViewController.m */; };
+		1195A25D20A7EAFE005CE445 /* JsAndOCListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1195A25C20A7EAFE005CE445 /* JsAndOCListViewController.m */; };
+		1195A26120A7ECDC005CE445 /* KVOMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1195A26020A7ECDC005CE445 /* KVOMainViewController.m */; };
 		11A2A3B3206F455400B4AFF4 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A3B2206F455400B4AFF4 /* Person.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		11A2A3D0207219BB00B4AFF4 /* AutoReleaseMemoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A3CF207219BB00B4AFF4 /* AutoReleaseMemoryViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		11A2A3D520721B8A00B4AFF4 /* AutoReleaseMRCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A3D420721B8A00B4AFF4 /* AutoReleaseMRCViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -209,6 +221,12 @@
 		11AAA9A92081C8E900DE7CA4 /* DispatchApplyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AAA9A82081C8E900DE7CA4 /* DispatchApplyViewController.m */; };
 		11AAA9AD2081EE8C00DE7CA4 /* DispatchSuspendController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AAA9AC2081EE8C00DE7CA4 /* DispatchSuspendController.m */; };
 		11AAA9B120823F2F00DE7CA4 /* DispatchOnceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AAA9B020823F2F00DE7CA4 /* DispatchOnceViewController.m */; };
+		11AC65EA20A7F01F0016BD7D /* KVOOtherUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AC65E920A7F01F0016BD7D /* KVOOtherUseViewController.m */; };
+		11AC65ED20A7F0F40016BD7D /* WebContentsizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AC65EC20A7F0F40016BD7D /* WebContentsizeViewController.m */; };
+		11AC65F020A7F13A0016BD7D /* MonitorModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AC65EF20A7F13A0016BD7D /* MonitorModelViewController.m */; };
+		11AC65F320A7F1870016BD7D /* DrawerEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AC65F220A7F1870016BD7D /* DrawerEffectViewController.m */; };
+		11AC65F720A7F30D0016BD7D /* NSTimerListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AC65F620A7F30D0016BD7D /* NSTimerListViewController.m */; };
+		11AC65FA20A813530016BD7D /* HeaderViewInSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AC65F920A813530016BD7D /* HeaderViewInSection.m */; };
 		11B8FD3D20760F48009878D2 /* RunTimeViewListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8FD3C20760F48009878D2 /* RunTimeViewListController.m */; };
 		11B8FD422076105F009878D2 /* ISAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8FD412076105F009878D2 /* ISAViewController.m */; };
 		11B8FD4620761C6F009878D2 /* msgSendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B8FD4520761C6F009878D2 /* msgSendViewController.m */; };
@@ -579,6 +597,30 @@
 		1177A83520A0A26E00726FE5 /* CordovaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CordovaViewController.m; sourceTree = "<group>"; };
 		117F8D9C207BAA5F0058825B /* CGDBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGDBasicViewController.h; sourceTree = "<group>"; };
 		117F8D9D207BAA5F0058825B /* CGDBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGDBasicViewController.m; sourceTree = "<group>"; };
+		1195A23220A7E4B2005CE445 /* OSSpinLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSpinLockViewController.m; sourceTree = "<group>"; };
+		1195A23320A7E4B2005CE445 /* OSSpinLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSpinLockViewController.h; sourceTree = "<group>"; };
+		1195A23420A7E4B2005CE445 /* LockListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LockListViewController.m; sourceTree = "<group>"; };
+		1195A23520A7E4B2005CE445 /* LockListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LockListViewController.h; sourceTree = "<group>"; };
+		1195A23B20A7E580005CE445 /* DispatchSemaphoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchSemaphoreViewController.h; sourceTree = "<group>"; };
+		1195A23C20A7E580005CE445 /* DispatchSemaphoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchSemaphoreViewController.m; sourceTree = "<group>"; };
+		1195A23F20A7E5A6005CE445 /* PthreadMutexViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PthreadMutexViewController.h; sourceTree = "<group>"; };
+		1195A24020A7E5A6005CE445 /* PthreadMutexViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PthreadMutexViewController.m; sourceTree = "<group>"; };
+		1195A24320A7E629005CE445 /* PthreadMutexRecursiveController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PthreadMutexRecursiveController.h; sourceTree = "<group>"; };
+		1195A24420A7E629005CE445 /* PthreadMutexRecursiveController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PthreadMutexRecursiveController.m; sourceTree = "<group>"; };
+		1195A24720A7E65F005CE445 /* NSLockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSLockViewController.h; sourceTree = "<group>"; };
+		1195A24820A7E65F005CE445 /* NSLockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSLockViewController.m; sourceTree = "<group>"; };
+		1195A24B20A7E67B005CE445 /* NSConditionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSConditionViewController.h; sourceTree = "<group>"; };
+		1195A24C20A7E67B005CE445 /* NSConditionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSConditionViewController.m; sourceTree = "<group>"; };
+		1195A24F20A7E69D005CE445 /* NSRecursiveLockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSRecursiveLockViewController.h; sourceTree = "<group>"; };
+		1195A25020A7E69D005CE445 /* NSRecursiveLockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSRecursiveLockViewController.m; sourceTree = "<group>"; };
+		1195A25320A7E6B9005CE445 /* SynchronizedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SynchronizedViewController.h; sourceTree = "<group>"; };
+		1195A25420A7E6B9005CE445 /* SynchronizedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SynchronizedViewController.m; sourceTree = "<group>"; };
+		1195A25720A7E6D4005CE445 /* NSConditionLockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSConditionLockViewController.h; sourceTree = "<group>"; };
+		1195A25820A7E6D4005CE445 /* NSConditionLockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSConditionLockViewController.m; sourceTree = "<group>"; };
+		1195A25B20A7EAFE005CE445 /* JsAndOCListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JsAndOCListViewController.h; sourceTree = "<group>"; };
+		1195A25C20A7EAFE005CE445 /* JsAndOCListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JsAndOCListViewController.m; sourceTree = "<group>"; };
+		1195A25F20A7ECDC005CE445 /* KVOMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOMainViewController.h; sourceTree = "<group>"; };
+		1195A26020A7ECDC005CE445 /* KVOMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOMainViewController.m; sourceTree = "<group>"; };
 		11A2A3B1206F455400B4AFF4 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		11A2A3B2206F455400B4AFF4 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		11A2A3CE207219BB00B4AFF4 /* AutoReleaseMemoryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoReleaseMemoryViewController.h; sourceTree = "<group>"; };
@@ -615,6 +657,18 @@
 		11AAA9AC2081EE8C00DE7CA4 /* DispatchSuspendController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchSuspendController.m; sourceTree = "<group>"; };
 		11AAA9AF20823F2F00DE7CA4 /* DispatchOnceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchOnceViewController.h; sourceTree = "<group>"; };
 		11AAA9B020823F2F00DE7CA4 /* DispatchOnceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchOnceViewController.m; sourceTree = "<group>"; };
+		11AC65E820A7F01F0016BD7D /* KVOOtherUseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOOtherUseViewController.h; sourceTree = "<group>"; };
+		11AC65E920A7F01F0016BD7D /* KVOOtherUseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOOtherUseViewController.m; sourceTree = "<group>"; };
+		11AC65EB20A7F0F40016BD7D /* WebContentsizeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebContentsizeViewController.h; sourceTree = "<group>"; };
+		11AC65EC20A7F0F40016BD7D /* WebContentsizeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebContentsizeViewController.m; sourceTree = "<group>"; };
+		11AC65EE20A7F13A0016BD7D /* MonitorModelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MonitorModelViewController.h; sourceTree = "<group>"; };
+		11AC65EF20A7F13A0016BD7D /* MonitorModelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MonitorModelViewController.m; sourceTree = "<group>"; };
+		11AC65F120A7F1870016BD7D /* DrawerEffectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawerEffectViewController.h; sourceTree = "<group>"; };
+		11AC65F220A7F1870016BD7D /* DrawerEffectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawerEffectViewController.m; sourceTree = "<group>"; };
+		11AC65F520A7F30D0016BD7D /* NSTimerListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTimerListViewController.h; sourceTree = "<group>"; };
+		11AC65F620A7F30D0016BD7D /* NSTimerListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTimerListViewController.m; sourceTree = "<group>"; };
+		11AC65F820A813530016BD7D /* HeaderViewInSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderViewInSection.h; sourceTree = "<group>"; };
+		11AC65F920A813530016BD7D /* HeaderViewInSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeaderViewInSection.m; sourceTree = "<group>"; };
 		11B8FD3B20760F48009878D2 /* RunTimeViewListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RunTimeViewListController.h; sourceTree = "<group>"; };
 		11B8FD3C20760F48009878D2 /* RunTimeViewListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RunTimeViewListController.m; sourceTree = "<group>"; };
 		11B8FD402076105F009878D2 /* ISAViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ISAViewController.h; sourceTree = "<group>"; };
@@ -663,6 +717,8 @@
 		11001E2B206A2E5200457CBC /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				11AC65F820A813530016BD7D /* HeaderViewInSection.h */,
+				11AC65F920A813530016BD7D /* HeaderViewInSection.m */,
 				1115737720660DFC00EB426C /* ViewController.h */,
 				1115737820660DFC00EB426C /* ViewController.m */,
 			);
@@ -948,6 +1004,7 @@
 				1171CC6B209C112D005E7C92 /* KVO相关 */,
 				1171CC9F209EE648005E7C92 /* KVC相关 */,
 				1171CCA3209EFB95005E7C92 /* js与OC交互 */,
+				1195A23120A7E470005CE445 /* 八种锁 */,
 				115FAA27208F1F5500353C45 /* 加密算法 */,
 			);
 			name = "面试题";
@@ -1675,6 +1732,7 @@
 		1171CC6B209C112D005E7C92 /* KVO相关 */ = {
 			isa = PBXGroup;
 			children = (
+				1195A25E20A7ECCC005CE445 /* main */,
 				1171CC6F209D55C5005E7C92 /* 基础应用 */,
 				1171CC74209D5662005E7C92 /* 监听数组 */,
 				1171CC70209D55CF005E7C92 /* 手动触发KVO */,
@@ -1721,6 +1779,7 @@
 		1171CC75209D576E005E7C92 /* KVO其它使用场景 */ = {
 			isa = PBXGroup;
 			children = (
+				11AC65E720A7EF440016BD7D /* main */,
 				1171CC90209ED220005E7C92 /* 监听数组刷新tableView */,
 				1171CC98209ED86A005E7C92 /* 导航栏颜色渐变 */,
 				1171CC99209ED94D005E7C92 /* webview混排监听contentsize */,
@@ -1790,6 +1849,8 @@
 		1171CC99209ED94D005E7C92 /* webview混排监听contentsize */ = {
 			isa = PBXGroup;
 			children = (
+				11AC65EB20A7F0F40016BD7D /* WebContentsizeViewController.h */,
+				11AC65EC20A7F0F40016BD7D /* WebContentsizeViewController.m */,
 			);
 			name = "webview混排监听contentsize";
 			sourceTree = "<group>";
@@ -1797,6 +1858,8 @@
 		1171CC9A209ED957005E7C92 /* 监听模型属性实时更新UI */ = {
 			isa = PBXGroup;
 			children = (
+				11AC65EE20A7F13A0016BD7D /* MonitorModelViewController.h */,
+				11AC65EF20A7F13A0016BD7D /* MonitorModelViewController.m */,
 			);
 			name = "监听模型属性实时更新UI";
 			sourceTree = "<group>";
@@ -1804,6 +1867,8 @@
 		1171CC9B209ED963005E7C92 /* 监听控制器frame改变，实现抽屉效果 */ = {
 			isa = PBXGroup;
 			children = (
+				11AC65F120A7F1870016BD7D /* DrawerEffectViewController.h */,
+				11AC65F220A7F1870016BD7D /* DrawerEffectViewController.m */,
 			);
 			name = "监听控制器frame改变，实现抽屉效果";
 			sourceTree = "<group>";
@@ -1820,6 +1885,7 @@
 		1171CCA3209EFB95005E7C92 /* js与OC交互 */ = {
 			isa = PBXGroup;
 			children = (
+				1195A25A20A7EAE7005CE445 /* main */,
 				1171CCA7209F115A005E7C92 /* 通过截取URL(web和WK) */,
 				1177A82420A091D400726FE5 /* JavaScriptCore(web) */,
 				1177A82B20A0A1B700726FE5 /* ScriptMessageHandler(WK) */,
@@ -1856,6 +1922,7 @@
 		1172B69F20960AB2009537DC /* NSTimer知识 */ = {
 			isa = PBXGroup;
 			children = (
+				11AC65F420A7F2E70016BD7D /* main */,
 				1171CC5B209BF377005E7C92 /* NSTimer基础知识 */,
 				1171CC5C209BF3DC005E7C92 /* NSTimer解决循环引用 */,
 				111E20EB209714C100C1F94B /* 其它两种定时器 */,
@@ -2004,6 +2071,131 @@
 				1177A83520A0A26E00726FE5 /* CordovaViewController.m */,
 			);
 			name = "cordova使用";
+			sourceTree = "<group>";
+		};
+		1195A23120A7E470005CE445 /* 八种锁 */ = {
+			isa = PBXGroup;
+			children = (
+				1195A23820A7E4B7005CE445 /* main */,
+				1195A23920A7E4CA005CE445 /* OSSpinLock */,
+				1195A23A20A7E565005CE445 /* dispatch_semaphore */,
+				1195A23E20A7E58E005CE445 /* pthread_mutex */,
+				1195A24620A7E637005CE445 /* NSLock */,
+				1195A24A20A7E667005CE445 /* NSCondition */,
+				1195A24220A7E5E5005CE445 /* pthread_mutex(recursive) */,
+				1195A24E20A7E68F005CE445 /* NSRecursiveLock */,
+				1195A25620A7E6C3005CE445 /* NSConditionLock */,
+				1195A25220A7E6A7005CE445 /* synchronized */,
+			);
+			name = "八种锁";
+			sourceTree = "<group>";
+		};
+		1195A23820A7E4B7005CE445 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				1195A23520A7E4B2005CE445 /* LockListViewController.h */,
+				1195A23420A7E4B2005CE445 /* LockListViewController.m */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		1195A23920A7E4CA005CE445 /* OSSpinLock */ = {
+			isa = PBXGroup;
+			children = (
+				1195A23320A7E4B2005CE445 /* OSSpinLockViewController.h */,
+				1195A23220A7E4B2005CE445 /* OSSpinLockViewController.m */,
+			);
+			name = OSSpinLock;
+			sourceTree = "<group>";
+		};
+		1195A23A20A7E565005CE445 /* dispatch_semaphore */ = {
+			isa = PBXGroup;
+			children = (
+				1195A23B20A7E580005CE445 /* DispatchSemaphoreViewController.h */,
+				1195A23C20A7E580005CE445 /* DispatchSemaphoreViewController.m */,
+			);
+			name = dispatch_semaphore;
+			sourceTree = "<group>";
+		};
+		1195A23E20A7E58E005CE445 /* pthread_mutex */ = {
+			isa = PBXGroup;
+			children = (
+				1195A23F20A7E5A6005CE445 /* PthreadMutexViewController.h */,
+				1195A24020A7E5A6005CE445 /* PthreadMutexViewController.m */,
+			);
+			name = pthread_mutex;
+			sourceTree = "<group>";
+		};
+		1195A24220A7E5E5005CE445 /* pthread_mutex(recursive) */ = {
+			isa = PBXGroup;
+			children = (
+				1195A24320A7E629005CE445 /* PthreadMutexRecursiveController.h */,
+				1195A24420A7E629005CE445 /* PthreadMutexRecursiveController.m */,
+			);
+			name = "pthread_mutex(recursive)";
+			sourceTree = "<group>";
+		};
+		1195A24620A7E637005CE445 /* NSLock */ = {
+			isa = PBXGroup;
+			children = (
+				1195A24720A7E65F005CE445 /* NSLockViewController.h */,
+				1195A24820A7E65F005CE445 /* NSLockViewController.m */,
+			);
+			name = NSLock;
+			sourceTree = "<group>";
+		};
+		1195A24A20A7E667005CE445 /* NSCondition */ = {
+			isa = PBXGroup;
+			children = (
+				1195A24B20A7E67B005CE445 /* NSConditionViewController.h */,
+				1195A24C20A7E67B005CE445 /* NSConditionViewController.m */,
+			);
+			name = NSCondition;
+			sourceTree = "<group>";
+		};
+		1195A24E20A7E68F005CE445 /* NSRecursiveLock */ = {
+			isa = PBXGroup;
+			children = (
+				1195A24F20A7E69D005CE445 /* NSRecursiveLockViewController.h */,
+				1195A25020A7E69D005CE445 /* NSRecursiveLockViewController.m */,
+			);
+			name = NSRecursiveLock;
+			sourceTree = "<group>";
+		};
+		1195A25220A7E6A7005CE445 /* synchronized */ = {
+			isa = PBXGroup;
+			children = (
+				1195A25320A7E6B9005CE445 /* SynchronizedViewController.h */,
+				1195A25420A7E6B9005CE445 /* SynchronizedViewController.m */,
+			);
+			name = synchronized;
+			sourceTree = "<group>";
+		};
+		1195A25620A7E6C3005CE445 /* NSConditionLock */ = {
+			isa = PBXGroup;
+			children = (
+				1195A25720A7E6D4005CE445 /* NSConditionLockViewController.h */,
+				1195A25820A7E6D4005CE445 /* NSConditionLockViewController.m */,
+			);
+			name = NSConditionLock;
+			sourceTree = "<group>";
+		};
+		1195A25A20A7EAE7005CE445 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				1195A25B20A7EAFE005CE445 /* JsAndOCListViewController.h */,
+				1195A25C20A7EAFE005CE445 /* JsAndOCListViewController.m */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		1195A25E20A7ECCC005CE445 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				1195A25F20A7ECDC005CE445 /* KVOMainViewController.h */,
+				1195A26020A7ECDC005CE445 /* KVOMainViewController.m */,
+			);
+			name = main;
 			sourceTree = "<group>";
 		};
 		11A2A3CD2072173F00B4AFF4 /* 自动释放池探究 */ = {
@@ -2200,6 +2392,24 @@
 			name = "NSOperation知识详解";
 			sourceTree = "<group>";
 		};
+		11AC65E720A7EF440016BD7D /* main */ = {
+			isa = PBXGroup;
+			children = (
+				11AC65E820A7F01F0016BD7D /* KVOOtherUseViewController.h */,
+				11AC65E920A7F01F0016BD7D /* KVOOtherUseViewController.m */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
+		11AC65F420A7F2E70016BD7D /* main */ = {
+			isa = PBXGroup;
+			children = (
+				11AC65F520A7F30D0016BD7D /* NSTimerListViewController.h */,
+				11AC65F620A7F30D0016BD7D /* NSTimerListViewController.m */,
+			);
+			name = main;
+			sourceTree = "<group>";
+		};
 		11B8FD3A20760F11009878D2 /* runtime知识补充 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2373,16 +2583,20 @@
 				1171CC8B209DEAD9005E7C92 /* NSObject+KVO.m in Sources */,
 				110E86AD208F875B0049F587 /* SwiftTestViewController.swift in Sources */,
 				11209757208E277100D666F7 /* Movie.m in Sources */,
+				1195A26120A7ECDC005CE445 /* KVOMainViewController.m in Sources */,
+				1195A25920A7E6D4005CE445 /* NSConditionLockViewController.m in Sources */,
 				11624E262086E1F900ABEB75 /* CategoryAttributesController.m in Sources */,
 				1174ACB1207B6152002996C5 /* ExampleBlockARCController.m in Sources */,
 				110E8683208F33D20049F587 /* SDWebImageDownloader.m in Sources */,
 				11A2A4052074B40D00B4AFF4 /* ReferenceCountViewController.m in Sources */,
 				11AAA9AD2081EE8C00DE7CA4 /* DispatchSuspendController.m in Sources */,
 				11001E28206A2E2700457CBC /* RuleStudyViewController.m in Sources */,
+				1195A23620A7E4B2005CE445 /* OSSpinLockViewController.m in Sources */,
 				110E8688208F33D20049F587 /* SDWebImagePrefetcher.m in Sources */,
 				115C99702098B8C100916654 /* YYAdvancedCell.m in Sources */,
 				1171CC83209D9B18005E7C92 /* Rice.m in Sources */,
 				112018F52078BF3200C9567A /* InterceptedVariableController.m in Sources */,
+				1195A24120A7E5A6005CE445 /* PthreadMutexViewController.m in Sources */,
 				1162701820A1845300F36BFD /* CDVCommandDelegateImpl.m in Sources */,
 				110E863E208F33C20049F587 /* AFHTTPSessionManager.m in Sources */,
 				11A2A3D520721B8A00B4AFF4 /* AutoReleaseMRCViewController.m in Sources */,
@@ -2393,10 +2607,13 @@
 				1162701420A1845300F36BFD /* CDVPlugin.m in Sources */,
 				11A2A3FC2074B16F00B4AFF4 /* ARCOwnershipAutoStrongController.m in Sources */,
 				11232EFC207DFE8C000824B2 /* DispatchSemaphoreController.m in Sources */,
+				1195A24920A7E65F005CE445 /* NSLockViewController.m in Sources */,
 				1171CC69209C0566005E7C92 /* NSTimer+EOCBlocksSupport.m in Sources */,
 				110E8639208F33C20049F587 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				110E863B208F33C20049F587 /* AFAutoPurgingImageCache.m in Sources */,
+				1195A23D20A7E580005CE445 /* DispatchSemaphoreViewController.m in Sources */,
 				110E869D208F7B5D0049F587 /* SwiftMixingViewController.m in Sources */,
+				11AC65F320A7F1870016BD7D /* DrawerEffectViewController.m in Sources */,
 				112018FD2078CEE800C9567A /* BlockAchieveViewController.m in Sources */,
 				11A2A4022074B18E00B4AFF4 /* ARCOwnershipAutoUnRetainedController.m in Sources */,
 				113ABF022085C55500847675 /* ThreadInsecureViewController.m in Sources */,
@@ -2434,6 +2651,8 @@
 				1110661A2086325C002B5C38 /* SwizzlingMethodViewController.m in Sources */,
 				110E8682208F33D20049F587 /* SDWebImageCodersManager.m in Sources */,
 				1162701B20A1845300F36BFD /* CDVURLProtocol.m in Sources */,
+				11AC65FA20A813530016BD7D /* HeaderViewInSection.m in Sources */,
+				1195A25120A7E69D005CE445 /* NSRecursiveLockViewController.m in Sources */,
 				1171CC78209D57D7005E7C92 /* YYPerson.m in Sources */,
 				11B8FD4620761C6F009878D2 /* msgSendViewController.m in Sources */,
 				1172B6A220960AD8009537DC /* NSTimerViewController.m in Sources */,
@@ -2488,6 +2707,7 @@
 				1171CC73209D55FB005E7C92 /* KVOBasicViewController.m in Sources */,
 				1162700D20A1845300F36BFD /* CDVLogger.m in Sources */,
 				1162701620A1845300F36BFD /* CDVInvokedUrlCommand.m in Sources */,
+				1195A24520A7E629005CE445 /* PthreadMutexRecursiveController.m in Sources */,
 				111065FC2085D638002B5C38 /* RunTimeBasicViewController.m in Sources */,
 				11626FC220A15F7900F36BFD /* YYAudioPlayer.m in Sources */,
 				110E8697208F33D20049F587 /* UIButton+WebCache.m in Sources */,
@@ -2495,19 +2715,24 @@
 				1174ACB6207B8278002996C5 /* ExampleBlockMRCController.m in Sources */,
 				110E8693208F33D20049F587 /* SDImageCacheConfig.m in Sources */,
 				113ABEDC20833A7700847675 /* YYOperation.m in Sources */,
+				11AC65EA20A7F01F0016BD7D /* KVOOtherUseViewController.m in Sources */,
 				1162702120A1845300F36BFD /* NSMutableArray+QueueAdditions.m in Sources */,
 				1172B69D2095C090009537DC /* Monkey.m in Sources */,
 				11624E43208750CC00ABEB75 /* Person+NewPerson.m in Sources */,
+				1195A24D20A7E67B005CE445 /* NSConditionViewController.m in Sources */,
 				110E8681208F33D20049F587 /* UIImage+ForceDecode.m in Sources */,
 				110E8635208F33C20049F587 /* UIRefreshControl+AFNetworking.m in Sources */,
 				11AAA9A92081C8E900DE7CA4 /* DispatchApplyViewController.m in Sources */,
 				111ED19C2098A8850023574B /* YYCell.m in Sources */,
 				110E8680208F33D20049F587 /* SDWebImageFrame.m in Sources */,
+				1195A23720A7E4B2005CE445 /* LockListViewController.m in Sources */,
+				11AC65F020A7F13A0016BD7D /* MonitorModelViewController.m in Sources */,
 				11A2A3D0207219BB00B4AFF4 /* AutoReleaseMemoryViewController.m in Sources */,
 				110E8642208F33C20049F587 /* AFSecurityPolicy.m in Sources */,
 				117F8D9E207BAA5F0058825B /* CGDBasicViewController.m in Sources */,
 				1115737620660DFC00EB426C /* AppDelegate.m in Sources */,
 				110E8634208F33C20049F587 /* UIProgressView+AFNetworking.m in Sources */,
+				1195A25520A7E6B9005CE445 /* SynchronizedViewController.m in Sources */,
 				11624E372086E7C900ABEB75 /* DictionaryToModelController.m in Sources */,
 				11001E2F206A300D00457CBC /* ARCOwnershipAutoReleaseController.m in Sources */,
 				112019052079112000C9567A /* blockVariableController.m in Sources */,
@@ -2531,6 +2756,7 @@
 				1171CC7B209D625B005E7C92 /* KVOObserverArrayController.m in Sources */,
 				113ABED520830CCD00847675 /* shareObject.m in Sources */,
 				113ABED82083217900847675 /* NSOperationBasicViewController.m in Sources */,
+				11AC65ED20A7F0F40016BD7D /* WebContentsizeViewController.m in Sources */,
 				113ABEF32085986100847675 /* OperationQueueMainController.m in Sources */,
 				1115737320660DFC00EB426C /* main.m in Sources */,
 				11A2A3E120732C9100B4AFF4 /* Animal.m in Sources */,
@@ -2540,9 +2766,11 @@
 				1110662320863416002B5C38 /* Fruit.m in Sources */,
 				11A2A3F020735F0200B4AFF4 /* NSObject+Category.m in Sources */,
 				1171CCA6209EFD70005E7C92 /* JsAndOCByURLViewController.m in Sources */,
+				1195A25D20A7EAFE005CE445 /* JsAndOCListViewController.m in Sources */,
 				110E869A208F76470049F587 /* AFNetworkingThreeController.m in Sources */,
 				11A2A3F42074AF1D00B4AFF4 /* ARCOwnershipViewListController.m in Sources */,
 				1162701A20A1845300F36BFD /* CDVAppDelegate.m in Sources */,
+				11AC65F720A7F30D0016BD7D /* NSTimerListViewController.m in Sources */,
 				11AAA9A12081C5E200DE7CA4 /* DispatchSyncViewController.m in Sources */,
 				111E20EA209713E800C1F94B /* PerformanceViewController.m in Sources */,
 				111066172085F4DB002B5C38 /* UIViewController+Swizzling.m in Sources */,

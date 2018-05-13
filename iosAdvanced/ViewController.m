@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "HeaderViewInSection.h"
 
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
@@ -55,6 +56,26 @@
 }
 
 #pragma mark - UITableViewDelegate
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    static NSString *idString = @"SectionViewID";
+    HeaderViewInSection *sectionView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:idString];
+    if (!sectionView)
+    {
+        sectionView = [[HeaderViewInSection alloc] initWithReuseIdentifier:idString];
+    }
+    sectionView.title = self.sectionSource[section];
+
+    NSLog(@"HeaderViewInSection.frame = %@",NSStringFromCGRect(sectionView.frame));
+    return sectionView;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    //设置title区域高度
+    return 40.f;
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSArray *sectionArray = self.controllerSoure[indexPath.section];
@@ -76,10 +97,10 @@
 }
 
 //设置每组的标题头
-- (nullable NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
-{
-    return self.sectionSource[section];
-}
+//- (nullable NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+//{
+//    return self.sectionSource[section];
+//}
 
 //设置每个cell的内容
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -187,20 +208,11 @@
                         @"SDWebImage源码解析",
                         @"AFNetworking3.0对比",
                         @"Swift混编",
-                        @"NSTimer基础知识",
-                        @"NSTimer解决循环引用",
-                        @"KVO基础使用",
-                        @"KVO监听数组",
-                        @"手动触发KVO",
-                        @"KVO原理以及自定义",
-                        @"KVO监听数组刷新tableView",
-                        @"KVO导航栏颜色渐变",
+                        @"NSTimer相关",
+                        @"KVO相关使用",
                         @"KVC基础知识",
-                        @"通过截取URL(WebView和WKWebView)",
-                        @"通过JavaScriptCore(WebView)",
-                        @"通过WKScriptMessageHandler(WKWebView)",
-                        @"通过三方框架(WebView和WKWebView)",
-                        @"通过cordova实现"],nil];
+                        @"js与oc交互",
+                        @"八种锁"],nil];
     }
     return _dataSoure;
 }
@@ -270,20 +282,11 @@
                               @"SDWebImageBasicController",
                               @"AFNetworkingThreeController",
                               @"SwiftMixingViewController",
-                              @"NSTimerViewController",
-                              @"NSTimerCycleController",
-                              @"KVOBasicViewController",
-                              @"KVOObserverArrayController",
-                              @"ManuallyKVOViewController",
-                              @"CustomizeKVOController",
-                              @"TableViewRefreshController",
-                              @"NavBarGradientController",
+                              @"NSTimerListViewController",
+                              @"KVOMainViewController",
                               @"KVCBasicViewController",
-                              @"JsAndOCByURLViewController",
-                              @"JavaScriptCoreViewController",
-                              @"MessageHandlerController",
-                              @"JavascriptBridgeController",
-                              @"CordovaViewController"],nil];
+                              @"JsAndOCListViewController",
+                              @"LockListViewController"],nil];
     }
     return _controllerSoure;
 }
