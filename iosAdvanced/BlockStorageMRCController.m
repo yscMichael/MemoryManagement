@@ -267,33 +267,33 @@ blockMallocFour fun(int rate)
 //2、NSStackBlock是位于栈区,超出变量作用域,栈上的Block以及__block变量都被销毁
 //3、NSMallocBlock是位于堆区,在变量作用域结束时不受影响。
 //4、注意:在 ARC 开启的情况下,将只会有 NSConcreteGlobalBlock 和 NSConcreteMallocBlock类型的block
-
+//
 //当前是MRC环境!!!
 //总结:
 //1、什么是全局Block
 //   a、定义全局变量的地方有block语法时
 //   b、block语法的表达式中没有使用应截获的自动变量时
 //   c、block语法赋值给成语变量
-
+//
 //2、什么是栈Block
 //   a、block语法的表达式在函数内局部定义,类似于局部变量
 //   b、block语法的表达式中使用截获的自动变量时
-
+//
 //3、什么时候栈Block会复制到堆上
 //   a、调用Block的copy实例方法时---手动复制
 //   b、Block作为函数返回值返回时---手动复制
 //   c、将Block赋值给附有__strong修饰符id类型的类或Block类型成员变量时<这里貌似是Global的Block>---不用手动复制
 //   d、将方法名中含有usingBlock的Cocoa框架方法或GCD的API中传递Block时---不用手动复制
 //   注意:上面只对Block进行了说明,其实在使用__block变量的Block从栈上复制到堆上时,__block变量也被从栈复制到堆上并被Block所持有
-
+//
 //4、__block变量被复制到堆
 //   a、__block变为__Block_byref_i_0结构体
 //   b、__Block_byref_i_0结构体里面有__forwarding指针
 //   c、栈上的__block变量复制到堆上时,会将成员变量__forwarding的值替换为复制到堆上的__block变量用结构体实例的地址.所以"不管__block变量配置在栈上还是堆上,都能够正确的访问该变量",这也是成员变量__forwarding存在的理由
 //   d、++i等价于 ++(i->__forwarding->i);
 //      如果__block没有被复制到堆上,则__forwarding指向自己;否则指向堆上变量
-
-
+//
+//
 //5、Block的copy
 //   _NSConcretStackBlock    copy      从栈复制到堆
 //   _NSConcretGlobalBlock   copy      什么也不做

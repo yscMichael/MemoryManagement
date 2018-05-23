@@ -20,7 +20,7 @@
     self = [super initWithReuseIdentifier:reuseIdentifier];
     if (self)
     {
-        self.backgroundView.backgroundColor = [UIColor lightGrayColor];
+        self.backgroundView.backgroundColor = [UIColor grayColor];
         [self addSubview:self.titleLabel];
     }
     return self;

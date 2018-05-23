@@ -49,7 +49,10 @@ typedef void(^blockCGD)(void);
     //4、主队列<串行队列>研究
 
     //主队列+异步
-    [self MainQueueAsyncStudy];
+    //[self MainQueueAsyncStudy];
+    //主队列经典例题
+    [self MainQueueAsyncStudyClassic];
+
     //主队列+同步--这里会崩溃
     //[self MainQueueSyncStudy];
 
@@ -387,6 +390,25 @@ typedef void(^blockCGD)(void);
 
     [NSThread sleepForTimeInterval:10.0];
     NSLog(@"先执行我,信息不信!!!!");
+}
+
+//结果是123
+//原因是当前是主队列(串行队列),当前整个程序就是任务1(包含NSLog(@"1")和NSLog(@"2"))
+//dispatch_async是任务2
+//根据串行队列和FIFO原则(先处理完任务1,再处理任务2)
+- (void)MainQueueAsyncStudyClassic
+{
+    dispatch_queue_t queue = dispatch_get_main_queue();
+    NSLog(@"1");
+    dispatch_async(queue, ^{
+
+        NSLog(@"3");
+        dispatch_sync(queue, ^{
+            NSLog(@"4");
+        });
+    });
+
+    NSLog(@"2");
 }
 
 //主队列+同步

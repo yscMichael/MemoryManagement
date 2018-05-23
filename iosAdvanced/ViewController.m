@@ -65,8 +65,6 @@
         sectionView = [[HeaderViewInSection alloc] initWithReuseIdentifier:idString];
     }
     sectionView.title = self.sectionSource[section];
-
-    NSLog(@"HeaderViewInSection.frame = %@",NSStringFromCGRect(sectionView.frame));
     return sectionView;
 }
 
