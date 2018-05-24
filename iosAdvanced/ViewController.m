@@ -135,6 +135,7 @@
                           @"runtime知识详解",
                           @"runloop知识详解",
                           @"响应链知识补充",
+                          @"AFNetworking使用详解",
                           @"面试题",nil];
     }
     return _sectionSource;
@@ -200,6 +201,7 @@
                         @"tableView卡顿",
                         @"tableView性能优化"],
                       @[@"响应链知识讲解"],
+                      @[@"AFNetworking使用详解"],
                       @[@"load和initialize细节",
                         @"synthesize和dynamic",
                         @"成员变量和实例变量区别",
@@ -274,6 +276,7 @@
                               @"BasicTableViewController",
                               @"PerformanceViewController"],
                             @[@"ResponseChainViewController"],
+                            @[@"AFNetworkingViewController"],
                             @[@"LoadAndInitializeViewController",
                               @"synthesizeAndDynamicController",
                               @"VariablesDifferenceController",
