@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" userLabel="testView" customClass="testView">
+            <rect key="frame" x="0.0" y="0.0" width="358" height="62"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是label哈哈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EJz-1e-Mqb" userLabel="labelOne">
+                    <rect key="frame" x="0.0" y="0.0" width="105.5" height="62"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是右侧Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PTk-qr-eZF" userLabel="labelTwo">
+                    <rect key="frame" x="208" y="0.0" width="111" height="62"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="150" id="jpz-NF-H43"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.33762424843980099" green="1" blue="0.26651272840988005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="PTk-qr-eZF" secondAttribute="bottom" id="3SB-9V-X7D"/>
+                <constraint firstAttribute="trailing" secondItem="PTk-qr-eZF" secondAttribute="leading" constant="150" id="ATM-rp-IBt"/>
+                <constraint firstItem="EJz-1e-Mqb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bCQ-Mr-NYh"/>
+                <constraint firstAttribute="bottom" secondItem="EJz-1e-Mqb" secondAttribute="bottom" id="ghk-ej-9fg"/>
+                <constraint firstItem="EJz-1e-Mqb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hc0-dW-vFj"/>
+                <constraint firstItem="PTk-qr-eZF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="p2I-Cv-Cay"/>
+                <constraint firstItem="EJz-1e-Mqb" firstAttribute="width" relation="lessThanOrEqual" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.5" id="yG1-js-irV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="leftLabel" destination="EJz-1e-Mqb" id="ugr-qQ-yNr"/>
+                <outlet property="rightLabel" destination="PTk-qr-eZF" id="U7x-jy-VR1"/>
+            </connections>
+            <point key="canvasLocation" x="19" y="-244"/>
+        </view>
+    </objects>
+</document>

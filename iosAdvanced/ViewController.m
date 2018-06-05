@@ -136,6 +136,7 @@
                           @"runloop知识详解",
                           @"响应链知识补充",
                           @"AFNetworking使用详解",
+                          @"布局相关",
                           @"面试题",nil];
     }
     return _sectionSource;
@@ -202,6 +203,7 @@
                         @"tableView性能优化"],
                       @[@"响应链知识讲解"],
                       @[@"AFNetworking使用详解"],
+                      @[@"Xib自定义View"],
                       @[@"load和initialize细节",
                         @"synthesize和dynamic",
                         @"成员变量和实例变量区别",
@@ -277,6 +279,7 @@
                               @"PerformanceViewController"],
                             @[@"ResponseChainViewController"],
                             @[@"AFNetworkingViewController"],
+                            @[@"XibViewShowController"],
                             @[@"LoadAndInitializeViewController",
                               @"synthesizeAndDynamicController",
                               @"VariablesDifferenceController",
