@@ -1449,6 +1449,13 @@
 			name = Controller;
 			sourceTree = "<group>";
 		};
+		1164330420C63C9E009A4427 /* Masonry使用 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Masonry使用";
+			sourceTree = "<group>";
+		};
 		116F661E2092FDEF00551E74 /* 测试模型 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2197,6 +2204,7 @@
 			isa = PBXGroup;
 			children = (
 				116432F320C62B68009A4427 /* xib自定义View */,
+				1164330420C63C9E009A4427 /* Masonry使用 */,
 			);
 			name = "布局相关";
 			sourceTree = "<group>";

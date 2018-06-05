@@ -43,7 +43,8 @@
 //   viewDidLoad➡️initWithCoder➡️awakeFromNib➡️layoutSubviews
 //   ➡️viewDidAppear➡️layoutSubviews
 //3、设置子控件在父控件中的宽高比例
-//
+//4、不会调用initWithFrame
+//5、使用init会调用initWithFrame,而使用initWithFrame不会调用init
 
 #pragma mark - Getter And Setter
 - (testView *)testView
