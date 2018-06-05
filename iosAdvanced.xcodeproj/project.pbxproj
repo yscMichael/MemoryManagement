@@ -735,7 +735,7 @@
 			name = "实现NSCoding的自动归档和解档";
 			sourceTree = "<group>";
 		};
-		111066042085EA33002B5C38 /* 面试题 */ = {
+		111066042085EA33002B5C38 /* 其它知识点 */ = {
 			isa = PBXGroup;
 			children = (
 				1110660E2085EBDE002B5C38 /* load和initialize区别 */,
@@ -751,7 +751,7 @@
 				1195A23120A7E470005CE445 /* 八种锁 */,
 				115FAA27208F1F5500353C45 /* 加密算法 */,
 			);
-			name = "面试题";
+			name = "其它知识点";
 			sourceTree = "<group>";
 		};
 		1110660E2085EBDE002B5C38 /* load和initialize区别 */ = {
@@ -842,7 +842,7 @@
 				113ABF0B2085CD3F00847675 /* runloop知识补充 */,
 				111065F82085CD9A002B5C38 /* 响应链知识补充 */,
 				111FC2F720B6FB2D0070DDD7 /* AFNetworking使用详解 */,
-				111066042085EA33002B5C38 /* 面试题 */,
+				111066042085EA33002B5C38 /* 其它知识点 */,
 				1115737120660DFC00EB426C /* Supporting Files */,
 			);
 			path = iosAdvanced;
