@@ -50,6 +50,8 @@
 		11232EF1207DF7B6000824B2 /* DispatchGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11232EF0207DF7B6000824B2 /* DispatchGroupViewController.m */; };
 		11232EF8207DFD35000824B2 /* DispatchBarrierController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11232EF7207DFD35000824B2 /* DispatchBarrierController.m */; };
 		11232EFC207DFE8C000824B2 /* DispatchSemaphoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11232EFB207DFE8C000824B2 /* DispatchSemaphoreController.m */; };
+		112ED36320CE551F00AE1884 /* MJExtensionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112ED36220CE551F00AE1884 /* MJExtensionViewController.m */; };
+		112ED36620CE56D400AE1884 /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 112ED36520CE56D400AE1884 /* TestModel.m */; };
 		113ABED520830CCD00847675 /* shareObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABED420830CCD00847675 /* shareObject.m */; };
 		113ABED82083217900847675 /* NSOperationBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABED72083217900847675 /* NSOperationBasicViewController.m */; };
 		113ABEDC20833A7700847675 /* YYOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 113ABEDB20833A7700847675 /* YYOperation.m */; };
@@ -276,6 +278,10 @@
 		11232EF7207DFD35000824B2 /* DispatchBarrierController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchBarrierController.m; sourceTree = "<group>"; };
 		11232EFA207DFE8C000824B2 /* DispatchSemaphoreController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchSemaphoreController.h; sourceTree = "<group>"; };
 		11232EFB207DFE8C000824B2 /* DispatchSemaphoreController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchSemaphoreController.m; sourceTree = "<group>"; };
+		112ED36120CE551F00AE1884 /* MJExtensionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MJExtensionViewController.h; sourceTree = "<group>"; };
+		112ED36220CE551F00AE1884 /* MJExtensionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MJExtensionViewController.m; sourceTree = "<group>"; };
+		112ED36420CE56D400AE1884 /* TestModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
+		112ED36520CE56D400AE1884 /* TestModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
 		113ABED320830CCD00847675 /* shareObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = shareObject.h; sourceTree = "<group>"; };
 		113ABED420830CCD00847675 /* shareObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = shareObject.m; sourceTree = "<group>"; };
 		113ABED62083217900847675 /* NSOperationBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSOperationBasicViewController.h; sourceTree = "<group>"; };
@@ -851,6 +857,7 @@
 				111065F82085CD9A002B5C38 /* 响应链知识补充 */,
 				111FC2F720B6FB2D0070DDD7 /* AFNetworking使用详解 */,
 				11B0826B20C62B1500223072 /* 布局相关 */,
+				112ED36020CE54FA00AE1884 /* MJExtension使用 */,
 				111066042085EA33002B5C38 /* 其它知识点 */,
 				1115737120660DFC00EB426C /* Supporting Files */,
 			);
@@ -1066,6 +1073,33 @@
 				11232EFB207DFE8C000824B2 /* DispatchSemaphoreController.m */,
 			);
 			name = dispatchSemaphore;
+			sourceTree = "<group>";
+		};
+		112ED36020CE54FA00AE1884 /* MJExtension使用 */ = {
+			isa = PBXGroup;
+			children = (
+				112ED36720CE56D700AE1884 /* Controller */,
+				112ED36820CE56DE00AE1884 /* Model */,
+			);
+			name = "MJExtension使用";
+			sourceTree = "<group>";
+		};
+		112ED36720CE56D700AE1884 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				112ED36120CE551F00AE1884 /* MJExtensionViewController.h */,
+				112ED36220CE551F00AE1884 /* MJExtensionViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		112ED36820CE56DE00AE1884 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				112ED36420CE56D400AE1884 /* TestModel.h */,
+				112ED36520CE56D400AE1884 /* TestModel.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		113ABED920833A3700847675 /* NSOperation基础知识 */ = {
@@ -2493,6 +2527,7 @@
 				1162701C20A1845300F36BFD /* CDVUserAgentUtil.m in Sources */,
 				1162701D20A1845300F36BFD /* CDVWhitelist.m in Sources */,
 				11A2A3B3206F455400B4AFF4 /* Person.m in Sources */,
+				112ED36620CE56D400AE1884 /* TestModel.m in Sources */,
 				1171CC7E209D6753005E7C92 /* model.m in Sources */,
 				11232EF8207DFD35000824B2 /* DispatchBarrierController.m in Sources */,
 				1171CC9E209EDC1D005E7C92 /* NavBarGradientController.m in Sources */,
@@ -2569,6 +2604,7 @@
 				110E869A208F76470049F587 /* AFNetworkingThreeController.m in Sources */,
 				11A2A3F42074AF1D00B4AFF4 /* ARCOwnershipViewListController.m in Sources */,
 				1162701A20A1845300F36BFD /* CDVAppDelegate.m in Sources */,
+				112ED36320CE551F00AE1884 /* MJExtensionViewController.m in Sources */,
 				11AC65F720A7F30D0016BD7D /* NSTimerListViewController.m in Sources */,
 				11AAA9A12081C5E200DE7CA4 /* DispatchSyncViewController.m in Sources */,
 				111E20EA209713E800C1F94B /* PerformanceViewController.m in Sources */,
