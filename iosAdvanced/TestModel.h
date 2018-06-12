@@ -22,8 +22,12 @@
 @property (nonatomic ,copy) NSString *bloodType;
 //出生日期
 @property (nonatomic ,copy) NSString *birthday;
+//省份
+@property (nonatomic ,strong) NSDictionary *province;
 //尝试
 @property (nonatomic ,copy) NSString *tempString;
+
+
 
 
 @end
