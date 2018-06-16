@@ -138,6 +138,7 @@
                           @"AFNetworking使用详解",
                           @"布局相关",
                           @"三方框架相关",
+                          @"UI控件相关",
                           @"面试题",nil];
     }
     return _sectionSource;
@@ -206,6 +207,7 @@
                       @[@"AFNetworking使用详解"],
                       @[@"Xib自定义View"],
                       @[@"MJExtension使用"],
+                      @[@"TableViewCell之工厂模式"],
                       @[@"load和initialize细节",
                         @"synthesize和dynamic",
                         @"成员变量和实例变量区别",
@@ -283,6 +285,7 @@
                             @[@"AFNetworkingViewController"],
                             @[@"XibViewShowController"],
                             @[@"MJExtensionViewController"],
+                            @[@"TableViewCellFactoryController"],
                             @[@"LoadAndInitializeViewController",
                               @"synthesizeAndDynamicController",
                               @"VariablesDifferenceController",

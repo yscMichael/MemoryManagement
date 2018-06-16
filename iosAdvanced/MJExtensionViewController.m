@@ -22,14 +22,67 @@
     self.view.backgroundColor = [UIColor whiteColor];
     //[self testMJ];
     //[self testNil];
+    //[self testNull];
+    //[self testCopyModel];
+
+    NSString *string = @"0123456789";
+    NSString *tempString = [string substringToIndex:0];
+    NSLog(@"tempString = %@",tempString);
+    //总结:使用substringToIndex时, 没有0的概念,不包含ToIndex后面的数
+}
+
+#pragma mark - 测试拷贝模型
+- (void)testCopyModel
+{
+    TestModel *testOne = [[TestModel alloc] init];
+    testOne.name = @"nameOne";
+    testOne.modelId = 1;
+    testOne.province = @{@"id":[NSNumber numberWithInt:1],
+                         @"key_name":@"nanjing"
+                         };
+    [testOne.area setValue:@"1111111" forKey:@"area"];
+
+
+    TestModel *testTwo = [testOne mutableCopy];
+    testTwo.name = @"nameTwo";
+    testTwo.modelId = 2;
+    testTwo.province = @{@"id":[NSNumber numberWithInt:2],
+                         @"key_name":@"beijing"
+                         };
+    [testTwo.area setValue:@"2222222" forKey:@"area"];
+
+
+    NSLog(@"testOne.name = %@",testOne.name);
+    NSLog(@"testOne.modelId = %d",testOne.modelId);
+    NSLog(@"testOne.province = %@",testOne.province);
+    NSLog(@"testOne.area = %@",testOne.area);
+
+
+    NSLog(@"testTwo.name = %@",testTwo.name);
+    NSLog(@"testTwo.modelId = %d",testTwo.modelId);
+    NSLog(@"testTwo.province = %@",testTwo.province);
+    NSLog(@"testTwo.area = %@",testTwo.area);
+
+
+    testOne = [testTwo mutableCopy];
+
+    NSLog(@"testOne.name = %@",testOne.name);
+    NSLog(@"testOne.modelId = %d",testOne.modelId);
+    NSLog(@"testOne.province = %@",testOne.province);
+    NSLog(@"testOne.area = %@",testOne.area);
+}
+
+#pragma mark - 测试null
+- (void)testNull
+{
 
     NSDictionary *temp = @{@"id":[NSNumber numberWithInt:1],
                            @"key_name":@"女"
                            };
-//    NSLog(@"temp = %@",temp);
-//    //执行错误
-//    [temp setValue:[NSNumber numberWithInt:2] forKey:@"id"];
-//    NSLog(@"temp = %@",temp);
+    //    NSLog(@"temp = %@",temp);
+    //    //执行错误
+    //    [temp setValue:[NSNumber numberWithInt:2] forKey:@"id"];
+    //    NSLog(@"temp = %@",temp);
 
     //NSDictionary不能执行setValue:forKey:
     NSMutableDictionary *tempTwo = [[NSMutableDictionary alloc] initWithDictionary:temp];
@@ -38,6 +91,9 @@
     [tempTwo setValue:[NSNumber numberWithInt:2] forKey:@"id"];
     NSLog(@"tempTwo = %@",tempTwo);
 }
+
+//总结
+// nil ---- (null)
 
 #pragma mark - 测试MJ
 - (void)testMJ

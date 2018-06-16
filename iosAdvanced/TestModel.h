@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TestModel : NSObject
+@interface TestModel : NSObject<NSCopying,NSMutableCopying>
 
 //姓名
 @property (nonatomic ,copy) NSString *name;
@@ -24,6 +24,8 @@
 @property (nonatomic ,copy) NSString *birthday;
 //省份
 @property (nonatomic ,strong) NSDictionary *province;
+//区域
+@property (nonatomic ,strong) NSMutableDictionary *area;
 //尝试
 @property (nonatomic ,copy) NSString *tempString;
 
