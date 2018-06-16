@@ -48,6 +48,19 @@
 		112019052079112000C9567A /* blockVariableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112019042079112000C9567A /* blockVariableController.m */; };
 		11209757208E277100D666F7 /* Movie.m in Sources */ = {isa = PBXBuildFile; fileRef = 11209756208E277100D666F7 /* Movie.m */; };
 		1122897020D4B86B0064B8EB /* TableViewCellFactoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1122896F20D4B86B0064B8EB /* TableViewCellFactoryController.m */; };
+		1122897F20D50C2A0064B8EB /* NamePictureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1122897D20D50C2A0064B8EB /* NamePictureCell.m */; };
+		1122898020D50C2A0064B8EB /* NamePictureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1122897E20D50C2A0064B8EB /* NamePictureCell.xib */; };
+		1122898420D50C390064B8EB /* AboutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1122898220D50C390064B8EB /* AboutCell.m */; };
+		1122898520D50C390064B8EB /* AboutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1122898320D50C390064B8EB /* AboutCell.xib */; };
+		1122899220D50CC50064B8EB /* FriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1122899020D50CC50064B8EB /* FriendCell.m */; };
+		1122899320D50CC50064B8EB /* FriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1122899120D50CC50064B8EB /* FriendCell.xib */; };
+		1122899720D50CDA0064B8EB /* AttributeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1122899520D50CDA0064B8EB /* AttributeCell.m */; };
+		1122899820D50CDA0064B8EB /* AttributeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1122899620D50CDA0064B8EB /* AttributeCell.xib */; };
+		1122899E20D50D5E0064B8EB /* EmailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1122899C20D50D5E0064B8EB /* EmailCell.m */; };
+		1122899F20D50D5E0064B8EB /* EmailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1122899D20D50D5E0064B8EB /* EmailCell.xib */; };
+		112289A220D50D920064B8EB /* ProfileViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 112289A120D50D920064B8EB /* ProfileViewModel.m */; };
+		112289A520D50DB70064B8EB /* ProfileModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 112289A420D50DB70064B8EB /* ProfileModel.m */; };
+		112289A820D545380064B8EB /* ServerData.json in Resources */ = {isa = PBXBuildFile; fileRef = 112289A720D545380064B8EB /* ServerData.json */; };
 		11232EF1207DF7B6000824B2 /* DispatchGroupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11232EF0207DF7B6000824B2 /* DispatchGroupViewController.m */; };
 		11232EF8207DFD35000824B2 /* DispatchBarrierController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11232EF7207DFD35000824B2 /* DispatchBarrierController.m */; };
 		11232EFC207DFE8C000824B2 /* DispatchSemaphoreController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11232EFB207DFE8C000824B2 /* DispatchSemaphoreController.m */; };
@@ -275,6 +288,26 @@
 		11209756208E277100D666F7 /* Movie.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Movie.m; sourceTree = "<group>"; };
 		1122896E20D4B86B0064B8EB /* TableViewCellFactoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCellFactoryController.h; sourceTree = "<group>"; };
 		1122896F20D4B86B0064B8EB /* TableViewCellFactoryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCellFactoryController.m; sourceTree = "<group>"; };
+		1122897C20D50C2A0064B8EB /* NamePictureCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NamePictureCell.h; sourceTree = "<group>"; };
+		1122897D20D50C2A0064B8EB /* NamePictureCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NamePictureCell.m; sourceTree = "<group>"; };
+		1122897E20D50C2A0064B8EB /* NamePictureCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NamePictureCell.xib; sourceTree = "<group>"; };
+		1122898120D50C390064B8EB /* AboutCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutCell.h; sourceTree = "<group>"; };
+		1122898220D50C390064B8EB /* AboutCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutCell.m; sourceTree = "<group>"; };
+		1122898320D50C390064B8EB /* AboutCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutCell.xib; sourceTree = "<group>"; };
+		1122898F20D50CC50064B8EB /* FriendCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FriendCell.h; sourceTree = "<group>"; };
+		1122899020D50CC50064B8EB /* FriendCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FriendCell.m; sourceTree = "<group>"; };
+		1122899120D50CC50064B8EB /* FriendCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendCell.xib; sourceTree = "<group>"; };
+		1122899420D50CDA0064B8EB /* AttributeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttributeCell.h; sourceTree = "<group>"; };
+		1122899520D50CDA0064B8EB /* AttributeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttributeCell.m; sourceTree = "<group>"; };
+		1122899620D50CDA0064B8EB /* AttributeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttributeCell.xib; sourceTree = "<group>"; };
+		1122899B20D50D5E0064B8EB /* EmailCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmailCell.h; sourceTree = "<group>"; };
+		1122899C20D50D5E0064B8EB /* EmailCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmailCell.m; sourceTree = "<group>"; };
+		1122899D20D50D5E0064B8EB /* EmailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmailCell.xib; sourceTree = "<group>"; };
+		112289A020D50D920064B8EB /* ProfileViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewModel.h; sourceTree = "<group>"; };
+		112289A120D50D920064B8EB /* ProfileViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewModel.m; sourceTree = "<group>"; };
+		112289A320D50DB70064B8EB /* ProfileModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileModel.h; sourceTree = "<group>"; };
+		112289A420D50DB70064B8EB /* ProfileModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileModel.m; sourceTree = "<group>"; };
+		112289A720D545380064B8EB /* ServerData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ServerData.json; sourceTree = "<group>"; };
 		11232EEF207DF7B6000824B2 /* DispatchGroupViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchGroupViewController.h; sourceTree = "<group>"; };
 		11232EF0207DF7B6000824B2 /* DispatchGroupViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchGroupViewController.m; sourceTree = "<group>"; };
 		11232EF6207DFD35000824B2 /* DispatchBarrierController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchBarrierController.h; sourceTree = "<group>"; };
@@ -1046,10 +1079,62 @@
 		1122896D20D4B7FD0064B8EB /* TableViewCell工厂模式 */ = {
 			isa = PBXGroup;
 			children = (
+				112289A720D545380064B8EB /* ServerData.json */,
+				1122897120D50B9F0064B8EB /* Controller */,
 				1122896E20D4B86B0064B8EB /* TableViewCellFactoryController.h */,
 				1122896F20D4B86B0064B8EB /* TableViewCellFactoryController.m */,
+				1122897220D50BAC0064B8EB /* ViewModel */,
+				1122897320D50BB50064B8EB /* Model */,
+				1122897B20D50C150064B8EB /* View */,
 			);
 			name = "TableViewCell工厂模式";
+			sourceTree = "<group>";
+		};
+		1122897120D50B9F0064B8EB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		1122897220D50BAC0064B8EB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				112289A020D50D920064B8EB /* ProfileViewModel.h */,
+				112289A120D50D920064B8EB /* ProfileViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		1122897320D50BB50064B8EB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				112289A320D50DB70064B8EB /* ProfileModel.h */,
+				112289A420D50DB70064B8EB /* ProfileModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		1122897B20D50C150064B8EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1122897C20D50C2A0064B8EB /* NamePictureCell.h */,
+				1122897D20D50C2A0064B8EB /* NamePictureCell.m */,
+				1122897E20D50C2A0064B8EB /* NamePictureCell.xib */,
+				1122898120D50C390064B8EB /* AboutCell.h */,
+				1122898220D50C390064B8EB /* AboutCell.m */,
+				1122898320D50C390064B8EB /* AboutCell.xib */,
+				1122898F20D50CC50064B8EB /* FriendCell.h */,
+				1122899020D50CC50064B8EB /* FriendCell.m */,
+				1122899120D50CC50064B8EB /* FriendCell.xib */,
+				1122899420D50CDA0064B8EB /* AttributeCell.h */,
+				1122899520D50CDA0064B8EB /* AttributeCell.m */,
+				1122899620D50CDA0064B8EB /* AttributeCell.xib */,
+				1122899B20D50D5E0064B8EB /* EmailCell.h */,
+				1122899C20D50D5E0064B8EB /* EmailCell.m */,
+				1122899D20D50D5E0064B8EB /* EmailCell.xib */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		11232EED207DF765000824B2 /* GCD基础知识 */ = {
@@ -2410,6 +2495,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1122899820D50CDA0064B8EB /* AttributeCell.xib in Resources */,
 				111ED1992098A0DA0023574B /* YYCell.xib in Resources */,
 				11626FBD20A15D7A00F36BFD /* indexThree.html in Resources */,
 				115C996B2098B39F00916654 /* timg.jpeg in Resources */,
@@ -2420,12 +2506,17 @@
 				1177A81920A0007A00726FE5 /* index.html in Resources */,
 				1177A817209FFC9700726FE5 /* JsAndOCByURLViewController.xib in Resources */,
 				110E8AAD208C40DD006D7E5C /* img.gif in Resources */,
+				1122899320D50CC50064B8EB /* FriendCell.xib in Resources */,
+				1122899F20D50D5E0064B8EB /* EmailCell.xib in Resources */,
 				1164330220C638AD009A4427 /* testView.xib in Resources */,
 				115C99712098B8C100916654 /* YYAdvancedCell.xib in Resources */,
+				1122898020D50C2A0064B8EB /* NamePictureCell.xib in Resources */,
+				112289A820D545380064B8EB /* ServerData.json in Resources */,
 				1115738120660DFC00EB426C /* LaunchScreen.storyboard in Resources */,
 				1171CC80209D788B005E7C92 /* KVOObserverArrayController.xib in Resources */,
 				1162702420A1864A00F36BFD /* www in Resources */,
 				1115737E20660DFC00EB426C /* Assets.xcassets in Resources */,
+				1122898520D50C390064B8EB /* AboutCell.xib in Resources */,
 				1115737C20660DFC00EB426C /* Main.storyboard in Resources */,
 				1162702220A1845300F36BFD /* config.xml in Resources */,
 			);
@@ -2460,6 +2551,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				112019012078F98D00C9567A /* BlockStorageARCController.m in Sources */,
+				1122897F20D50C2A0064B8EB /* NamePictureCell.m in Sources */,
 				1171CC97209ED3AC005E7C92 /* TableViewRefreshController.m in Sources */,
 				11B8FD4C2076316B009878D2 /* Son.m in Sources */,
 				1171CC8B209DEAD9005E7C92 /* NSObject+KVO.m in Sources */,
@@ -2469,6 +2561,7 @@
 				1195A25920A7E6D4005CE445 /* NSConditionLockViewController.m in Sources */,
 				1122897020D4B86B0064B8EB /* TableViewCellFactoryController.m in Sources */,
 				11624E262086E1F900ABEB75 /* CategoryAttributesController.m in Sources */,
+				112289A220D50D920064B8EB /* ProfileViewModel.m in Sources */,
 				1174ACB1207B6152002996C5 /* ExampleBlockARCController.m in Sources */,
 				11A2A4052074B40D00B4AFF4 /* ReferenceCountViewController.m in Sources */,
 				11AAA9AD2081EE8C00DE7CA4 /* DispatchSuspendController.m in Sources */,
@@ -2488,6 +2581,7 @@
 				11232EFC207DFE8C000824B2 /* DispatchSemaphoreController.m in Sources */,
 				1195A24920A7E65F005CE445 /* NSLockViewController.m in Sources */,
 				1171CC69209C0566005E7C92 /* NSTimer+EOCBlocksSupport.m in Sources */,
+				1122899E20D50D5E0064B8EB /* EmailCell.m in Sources */,
 				1195A23D20A7E580005CE445 /* DispatchSemaphoreViewController.m in Sources */,
 				110E869D208F7B5D0049F587 /* SwiftMixingViewController.m in Sources */,
 				11AC65F320A7F1870016BD7D /* DrawerEffectViewController.m in Sources */,
@@ -2519,6 +2613,7 @@
 				1162701B20A1845300F36BFD /* CDVURLProtocol.m in Sources */,
 				11AC65FA20A813530016BD7D /* HeaderViewInSection.m in Sources */,
 				1195A25120A7E69D005CE445 /* NSRecursiveLockViewController.m in Sources */,
+				1122899720D50CDA0064B8EB /* AttributeCell.m in Sources */,
 				1171CC78209D57D7005E7C92 /* YYPerson.m in Sources */,
 				11B8FD4620761C6F009878D2 /* msgSendViewController.m in Sources */,
 				1172B6A220960AD8009537DC /* NSTimerViewController.m in Sources */,
@@ -2544,6 +2639,8 @@
 				112ED36620CE56D400AE1884 /* TestModel.m in Sources */,
 				1171CC7E209D6753005E7C92 /* model.m in Sources */,
 				11232EF8207DFD35000824B2 /* DispatchBarrierController.m in Sources */,
+				112289A520D50DB70064B8EB /* ProfileModel.m in Sources */,
+				1122898420D50C390064B8EB /* AboutCell.m in Sources */,
 				1171CC9E209EDC1D005E7C92 /* NavBarGradientController.m in Sources */,
 				1147D71A20B6FBAD007C07AB /* AFNetworkingViewController.m in Sources */,
 				113ABEF92085A89A00847675 /* OperationDependViewController.m in Sources */,
@@ -2630,6 +2727,7 @@
 				11A2A3DE20732B1800B4AFF4 /* AutoReleaseARCViewController.m in Sources */,
 				1162701F20A1845300F36BFD /* CDVConfigParser.m in Sources */,
 				1172B69B2095C090009537DC /* Bird.m in Sources */,
+				1122899220D50CC50064B8EB /* FriendCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
