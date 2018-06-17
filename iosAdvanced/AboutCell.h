@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ProfileViewModelAboutItem.h"
 
 @interface AboutCell : UITableViewCell
 
+@property (nonatomic,strong) ProfileViewModelAboutItem *item;
+@property (weak, nonatomic) IBOutlet UILabel *contentLabel;
 + (UINib *)nib;
 + (NSString *)identifier;
 

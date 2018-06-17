@@ -26,5 +26,11 @@
     return [self description];
 }
 
+- (void)setItem:(ProfileViewModelEmailItem *)item
+{
+    _item = item;
+    self.contentLabel.text = item.email;
+}
+
 
 @end

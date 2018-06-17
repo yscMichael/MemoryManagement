@@ -128,6 +128,14 @@
 		116432F620C62B93009A4427 /* XibViewShowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 116432F520C62B93009A4427 /* XibViewShowController.m */; };
 		1164330220C638AD009A4427 /* testView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 116432FF20C638AD009A4427 /* testView.xib */; };
 		1164330320C638AD009A4427 /* testView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1164330120C638AD009A4427 /* testView.m */; };
+		1166C55A20D6003B00956B7A /* ProfileViewModelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1166C55920D6003B00956B7A /* ProfileViewModelItem.m */; };
+		1166C55D20D6004D00956B7A /* ProfileViewModelNamePictureItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1166C55C20D6004D00956B7A /* ProfileViewModelNamePictureItem.m */; };
+		1166C56020D6005B00956B7A /* ProfileViewModelAboutItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1166C55F20D6005B00956B7A /* ProfileViewModelAboutItem.m */; };
+		1166C56320D6006700956B7A /* ProfileViewModelEmailItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1166C56220D6006700956B7A /* ProfileViewModelEmailItem.m */; };
+		1166C56620D6007400956B7A /* ProfileViewModeFriendsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1166C56520D6007400956B7A /* ProfileViewModeFriendsItem.m */; };
+		1166C56920D6008300956B7A /* ProfileViewModeAttributeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1166C56820D6008300956B7A /* ProfileViewModeAttributeItem.m */; };
+		1166C56C20D609E500956B7A /* Attribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 1166C56B20D609E500956B7A /* Attribute.m */; };
+		1166C56F20D609F200956B7A /* Friend.m in Sources */ = {isa = PBXBuildFile; fileRef = 1166C56E20D609F200956B7A /* Friend.m */; };
 		116F661D2092FDE700551E74 /* TestOCDemo.m in Sources */ = {isa = PBXBuildFile; fileRef = 116F661C2092FDE700551E74 /* TestOCDemo.m */; };
 		1171CC5F209BF43F005E7C92 /* NSTimerCycleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CC5E209BF43F005E7C92 /* NSTimerCycleController.m */; };
 		1171CC63209BF5D5005E7C92 /* EOCClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1171CC62209BF5D4005E7C92 /* EOCClass.m */; };
@@ -444,6 +452,22 @@
 		116432FF20C638AD009A4427 /* testView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = testView.xib; sourceTree = "<group>"; };
 		1164330020C638AD009A4427 /* testView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testView.h; sourceTree = "<group>"; };
 		1164330120C638AD009A4427 /* testView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testView.m; sourceTree = "<group>"; };
+		1166C55820D6003B00956B7A /* ProfileViewModelItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewModelItem.h; sourceTree = "<group>"; };
+		1166C55920D6003B00956B7A /* ProfileViewModelItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewModelItem.m; sourceTree = "<group>"; };
+		1166C55B20D6004D00956B7A /* ProfileViewModelNamePictureItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewModelNamePictureItem.h; sourceTree = "<group>"; };
+		1166C55C20D6004D00956B7A /* ProfileViewModelNamePictureItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewModelNamePictureItem.m; sourceTree = "<group>"; };
+		1166C55E20D6005B00956B7A /* ProfileViewModelAboutItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewModelAboutItem.h; sourceTree = "<group>"; };
+		1166C55F20D6005B00956B7A /* ProfileViewModelAboutItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewModelAboutItem.m; sourceTree = "<group>"; };
+		1166C56120D6006700956B7A /* ProfileViewModelEmailItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewModelEmailItem.h; sourceTree = "<group>"; };
+		1166C56220D6006700956B7A /* ProfileViewModelEmailItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewModelEmailItem.m; sourceTree = "<group>"; };
+		1166C56420D6007400956B7A /* ProfileViewModeFriendsItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewModeFriendsItem.h; sourceTree = "<group>"; };
+		1166C56520D6007400956B7A /* ProfileViewModeFriendsItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewModeFriendsItem.m; sourceTree = "<group>"; };
+		1166C56720D6008300956B7A /* ProfileViewModeAttributeItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewModeAttributeItem.h; sourceTree = "<group>"; };
+		1166C56820D6008300956B7A /* ProfileViewModeAttributeItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewModeAttributeItem.m; sourceTree = "<group>"; };
+		1166C56A20D609E500956B7A /* Attribute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Attribute.h; sourceTree = "<group>"; };
+		1166C56B20D609E500956B7A /* Attribute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Attribute.m; sourceTree = "<group>"; };
+		1166C56D20D609F200956B7A /* Friend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Friend.h; sourceTree = "<group>"; };
+		1166C56E20D609F200956B7A /* Friend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Friend.m; sourceTree = "<group>"; };
 		116F661B2092FDE700551E74 /* TestOCDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestOCDemo.h; sourceTree = "<group>"; };
 		116F661C2092FDE700551E74 /* TestOCDemo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestOCDemo.m; sourceTree = "<group>"; };
 		1171CC5D209BF43F005E7C92 /* NSTimerCycleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTimerCycleController.h; sourceTree = "<group>"; };
@@ -1100,6 +1124,7 @@
 		1122897220D50BAC0064B8EB /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				1166C55720D5FFD900956B7A /* Item */,
 				112289A020D50D920064B8EB /* ProfileViewModel.h */,
 				112289A120D50D920064B8EB /* ProfileViewModel.m */,
 			);
@@ -1111,6 +1136,10 @@
 			children = (
 				112289A320D50DB70064B8EB /* ProfileModel.h */,
 				112289A420D50DB70064B8EB /* ProfileModel.m */,
+				1166C56A20D609E500956B7A /* Attribute.h */,
+				1166C56B20D609E500956B7A /* Attribute.m */,
+				1166C56D20D609F200956B7A /* Friend.h */,
+				1166C56E20D609F200956B7A /* Friend.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -1124,15 +1153,15 @@
 				1122898120D50C390064B8EB /* AboutCell.h */,
 				1122898220D50C390064B8EB /* AboutCell.m */,
 				1122898320D50C390064B8EB /* AboutCell.xib */,
+				1122899B20D50D5E0064B8EB /* EmailCell.h */,
+				1122899C20D50D5E0064B8EB /* EmailCell.m */,
+				1122899D20D50D5E0064B8EB /* EmailCell.xib */,
 				1122898F20D50CC50064B8EB /* FriendCell.h */,
 				1122899020D50CC50064B8EB /* FriendCell.m */,
 				1122899120D50CC50064B8EB /* FriendCell.xib */,
 				1122899420D50CDA0064B8EB /* AttributeCell.h */,
 				1122899520D50CDA0064B8EB /* AttributeCell.m */,
 				1122899620D50CDA0064B8EB /* AttributeCell.xib */,
-				1122899B20D50D5E0064B8EB /* EmailCell.h */,
-				1122899C20D50D5E0064B8EB /* EmailCell.m */,
-				1122899D20D50D5E0064B8EB /* EmailCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -1586,6 +1615,25 @@
 			children = (
 			);
 			name = "Masonry使用";
+			sourceTree = "<group>";
+		};
+		1166C55720D5FFD900956B7A /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				1166C55820D6003B00956B7A /* ProfileViewModelItem.h */,
+				1166C55920D6003B00956B7A /* ProfileViewModelItem.m */,
+				1166C55B20D6004D00956B7A /* ProfileViewModelNamePictureItem.h */,
+				1166C55C20D6004D00956B7A /* ProfileViewModelNamePictureItem.m */,
+				1166C55E20D6005B00956B7A /* ProfileViewModelAboutItem.h */,
+				1166C55F20D6005B00956B7A /* ProfileViewModelAboutItem.m */,
+				1166C56120D6006700956B7A /* ProfileViewModelEmailItem.h */,
+				1166C56220D6006700956B7A /* ProfileViewModelEmailItem.m */,
+				1166C56420D6007400956B7A /* ProfileViewModeFriendsItem.h */,
+				1166C56520D6007400956B7A /* ProfileViewModeFriendsItem.m */,
+				1166C56720D6008300956B7A /* ProfileViewModeAttributeItem.h */,
+				1166C56820D6008300956B7A /* ProfileViewModeAttributeItem.m */,
+			);
+			name = Item;
 			sourceTree = "<group>";
 		};
 		116F661E2092FDEF00551E74 /* 测试模型 */ = {
@@ -2552,6 +2600,7 @@
 			files = (
 				112019012078F98D00C9567A /* BlockStorageARCController.m in Sources */,
 				1122897F20D50C2A0064B8EB /* NamePictureCell.m in Sources */,
+				1166C55A20D6003B00956B7A /* ProfileViewModelItem.m in Sources */,
 				1171CC97209ED3AC005E7C92 /* TableViewRefreshController.m in Sources */,
 				11B8FD4C2076316B009878D2 /* Son.m in Sources */,
 				1171CC8B209DEAD9005E7C92 /* NSObject+KVO.m in Sources */,
@@ -2570,6 +2619,7 @@
 				115C99702098B8C100916654 /* YYAdvancedCell.m in Sources */,
 				1171CC83209D9B18005E7C92 /* Rice.m in Sources */,
 				112018F52078BF3200C9567A /* InterceptedVariableController.m in Sources */,
+				1166C56920D6008300956B7A /* ProfileViewModeAttributeItem.m in Sources */,
 				1195A24120A7E5A6005CE445 /* PthreadMutexViewController.m in Sources */,
 				1162701820A1845300F36BFD /* CDVCommandDelegateImpl.m in Sources */,
 				11A2A3D520721B8A00B4AFF4 /* AutoReleaseMRCViewController.m in Sources */,
@@ -2581,13 +2631,17 @@
 				11232EFC207DFE8C000824B2 /* DispatchSemaphoreController.m in Sources */,
 				1195A24920A7E65F005CE445 /* NSLockViewController.m in Sources */,
 				1171CC69209C0566005E7C92 /* NSTimer+EOCBlocksSupport.m in Sources */,
+				1166C56320D6006700956B7A /* ProfileViewModelEmailItem.m in Sources */,
+				1166C56C20D609E500956B7A /* Attribute.m in Sources */,
 				1122899E20D50D5E0064B8EB /* EmailCell.m in Sources */,
 				1195A23D20A7E580005CE445 /* DispatchSemaphoreViewController.m in Sources */,
 				110E869D208F7B5D0049F587 /* SwiftMixingViewController.m in Sources */,
+				1166C55D20D6004D00956B7A /* ProfileViewModelNamePictureItem.m in Sources */,
 				11AC65F320A7F1870016BD7D /* DrawerEffectViewController.m in Sources */,
 				112018FD2078CEE800C9567A /* BlockAchieveViewController.m in Sources */,
 				11A2A4022074B18E00B4AFF4 /* ARCOwnershipAutoUnRetainedController.m in Sources */,
 				113ABF022085C55500847675 /* ThreadInsecureViewController.m in Sources */,
+				1166C56020D6005B00956B7A /* ProfileViewModelAboutItem.m in Sources */,
 				1174AC85207B5A23002996C5 /* InterceptedObjectsMRCController.m in Sources */,
 				115FA978208ED0F600353C45 /* Bulldog.m in Sources */,
 				1110663620863DD7002B5C38 /* Banana+BananaOne.m in Sources */,
@@ -2640,6 +2694,7 @@
 				1171CC7E209D6753005E7C92 /* model.m in Sources */,
 				11232EF8207DFD35000824B2 /* DispatchBarrierController.m in Sources */,
 				112289A520D50DB70064B8EB /* ProfileModel.m in Sources */,
+				1166C56620D6007400956B7A /* ProfileViewModeFriendsItem.m in Sources */,
 				1122898420D50C390064B8EB /* AboutCell.m in Sources */,
 				1171CC9E209EDC1D005E7C92 /* NavBarGradientController.m in Sources */,
 				1147D71A20B6FBAD007C07AB /* AFNetworkingViewController.m in Sources */,
@@ -2708,6 +2763,7 @@
 				1115737320660DFC00EB426C /* main.m in Sources */,
 				11A2A3E120732C9100B4AFF4 /* Animal.m in Sources */,
 				1171CC94209ED356005E7C92 /* tableViewModel.m in Sources */,
+				1166C56F20D609F200956B7A /* Friend.m in Sources */,
 				1110662320863416002B5C38 /* Fruit.m in Sources */,
 				11A2A3F020735F0200B4AFF4 /* NSObject+Category.m in Sources */,
 				1171CCA6209EFD70005E7C92 /* JsAndOCByURLViewController.m in Sources */,

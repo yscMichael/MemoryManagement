@@ -26,5 +26,13 @@
     return [self description];
 }
 
+- (void)setItem:(Friend *)item
+{
+    _item = item;
+    NSLog(@"");
+    self.contentImage.image = [UIImage imageNamed:item.pictureUrl];
+    self.contentLabel.text = item.name;
+}
+
 
 @end

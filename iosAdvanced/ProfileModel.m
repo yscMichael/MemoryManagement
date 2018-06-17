@@ -7,61 +7,9 @@
 //
 
 #import "ProfileModel.h"
+#import "Friend.h"
+#import "Attribute.h"
 
-#pragma mark - Friend
-@interface Friend : NSObject
-//姓名
-@property (nonatomic ,copy) NSString *name;
-//照片
-@property (nonatomic ,copy) NSString *pictureUrl;
-//对象
-+ (Friend *)jsonToModelWithDict:(NSDictionary *)dict;
-@end
-
-@implementation Friend
-+ (Friend *)jsonToModelWithDict:(NSDictionary *)dict
-{
-    return [[self alloc] initWithDict:dict];
-}
-
-- (instancetype)initWithDict:(NSDictionary *)dict
-{
-    if (self = [super init])
-    {
-        [self setValuesForKeysWithDictionary:dict];
-    }
-    return self;
-}
-@end
-
-#pragma mark - Attribute
-@interface Attribute : NSObject
-//key
-@property (nonatomic ,copy) NSString *key;
-//value
-@property (nonatomic ,copy) NSString *value;
-//对象
-+ (Attribute *)jsonToModelWithDict:(NSDictionary *)dict;
-@end
-
-@implementation Attribute
-+ (Attribute *)jsonToModelWithDict:(NSDictionary *)dict
-{
-    return [[self alloc] initWithDict:dict];
-}
-
-- (instancetype)initWithDict:(NSDictionary *)dict
-{
-    if (self = [super init])
-    {
-        [self setValuesForKeysWithDictionary:dict];
-    }
-    return self;
-}
-
-@end
-
-#pragma mark - ProfileModel
 @interface ProfileModel ()
 
 @end
@@ -99,7 +47,7 @@
     for (NSDictionary *dict in attributesArray)
     {
         Attribute *attribute = [Attribute jsonToModelWithDict:dict];
-        [self.friends addObject:attribute];
+        [self.profileAttributes addObject:attribute];
     }
 }
 

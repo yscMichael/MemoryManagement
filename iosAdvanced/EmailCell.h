@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ProfileViewModelEmailItem.h"
 
 @interface EmailCell : UITableViewCell
+@property (nonatomic,strong) ProfileViewModelEmailItem *item;
+@property (weak, nonatomic) IBOutlet UILabel *contentLabel;
 
 + (UINib *)nib;
 + (NSString *)identifier;

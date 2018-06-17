@@ -25,4 +25,12 @@
     return [self description];
 }
 
+- (void)setItem:(ProfileViewModelNamePictureItem *)item
+{
+    _item = item;
+    self.contentImage.image = [UIImage imageNamed:item.pictureUrl];
+    self.contentLabel.text = item.name;
+}
+
+
 @end

@@ -29,6 +29,9 @@
     self.view.backgroundColor = [UIColor whiteColor];
 
     self.tableView.dataSource = self.profileViewModel;
+    self.tableView.delegate = self.profileViewModel;
+//    self.tableView.estimatedRowHeight = 200;
+//    self.tableView.rowHeight = UITableViewAutomaticDimension;
     [self.tableView registerNib:[NamePictureCell nib] forCellReuseIdentifier:[NamePictureCell identifier]];
     [self.tableView registerNib:[AboutCell nib] forCellReuseIdentifier:[AboutCell identifier]];
     [self.tableView registerNib:[FriendCell nib] forCellReuseIdentifier:[FriendCell identifier]];

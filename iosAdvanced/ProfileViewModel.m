@@ -7,135 +7,12 @@
 //
 
 #import "ProfileViewModel.h"
+#import "ProfileViewModelNamePictureItem.h"
+#import "ProfileViewModelAboutItem.h"
+#import "ProfileViewModelEmailItem.h"
+#import "ProfileViewModeFriendsItem.h"
+#import "ProfileViewModeAttributeItem.h"
 #import "ProfileModel.h"
-
-typedef NS_ENUM (NSInteger , ProfileViewModelItemType){
-    nameAndPicture,
-    about,
-    email,
-    friend,
-    attribute
-};
-
-#pragma mark - Item的基类
-@interface ProfileViewModelItem : NSObject
-//类型
-@property (nonatomic,assign) ProfileViewModelItemType type;
-//每组标题
-@property (nonatomic,strong) NSString *sectionTitle;
-//每组多少行
-@property (nonatomic,assign) int rowCount;
-@end
-
-#pragma mark - Item<姓名和图片>
-@interface ProfileViewModelNamePictureItem : ProfileViewModelItem
-//姓名
-@property (nonatomic ,copy) NSString *name;
-//图片
-@property (nonatomic ,copy) NSString *pictureUrl;
-- (instancetype)initWithModel:(ProfileModel *)model;
-@end
-
-@implementation ProfileViewModelNamePictureItem
-- (instancetype)initWithModel:(ProfileModel *)model
-{
-    if (self = [super init])
-    {
-        self.type = nameAndPicture;
-        self.sectionTitle = @"Main Info";
-        self.rowCount = 1;
-        self.name = model.fullName;
-        self.pictureUrl = model.pictureUrl;
-    }
-    return self;
-}
-@end
-
-#pragma mark - Item<about>
-@interface ProfileViewModelAboutItem : ProfileViewModelItem
-//about
-@property (nonatomic ,copy) NSString *about;
-- (instancetype)initWithModel:(ProfileModel *)model;
-@end
-
-@implementation ProfileViewModelAboutItem
-- (instancetype)initWithModel:(ProfileModel *)model
-{
-    if (self = [super init])
-    {
-        self.type = about;
-        self.sectionTitle = @"About";
-        self.rowCount = 1;
-        self.about = model.about;
-    }
-    return self;
-}
-@end
-
-#pragma mark - Itme<email>
-@interface ProfileViewModelEmailItem : ProfileViewModelItem
-//email
-@property (nonatomic ,copy) NSString *email;
-- (instancetype)initWithModel:(ProfileModel *)model;
-@end
-
-@implementation ProfileViewModelEmailItem
-- (instancetype)initWithModel:(ProfileModel *)model
-{
-    if (self = [super init])
-    {
-        self.type = email;
-        self.sectionTitle = @"Email";
-        self.rowCount = 1;
-        self.email = model.email;
-    }
-    return self;
-}
-
-@end
-
-#pragma mark - Item<Attribute>
-@interface ProfileViewModeAttributeItem : ProfileViewModelItem
-//attribute
-@property (nonatomic,strong) NSArray *attribute;
-- (instancetype)initWithModel:(ProfileModel *)model;
-@end
-
-@implementation ProfileViewModeAttributeItem
-- (instancetype)initWithModel:(ProfileModel *)model
-{
-    if (self = [super init])
-    {
-        self.type = attribute;
-        self.sectionTitle = @"Attributes";
-        self.rowCount = (int)model.profileAttributes.count;
-        self.attribute = model.profileAttributes;
-    }
-    return self;
-}
-@end
-
-#pragma mark - Item<Friends>
-@interface ProfileViewModeFriendsItem : ProfileViewModelItem
-//friends
-@property (nonatomic,strong) NSArray *friends;
-- (instancetype)initWithModel:(ProfileModel *)model;
-@end
-
-@implementation ProfileViewModeFriendsItem
-- (instancetype)initWithModel:(ProfileModel *)model
-{
-    if (self = [super init])
-    {
-        self.type = friend;
-        self.sectionTitle = @"Friends";
-        self.rowCount = (int)model.friends.count;
-        self.friends = model.friends;
-    }
-    return self;
-}
-
-@end
 
 #pragma mark - ProfileViewModel
 @interface ProfileViewModel ()
@@ -161,6 +38,11 @@ typedef NS_ENUM (NSInteger , ProfileViewModelItemType){
     return self;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 100;
+}
+
 #pragma mark - UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -173,34 +55,62 @@ typedef NS_ENUM (NSInteger , ProfileViewModelItemType){
     return item.rowCount;
 }
 
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    ProfileViewModelItem *item = self.dataSource[section];
+    return item.sectionTitle;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //获取类型
     ProfileViewModelItem *item = self.dataSource[indexPath.section];
     switch (item.type)
-    {
+    {//Object-C在case块中声明变量需要用大括号包围，如果没有变量声明就不需要了
         case nameAndPicture:
-            //
-            break;
+        {//姓名和图片
+            NamePictureCell *cell = [tableView dequeueReusableCellWithIdentifier:[NamePictureCell identifier]];
+            cell.item = (ProfileViewModelNamePictureItem *)self.dataSource[indexPath.section];
+            return cell;
+        }
+        break;
         case about:
-            //
-            break;
+        {//about
+            AboutCell *about = [tableView dequeueReusableCellWithIdentifier:[AboutCell identifier]];
+            about.item = (ProfileViewModelAboutItem *)self.dataSource[indexPath.section];
+            return about;
+        }
+        break;
         case email:
-            //
-            break;
+        {//email
+            EmailCell *email = [tableView dequeueReusableCellWithIdentifier:[EmailCell identifier]];
+            email.item = (ProfileViewModelEmailItem *)self.dataSource[indexPath.section];
+            return email;
+        }
+        break;
         case friend:
-            //
-            break;
+        {//friend
+            FriendCell *friendCell = [tableView dequeueReusableCellWithIdentifier:[FriendCell identifier]];
+            ProfileViewModeFriendsItem *friendItem = self.dataSource[indexPath.section];
+            NSArray *friends = friendItem.friends;
+            friendCell.item = friends[indexPath.row];
+            return friendCell;
+        }
+        break;
         case attribute:
-            //
-            break;
+        {//attribute
+            AttributeCell *attributeCell = [tableView dequeueReusableCellWithIdentifier:[AttributeCell identifier]];
+            ProfileViewModeAttributeItem *attributeItem = self.dataSource[indexPath.section];
+            NSArray *attributes = attributeItem.attribute;
+            attributeCell.item = attributes[indexPath.row];
+            return attributeCell;
+        }
+        break;
         default:
             break;
     }
 
-    UITableViewCell *cell;
-
-    return cell;
+    return nil;
 }
 
 #pragma mark - Private Methods

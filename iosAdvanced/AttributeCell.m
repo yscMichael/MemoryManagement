@@ -26,6 +26,13 @@
     return [self description];
 }
 
+- (void)setItem:(Attribute *)item
+{
+    _item = item;
+    self.titleLabel.text = item.key;
+    self.contentLabel.text = item.value;
+}
+
 
 
 @end

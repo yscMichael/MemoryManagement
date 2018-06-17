@@ -26,6 +26,11 @@
     return [self description];
 }
 
+- (void)setItem:(ProfileViewModelAboutItem *)item
+{
+    _item = item;
+    self.contentLabel.text = item.about;
+}
 
 
 @end

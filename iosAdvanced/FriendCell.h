@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Friend.h"
 
 @interface FriendCell : UITableViewCell
+
+@property (nonatomic,strong) Friend *item;
+@property (weak, nonatomic) IBOutlet UIImageView *contentImage;
+@property (weak, nonatomic) IBOutlet UILabel *contentLabel;
 
 + (UINib *)nib;
 + (NSString *)identifier;
