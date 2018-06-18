@@ -1105,8 +1105,6 @@
 			children = (
 				112289A720D545380064B8EB /* ServerData.json */,
 				1122897120D50B9F0064B8EB /* Controller */,
-				1122896E20D4B86B0064B8EB /* TableViewCellFactoryController.h */,
-				1122896F20D4B86B0064B8EB /* TableViewCellFactoryController.m */,
 				1122897220D50BAC0064B8EB /* ViewModel */,
 				1122897320D50BB50064B8EB /* Model */,
 				1122897B20D50C150064B8EB /* View */,
@@ -1117,6 +1115,8 @@
 		1122897120D50B9F0064B8EB /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				1122896E20D4B86B0064B8EB /* TableViewCellFactoryController.h */,
+				1122896F20D4B86B0064B8EB /* TableViewCellFactoryController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
