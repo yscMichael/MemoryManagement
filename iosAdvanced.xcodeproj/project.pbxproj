@@ -928,6 +928,7 @@
 				112ED36020CE54FA00AE1884 /* MJExtension使用 */,
 				1122896D20D4B7FD0064B8EB /* TableViewCell工厂模式 */,
 				11935A5320D7461B0014A534 /* Cell工厂模式项目实践 */,
+				116DBC5120DB721700684732 /* UI总结 */,
 				111066042085EA33002B5C38 /* 其它知识点 */,
 				1115737120660DFC00EB426C /* Supporting Files */,
 			);
@@ -1645,6 +1646,14 @@
 			name = Item;
 			sourceTree = "<group>";
 		};
+		116DBC5120DB721700684732 /* UI总结 */ = {
+			isa = PBXGroup;
+			children = (
+				11A8B65620DB7288002C0F1B /* TableView相关 */,
+			);
+			name = "UI总结";
+			sourceTree = "<group>";
+		};
 		116F661E2092FDEF00551E74 /* 测试模型 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2341,6 +2350,13 @@
 				11A2A4082074D51400B4AFF4 /* AttributesCompareViewController.m */,
 			);
 			name = "关键字比较";
+			sourceTree = "<group>";
+		};
+		11A8B65620DB7288002C0F1B /* TableView相关 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "TableView相关";
 			sourceTree = "<group>";
 		};
 		11AAA99A2081AD8400DE7CA4 /* DispatchTarget */ = {
