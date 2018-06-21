@@ -174,6 +174,9 @@
 		1177A83220A0A20400726FE5 /* JavascriptBridgeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1177A83120A0A20400726FE5 /* JavascriptBridgeController.m */; };
 		1177A83620A0A26E00726FE5 /* CordovaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1177A83520A0A26E00726FE5 /* CordovaViewController.m */; };
 		117F8D9E207BAA5F0058825B /* CGDBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 117F8D9D207BAA5F0058825B /* CGDBasicViewController.m */; };
+		11935A5620D746CC0014A534 /* PracticeFactoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11935A5520D746CC0014A534 /* PracticeFactoryController.m */; };
+		11935A5D20D7490F0014A534 /* NameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11935A5B20D7490F0014A534 /* NameCell.m */; };
+		11935A5E20D7490F0014A534 /* NameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11935A5C20D7490F0014A534 /* NameCell.xib */; };
 		1195A23620A7E4B2005CE445 /* OSSpinLockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1195A23220A7E4B2005CE445 /* OSSpinLockViewController.m */; };
 		1195A23720A7E4B2005CE445 /* LockListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1195A23420A7E4B2005CE445 /* LockListViewController.m */; };
 		1195A23D20A7E580005CE445 /* DispatchSemaphoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1195A23C20A7E580005CE445 /* DispatchSemaphoreViewController.m */; };
@@ -540,6 +543,11 @@
 		1177A83520A0A26E00726FE5 /* CordovaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CordovaViewController.m; sourceTree = "<group>"; };
 		117F8D9C207BAA5F0058825B /* CGDBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGDBasicViewController.h; sourceTree = "<group>"; };
 		117F8D9D207BAA5F0058825B /* CGDBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGDBasicViewController.m; sourceTree = "<group>"; };
+		11935A5420D746CC0014A534 /* PracticeFactoryController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PracticeFactoryController.h; sourceTree = "<group>"; };
+		11935A5520D746CC0014A534 /* PracticeFactoryController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PracticeFactoryController.m; sourceTree = "<group>"; };
+		11935A5A20D7490F0014A534 /* NameCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NameCell.h; sourceTree = "<group>"; };
+		11935A5B20D7490F0014A534 /* NameCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NameCell.m; sourceTree = "<group>"; };
+		11935A5C20D7490F0014A534 /* NameCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NameCell.xib; sourceTree = "<group>"; };
 		1195A23220A7E4B2005CE445 /* OSSpinLockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OSSpinLockViewController.m; sourceTree = "<group>"; };
 		1195A23320A7E4B2005CE445 /* OSSpinLockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OSSpinLockViewController.h; sourceTree = "<group>"; };
 		1195A23420A7E4B2005CE445 /* LockListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LockListViewController.m; sourceTree = "<group>"; };
@@ -919,6 +927,7 @@
 				11B0826B20C62B1500223072 /* 布局相关 */,
 				112ED36020CE54FA00AE1884 /* MJExtension使用 */,
 				1122896D20D4B7FD0064B8EB /* TableViewCell工厂模式 */,
+				11935A5320D7461B0014A534 /* Cell工厂模式项目实践 */,
 				111066042085EA33002B5C38 /* 其它知识点 */,
 				1115737120660DFC00EB426C /* Supporting Files */,
 			);
@@ -2043,6 +2052,66 @@
 			name = "cordova使用";
 			sourceTree = "<group>";
 		};
+		11935A5320D7461B0014A534 /* Cell工厂模式项目实践 */ = {
+			isa = PBXGroup;
+			children = (
+				11935A5720D747500014A534 /* Controller */,
+				11935A5820D7475E0014A534 /* View */,
+			);
+			name = "Cell工厂模式项目实践";
+			sourceTree = "<group>";
+		};
+		11935A5720D747500014A534 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11935A5420D746CC0014A534 /* PracticeFactoryController.h */,
+				11935A5520D746CC0014A534 /* PracticeFactoryController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		11935A5820D7475E0014A534 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11935A5920D748DB0014A534 /* 姓名 */,
+				11935A5A20D7490F0014A534 /* NameCell.h */,
+				11935A5B20D7490F0014A534 /* NameCell.m */,
+				11935A5C20D7490F0014A534 /* NameCell.xib */,
+				11935A5F20D749730014A534 /* 性别和孕妇和陪护人 */,
+				11935A6020D749860014A534 /* 年龄 */,
+				11935A6120D749B60014A534 /* 联系方式和体重 */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		11935A5920D748DB0014A534 /* 姓名 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "姓名";
+			sourceTree = "<group>";
+		};
+		11935A5F20D749730014A534 /* 性别和孕妇和陪护人 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "性别和孕妇和陪护人";
+			sourceTree = "<group>";
+		};
+		11935A6020D749860014A534 /* 年龄 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "年龄";
+			sourceTree = "<group>";
+		};
+		11935A6120D749B60014A534 /* 联系方式和体重 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "联系方式和体重";
+			sourceTree = "<group>";
+		};
 		1195A23120A7E470005CE445 /* 八种锁 */ = {
 			isa = PBXGroup;
 			children = (
@@ -2554,6 +2623,7 @@
 				1177A81920A0007A00726FE5 /* index.html in Resources */,
 				1177A817209FFC9700726FE5 /* JsAndOCByURLViewController.xib in Resources */,
 				110E8AAD208C40DD006D7E5C /* img.gif in Resources */,
+				11935A5E20D7490F0014A534 /* NameCell.xib in Resources */,
 				1122899320D50CC50064B8EB /* FriendCell.xib in Resources */,
 				1122899F20D50D5E0064B8EB /* EmailCell.xib in Resources */,
 				1164330220C638AD009A4427 /* testView.xib in Resources */,
@@ -2601,6 +2671,7 @@
 				112019012078F98D00C9567A /* BlockStorageARCController.m in Sources */,
 				1122897F20D50C2A0064B8EB /* NamePictureCell.m in Sources */,
 				1166C55A20D6003B00956B7A /* ProfileViewModelItem.m in Sources */,
+				11935A5620D746CC0014A534 /* PracticeFactoryController.m in Sources */,
 				1171CC97209ED3AC005E7C92 /* TableViewRefreshController.m in Sources */,
 				11B8FD4C2076316B009878D2 /* Son.m in Sources */,
 				1171CC8B209DEAD9005E7C92 /* NSObject+KVO.m in Sources */,
@@ -2631,6 +2702,7 @@
 				11232EFC207DFE8C000824B2 /* DispatchSemaphoreController.m in Sources */,
 				1195A24920A7E65F005CE445 /* NSLockViewController.m in Sources */,
 				1171CC69209C0566005E7C92 /* NSTimer+EOCBlocksSupport.m in Sources */,
+				11935A5D20D7490F0014A534 /* NameCell.m in Sources */,
 				1166C56320D6006700956B7A /* ProfileViewModelEmailItem.m in Sources */,
 				1166C56C20D609E500956B7A /* Attribute.m in Sources */,
 				1122899E20D50D5E0064B8EB /* EmailCell.m in Sources */,
