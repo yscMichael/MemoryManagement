@@ -125,6 +125,29 @@
 		1162702220A1845300F36BFD /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1162700920A1845300F36BFD /* config.xml */; };
 		1162702420A1864A00F36BFD /* www in Resources */ = {isa = PBXBuildFile; fileRef = 1162702320A1864A00F36BFD /* www */; };
 		1162702820A19D3F00F36BFD /* YYPlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 1162702720A19D3F00F36BFD /* YYPlugin.m */; };
+		1163028C20DC840900C3B444 /* SelectYesOrNoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1163028A20DC840900C3B444 /* SelectYesOrNoCell.m */; };
+		1163028D20DC840900C3B444 /* SelectYesOrNoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1163028B20DC840900C3B444 /* SelectYesOrNoCell.xib */; };
+		1163029120DC843000C3B444 /* AgeInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1163028F20DC843000C3B444 /* AgeInputCell.m */; };
+		1163029220DC843000C3B444 /* AgeInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1163029020DC843000C3B444 /* AgeInputCell.xib */; };
+		1163029620DC845400C3B444 /* NumberInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1163029420DC845400C3B444 /* NumberInputCell.m */; };
+		1163029720DC845400C3B444 /* NumberInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1163029520DC845400C3B444 /* NumberInputCell.xib */; };
+		1163029D20DC86F900C3B444 /* ChoosePopViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1163029B20DC86F900C3B444 /* ChoosePopViewCell.m */; };
+		1163029E20DC86F900C3B444 /* ChoosePopViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1163029C20DC86F900C3B444 /* ChoosePopViewCell.xib */; };
+		116302A320DC875E00C3B444 /* SelectRelationshipCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 116302A120DC875E00C3B444 /* SelectRelationshipCell.m */; };
+		116302A420DC875E00C3B444 /* SelectRelationshipCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 116302A220DC875E00C3B444 /* SelectRelationshipCell.xib */; };
+		116302AA20DC87DD00C3B444 /* StringInputCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 116302A820DC87DD00C3B444 /* StringInputCell.m */; };
+		116302AB20DC87DD00C3B444 /* StringInputCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 116302A920DC87DD00C3B444 /* StringInputCell.xib */; };
+		116302B120DC8E8200C3B444 /* Patient.json in Resources */ = {isa = PBXBuildFile; fileRef = 116302B020DC8E8200C3B444 /* Patient.json */; };
+		116302B420DC8EDC00C3B444 /* PatientModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 116302B320DC8EDC00C3B444 /* PatientModel.m */; };
+		116302BB20DC929500C3B444 /* PatientBaseItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 116302BA20DC929500C3B444 /* PatientBaseItem.m */; };
+		116302BE20DC92B700C3B444 /* NameItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 116302BD20DC92B700C3B444 /* NameItem.m */; };
+		116302C320DC930E00C3B444 /* SelectYesOrNoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 116302C220DC930E00C3B444 /* SelectYesOrNoItem.m */; };
+		116302C720DC93A300C3B444 /* AgeInputItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 116302C620DC93A300C3B444 /* AgeInputItem.m */; };
+		116302CB20DC93C200C3B444 /* NumberInputItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 116302CA20DC93C200C3B444 /* NumberInputItem.m */; };
+		116302CF20DC93F600C3B444 /* ChoosePopViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 116302CE20DC93F600C3B444 /* ChoosePopViewItem.m */; };
+		116302D320DC941000C3B444 /* SelectRelationshipItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 116302D220DC941000C3B444 /* SelectRelationshipItem.m */; };
+		116302D720DC942E00C3B444 /* StringInputItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 116302D620DC942E00C3B444 /* StringInputItem.m */; };
+		116302DB20DC9F8C00C3B444 /* PatientViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 116302DA20DC9F8C00C3B444 /* PatientViewModel.m */; };
 		116432F620C62B93009A4427 /* XibViewShowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 116432F520C62B93009A4427 /* XibViewShowController.m */; };
 		1164330220C638AD009A4427 /* testView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 116432FF20C638AD009A4427 /* testView.xib */; };
 		1164330320C638AD009A4427 /* testView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1164330120C638AD009A4427 /* testView.m */; };
@@ -201,6 +224,9 @@
 		11A2A4022074B18E00B4AFF4 /* ARCOwnershipAutoUnRetainedController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A4012074B18E00B4AFF4 /* ARCOwnershipAutoUnRetainedController.m */; };
 		11A2A4052074B40D00B4AFF4 /* ReferenceCountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A4042074B40D00B4AFF4 /* ReferenceCountViewController.m */; };
 		11A2A4092074D51400B4AFF4 /* AttributesCompareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A2A4082074D51400B4AFF4 /* AttributesCompareViewController.m */; };
+		11A8B65B20DB770F002C0F1B /* TextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A8B65A20DB770F002C0F1B /* TextViewController.m */; };
+		11A8B65F20DB7778002C0F1B /* TextViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 11A8B65D20DB7778002C0F1B /* TextViewCell.m */; };
+		11A8B66020DB7778002C0F1B /* TextViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A8B65E20DB7778002C0F1B /* TextViewCell.xib */; };
 		11AAA99D2081ADB600DE7CA4 /* DispatchTargetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AAA99C2081ADB600DE7CA4 /* DispatchTargetViewController.m */; };
 		11AAA9A12081C5E200DE7CA4 /* DispatchSyncViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AAA9A02081C5E200DE7CA4 /* DispatchSyncViewController.m */; };
 		11AAA9A52081C62500DE7CA4 /* DispatchAfterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AAA9A42081C62500DE7CA4 /* DispatchAfterViewController.m */; };
@@ -450,6 +476,45 @@
 		1162702320A1864A00F36BFD /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
 		1162702620A19D3F00F36BFD /* YYPlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYPlugin.h; sourceTree = "<group>"; };
 		1162702720A19D3F00F36BFD /* YYPlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYPlugin.m; sourceTree = "<group>"; };
+		1163028920DC840900C3B444 /* SelectYesOrNoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectYesOrNoCell.h; sourceTree = "<group>"; };
+		1163028A20DC840900C3B444 /* SelectYesOrNoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectYesOrNoCell.m; sourceTree = "<group>"; };
+		1163028B20DC840900C3B444 /* SelectYesOrNoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectYesOrNoCell.xib; sourceTree = "<group>"; };
+		1163028E20DC843000C3B444 /* AgeInputCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AgeInputCell.h; sourceTree = "<group>"; };
+		1163028F20DC843000C3B444 /* AgeInputCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AgeInputCell.m; sourceTree = "<group>"; };
+		1163029020DC843000C3B444 /* AgeInputCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AgeInputCell.xib; sourceTree = "<group>"; };
+		1163029320DC845400C3B444 /* NumberInputCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumberInputCell.h; sourceTree = "<group>"; };
+		1163029420DC845400C3B444 /* NumberInputCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumberInputCell.m; sourceTree = "<group>"; };
+		1163029520DC845400C3B444 /* NumberInputCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberInputCell.xib; sourceTree = "<group>"; };
+		1163029A20DC86F900C3B444 /* ChoosePopViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChoosePopViewCell.h; sourceTree = "<group>"; };
+		1163029B20DC86F900C3B444 /* ChoosePopViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChoosePopViewCell.m; sourceTree = "<group>"; };
+		1163029C20DC86F900C3B444 /* ChoosePopViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChoosePopViewCell.xib; sourceTree = "<group>"; };
+		116302A020DC875E00C3B444 /* SelectRelationshipCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectRelationshipCell.h; sourceTree = "<group>"; };
+		116302A120DC875E00C3B444 /* SelectRelationshipCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectRelationshipCell.m; sourceTree = "<group>"; };
+		116302A220DC875E00C3B444 /* SelectRelationshipCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectRelationshipCell.xib; sourceTree = "<group>"; };
+		116302A720DC87DD00C3B444 /* StringInputCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringInputCell.h; sourceTree = "<group>"; };
+		116302A820DC87DD00C3B444 /* StringInputCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringInputCell.m; sourceTree = "<group>"; };
+		116302A920DC87DD00C3B444 /* StringInputCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StringInputCell.xib; sourceTree = "<group>"; };
+		116302B020DC8E8200C3B444 /* Patient.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Patient.json; sourceTree = "<group>"; };
+		116302B220DC8EDC00C3B444 /* PatientModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PatientModel.h; sourceTree = "<group>"; };
+		116302B320DC8EDC00C3B444 /* PatientModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PatientModel.m; sourceTree = "<group>"; };
+		116302B920DC929500C3B444 /* PatientBaseItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PatientBaseItem.h; sourceTree = "<group>"; };
+		116302BA20DC929500C3B444 /* PatientBaseItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PatientBaseItem.m; sourceTree = "<group>"; };
+		116302BC20DC92B700C3B444 /* NameItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NameItem.h; sourceTree = "<group>"; };
+		116302BD20DC92B700C3B444 /* NameItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NameItem.m; sourceTree = "<group>"; };
+		116302C120DC930E00C3B444 /* SelectYesOrNoItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectYesOrNoItem.h; sourceTree = "<group>"; };
+		116302C220DC930E00C3B444 /* SelectYesOrNoItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectYesOrNoItem.m; sourceTree = "<group>"; };
+		116302C520DC93A300C3B444 /* AgeInputItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AgeInputItem.h; sourceTree = "<group>"; };
+		116302C620DC93A300C3B444 /* AgeInputItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AgeInputItem.m; sourceTree = "<group>"; };
+		116302C920DC93C200C3B444 /* NumberInputItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NumberInputItem.h; sourceTree = "<group>"; };
+		116302CA20DC93C200C3B444 /* NumberInputItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NumberInputItem.m; sourceTree = "<group>"; };
+		116302CD20DC93F600C3B444 /* ChoosePopViewItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChoosePopViewItem.h; sourceTree = "<group>"; };
+		116302CE20DC93F600C3B444 /* ChoosePopViewItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChoosePopViewItem.m; sourceTree = "<group>"; };
+		116302D120DC941000C3B444 /* SelectRelationshipItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectRelationshipItem.h; sourceTree = "<group>"; };
+		116302D220DC941000C3B444 /* SelectRelationshipItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectRelationshipItem.m; sourceTree = "<group>"; };
+		116302D520DC942E00C3B444 /* StringInputItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringInputItem.h; sourceTree = "<group>"; };
+		116302D620DC942E00C3B444 /* StringInputItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringInputItem.m; sourceTree = "<group>"; };
+		116302D920DC9F8C00C3B444 /* PatientViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PatientViewModel.h; sourceTree = "<group>"; };
+		116302DA20DC9F8C00C3B444 /* PatientViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PatientViewModel.m; sourceTree = "<group>"; };
 		116432F420C62B93009A4427 /* XibViewShowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XibViewShowController.h; sourceTree = "<group>"; };
 		116432F520C62B93009A4427 /* XibViewShowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XibViewShowController.m; sourceTree = "<group>"; };
 		116432FF20C638AD009A4427 /* testView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = testView.xib; sourceTree = "<group>"; };
@@ -596,6 +661,11 @@
 		11A2A4042074B40D00B4AFF4 /* ReferenceCountViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReferenceCountViewController.m; sourceTree = "<group>"; };
 		11A2A4072074D51400B4AFF4 /* AttributesCompareViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AttributesCompareViewController.h; sourceTree = "<group>"; };
 		11A2A4082074D51400B4AFF4 /* AttributesCompareViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttributesCompareViewController.m; sourceTree = "<group>"; };
+		11A8B65920DB770F002C0F1B /* TextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewController.h; sourceTree = "<group>"; };
+		11A8B65A20DB770F002C0F1B /* TextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewController.m; sourceTree = "<group>"; };
+		11A8B65C20DB7778002C0F1B /* TextViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextViewCell.h; sourceTree = "<group>"; };
+		11A8B65D20DB7778002C0F1B /* TextViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextViewCell.m; sourceTree = "<group>"; };
+		11A8B65E20DB7778002C0F1B /* TextViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewCell.xib; sourceTree = "<group>"; };
 		11AAA99B2081ADB600DE7CA4 /* DispatchTargetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchTargetViewController.h; sourceTree = "<group>"; };
 		11AAA99C2081ADB600DE7CA4 /* DispatchTargetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchTargetViewController.m; sourceTree = "<group>"; };
 		11AAA99F2081C5E200DE7CA4 /* DispatchSyncViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchSyncViewController.h; sourceTree = "<group>"; };
@@ -1113,7 +1183,7 @@
 		1122896D20D4B7FD0064B8EB /* TableViewCell工厂模式 */ = {
 			isa = PBXGroup;
 			children = (
-				112289A720D545380064B8EB /* ServerData.json */,
+				116302B520DC921F00C3B444 /* Data */,
 				1122897120D50B9F0064B8EB /* Controller */,
 				1122897220D50BAC0064B8EB /* ViewModel */,
 				1122897320D50BB50064B8EB /* Model */,
@@ -1592,6 +1662,157 @@
 			name = Plugins;
 			sourceTree = "<group>";
 		};
+		1163029820DC846E00C3B444 /* 过敏史和血型和所在地区  */ = {
+			isa = PBXGroup;
+			children = (
+				1163029A20DC86F900C3B444 /* ChoosePopViewCell.h */,
+				1163029B20DC86F900C3B444 /* ChoosePopViewCell.m */,
+				1163029C20DC86F900C3B444 /* ChoosePopViewCell.xib */,
+			);
+			name = "过敏史和血型和所在地区 ";
+			sourceTree = "<group>";
+		};
+		1163029F20DC870600C3B444 /* 与患者关系 */ = {
+			isa = PBXGroup;
+			children = (
+				116302A020DC875E00C3B444 /* SelectRelationshipCell.h */,
+				116302A120DC875E00C3B444 /* SelectRelationshipCell.m */,
+				116302A220DC875E00C3B444 /* SelectRelationshipCell.xib */,
+			);
+			name = "与患者关系";
+			sourceTree = "<group>";
+		};
+		116302A520DC877300C3B444 /* 所在地区和详细地址 */ = {
+			isa = PBXGroup;
+			children = (
+				116302A720DC87DD00C3B444 /* StringInputCell.h */,
+				116302A820DC87DD00C3B444 /* StringInputCell.m */,
+				116302A920DC87DD00C3B444 /* StringInputCell.xib */,
+			);
+			name = "所在地区和详细地址";
+			sourceTree = "<group>";
+		};
+		116302AF20DC8D1900C3B444 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				116302B220DC8EDC00C3B444 /* PatientModel.h */,
+				116302B320DC8EDC00C3B444 /* PatientModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		116302B520DC921F00C3B444 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				112289A720D545380064B8EB /* ServerData.json */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		116302B620DC923300C3B444 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				116302B020DC8E8200C3B444 /* Patient.json */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		116302B720DC924500C3B444 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				116302B920DC929500C3B444 /* PatientBaseItem.h */,
+				116302BA20DC929500C3B444 /* PatientBaseItem.m */,
+				116302B820DC925A00C3B444 /* otherItems */,
+			);
+			name = Item;
+			sourceTree = "<group>";
+		};
+		116302B820DC925A00C3B444 /* otherItems */ = {
+			isa = PBXGroup;
+			children = (
+				116302BF20DC92BA00C3B444 /* 姓名 */,
+				116302C020DC92CA00C3B444 /* 性别和孕妇和陪护人 */,
+				116302C420DC933600C3B444 /* 年龄 */,
+				116302C820DC93AD00C3B444 /* 联系方式和体重 */,
+				116302CC20DC93DB00C3B444 /* 过敏史和血型和所在地区  */,
+				116302D020DC93FE00C3B444 /* 与患者关系 */,
+				116302D420DC942000C3B444 /* 详细地址和备注 */,
+			);
+			name = otherItems;
+			sourceTree = "<group>";
+		};
+		116302BF20DC92BA00C3B444 /* 姓名 */ = {
+			isa = PBXGroup;
+			children = (
+				116302BC20DC92B700C3B444 /* NameItem.h */,
+				116302BD20DC92B700C3B444 /* NameItem.m */,
+			);
+			name = "姓名";
+			sourceTree = "<group>";
+		};
+		116302C020DC92CA00C3B444 /* 性别和孕妇和陪护人 */ = {
+			isa = PBXGroup;
+			children = (
+				116302C120DC930E00C3B444 /* SelectYesOrNoItem.h */,
+				116302C220DC930E00C3B444 /* SelectYesOrNoItem.m */,
+			);
+			name = "性别和孕妇和陪护人";
+			sourceTree = "<group>";
+		};
+		116302C420DC933600C3B444 /* 年龄 */ = {
+			isa = PBXGroup;
+			children = (
+				116302C520DC93A300C3B444 /* AgeInputItem.h */,
+				116302C620DC93A300C3B444 /* AgeInputItem.m */,
+			);
+			name = "年龄";
+			sourceTree = "<group>";
+		};
+		116302C820DC93AD00C3B444 /* 联系方式和体重 */ = {
+			isa = PBXGroup;
+			children = (
+				116302C920DC93C200C3B444 /* NumberInputItem.h */,
+				116302CA20DC93C200C3B444 /* NumberInputItem.m */,
+			);
+			name = "联系方式和体重";
+			sourceTree = "<group>";
+		};
+		116302CC20DC93DB00C3B444 /* 过敏史和血型和所在地区  */ = {
+			isa = PBXGroup;
+			children = (
+				116302CD20DC93F600C3B444 /* ChoosePopViewItem.h */,
+				116302CE20DC93F600C3B444 /* ChoosePopViewItem.m */,
+			);
+			name = "过敏史和血型和所在地区 ";
+			sourceTree = "<group>";
+		};
+		116302D020DC93FE00C3B444 /* 与患者关系 */ = {
+			isa = PBXGroup;
+			children = (
+				116302D120DC941000C3B444 /* SelectRelationshipItem.h */,
+				116302D220DC941000C3B444 /* SelectRelationshipItem.m */,
+			);
+			name = "与患者关系";
+			sourceTree = "<group>";
+		};
+		116302D420DC942000C3B444 /* 详细地址和备注 */ = {
+			isa = PBXGroup;
+			children = (
+				116302D520DC942E00C3B444 /* StringInputItem.h */,
+				116302D620DC942E00C3B444 /* StringInputItem.m */,
+			);
+			name = "详细地址和备注";
+			sourceTree = "<group>";
+		};
+		116302D820DC9F2900C3B444 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				116302D920DC9F8C00C3B444 /* PatientViewModel.h */,
+				116302DA20DC9F8C00C3B444 /* PatientViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
 		116432F320C62B68009A4427 /* xib自定义View */ = {
 			isa = PBXGroup;
 			children = (
@@ -1650,6 +1871,7 @@
 			isa = PBXGroup;
 			children = (
 				11A8B65620DB7288002C0F1B /* TableView相关 */,
+				11A8B65820DB76F1002C0F1B /* TextView相关 */,
 			);
 			name = "UI总结";
 			sourceTree = "<group>";
@@ -2064,7 +2286,11 @@
 		11935A5320D7461B0014A534 /* Cell工厂模式项目实践 */ = {
 			isa = PBXGroup;
 			children = (
+				116302B620DC923300C3B444 /* Data */,
 				11935A5720D747500014A534 /* Controller */,
+				116302D820DC9F2900C3B444 /* ViewModel */,
+				116302AF20DC8D1900C3B444 /* Model */,
+				116302B720DC924500C3B444 /* Item */,
 				11935A5820D7475E0014A534 /* View */,
 			);
 			name = "Cell工厂模式项目实践";
@@ -2083,12 +2309,12 @@
 			isa = PBXGroup;
 			children = (
 				11935A5920D748DB0014A534 /* 姓名 */,
-				11935A5A20D7490F0014A534 /* NameCell.h */,
-				11935A5B20D7490F0014A534 /* NameCell.m */,
-				11935A5C20D7490F0014A534 /* NameCell.xib */,
 				11935A5F20D749730014A534 /* 性别和孕妇和陪护人 */,
 				11935A6020D749860014A534 /* 年龄 */,
 				11935A6120D749B60014A534 /* 联系方式和体重 */,
+				1163029820DC846E00C3B444 /* 过敏史和血型和所在地区  */,
+				1163029F20DC870600C3B444 /* 与患者关系 */,
+				116302A520DC877300C3B444 /* 所在地区和详细地址 */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -2096,6 +2322,9 @@
 		11935A5920D748DB0014A534 /* 姓名 */ = {
 			isa = PBXGroup;
 			children = (
+				11935A5A20D7490F0014A534 /* NameCell.h */,
+				11935A5B20D7490F0014A534 /* NameCell.m */,
+				11935A5C20D7490F0014A534 /* NameCell.xib */,
 			);
 			name = "姓名";
 			sourceTree = "<group>";
@@ -2103,6 +2332,9 @@
 		11935A5F20D749730014A534 /* 性别和孕妇和陪护人 */ = {
 			isa = PBXGroup;
 			children = (
+				1163028920DC840900C3B444 /* SelectYesOrNoCell.h */,
+				1163028A20DC840900C3B444 /* SelectYesOrNoCell.m */,
+				1163028B20DC840900C3B444 /* SelectYesOrNoCell.xib */,
 			);
 			name = "性别和孕妇和陪护人";
 			sourceTree = "<group>";
@@ -2110,6 +2342,9 @@
 		11935A6020D749860014A534 /* 年龄 */ = {
 			isa = PBXGroup;
 			children = (
+				1163028E20DC843000C3B444 /* AgeInputCell.h */,
+				1163028F20DC843000C3B444 /* AgeInputCell.m */,
+				1163029020DC843000C3B444 /* AgeInputCell.xib */,
 			);
 			name = "年龄";
 			sourceTree = "<group>";
@@ -2117,6 +2352,9 @@
 		11935A6120D749B60014A534 /* 联系方式和体重 */ = {
 			isa = PBXGroup;
 			children = (
+				1163029320DC845400C3B444 /* NumberInputCell.h */,
+				1163029420DC845400C3B444 /* NumberInputCell.m */,
+				1163029520DC845400C3B444 /* NumberInputCell.xib */,
 			);
 			name = "联系方式和体重";
 			sourceTree = "<group>";
@@ -2357,6 +2595,34 @@
 			children = (
 			);
 			name = "TableView相关";
+			sourceTree = "<group>";
+		};
+		11A8B65820DB76F1002C0F1B /* TextView相关 */ = {
+			isa = PBXGroup;
+			children = (
+				11A8B66120DB777C002C0F1B /* Controller */,
+				11A8B66220DB7782002C0F1B /* View */,
+			);
+			name = "TextView相关";
+			sourceTree = "<group>";
+		};
+		11A8B66120DB777C002C0F1B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11A8B65920DB770F002C0F1B /* TextViewController.h */,
+				11A8B65A20DB770F002C0F1B /* TextViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		11A8B66220DB7782002C0F1B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11A8B65C20DB7778002C0F1B /* TextViewCell.h */,
+				11A8B65D20DB7778002C0F1B /* TextViewCell.m */,
+				11A8B65E20DB7778002C0F1B /* TextViewCell.xib */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 		11AAA99A2081AD8400DE7CA4 /* DispatchTarget */ = {
@@ -2630,6 +2896,8 @@
 			files = (
 				1122899820D50CDA0064B8EB /* AttributeCell.xib in Resources */,
 				111ED1992098A0DA0023574B /* YYCell.xib in Resources */,
+				1163029720DC845400C3B444 /* NumberInputCell.xib in Resources */,
+				1163029220DC843000C3B444 /* AgeInputCell.xib in Resources */,
 				11626FBD20A15D7A00F36BFD /* indexThree.html in Resources */,
 				115C996B2098B39F00916654 /* timg.jpeg in Resources */,
 				111E20E72097090100C1F94B /* NSTimerRunLoopController.xib in Resources */,
@@ -2637,6 +2905,7 @@
 				1177A82A20A09C0500726FE5 /* indexTwo.html in Resources */,
 				111ED19720989E6D0023574B /* spaceship.jpg in Resources */,
 				1177A81920A0007A00726FE5 /* index.html in Resources */,
+				116302AB20DC87DD00C3B444 /* StringInputCell.xib in Resources */,
 				1177A817209FFC9700726FE5 /* JsAndOCByURLViewController.xib in Resources */,
 				110E8AAD208C40DD006D7E5C /* img.gif in Resources */,
 				11935A5E20D7490F0014A534 /* NameCell.xib in Resources */,
@@ -2644,13 +2913,18 @@
 				1122899F20D50D5E0064B8EB /* EmailCell.xib in Resources */,
 				1164330220C638AD009A4427 /* testView.xib in Resources */,
 				115C99712098B8C100916654 /* YYAdvancedCell.xib in Resources */,
+				116302A420DC875E00C3B444 /* SelectRelationshipCell.xib in Resources */,
+				1163028D20DC840900C3B444 /* SelectYesOrNoCell.xib in Resources */,
+				1163029E20DC86F900C3B444 /* ChoosePopViewCell.xib in Resources */,
 				1122898020D50C2A0064B8EB /* NamePictureCell.xib in Resources */,
+				11A8B66020DB7778002C0F1B /* TextViewCell.xib in Resources */,
 				112289A820D545380064B8EB /* ServerData.json in Resources */,
 				1115738120660DFC00EB426C /* LaunchScreen.storyboard in Resources */,
 				1171CC80209D788B005E7C92 /* KVOObserverArrayController.xib in Resources */,
 				1162702420A1864A00F36BFD /* www in Resources */,
 				1115737E20660DFC00EB426C /* Assets.xcassets in Resources */,
 				1122898520D50C390064B8EB /* AboutCell.xib in Resources */,
+				116302B120DC8E8200C3B444 /* Patient.json in Resources */,
 				1115737C20660DFC00EB426C /* Main.storyboard in Resources */,
 				1162702220A1845300F36BFD /* config.xml in Resources */,
 			);
@@ -2702,6 +2976,7 @@
 				11A2A4052074B40D00B4AFF4 /* ReferenceCountViewController.m in Sources */,
 				11AAA9AD2081EE8C00DE7CA4 /* DispatchSuspendController.m in Sources */,
 				11001E28206A2E2700457CBC /* RuleStudyViewController.m in Sources */,
+				116302C320DC930E00C3B444 /* SelectYesOrNoItem.m in Sources */,
 				1195A23620A7E4B2005CE445 /* OSSpinLockViewController.m in Sources */,
 				115C99702098B8C100916654 /* YYAdvancedCell.m in Sources */,
 				1171CC83209D9B18005E7C92 /* Rice.m in Sources */,
@@ -2713,6 +2988,7 @@
 				1177A81D20A0011400726FE5 /* WebViewController.m in Sources */,
 				115FA97C208ED17300353C45 /* Bulldog+Category.m in Sources */,
 				1162701420A1845300F36BFD /* CDVPlugin.m in Sources */,
+				1163029D20DC86F900C3B444 /* ChoosePopViewCell.m in Sources */,
 				11A2A3FC2074B16F00B4AFF4 /* ARCOwnershipAutoStrongController.m in Sources */,
 				1164330320C638AD009A4427 /* testView.m in Sources */,
 				11232EFC207DFE8C000824B2 /* DispatchSemaphoreController.m in Sources */,
@@ -2727,12 +3003,14 @@
 				1166C55D20D6004D00956B7A /* ProfileViewModelNamePictureItem.m in Sources */,
 				11AC65F320A7F1870016BD7D /* DrawerEffectViewController.m in Sources */,
 				112018FD2078CEE800C9567A /* BlockAchieveViewController.m in Sources */,
+				116302B420DC8EDC00C3B444 /* PatientModel.m in Sources */,
 				11A2A4022074B18E00B4AFF4 /* ARCOwnershipAutoUnRetainedController.m in Sources */,
 				113ABF022085C55500847675 /* ThreadInsecureViewController.m in Sources */,
 				1166C56020D6005B00956B7A /* ProfileViewModelAboutItem.m in Sources */,
 				1174AC85207B5A23002996C5 /* InterceptedObjectsMRCController.m in Sources */,
 				115FA978208ED0F600353C45 /* Bulldog.m in Sources */,
 				1110663620863DD7002B5C38 /* Banana+BananaOne.m in Sources */,
+				116302BB20DC929500C3B444 /* PatientBaseItem.m in Sources */,
 				1162701E20A1845300F36BFD /* CDVPluginResult.m in Sources */,
 				1171CC5F209BF43F005E7C92 /* NSTimerCycleController.m in Sources */,
 				11624E3A2086E86300ABEB75 /* DynamicAddMethodController.m in Sources */,
@@ -2754,14 +3032,17 @@
 				1110661A2086325C002B5C38 /* SwizzlingMethodViewController.m in Sources */,
 				1162701B20A1845300F36BFD /* CDVURLProtocol.m in Sources */,
 				11AC65FA20A813530016BD7D /* HeaderViewInSection.m in Sources */,
+				1163029120DC843000C3B444 /* AgeInputCell.m in Sources */,
 				1195A25120A7E69D005CE445 /* NSRecursiveLockViewController.m in Sources */,
 				1122899720D50CDA0064B8EB /* AttributeCell.m in Sources */,
+				11A8B65B20DB770F002C0F1B /* TextViewController.m in Sources */,
 				1171CC78209D57D7005E7C92 /* YYPerson.m in Sources */,
 				11B8FD4620761C6F009878D2 /* msgSendViewController.m in Sources */,
 				1172B6A220960AD8009537DC /* NSTimerViewController.m in Sources */,
 				1162702820A19D3F00F36BFD /* YYPlugin.m in Sources */,
 				1162700F20A1845300F36BFD /* CDVUIWebViewDelegate.m in Sources */,
 				1162700A20A1845300F36BFD /* CDVGestureHandler.m in Sources */,
+				11A8B65F20DB7778002C0F1B /* TextViewCell.m in Sources */,
 				1162700E20A1845300F36BFD /* CDVLocalStorage.m in Sources */,
 				1162701120A1845300F36BFD /* CDVUIWebViewEngine.m in Sources */,
 				1172B69C2095C090009537DC /* People.m in Sources */,
@@ -2781,11 +3062,15 @@
 				112ED36620CE56D400AE1884 /* TestModel.m in Sources */,
 				1171CC7E209D6753005E7C92 /* model.m in Sources */,
 				11232EF8207DFD35000824B2 /* DispatchBarrierController.m in Sources */,
+				116302D320DC941000C3B444 /* SelectRelationshipItem.m in Sources */,
 				112289A520D50DB70064B8EB /* ProfileModel.m in Sources */,
+				116302D720DC942E00C3B444 /* StringInputItem.m in Sources */,
 				1166C56620D6007400956B7A /* ProfileViewModeFriendsItem.m in Sources */,
 				1122898420D50C390064B8EB /* AboutCell.m in Sources */,
+				116302C720DC93A300C3B444 /* AgeInputItem.m in Sources */,
 				1171CC9E209EDC1D005E7C92 /* NavBarGradientController.m in Sources */,
 				1147D71A20B6FBAD007C07AB /* AFNetworkingViewController.m in Sources */,
+				116302A320DC875E00C3B444 /* SelectRelationshipCell.m in Sources */,
 				113ABEF92085A89A00847675 /* OperationDependViewController.m in Sources */,
 				1162701320A1845300F36BFD /* NSDictionary+CordovaPreferences.m in Sources */,
 				1177A83620A0A26E00726FE5 /* CordovaViewController.m in Sources */,
@@ -2795,6 +3080,7 @@
 				1171CC87209DEA67005E7C92 /* CustomizeKVOController.m in Sources */,
 				1162701020A1845300F36BFD /* CDVUIWebViewNavigationDelegate.m in Sources */,
 				110E86AF208F8A8E0049F587 /* TestSwiftDemo.swift in Sources */,
+				116302CF20DC93F600C3B444 /* ChoosePopViewItem.m in Sources */,
 				1162700C20A1845300F36BFD /* CDVHandleOpenURL.m in Sources */,
 				1177A83220A0A20400726FE5 /* JavascriptBridgeController.m in Sources */,
 				1177A82720A091E800726FE5 /* JavaScriptCoreViewController.m in Sources */,
@@ -2808,6 +3094,7 @@
 				1171CC73209D55FB005E7C92 /* KVOBasicViewController.m in Sources */,
 				1162700D20A1845300F36BFD /* CDVLogger.m in Sources */,
 				1162701620A1845300F36BFD /* CDVInvokedUrlCommand.m in Sources */,
+				1163029620DC845400C3B444 /* NumberInputCell.m in Sources */,
 				1195A24520A7E629005CE445 /* PthreadMutexRecursiveController.m in Sources */,
 				111065FC2085D638002B5C38 /* RunTimeBasicViewController.m in Sources */,
 				11626FC220A15F7900F36BFD /* YYAudioPlayer.m in Sources */,
@@ -2837,6 +3124,7 @@
 				1110660D2085EBA8002B5C38 /* ResponseChainViewController.m in Sources */,
 				111066072085EB51002B5C38 /* RunLoopBasicViewController.m in Sources */,
 				11B8FD4920763159009878D2 /* Father.m in Sources */,
+				1163028C20DC840900C3B444 /* SelectYesOrNoCell.m in Sources */,
 				112018F92078C34C00C9567A /* InterceptedObjectsController.m in Sources */,
 				115FA972208ECFEA00353C45 /* Dog.m in Sources */,
 				11B8FD3D20760F48009878D2 /* RunTimeViewListController.m in Sources */,
@@ -2844,6 +3132,7 @@
 				11A2A3FF2074B18100B4AFF4 /* ARCOwnershipAutoWeakController.m in Sources */,
 				1110663920863DFA002B5C38 /* Apple+AppleOne.m in Sources */,
 				1171CC7B209D625B005E7C92 /* KVOObserverArrayController.m in Sources */,
+				116302DB20DC9F8C00C3B444 /* PatientViewModel.m in Sources */,
 				113ABED520830CCD00847675 /* shareObject.m in Sources */,
 				113ABED82083217900847675 /* NSOperationBasicViewController.m in Sources */,
 				11AC65ED20A7F0F40016BD7D /* WebContentsizeViewController.m in Sources */,
@@ -2864,7 +3153,10 @@
 				11AAA9A12081C5E200DE7CA4 /* DispatchSyncViewController.m in Sources */,
 				111E20EA209713E800C1F94B /* PerformanceViewController.m in Sources */,
 				111066172085F4DB002B5C38 /* UIViewController+Swizzling.m in Sources */,
+				116302AA20DC87DD00C3B444 /* StringInputCell.m in Sources */,
+				116302CB20DC93C200C3B444 /* NumberInputItem.m in Sources */,
 				11232EF1207DF7B6000824B2 /* DispatchGroupViewController.m in Sources */,
+				116302BE20DC92B700C3B444 /* NameItem.m in Sources */,
 				113ABF0A2085CABB00847675 /* QueueAttributesViewController.m in Sources */,
 				111E20DF2096EF9D00C1F94B /* HLThread.m in Sources */,
 				1162701920A1845300F36BFD /* CDVTimer.m in Sources */,

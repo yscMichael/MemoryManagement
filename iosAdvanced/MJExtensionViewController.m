@@ -24,7 +24,30 @@
     //[self testNil];
     //[self testNull];
     //[self testCopyModel];
+    //[self testSubstringToIndex];
 
+    UIFont *font = [UIFont systemFontOfSize:12.0];
+    NSLog(@"font.name = %@",font.familyName);
+
+    NSArray *familyNames = [UIFont familyNames];
+    for( NSString *familyName in familyNames )
+    {
+        NSLog(@"Family: %@",familyName);
+        NSArray *fontNames = [UIFont fontNamesForFamilyName:familyName];
+        for( NSString *fontName in fontNames )
+        {
+            NSLog(@"Font: %@",fontName);
+        }
+    }
+
+    //总结:
+    //1、systemFontOfSize:默认字体是font.name = .SF UI Text
+    //2、
+}
+
+#pragma mark - 测试substringToIndex
+- (void)testSubstringToIndex
+{
     NSString *string = @"0123456789";
     NSString *tempString = [string substringToIndex:0];
     NSLog(@"tempString = %@",tempString);

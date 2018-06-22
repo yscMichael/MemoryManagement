@@ -1,0 +1,50 @@
+{
+            "age" : 0,
+            "age_type" :             {
+                "id" : 1,
+                "key_name" : "0岁—6岁"
+            },
+            "age_type_name" : "0岁-6岁",
+            "clinic_id" :             {
+                "id" : 26,
+                "key_name" : "大岚山诊所",
+            },
+            "consume_amount" : 12000,
+            "create_entity" :             {
+                "id" : 1000140,
+                "key_name" : "小山姐",
+            },
+            "create_time" : "2018-06-21 10:52:05",
+            "debt_amount" : 0,
+            "doctor_say" : "日光性皮炎",
+            "gender" :             {
+                "id" : 1,
+                "key_name" : "男",
+            },
+            "handle_month" : 6,
+            "handle_quarter" : 2,
+            "handle_week" : 4,
+            "handle_year" : 2018,
+            "id" : 1356,
+            "is_relationship" :             {
+                "id" : 0,
+                "key_name" : "否",
+            },
+            "key_name" : "JJ",
+            "last_visit_time" : "2018-06-21 15:09:37",
+            "mobile" : 15856566555,
+            "modify_entity" :             {
+                "id" : 1000140,
+                "key_name" : "小山姐",
+            },
+            "modify_time" : "2018-06-21 11:25:26",
+            "month" : 1,
+            "patient_pinyin" : "JJ",
+            "review_state" :             {
+                "id" : 1,
+                "key_name" : "是",
+            },
+            "status" : 1,
+            "subcompany_id" : 1,
+            "visit_count" : 1,
+}
