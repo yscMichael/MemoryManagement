@@ -88,6 +88,9 @@
 		115FA972208ECFEA00353C45 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 115FA971208ECFEA00353C45 /* Dog.m */; };
 		115FA978208ED0F600353C45 /* Bulldog.m in Sources */ = {isa = PBXBuildFile; fileRef = 115FA977208ED0F600353C45 /* Bulldog.m */; };
 		115FA97C208ED17300353C45 /* Bulldog+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 115FA97B208ED17300353C45 /* Bulldog+Category.m */; };
+		1160520520E9F6A80053E41E /* LoadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1160520420E9F6A80053E41E /* LoadViewController.m */; };
+		1160520E20EA0CDC0053E41E /* YYAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 1160520D20EA0CDC0053E41E /* YYAnimation.m */; };
+		1160521020EA1FFF0053E41E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1160520F20EA1FFF0053E41E /* QuartzCore.framework */; };
 		11624E262086E1F900ABEB75 /* CategoryAttributesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11624E252086E1F900ABEB75 /* CategoryAttributesController.m */; };
 		11624E2D2086E5EB00ABEB75 /* synthesizeAndDynamicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11624E2C2086E5EB00ABEB75 /* synthesizeAndDynamicController.m */; };
 		11624E312086E65B00ABEB75 /* VariablesDifferenceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11624E302086E65B00ABEB75 /* VariablesDifferenceController.m */; };
@@ -182,6 +185,7 @@
 		1172B69C2095C090009537DC /* People.m in Sources */ = {isa = PBXBuildFile; fileRef = 1172B6972095C090009537DC /* People.m */; };
 		1172B69D2095C090009537DC /* Monkey.m in Sources */ = {isa = PBXBuildFile; fileRef = 1172B6982095C090009537DC /* Monkey.m */; };
 		1172B6A220960AD8009537DC /* NSTimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1172B6A120960AD8009537DC /* NSTimerViewController.m */; };
+		11738DD520E0E4D1000D6FDB /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11738DD420E0E4D1000D6FDB /* Data.plist */; };
 		1174AC82207B189A002996C5 /* BlockStorageMRCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC81207B189A002996C5 /* BlockStorageMRCController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1174AC85207B5A23002996C5 /* InterceptedObjectsMRCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC84207B5A23002996C5 /* InterceptedObjectsMRCController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1174AC88207B5A64002996C5 /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 1174AC87207B5A64002996C5 /* MyClass.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -397,6 +401,11 @@
 		115FA977208ED0F600353C45 /* Bulldog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bulldog.m; sourceTree = "<group>"; };
 		115FA97A208ED17300353C45 /* Bulldog+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bulldog+Category.h"; sourceTree = "<group>"; };
 		115FA97B208ED17300353C45 /* Bulldog+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Bulldog+Category.m"; sourceTree = "<group>"; };
+		1160520320E9F6A80053E41E /* LoadViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadViewController.h; sourceTree = "<group>"; };
+		1160520420E9F6A80053E41E /* LoadViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadViewController.m; sourceTree = "<group>"; };
+		1160520C20EA0CDC0053E41E /* YYAnimation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YYAnimation.h; sourceTree = "<group>"; };
+		1160520D20EA0CDC0053E41E /* YYAnimation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YYAnimation.m; sourceTree = "<group>"; };
+		1160520F20EA1FFF0053E41E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		11624E242086E1F900ABEB75 /* CategoryAttributesController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CategoryAttributesController.h; sourceTree = "<group>"; };
 		11624E252086E1F900ABEB75 /* CategoryAttributesController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CategoryAttributesController.m; sourceTree = "<group>"; };
 		11624E2B2086E5EB00ABEB75 /* synthesizeAndDynamicController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = synthesizeAndDynamicController.h; sourceTree = "<group>"; };
@@ -581,6 +590,7 @@
 		1172B69A2095C090009537DC /* People.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = People.h; sourceTree = "<group>"; };
 		1172B6A020960AD8009537DC /* NSTimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSTimerViewController.h; sourceTree = "<group>"; };
 		1172B6A120960AD8009537DC /* NSTimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSTimerViewController.m; sourceTree = "<group>"; };
+		11738DD420E0E4D1000D6FDB /* Data.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
 		1174AC80207B189A002996C5 /* BlockStorageMRCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlockStorageMRCController.h; sourceTree = "<group>"; };
 		1174AC81207B189A002996C5 /* BlockStorageMRCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlockStorageMRCController.m; sourceTree = "<group>"; };
 		1174AC83207B5A23002996C5 /* InterceptedObjectsMRCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InterceptedObjectsMRCController.h; sourceTree = "<group>"; };
@@ -714,6 +724,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1160521020EA1FFF0053E41E /* QuartzCore.framework in Frameworks */,
 				6F16EE0A7D625DE37F5031B5 /* libPods-iosAdvanced.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -998,6 +1009,7 @@
 				112ED36020CE54FA00AE1884 /* MJExtension使用 */,
 				1122896D20D4B7FD0064B8EB /* TableViewCell工厂模式 */,
 				11935A5320D7461B0014A534 /* Cell工厂模式项目实践 */,
+				1160520220E9F6700053E41E /* 加载控制器View */,
 				116DBC5120DB721700684732 /* UI总结 */,
 				111066042085EA33002B5C38 /* 其它知识点 */,
 				1115737120660DFC00EB426C /* Supporting Files */,
@@ -1113,6 +1125,7 @@
 				111ED19D2098A88B0023574B /* cell */,
 				115C99672098AD8B00916654 /* BasicTableViewController.h */,
 				115C99682098AD8C00916654 /* BasicTableViewController.m */,
+				11738DD420E0E4D1000D6FDB /* Data.plist */,
 			);
 			name = "基本的tableView";
 			sourceTree = "<group>";
@@ -1471,6 +1484,33 @@
 			children = (
 			);
 			name = "加密算法";
+			sourceTree = "<group>";
+		};
+		1160520220E9F6700053E41E /* 加载控制器View */ = {
+			isa = PBXGroup;
+			children = (
+				1160520B20EA0CC20053E41E /* YYAnimation */,
+				1160520620E9F6AB0053E41E /* Controlller */,
+			);
+			name = "加载控制器View";
+			sourceTree = "<group>";
+		};
+		1160520620E9F6AB0053E41E /* Controlller */ = {
+			isa = PBXGroup;
+			children = (
+				1160520320E9F6A80053E41E /* LoadViewController.h */,
+				1160520420E9F6A80053E41E /* LoadViewController.m */,
+			);
+			name = Controlller;
+			sourceTree = "<group>";
+		};
+		1160520B20EA0CC20053E41E /* YYAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				1160520C20EA0CDC0053E41E /* YYAnimation.h */,
+				1160520D20EA0CDC0053E41E /* YYAnimation.m */,
+			);
+			name = YYAnimation;
 			sourceTree = "<group>";
 		};
 		11624E2A2086E5B900ABEB75 /* @synthesize和dynamic */ = {
@@ -2828,6 +2868,7 @@
 		C86AE111AA4FD61FCE107271 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1160520F20EA1FFF0053E41E /* QuartzCore.framework */,
 				5E54631BCA118F8360233494 /* libPods-iosAdvanced.a */,
 			);
 			name = Frameworks;
@@ -2918,6 +2959,7 @@
 				1163029E20DC86F900C3B444 /* ChoosePopViewCell.xib in Resources */,
 				1122898020D50C2A0064B8EB /* NamePictureCell.xib in Resources */,
 				11A8B66020DB7778002C0F1B /* TextViewCell.xib in Resources */,
+				11738DD520E0E4D1000D6FDB /* Data.plist in Resources */,
 				112289A820D545380064B8EB /* ServerData.json in Resources */,
 				1115738120660DFC00EB426C /* LaunchScreen.storyboard in Resources */,
 				1171CC80209D788B005E7C92 /* KVOObserverArrayController.xib in Resources */,
@@ -2983,6 +3025,7 @@
 				112018F52078BF3200C9567A /* InterceptedVariableController.m in Sources */,
 				1166C56920D6008300956B7A /* ProfileViewModeAttributeItem.m in Sources */,
 				1195A24120A7E5A6005CE445 /* PthreadMutexViewController.m in Sources */,
+				1160520520E9F6A80053E41E /* LoadViewController.m in Sources */,
 				1162701820A1845300F36BFD /* CDVCommandDelegateImpl.m in Sources */,
 				11A2A3D520721B8A00B4AFF4 /* AutoReleaseMRCViewController.m in Sources */,
 				1177A81D20A0011400726FE5 /* WebViewController.m in Sources */,
@@ -3074,6 +3117,7 @@
 				113ABEF92085A89A00847675 /* OperationDependViewController.m in Sources */,
 				1162701320A1845300F36BFD /* NSDictionary+CordovaPreferences.m in Sources */,
 				1177A83620A0A26E00726FE5 /* CordovaViewController.m in Sources */,
+				1160520E20EA0CDC0053E41E /* YYAnimation.m in Sources */,
 				11B8FD5020765430009878D2 /* MessageForwardingController.m in Sources */,
 				11AAA9A52081C62500DE7CA4 /* DispatchAfterViewController.m in Sources */,
 				1171CC6E209C120E005E7C92 /* ManuallyKVOViewController.m in Sources */,

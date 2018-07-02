@@ -35,6 +35,12 @@
     [self.view addSubview:self.tableView];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+
+    NSString *plistPath = [[NSBundle mainBundle] pathForResource:@"Data" ofType:@"plist"];
+    //读取出来的可以是数组，也可以是字典
+    //读取出来的字典
+    NSMutableDictionary *usersDic = [[NSMutableDictionary alloc]initWithContentsOfFile:plistPath];
+    NSLog(@"usersDicusersDic = %@",usersDic);
 }
 
 #pragma mark - UITableViewDataSource
