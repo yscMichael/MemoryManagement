@@ -209,7 +209,7 @@
                       @[@"MJExtension使用"],
                       @[@"TableViewCell之工厂模式",
                         @"工厂模式项目实践",
-                        @"加载控制器View"],
+                        @"转场动画View"],
                       @[@"load和initialize细节",
                         @"synthesize和dynamic",
                         @"成员变量和实例变量区别",

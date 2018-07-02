@@ -1009,7 +1009,7 @@
 				112ED36020CE54FA00AE1884 /* MJExtension使用 */,
 				1122896D20D4B7FD0064B8EB /* TableViewCell工厂模式 */,
 				11935A5320D7461B0014A534 /* Cell工厂模式项目实践 */,
-				1160520220E9F6700053E41E /* 加载控制器View */,
+				1160520220E9F6700053E41E /* 转场动画View */,
 				116DBC5120DB721700684732 /* UI总结 */,
 				111066042085EA33002B5C38 /* 其它知识点 */,
 				1115737120660DFC00EB426C /* Supporting Files */,
@@ -1486,13 +1486,13 @@
 			name = "加密算法";
 			sourceTree = "<group>";
 		};
-		1160520220E9F6700053E41E /* 加载控制器View */ = {
+		1160520220E9F6700053E41E /* 转场动画View */ = {
 			isa = PBXGroup;
 			children = (
 				1160520B20EA0CC20053E41E /* YYAnimation */,
 				1160520620E9F6AB0053E41E /* Controlller */,
 			);
-			name = "加载控制器View";
+			name = "转场动画View";
 			sourceTree = "<group>";
 		};
 		1160520620E9F6AB0053E41E /* Controlller */ = {
