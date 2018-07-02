@@ -71,37 +71,11 @@
 
 - (void)scrollButtonView:(UIButton *)sender
 {
-    NSLog(@"开始滚动");
-
-//    [self.animation transitionWithType:@"kCATransitionPush" WithSubtype:@"kCATransitionFromLeft" ForView:self.firstView];
-
-
-//    [self transitionWithType:@"kCATransitionPush" WithSubtype:@"kCATransitionFromLeft" ForView:self.view];
-
+    NSString *type = kCATransitionPush;
+    NSString *subtype = kCATransitionFromLeft;
+    [self.animation transitionWithType:type WithSubtype:subtype ForView:self.firstView];
     //不能这种字符串
     //[self transitionWithType:@"kCATransitionPush" WithSubtype:@"kCATransitionFromLeft" ForView:self.firstView];
-}
-
-- (void) transitionWithType:(NSString *) type WithSubtype:(NSString *) subtype ForView : (UIView *) view
-{
-    //创建CATransition对象
-    CATransition *animation = [CATransition animation];
-
-    //设置运动时间
-    animation.duration = 1.0;
-
-    //设置运动type
-    animation.type = kCATransitionPush;
-    if (subtype != nil) {
-
-        //设置子类
-        animation.subtype = kCATransitionFromBottom;
-    }
-
-    //设置运动速度
-    animation.timingFunction = UIViewAnimationOptionCurveEaseInOut;
-
-    [view.layer addAnimation:animation forKey:@"animation"];
 }
 
 #pragma mark - Getter And Setter
