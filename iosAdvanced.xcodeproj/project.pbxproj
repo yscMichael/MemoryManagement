@@ -237,6 +237,7 @@
 		11AAA9A92081C8E900DE7CA4 /* DispatchApplyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AAA9A82081C8E900DE7CA4 /* DispatchApplyViewController.m */; };
 		11AAA9AD2081EE8C00DE7CA4 /* DispatchSuspendController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AAA9AC2081EE8C00DE7CA4 /* DispatchSuspendController.m */; };
 		11AAA9B120823F2F00DE7CA4 /* DispatchOnceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AAA9B020823F2F00DE7CA4 /* DispatchOnceViewController.m */; };
+		11AAD84E20F4AE7E00A30FE4 /* SegmentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AAD84C20F4AE7E00A30FE4 /* SegmentedViewController.m */; };
 		11AC65EA20A7F01F0016BD7D /* KVOOtherUseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AC65E920A7F01F0016BD7D /* KVOOtherUseViewController.m */; };
 		11AC65ED20A7F0F40016BD7D /* WebContentsizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AC65EC20A7F0F40016BD7D /* WebContentsizeViewController.m */; };
 		11AC65F020A7F13A0016BD7D /* MonitorModelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11AC65EF20A7F13A0016BD7D /* MonitorModelViewController.m */; };
@@ -688,6 +689,8 @@
 		11AAA9AC2081EE8C00DE7CA4 /* DispatchSuspendController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchSuspendController.m; sourceTree = "<group>"; };
 		11AAA9AF20823F2F00DE7CA4 /* DispatchOnceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DispatchOnceViewController.h; sourceTree = "<group>"; };
 		11AAA9B020823F2F00DE7CA4 /* DispatchOnceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DispatchOnceViewController.m; sourceTree = "<group>"; };
+		11AAD84C20F4AE7E00A30FE4 /* SegmentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SegmentedViewController.m; sourceTree = "<group>"; };
+		11AAD84D20F4AE7E00A30FE4 /* SegmentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SegmentedViewController.h; sourceTree = "<group>"; };
 		11AC65E820A7F01F0016BD7D /* KVOOtherUseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOOtherUseViewController.h; sourceTree = "<group>"; };
 		11AC65E920A7F01F0016BD7D /* KVOOtherUseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOOtherUseViewController.m; sourceTree = "<group>"; };
 		11AC65EB20A7F0F40016BD7D /* WebContentsizeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebContentsizeViewController.h; sourceTree = "<group>"; };
@@ -1010,6 +1013,7 @@
 				1122896D20D4B7FD0064B8EB /* TableViewCell工厂模式 */,
 				11935A5320D7461B0014A534 /* Cell工厂模式项目实践 */,
 				1160520220E9F6700053E41E /* 转场动画View */,
+				11AAD84B20F4AE6B00A30FE4 /* 分段控制器 */,
 				116DBC5120DB721700684732 /* UI总结 */,
 				111066042085EA33002B5C38 /* 其它知识点 */,
 				1115737120660DFC00EB426C /* Supporting Files */,
@@ -2753,6 +2757,15 @@
 			name = "NSOperation知识详解";
 			sourceTree = "<group>";
 		};
+		11AAD84B20F4AE6B00A30FE4 /* 分段控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				11AAD84D20F4AE7E00A30FE4 /* SegmentedViewController.h */,
+				11AAD84C20F4AE7E00A30FE4 /* SegmentedViewController.m */,
+			);
+			name = "分段控制器";
+			sourceTree = "<group>";
+		};
 		11AC65E720A7EF440016BD7D /* main */ = {
 			isa = PBXGroup;
 			children = (
@@ -3020,6 +3033,7 @@
 				11001E28206A2E2700457CBC /* RuleStudyViewController.m in Sources */,
 				116302C320DC930E00C3B444 /* SelectYesOrNoItem.m in Sources */,
 				1195A23620A7E4B2005CE445 /* OSSpinLockViewController.m in Sources */,
+				11AAD84E20F4AE7E00A30FE4 /* SegmentedViewController.m in Sources */,
 				115C99702098B8C100916654 /* YYAdvancedCell.m in Sources */,
 				1171CC83209D9B18005E7C92 /* Rice.m in Sources */,
 				112018F52078BF3200C9567A /* InterceptedVariableController.m in Sources */,
