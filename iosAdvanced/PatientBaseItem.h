@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 typedef NS_ENUM (NSInteger , PatientItemType){
-    PatientItemTypeName,//姓名
+    PatientItemTypeName = 0,//姓名
     PatientItemTypeSelectYesOrNo,//性别、孕妇、陪护人
     PatientItemTypeAge,//年龄
     PatientItemTypeNumber,//联系方式、体重
