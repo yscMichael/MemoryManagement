@@ -48,8 +48,8 @@
 
 //Block类型变量类似于"函数指针"
 //1、定义形式
-//   返回值类型(^Block名称)(参数类型) = ^(参数列表) {表达式}//这里返回值类型被省略
-//   int(^blk)(int) = ^(int count){return count + 1;}
+//   返回值类型(^Block名称)(参数类型) = ^(返回值类型)(参数列表) {表达式}//这里返回值类型被省略
+//   int(^blk)(int) = ^int(int count){return count + 1;}
 //   int(^blk)(int,int) = ^(int count,int rate){return count + rate;}
 
 //2、typedef定义Block
