@@ -48,7 +48,7 @@
 
 //Block类型变量类似于"函数指针"
 //1、定义形式
-//   返回值类型(^Block名称)(参数类型) = ^(返回值类型)(参数列表) {表达式}//这里返回值类型被省略
+//   返回值类型(^Block名称)(参数类型) = ^返回值类型(参数列表) {表达式}
 //   int(^blk)(int) = ^int(int count){return count + 1;}
 //   int(^blk)(int,int) = ^(int count,int rate){return count + rate;}
 
@@ -57,15 +57,26 @@
 
 //背景:
 //   因为Block可以当函数参数和函数的返回值
-//   void fun (int(^blk)(int)) //Block参数
-//   int (^fun()) (int) //Block返回值
+//   1、Block参数
+//   - (void)fun(int(^)(int))blk
+//   {
+
+//   }
+//
+//   2、Block返回值
+//   - (int(^)(int))fun
 //   {
 //     return ^(int count){return count + 1;}
 //   }
 
 //转化:
-//   void fun(blk_t blk)
-//   blk_t fun()
+//   - (void)fun(blk_t)blk
+//   {
+
+//   }
+//
+//
+//   - (blk_t)fun
 //   {
 //       return ^(int count){return count + 1;}
 //   }
