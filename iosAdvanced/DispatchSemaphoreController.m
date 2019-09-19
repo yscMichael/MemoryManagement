@@ -106,10 +106,14 @@
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0);
     for (int i = 0; i < 50; i++)
     {
+        //等待
+        //如果为0，代表没有资源了，不允许向下进行
+        //如果大于或等于1，有资源可用，总资源数量减1，程序可以继续向下执行
         dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
         dispatch_group_async(group, queue, ^{
             NSLog(@"%i + %@ = ",i,[NSThread currentThread]);
             sleep(2);
+            //发送一个信号、相当于释放资源
             dispatch_semaphore_signal(semaphore);
         });
     }

@@ -22,8 +22,9 @@
 {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    //[self testOne];
-    [self testTwo];
+//    [self testOne];
+//    [self testTwo];
+    [self testChildThread];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -49,6 +50,18 @@
     NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(timerUpdate) userInfo:nil repeats:YES];
     [timer fire];//立马开启
     self.timer = timer;
+}
+
+#pragma mark - 测试子线程
+- (void)testChildThread
+{
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        //不会执行
+        [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(timerUpdate) userInfo:nil repeats:YES];
+        //添加这句、可以正常执行
+        //必须在下面，因为不添加Source，不会正常开启RunLoop
+        [[NSRunLoop currentRunLoop] run];
+    });
 }
 
 - (void)timerUpdate
